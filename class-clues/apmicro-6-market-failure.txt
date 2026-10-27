@@ -1,0 +1,92 @@
+# Course: APMICRO | AP Microeconomics
+# Unit: failure | Unit 6: Market Failure and the Role of Government
+
+## EFFICIENT OUTCOMES
+1 | The loss of total surplus when a market produces more or less than the efficient quantity | DEADWEIGHT LOSS / DWL / DEAD WEIGHT LOSS
+2 | A market is allocatively efficient where marginal social benefit equals this | MARGINAL SOCIAL COST | MARGINAL PRIVATE COST; AVERAGE TOTAL COST; THE PRICE CEILING
+3 | When a market on its own doesn't produce the efficient quantity, it is called this | MARKET FAILURE | MARKET EQUILIBRIUM; PERFECT COMPETITION; NORMAL PROFIT
+4 | Total surplus is consumer surplus plus this | PRODUCER SURPLUS / PRODUCERS SURPLUS
+5 | [graph: surplus] If a quota limited sales to 40 units, how much total surplus would be lost, in dollars? | = 140 dollars ~0
+
+## SPILLOVER COSTS
+1 | A cost that falls on people outside a market, like pollution | NEGATIVE EXTERNALITY | POSITIVE EXTERNALITY; PUBLIC GOOD; SUNK COST
+2 | [graph: negative-externality] What quantity does the unregulated market produce? | = 45 units ~0
+3 | [graph: negative-externality] What is the socially optimal quantity? | = 35 units ~0
+4 | [graph: negative-externality] Without government action, this market produces this | TOO MUCH | TOO LITTLE; THE EFFICIENT AMOUNT; NOTHING
+5 | [graph: negative-externality] What per-unit tax would move the market to the socially optimal quantity, in dollars? | = 20 dollars ~0
+
+## SPILLOVER BENEFITS
+1 | Vaccines and education help people besides the buyer. They create this kind of externality | POSITIVE
+2 | [graph: positive-externality] What quantity does the market produce on its own? | = 30 units ~0
+3 | [graph: positive-externality] What is the socially optimal quantity? | = 40 units ~0
+4 | [graph: positive-externality] The best government response is this | A PER-UNIT SUBSIDY | A PER-UNIT TAX; A PRICE CEILING; A BAN
+5 | [graph: positive-externality] What is the marginal external benefit per unit, in dollars? | = 20 dollars ~0
+
+## FIXING EXTERNALITIES
+1 | A per-unit tax equal to the external cost, named after economist Arthur Pigou | PIGOUVIAN TAX / PIGOVIAN TAX / PIGOUVIAN / PIGOVIAN
+2 | Capping pollution and letting firms buy and sell permits to pollute is called this | CAP AND TRADE | A PRICE CEILING; A SUBSIDY; NATIONALIZATION
+3 | A tax on a negative externality aims to make producers do this | INTERNALIZE THE EXTERNAL COST | IGNORE THE EXTERNAL COST; INCREASE THEIR SUPPLY; PRODUCE MORE
+4 | A per-unit carbon tax on producers shifts the market supply curve this way | LEFT / TO THE LEFT / LEFTWARD / UP / UPWARD
+5 | [graph: negative-externality] With a $20 per-unit tax, what price would consumers pay, in dollars? | = 65 dollars ~0
+
+## EVERYONE BENEFITS
+1 | Goods that are non-rival and non-excludable, like national defence | PUBLIC GOODS | PRIVATE GOODS; COMMON RESOURCES; CLUB GOODS
+2 | People who enjoy a public good without paying for it | FREE RIDERS / FREE RIDER / FREE-RIDERS
+3 | A good is non-excludable when this is true | NON-PAYERS CAN'T BE STOPPED FROM USING IT | ONE PERSON'S USE LEAVES LESS FOR OTHERS; IT IS VERY EXPENSIVE; ONLY THE GOVERNMENT CAN SELL IT
+4 | Markets underproduce public goods because of this problem | THE FREE-RIDER PROBLEM | DIMINISHING RETURNS; ECONOMIES OF SCALE; PRICE DISCRIMINATION
+5 | Three neighbours value a streetlight at $40, $30 and $20. It costs $80. Is building it efficient? | YES: TOTAL BENEFIT IS $90 | NO: NO ONE VALUES IT AT $80; NO: STREETLIGHTS MUST BE PRIVATE; YES: BECAUSE IT IS FREE TO USE
+
+## TYPES OF GOODS
+1 | Fish in the ocean are rival but non-excludable. They are this kind of good | A COMMON RESOURCE | A PUBLIC GOOD; A PRIVATE GOOD; A CLUB GOOD
+2 | Overuse of a common resource, like overfishing, is called the tragedy of the ___ | COMMONS
+3 | A sandwich is rival and excludable. It is this kind of good | A PRIVATE GOOD | A PUBLIC GOOD; A COMMON RESOURCE; A CLUB GOOD
+4 | A streaming service is excludable but non-rival. It is this kind of good | A CLUB GOOD | A PUBLIC GOOD; A COMMON RESOURCE; A PRIVATE GOOD
+5 | A good is rival when this is true | ONE PERSON'S USE LEAVES LESS FOR OTHERS | NON-PAYERS CAN BE STOPPED FROM USING IT; IT HAS A HIGH PRICE; THE GOVERNMENT MAKES IT
+
+## POLICY EFFECTS
+1 | A per-unit tax on a competitive market with no externality creates this | DEADWEIGHT LOSS | MORE CONSUMER SURPLUS; MORE PRODUCER SURPLUS; A SHORTAGE
+2 | A lump-sum tax on a monopoly lowers its profit but doesn't change this | ITS PRICE AND OUTPUT | ITS PROFIT; ITS FIXED COST; ITS TOTAL COST
+3 | A per-unit tax on a monopoly does this to its output | DECREASES IT | INCREASES IT; LEAVES IT UNCHANGED; MAKES IT EFFICIENT
+4 | The deadweight loss of a tax is bigger when demand and supply are this | MORE ELASTIC | MORE INELASTIC; PERFECTLY INELASTIC; UNIT ELASTIC
+5 | A per-unit subsidy in a market with no externality does this | CREATES DEADWEIGHT LOSS | REMOVES DEADWEIGHT LOSS; HAS NO EFFECT ON EFFICIENCY; CREATES A SHORTAGE
+
+## MEASURING INEQUALITY
+1 | [graph: lorenz] What does the straight diagonal line show? | PERFECT EQUALITY | PERFECT INEQUALITY; A TYPICAL ECONOMY; THE POVERTY LINE
+2 | The curve showing the cumulative share of income earned by the cumulative share of households | LORENZ CURVE / LORENZ / THE LORENZ CURVE
+3 | [graph: lorenz] Which curve shows more income inequality? | CURVE B | CURVE A; THEY ARE EQUAL; THE STRAIGHT LINE
+4 | A single number from 0 to 1 that measures inequality using the Lorenz curve | GINI COEFFICIENT / GINI / GINI INDEX / GINI RATIO
+5 | [graph: lorenz] Which curve has the higher Gini coefficient? | CURVE B | CURVE A; THEY ARE THE SAME; THE STRAIGHT LINE
+
+## TAXES AND FAIRNESS
+1 | A tax that takes a larger percentage of income from people with higher incomes | PROGRESSIVE TAX | REGRESSIVE TAX; PROPORTIONAL TAX; LUMP-SUM TAX
+2 | A tax that takes the same percentage of everyone's income | PROPORTIONAL / FLAT / PROPORTIONAL TAX / FLAT TAX
+3 | Sales taxes are usually this, because lower-income people spend a bigger share of their income | REGRESSIVE | PROGRESSIVE; PROPORTIONAL; NEUTRAL
+4 | Ali earns $20,000 and pays $2,000 in tax. Beth earns $100,000 and pays $15,000. This tax is this | PROGRESSIVE | REGRESSIVE; PROPORTIONAL; LUMP-SUM
+5 | Transfer payments and progressive taxes make the Lorenz curve do this | MOVE CLOSER TO THE LINE OF EQUALITY | MOVE FARTHER FROM THE LINE OF EQUALITY; STAY THE SAME; FLATTEN ALONG THE BOTTOM AXIS
+
+## WHY INCOMES DIFFER
+1 | Differences in education and skills, called differences in human ___, are a big source of income inequality | CAPITAL
+2 | Income is a flow; this is a stock of assets like houses and savings | WEALTH | INCOME; REVENUE; PROFIT
+3 | Inherited wealth tends to do this to inequality across generations | INCREASE IT | DECREASE IT; ELIMINATE IT; HAVE NO EFFECT
+4 | Government payments to households that are not in exchange for goods or services, like welfare | TRANSFER PAYMENTS / TRANSFER PAYMENT / TRANSFERS
+5 | Compared with income, wealth is usually distributed this way | MORE UNEQUALLY | MORE EQUALLY; EXACTLY THE SAME WAY; PERFECTLY EQUALLY
+
+## WHEN GOVERNMENT STEPS IN
+1 | A government that sets a price floor above equilibrium creates this | A SURPLUS | A SHORTAGE; NO CHANGE; MORE CONSUMER SURPLUS
+2 | A payment from the government to producers or consumers for each unit of a good | SUBSIDY / A SUBSIDY / PER-UNIT SUBSIDY
+3 | Government provides goods like national defence and street lighting because private markets would provide this | TOO LITTLE OR NONE | TOO MUCH; THE EFFICIENT AMOUNT; TOO MANY CHOICES
+4 | [graph: positive-externality] A per-unit subsidy of what size, in dollars, would move this market to the socially optimal quantity? | = 20 dollars ~0
+5 | Government action that makes the outcome less efficient than the market would have been | GOVERNMENT FAILURE | MARKET FAILURE; A PUBLIC GOOD; A NATURAL MONOPOLY
+
+
+## EXTERNALITY MATH
+1 | A factory's pollution costs its neighbours $5 for every unit it makes. What per-unit tax would correct the externality, in dollars? | = 5 dollars ~0
+2 | Each flu shot gives other people $15 of benefit from less disease. What per-unit subsidy would correct the externality, in dollars? | = 15 dollars ~0
+3 | At the current output, marginal private cost is $30 and marginal external cost is $10. What is marginal social cost, in dollars? | = 40 dollars ~0
+4 | Marginal private benefit is $50 and marginal external benefit is $12. What is marginal social benefit, in dollars? | = 62 dollars ~0
+5 | A market overproduces by 10 units, and at the market quantity marginal social cost is $30 above marginal social benefit. With straight-line curves, what is the deadweight loss, in dollars? | = 150 dollars ~0
+
+FINAL | EXTERNALITIES | [graph: negative-externality] What is the deadweight loss of the unregulated market, in dollars? | = 100 dollars ~0
+FINAL | PUBLIC GOODS | National defence is a public good because it is non-rival and this | NON-EXCLUDABLE | EXCLUDABLE; RIVAL; FREE TO PRODUCE
+FINAL | POSITIVE EXTERNALITIES | [graph: positive-externality] Before any subsidy, what is the deadweight loss in this market, in dollars? | = 100 dollars ~0
+FINAL | INEQUALITY | A country's Gini coefficient falls from 0.45 to 0.35. Income inequality has done this | DECREASED | INCREASED; STAYED THE SAME; DOUBLED

@@ -1,0 +1,91 @@
+# Course: APMICRO | AP Microeconomics
+# Unit: supply | Unit 2: Supply and Demand
+
+## WHAT BUYERS WANT
+1 | The law of demand: when the price of a good rises, this falls | QUANTITY DEMANDED | DEMAND; SUPPLY; QUANTITY SUPPLIED
+2 | A change in the good's own price causes this | A MOVEMENT ALONG THE DEMAND CURVE | A SHIFT OF THE DEMAND CURVE; A SHIFT OF THE SUPPLY CURVE; NO CHANGE AT ALL
+3 | When incomes rise, demand for this kind of good falls, like bus rides or instant noodles | INFERIOR GOOD / INFERIOR GOODS / INFERIOR
+4 | When the price of coffee rises, demand for cream falls. Coffee and cream are these | COMPLEMENTS | SUBSTITUTES; INFERIOR GOODS; NORMAL GOODS
+5 | Buyers expect laptop prices to rise next month. Today's demand for laptops does this | INCREASES | DECREASES; STAYS THE SAME; BECOMES PERFECTLY INELASTIC
+
+## WHAT SELLERS OFFER
+1 | The law of supply: a higher price leads to more of this | QUANTITY SUPPLIED | SUPPLY; DEMAND; QUANTITY DEMANDED
+2 | A rise in the price of an input, like steel for car makers, does this to supply | DECREASES IT | INCREASES IT; HAS NO EFFECT; INCREASES DEMAND
+3 | Better technology that lowers production costs shifts the supply curve this way | RIGHT / TO THE RIGHT / RIGHTWARD / OUTWARD
+4 | A per-unit subsidy to producers does this to supply | INCREASES IT | DECREASES IT; HAS NO EFFECT; MAKES IT PERFECTLY ELASTIC
+5 | A farmer can grow corn or soybeans. If the price of soybeans rises, the supply of corn does this | DECREASES | INCREASES; STAYS THE SAME; BECOMES MORE ELASTIC
+
+## PRICE TOO HIGH OR TOO LOW
+1 | When quantity demanded is greater than quantity supplied at the current price, there is this | A SHORTAGE | A SURPLUS; AN EQUILIBRIUM; A DEADWEIGHT LOSS
+2 | A surplus of a good pushes its price this way | DOWN / DOWNWARD / LOWER / FALLS / DECREASES
+3 | Qd = 100 − 2P and Qs = 10 + P. What is the equilibrium price, in dollars? | = 30 dollars ~0
+4 | Qd = 100 − 2P and Qs = 10 + P. What is the equilibrium quantity? | = 40 units ~0
+5 | Qd = 100 − 2P and Qs = 10 + P. If the price is $20, how large is the shortage, in units? | = 30 units ~0
+
+## PRICE ELASTICITY
+1 | If quantity demanded changes by a bigger percentage than price, demand is this | ELASTIC | INELASTIC; UNIT ELASTIC; PERFECTLY INELASTIC
+2 | Goods with few substitutes, like insulin, tend to have demand that is this | INELASTIC / PRICE INELASTIC
+3 | Price elasticity of demand is the percentage change in quantity demanded divided by this | THE PERCENTAGE CHANGE IN PRICE | THE PERCENTAGE CHANGE IN INCOME; THE CHANGE IN TOTAL REVENUE; THE PERCENTAGE CHANGE IN SUPPLY
+4 | [graph: elasticity] At which point is demand unit elastic? | Y | X; Z; NONE OF THEM
+5 | [graph: elasticity] At point X, demand is this | ELASTIC | INELASTIC; UNIT ELASTIC; PERFECTLY INELASTIC
+
+## ELASTICITY MATH
+1 | Price rises 10% and quantity demanded falls 20%. What is the price elasticity of demand (as a positive number)? | = 2 ~0
+2 | Price falls 20% and quantity demanded rises 5%. What is the price elasticity of demand (as a positive number)? | = 0.25 ~1%
+3 | Price elasticity of demand is 0.5. If price rises 10%, by what percent does quantity demanded fall? | = 5 % ~0
+4 | Price elasticity of supply is 2. If price rises 4%, by what percent does quantity supplied rise? | = 8 % ~0
+5 | Price elasticity of demand is 1.5. By what percent must price rise to cut quantity demanded by 30%? | = 20 % ~0
+
+## THE TOTAL REVENUE TEST
+1 | Total revenue equals price times this | QUANTITY / QUANTITY SOLD / OUTPUT
+2 | If demand is inelastic, raising the price does this to total revenue | INCREASES IT | DECREASES IT; LEAVES IT UNCHANGED; MAKES IT ZERO
+3 | A store cuts its prices and its total revenue rises. Demand in that price range is this | ELASTIC | INELASTIC; UNIT ELASTIC; PERFECTLY INELASTIC
+4 | [graph: elasticity] At which point is total revenue greatest? | Y | X; Z; WHERE PRICE IS $10
+5 | [graph: elasticity] What is total revenue at point Y, in dollars? | = 250 dollars ~0
+
+## OTHER ELASTICITIES
+1 | Income elasticity of demand is negative for this kind of good | INFERIOR GOODS | NORMAL GOODS; LUXURY GOODS; COMPLEMENTS
+2 | A positive cross-price elasticity of demand means the two goods are these | SUBSTITUTES / SUBSTITUTE
+3 | An income elasticity of demand greater than 1 marks this kind of good | A LUXURY | A NECESSITY; AN INFERIOR GOOD; A COMPLEMENT
+4 | Supply is usually more elastic over this time period | THE LONG RUN | THE SHORT RUN; THE MARKET PERIOD; IT IS THE SAME IN EVERY PERIOD
+5 | Incomes rise 10% and the quantity demanded of a good rises 5%. What is its income elasticity? | = 0.5 ~1%
+
+## MARKET CHANGES
+1 | An increase in demand shifts the demand curve this way | TO THE RIGHT | TO THE LEFT; ALONG ITSELF; IT DOESN'T SHIFT
+2 | [graph: demand-shift] The shift from D₁ to D₂ could be caused by this | HIGHER INCOMES, IF THIS IS A NORMAL GOOD | A FALL IN THE GOOD'S OWN PRICE; BETTER PRODUCTION TECHNOLOGY; A RISE IN THE PRICE OF A COMPLEMENT
+3 | [graph: demand-shift] After demand increases, what happens to equilibrium price and quantity? | BOTH RISE | BOTH FALL; PRICE RISES AND QUANTITY FALLS; PRICE FALLS AND QUANTITY RISES
+4 | Demand increases and supply decreases at the same time. Which change is certain? | PRICE RISES | QUANTITY RISES; QUANTITY FALLS; PRICE FALLS
+5 | Demand and supply both increase. What happens to equilibrium quantity and price? | QUANTITY RISES; THE PRICE CHANGE IS UNCERTAIN | BOTH RISE FOR CERTAIN; QUANTITY FALLS AND PRICE RISES; QUANTITY IS UNCERTAIN AND PRICE FALLS
+
+## AREAS ON THE GRAPH
+1 | The difference between what buyers are willing to pay and what they actually pay | CONSUMER SURPLUS | PRODUCER SURPLUS; DEADWEIGHT LOSS; TOTAL REVENUE
+2 | [graph: surplus] What does area A show? | CONSUMER SURPLUS | PRODUCER SURPLUS; DEADWEIGHT LOSS; TOTAL REVENUE
+3 | [graph: surplus] Name what area B shows | PRODUCER SURPLUS / PRODUCERS SURPLUS
+4 | [graph: surplus] What is consumer surplus at equilibrium, in dollars? | = 320 dollars ~0
+5 | [graph: surplus] What is total surplus (consumer plus producer) at equilibrium, in dollars? | = 560 dollars ~0
+
+## PRICE CONTROLS
+1 | A legal maximum price, like rent control, is called a price ___ | CEILING | FLOOR; SUPPORT; TARGET
+2 | [graph: ceiling] The $9 price ceiling creates this | A SHORTAGE | A SURPLUS; NO EFFECT; AN INCREASE IN SUPPLY
+3 | [graph: ceiling] How large is the shortage, in units? | = 70 units ~0
+4 | [graph: min-wage] The $22 minimum wage is a price floor. How large is the surplus of labour (unemployment), in workers? | = 40 workers ~0
+5 | A price ceiling set above the equilibrium price does this | HAS NO EFFECT | CREATES A SHORTAGE; CREATES A SURPLUS; CREATES DEADWEIGHT LOSS
+
+## TAXES ON A GRAPH
+1 | [graph: tax] A $4 per-unit tax is placed on sellers. What price do buyers now pay, in dollars? | = 14 dollars ~0
+2 | [graph: tax] Which areas are the government's tax revenue? | B AND D | A AND F; C AND E; B AND C
+3 | [graph: tax] What is the deadweight loss of the tax, in dollars? | = 40 dollars ~0
+4 | [graph: tax] How much tax revenue does the government collect, in dollars? | = 240 dollars ~0
+5 | Buyers bear more of a tax's burden when demand is this, compared with supply | MORE INELASTIC | MORE ELASTIC; EQUALLY ELASTIC; PERFECTLY ELASTIC
+
+## INTERNATIONAL TRADE
+1 | A tax on imported goods | TARIFF | QUOTA; SUBSIDY; EMBARGO
+2 | A legal limit on the quantity of a good that can be imported | QUOTA / IMPORT QUOTA / A QUOTA
+3 | When the world price is below a country's domestic equilibrium price, free trade leads the country to do this | IMPORT THE GOOD | EXPORT THE GOOD; STOP CONSUMING THE GOOD; PRODUCE MORE OF THE GOOD
+4 | A tariff on imported steel helps this group | DOMESTIC STEEL PRODUCERS | DOMESTIC STEEL BUYERS; FOREIGN STEEL PRODUCERS; CAR MAKERS THAT USE STEEL
+5 | Opening a country to imports at a lower world price does this to its consumer surplus | INCREASES IT | DECREASES IT; LEAVES IT UNCHANGED; ELIMINATES IT
+
+FINAL | ELASTICITY | A theatre raises ticket prices from $10 to $12 and attendance falls from 500 to 450. What happened to total revenue? | IT ROSE | IT FELL; IT STAYED THE SAME; IT CAN'T BE TOLD
+FINAL | TAXES | [graph: tax] After the $4 tax, which area is still consumer surplus? | A | A AND B; B AND C; F
+FINAL | PRICE CONTROLS | [graph: ceiling] With the $9 price ceiling, how many units are actually bought and sold? | = 40 units ~0
+FINAL | MARKET CHANGES | The price of gasoline rises sharply. What happens in the market for small, fuel-efficient cars? | DEMAND INCREASES | DEMAND DECREASES; SUPPLY INCREASES; QUANTITY DEMANDED FALLS ALONG THE CURVE

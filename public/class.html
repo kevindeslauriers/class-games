@@ -81,6 +81,19 @@ body{font-size:clamp(14px,1.35vw,30px);overflow:hidden;height:100vh;
 .ch.right .fill{background:rgba(71,224,138,.28)}
 .ch.dim{opacity:.55}
 .hint{font-size:.85em;color:#c9d3ff;text-align:center}
+/* Clues with a graph */
+.cbody.withgraph{flex-direction:row;align-items:center;justify-content:center;gap:3vw}
+.graph{height:min(54vh,600px);max-width:46vw;object-fit:contain;filter:drop-shadow(0 1vh 2vh rgba(0,0,0,.45));flex:none}
+.clue.done .graph{height:min(46vh,520px)}
+.gcol{display:flex;flex-direction:column;gap:1.4vh;align-items:center;justify-content:safe center;min-width:0;max-height:100%;overflow:auto;flex:0 1 46vw}
+/* Results beside a graph: everything a size smaller so it fits */
+.clue.done .withgraph .ca{font-size:min(1.9em,4.4vh)}
+.clue.done .withgraph .ch{font-size:min(1em,2.4vh);min-height:1.9em;padding:.3em .7em}
+.clue.done .withgraph .pct{font-size:1.05em}
+.withgraph .tres{gap:.6vw}
+.withgraph .tr{min-width:6.5em;font-size:.8em;padding:.25em .5em}
+.withgraph .choices{grid-template-columns:1fr;width:100%}
+.withgraph .prompt{width:100%}
 /* Typed and number clues: a big prompt in place of the choices */
 .prompt{display:flex;flex-direction:column;align-items:center;gap:1.2vh;text-align:center;padding:2.4vh 3vw;border-radius:1em;border:3px dashed rgba(201,211,255,.45);background:rgba(5,10,60,.35)}
 .prompt .big{font-family:"Anton",sans-serif;font-size:min(2.4em,5.4vh);letter-spacing:.03em;color:#fff}

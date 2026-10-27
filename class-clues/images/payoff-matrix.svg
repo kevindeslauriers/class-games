@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450" width="640" height="450" font-family="Arial, Helvetica, sans-serif">
+<rect x="1" y="1" width="638" height="448" rx="14" fill="#ffffff" stroke="#c9d3ff" stroke-width="2"/>
+<text x="410" y="50" font-size="22" font-weight="bold" text-anchor="middle" fill="#d1342f">Firm B</text>
+<text x="70" y="230" font-size="22" font-weight="bold" text-anchor="middle" fill="#1f4fd1" transform="rotate(-90 70 230)">Firm A</text>
+<text x="320" y="104" font-size="19" font-weight="bold" text-anchor="middle" fill="#d1342f">Advertise</text>
+<text x="500" y="104" font-size="19" font-weight="bold" text-anchor="middle" fill="#d1342f">Don’t</text>
+<text x="216" y="182" font-size="19" font-weight="bold" text-anchor="end" fill="#1f4fd1">Advertise</text>
+<text x="216" y="292" font-size="19" font-weight="bold" text-anchor="end" fill="#1f4fd1">Don’t</text>
+<rect x="230" y="120" width="180" height="110" fill="#f8fafc" stroke="#111" stroke-width="2.5"/>
+<text x="320" y="185" font-size="28" font-weight="bold" text-anchor="middle"><tspan fill="#1f4fd1">$40</tspan><tspan fill="#111">, </tspan><tspan fill="#d1342f">$30</tspan></text>
+<rect x="410" y="120" width="180" height="110" fill="#f8fafc" stroke="#111" stroke-width="2.5"/>
+<text x="500" y="185" font-size="28" font-weight="bold" text-anchor="middle"><tspan fill="#1f4fd1">$70</tspan><tspan fill="#111">, </tspan><tspan fill="#d1342f">$20</tspan></text>
+<rect x="230" y="230" width="180" height="110" fill="#f8fafc" stroke="#111" stroke-width="2.5"/>
+<text x="320" y="295" font-size="28" font-weight="bold" text-anchor="middle"><tspan fill="#1f4fd1">$30</tspan><tspan fill="#111">, </tspan><tspan fill="#d1342f">$60</tspan></text>
+<rect x="410" y="230" width="180" height="110" fill="#f8fafc" stroke="#111" stroke-width="2.5"/>
+<text x="500" y="295" font-size="28" font-weight="bold" text-anchor="middle"><tspan fill="#1f4fd1">$50</tspan><tspan fill="#111">, </tspan><tspan fill="#d1342f">$50</tspan></text>
+<text x="320" y="422" font-size="16" text-anchor="middle" fill="#333">Payoffs: (Firm A, Firm B) profits</text>
+</svg>

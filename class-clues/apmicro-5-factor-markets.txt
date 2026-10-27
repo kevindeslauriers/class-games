@@ -1,0 +1,92 @@
+# Course: APMICRO | AP Microeconomics
+# Unit: factors | Unit 5: Factor Markets
+
+## WHY FIRMS HIRE
+1 | Demand for workers depends on demand for the products they make. This is called ___ demand | DERIVED
+2 | Factor markets are where firms buy these | RESOURCES SUCH AS LABOUR AND CAPITAL | FINISHED CONSUMER GOODS; GOVERNMENT BONDS; IMPORTED GOODS
+3 | In factor markets, households are the sellers and these are the buyers | FIRMS | GOVERNMENTS ONLY; OTHER HOUSEHOLDS; BANKS ONLY
+4 | Demand for pizza rises. What happens to the demand for pizza cooks? | IT INCREASES | IT DECREASES; IT STAYS THE SAME; THE SUPPLY OF COOKS FALLS
+5 | The demand curve for labour slopes down mainly because of this | DIMINISHING MARGINAL RETURNS | ECONOMIES OF SCALE; RISING FIXED COSTS; THE MINIMUM WAGE
+
+## WHAT A WORKER IS WORTH
+1 | The extra revenue from hiring one more worker | MARGINAL REVENUE PRODUCT | MARGINAL PRODUCT; MARGINAL FACTOR COST; TOTAL REVENUE
+2 | When the product market is competitive, MRP equals marginal product times this | PRICE / THE PRICE / PRODUCT PRICE / PRICE OF THE PRODUCT / MARGINAL REVENUE
+3 | A worker's marginal product is 8 units and each unit sells for $5 in a competitive market. What is the worker's MRP, in dollars? | = 40 dollars ~0
+4 | The marginal products of workers 1 to 3 are 12, 10 and 7, and output sells for $3. What is the 3rd worker's MRP, in dollars? | = 21 dollars ~0
+5 | Total revenue is $500 with 4 workers and $560 with 5 workers. What is the 5th worker's MRP, in dollars? | = 60 dollars ~0
+
+## HOW MANY TO HIRE
+1 | A profit-maximizing firm hires workers until MRP equals this | MARGINAL FACTOR COST / MARGINAL RESOURCE COST / MFC / MRC
+2 | In a perfectly competitive labour market, a firm's marginal factor cost equals this | THE WAGE | THE PRICE OF OUTPUT; MARGINAL PRODUCT; ZERO
+3 | The wage is $50. The MRPs of workers 1 to 5 are $90, $75, $60, $50 and $35. How many workers should the firm hire? | = 4 workers ~0
+4 | A firm hiring in a perfectly competitive labour market faces a labour supply curve that is this | HORIZONTAL AT THE MARKET WAGE | VERTICAL; UPWARD SLOPING; DOWNWARD SLOPING
+5 | The last worker's MRP is $70 and the wage is $60. The firm should do this | HIRE MORE WORKERS | HIRE FEWER WORKERS; CUT THE WAGE; SHUT DOWN
+
+## MORE OR FEWER WORKERS
+1 | The price of the product workers make rises. Demand for those workers does this | INCREASES | DECREASES; STAYS THE SAME; BECOMES VERTICAL
+2 | Training makes workers more productive. What happens to the demand for them? | INCREASES / IT INCREASES / RISES / IT RISES / GOES UP / INCREASE
+3 | A new machine that replaces cashiers is this, compared with cashiers' labour | A SUBSTITUTE | A COMPLEMENT; AN INFERIOR GOOD; A NORMAL GOOD
+4 | Cheaper computers make programmers more productive. Computers and programmers are these | COMPLEMENTS | SUBSTITUTES; UNRELATED; INFERIOR INPUTS
+5 | A rise in the wage itself causes this | A MOVEMENT ALONG THE LABOUR DEMAND CURVE | A RIGHTWARD SHIFT IN LABOUR DEMAND; A LEFTWARD SHIFT IN LABOUR DEMAND; A SHIFT IN PRODUCT DEMAND
+
+## WHO WANTS TO WORK
+1 | More people train to become nurses. The supply of nurses does this | INCREASES | DECREASES; STAYS THE SAME; BECOMES VERTICAL
+2 | New licensing rules make it harder to become an electrician. Electricians' wages tend to do this | RISE | FALL; STAY THE SAME; FALL TO THE MINIMUM WAGE
+3 | Dangerous or unpleasant jobs often pay more. These extra wages are called ___ differentials | COMPENSATING / COMPENSATING WAGE
+4 | Skilled workers move into an industry. All else equal, wages in that industry do this | FALL | RISE; STAY THE SAME; DOUBLE
+5 | In a competitive labour market, the market wage is set where labour demand meets this | LABOUR SUPPLY | MARGINAL FACTOR COST; THE MINIMUM WAGE; PRODUCT DEMAND
+
+## A SINGLE BUYER
+1 | A market with a single buyer of labour, like the only big employer in a small town | MONOPSONY | MONOPOLY; OLIGOPOLY; PERFECT COMPETITION
+2 | [graph: monopsony] Why is the MFC curve above the supply curve? | TO HIRE ONE MORE WORKER IT MUST RAISE EVERYONE'S WAGE | WORKERS ASK FOR MORE THAN THEY'RE WORTH; THE GOVERNMENT SETS A HIGHER WAGE; MRP IS FALLING
+3 | [graph: monopsony] How many workers does the monopsonist hire? | = 20 workers ~0
+4 | [graph: monopsony] What wage does the monopsonist pay, in dollars? | = 15 dollars ~0
+5 | [graph: monopsony] What wage would a competitive labour market pay, in dollars? | = 20 dollars ~0
+
+## THE ONLY EMPLOYER
+1 | [graph: monopsony] How many workers would a competitive labour market hire? | = 30 workers ~0
+2 | Compared with a competitive labour market, a monopsonist hires fewer workers and pays this | A LOWER WAGE | A HIGHER WAGE; THE SAME WAGE; ONLY THE MINIMUM WAGE
+3 | [graph: monopsony] At the monopsonist's level of hiring, what is the last worker's MRP, in dollars? | = 25 dollars ~0
+4 | A monopsonist pays 5 workers $10 each. To hire a 6th, it must pay all 6 workers $11. What is the marginal factor cost of the 6th worker, in dollars? | = 16 dollars ~0
+5 | [graph: monopsony] A minimum wage of $20 would make this monopsonist do this | HIRE MORE WORKERS | HIRE FEWER WORKERS; HIRE THE SAME NUMBER; SHUT DOWN
+
+## MIXING INPUTS
+1 | A firm uses the least-cost mix of inputs when the marginal product per ___ is the same for every input | DOLLAR | WORKER; MACHINE; HOUR
+2 | Labour's MP is 20 at a wage of $10; capital's MP is 30 at a rental price of $10. To cut costs, the firm should use more of this | CAPITAL | LABOUR; NEITHER; BOTH EQUALLY
+3 | Labour's marginal product is 40 and the wage is $20. What is labour's marginal product per dollar? | = 2 units ~0
+4 | Labour's MP per dollar is 3 and capital's is also 3. This means the firm is doing this | PRODUCING ITS OUTPUT AT THE LOWEST COST | MAXIMIZING ITS REVENUE; USING TOO MUCH LABOUR; USING TOO MUCH CAPITAL
+5 | To maximize profit, a firm hires each input until MRP equals MFC. So for every input, MRP ÷ MFC equals what number? | = 1 ~0
+
+## MINIMUM WAGE
+1 | [graph: min-wage] What is the equilibrium wage, in dollars per hour? | = 18 dollars ~0
+2 | [graph: min-wage] At the $22 minimum wage, how many workers do firms hire? | = 40 workers ~0
+3 | [graph: min-wage] At the $22 minimum wage, how many people want to work? | = 80 workers ~0
+4 | [graph: min-wage] Compared with the equilibrium, how many fewer workers have jobs at the minimum wage? | = 20 workers ~0
+5 | A minimum wage set below the equilibrium wage does this | HAS NO EFFECT | CAUSES UNEMPLOYMENT; CAUSES A LABOUR SHORTAGE; RAISES EVERY WAGE
+
+## WHY WAGES DIFFER
+1 | A group of workers who bargain together with their employer | UNION / A UNION / LABOUR UNION / LABOR UNION / TRADE UNION
+2 | Education and skills that raise a worker's productivity are called human ___ | CAPITAL
+3 | A union wins a wage above equilibrium in a competitive labour market. This will likely cause this | FEWER WORKERS TO BE HIRED | MORE WORKERS TO BE HIRED; NO CHANGE IN HIRING; A LABOUR SHORTAGE
+4 | Paying people differently because of race or gender rather than productivity | DISCRIMINATION / WAGE DISCRIMINATION / LABOUR MARKET DISCRIMINATION
+5 | Surgeons earn more than cashiers mainly because surgeons have this | A HIGHER MARGINAL REVENUE PRODUCT | LOWER PRODUCTIVITY; MORE MONOPSONY POWER; LONGER WORK WEEKS ONLY
+
+## WHO GETS PAID WHAT
+1 | The payment for labour | WAGES / WAGE / SALARIES / SALARY
+2 | The payment for capital | INTEREST | RENT; WAGES; DIVIDENDS ONLY
+3 | The reward for entrepreneurship | PROFIT | RENT; WAGES; INTEREST
+4 | In the circular flow, what firms pay for factors of production becomes this for households | INCOME | TAXES; INVENTORY; SAVINGS ONLY
+5 | The supply of land is fixed, so a rise in the demand for land raises only this | ITS PRICE (RENT) | THE QUANTITY OF LAND; BOTH PRICE AND QUANTITY; NEITHER
+
+
+## CAPITAL AND LAND
+1 | A firm rents machines until the MRP of capital equals this | THE RENTAL PRICE OF CAPITAL | THE WAGE; ZERO; THE PRICE OF OUTPUT
+2 | A new machine adds $500 a month in revenue and rents for $400 a month. Should the firm rent it? | YES | NO; ONLY IF WAGES RISE; ONLY IF THE OUTPUT PRICE FALLS
+3 | The MRPs of machines 1 to 4 are $900, $700, $500 and $300, and each rents for $600 a month. How many machines should the firm rent? | = 2 machines ~0
+4 | Because the amount of land is fixed, the supply curve of land is this | VERTICAL / PERFECTLY INELASTIC / INELASTIC
+5 | New machines make workers more productive. If machines and labour are complements, demand for labour does this | INCREASES | DECREASES; STAYS THE SAME; BECOMES PERFECTLY ELASTIC
+
+FINAL | HIRING | Output sells for $4 in a competitive market and the wage is $60. The marginal products of workers 1 to 4 are 25, 20, 15 and 10. How many workers should the firm hire? | = 3 workers ~0
+FINAL | MONOPSONY | [graph: monopsony] At the monopsony outcome, how far is the wage below the last worker's MRP, in dollars? | = 10 dollars ~0
+FINAL | LABOUR DEMAND | A new technology raises workers' marginal product. In a competitive labour market, the equilibrium wage does this | RISES | FALLS; STAYS THE SAME; FALLS TO ZERO
+FINAL | MIXING INPUTS | Labour's MP is 10 at a wage of $20, and capital's MP is 30 at a rental rate of $40. Which input gives more output per dollar? | CAPITAL | LABOUR; THEY ARE EQUAL; NEITHER

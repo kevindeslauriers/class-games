@@ -1,0 +1,92 @@
+# Course: APMICRO | AP Microeconomics
+# Unit: basics | Unit 1: Basic Economic Concepts
+// Same format as the SNC1W units. "[graph: name]" shows class-clues/images/name.svg with the clue.
+
+## THE BASIC PROBLEM
+1 | The basic economic problem: unlimited wants but limited resources | SCARCITY | SURPLUS; INFLATION; EQUILIBRIUM
+2 | Land, labour, capital and entrepreneurship are called these | FACTORS OF PRODUCTION / RESOURCES / INPUTS / FACTORS
+3 | To an economist, a factory machine or a delivery truck counts as this factor of production | CAPITAL | LAND; LABOUR; MONEY
+4 | The payment earned by the factor of production called land | RENT | WAGES; INTEREST; PROFIT
+5 | Even a billionaire faces scarcity, because this resource is limited for everyone | TIME | MONEY; INFORMATION; ENTERTAINMENT
+
+## WHAT YOU GIVE UP
+1 | The value of the next best alternative given up when you make a choice | OPPORTUNITY COST | SUNK COST; MARGINAL COST; EXPLICIT COST
+2 | Maya can work 3 hours at $15 an hour or go to a concert with a $40 ticket. What is the full opportunity cost of the concert, in dollars? | = 85 dollars ~0
+3 | A cost that has already been paid and can't be recovered, so it should be ignored when deciding | SUNK COST / SUNK COSTS / SUNK
+4 | Opportunity costs that involve no direct money payment, like an owner's forgone salary, are called these | IMPLICIT COSTS | EXPLICIT COSTS; SUNK COSTS; FIXED COSTS
+5 | Moving along a bowed-out PPC, each extra unit of one good costs more and more of the other. This is the law of increasing ___ | OPPORTUNITY COST / OPPORTUNITY COSTS / COSTS / COST
+
+## ECONOMIC SYSTEMS
+1 | In this system, prices set by supply and demand decide what gets produced | MARKET ECONOMY | COMMAND ECONOMY; TRADITIONAL ECONOMY; BARTER ECONOMY
+2 | In a command economy, what to produce, how, and for whom are decided mainly by this | THE GOVERNMENT | CONSUMERS; FIRMS; TRADITION
+3 | Adam Smith's name for how self-interested buyers and sellers end up serving society's interest | INVISIBLE HAND / THE INVISIBLE HAND
+4 | Canada and the United States combine markets with government programs, so they have this kind of economy | MIXED ECONOMY / MIXED / A MIXED ECONOMY
+5 | In a market economy, "for whom to produce" is decided mainly by this | WHO IS WILLING AND ABLE TO PAY | GOVERNMENT PLANNERS; TRADITION AND CUSTOM; A LOTTERY
+
+## READ THE CURVE
+1 | [graph: ppc] Which point can't be reached with today's resources and technology? | D | A; B; C
+2 | [graph: ppc] Point A shows this | UNEMPLOYED OR UNDERUSED RESOURCES | FULL EMPLOYMENT; ECONOMIC GROWTH; AN UNATTAINABLE GOAL
+3 | [graph: ppc] Moving from B to C, the economy gains consumer goods. The capital goods it gives up are this | THE OPPORTUNITY COST | THE SUNK COST; THE MARGINAL BENEFIT; THE PROFIT
+4 | [graph: ppc] The curve bows outward because resources are not this | EQUALLY SUITED TO MAKING BOTH GOODS | SCARCE; OWNED BY THE GOVERNMENT; FREE
+5 | [graph: ppc] Choosing point B over point C today is most likely to do this in the future | SHIFT THE CURVE OUT FURTHER | SHIFT THE CURVE INWARD; MOVE THE ECONOMY TO POINT A; MAKE THE CURVE A STRAIGHT LINE
+
+## SHIFTING THE CURVE
+1 | Better technology for making both goods does this to the PPC | SHIFTS IT OUTWARD | SHIFTS IT INWARD; MOVES THE ECONOMY ALONG IT; HAS NO EFFECT
+2 | A natural disaster that destroys factories does this to the PPC | SHIFTS IT INWARD | SHIFTS IT OUTWARD; MOVES THE ECONOMY ALONG IT; MAKES IT A STRAIGHT LINE
+3 | A straight-line PPC means this about opportunity cost | IT IS CONSTANT | IT IS INCREASING; IT IS DECREASING; IT IS ZERO
+4 | A rise in unemployment moves the economy to here, without shifting the PPC | INSIDE THE CURVE | OUTSIDE THE CURVE; ALONG THE CURVE; TO THE ORIGIN
+5 | A new technology that helps produce only wheat does this to a wheat-and-cloth PPC | PIVOTS IT OUT ALONG THE WHEAT AXIS ONLY | SHIFTS THE WHOLE CURVE OUTWARD; SHIFTS IT INWARD; LEAVES IT UNCHANGED
+
+## WHO SHOULD MAKE WHAT?
+1 | Being able to produce more of a good than another producer with the same resources | ABSOLUTE ADVANTAGE | COMPARATIVE ADVANTAGE; ECONOMIES OF SCALE; SPECIALIZATION
+2 | Being able to produce a good at a lower opportunity cost than another producer | COMPARATIVE ADVANTAGE / COMPARATIVE
+3 | Ana can make 20 shirts or 10 hats in a day. What is her opportunity cost of one hat, in shirts? | = 2 shirts ~0
+4 | Ana can make 20 shirts or 10 hats in a day; Ben can make 12 shirts or 4 hats. Who has the comparative advantage in hats? | ANA | BEN; NEITHER; BOTH OF THEM
+5 | Ana makes 20 shirts or 10 hats a day; Ben makes 12 shirts or 4 hats. What is Ben's opportunity cost of one shirt, in hats? Give a decimal. | = 0.333 hats ~2%
+
+## TERMS OF TRADE
+1 | When countries specialize by comparative advantage and trade, total output does this | INCREASES | DECREASES; STAYS THE SAME; FALLS TO ZERO
+2 | Trade helps both sides when the terms of trade fall here | BETWEEN THE TWO OPPORTUNITY COSTS | ABOVE BOTH OPPORTUNITY COSTS; BELOW BOTH OPPORTUNITY COSTS; AT ZERO
+3 | One hat costs Ana 2 shirts to make and costs Ben 3 shirts. Which price for a hat, in shirts, benefits both? | 2.5 SHIRTS | 1.5 SHIRTS; 3.5 SHIRTS; 4 SHIRTS
+4 | A country with an absolute advantage in everything still gains from trade because of differences in this | OPPORTUNITY COSTS / OPPORTUNITY COST / COMPARATIVE ADVANTAGE
+5 | Country X needs 4 hours to make a car and 2 hours to make a bike. What is its opportunity cost of one car, in bikes? | = 2 bikes ~0
+
+## COST-BENEFIT ANALYSIS
+1 | A rational decision-maker takes an action whenever its benefit is at least as great as this | ITS COST | ITS PRICE; ITS SUNK COST; ZERO
+2 | Costs that are actual money payments, like rent and wages, are called these | EXPLICIT COSTS / EXPLICIT COST / EXPLICIT
+3 | Raj paid for a non-refundable $20 ticket, and the movie is boring. A rational Raj ignores the $20 because it is this | A SUNK COST | AN IMPLICIT COST; A MARGINAL COST; A VARIABLE COST
+4 | A rational consumer spends their budget to maximize this | TOTAL UTILITY | MARGINAL UTILITY; TOTAL SPENDING; SAVINGS
+5 | Studying 3 hours earns 30 points and studying 4 hours earns 36. What is the marginal benefit of the 4th hour, in points? | = 6 points ~0
+
+## AT THE MARGIN
+1 | The extra benefit from one more unit of something | MARGINAL BENEFIT | TOTAL BENEFIT; AVERAGE BENEFIT; NET BENEFIT
+2 | The best amount of an activity is where marginal benefit equals this | MARGINAL COST / MC
+3 | Each extra slice of pizza gives less satisfaction than the last. This is the law of diminishing ___ | MARGINAL UTILITY / UTILITY
+4 | Hours 1 to 4 of tutoring have marginal benefits of $50, $40, $30 and $20, and each hour costs $35. How many hours should you buy? | = 2 hours ~0
+5 | When marginal utility is negative, total utility is doing this | FALLING | RISING; AT ITS MAXIMUM; STAYING CONSTANT
+
+## CONSUMER CHOICE
+1 | Consumers maximize utility when the marginal utility per ___ spent is equal across goods | DOLLAR | UNIT; HOUR; GOOD
+2 | The next slice of pizza costs $4 and gives 20 utils. What is its marginal utility per dollar? | = 5 utils ~0
+3 | The next burger gives 30 utils for $6; the next taco gives 12 utils for $2. Which should you buy next? | THE TACO | THE BURGER; NEITHER; BOTH ARE EQUALLY GOOD
+4 | Good X gives 8 utils per dollar at the margin and good Y gives 5. To raise total utility, the consumer should do this | BUY MORE X AND LESS Y | BUY MORE Y AND LESS X; KEEP THE SAME BUNDLE; BUY LESS OF BOTH
+5 | Apples cost $1 and the last apple adds 6 utils. Oranges cost $2. For utility to be maximized, how many utils must the last orange add? | = 12 utils ~0
+
+## ECONOMIC MODELS
+1 | "The minimum wage should be raised" is this kind of statement | NORMATIVE | POSITIVE; EMPIRICAL; MARGINAL
+2 | A statement that can be tested with facts, like "Higher gas prices reduce how much gas people buy," is this kind | POSITIVE / POSITIVE STATEMENT
+3 | The Latin phrase meaning "all other things held constant" | CETERIS PARIBUS
+4 | Microeconomics studies this | INDIVIDUAL HOUSEHOLDS, FIRMS AND MARKETS | THE WHOLE ECONOMY'S OUTPUT; INFLATION AND UNEMPLOYMENT; GOVERNMENT BUDGETS
+5 | In the circular flow model, households sell this to firms in the factor market | FACTORS OF PRODUCTION | FINISHED GOODS; TAXES; GOVERNMENT SERVICES
+
+## THINKING LIKE AN ECONOMIST
+1 | Things like prices, rewards and penalties that people respond to | INCENTIVES / INCENTIVE
+2 | Choosing to study instead of working means accepting this | A TRADE-OFF | A SURPLUS; A SUBSIDY; AN EXTERNALITY
+3 | Splitting up work so each person does what they are relatively best at | SPECIALIZATION | DIVERSIFICATION; AUTOMATION; REGULATION
+4 | For markets to work, people need to be able to own and use resources. This depends on secure ___ | PRIVATE PROPERTY RIGHTS | PUBLIC GOODS; PRICE CONTROLS; CENTRAL PLANNING
+5 | Total utility from 1, 2 and 3 cookies is 10, 18 and 24 utils. What is the marginal utility of the 3rd cookie? | = 6 utils ~0
+
+FINAL | COMPARATIVE ADVANTAGE | In one hour, the U.S. can make 6 computers or 12 phones, and Mexico can make 2 computers or 8 phones. Who has the comparative advantage in phones? | MEXICO | THE UNITED STATES; NEITHER COUNTRY; BOTH COUNTRIES
+FINAL | CONSUMER CHOICE | Ice cream costs $3 and the next cone adds 15 utils; cake costs $5 and the next slice adds 30 utils. Which should the consumer buy next? | CAKE | ICE CREAM; NEITHER; THEY ARE EQUALLY GOOD
+FINAL | THE PPC | [graph: ppc] A large increase in the labour force would most likely make point D this | ATTAINABLE | INEFFICIENT; THE SAME AS POINT A; LESS ATTAINABLE THAN BEFORE
+FINAL | OPPORTUNITY COST | A student turns down a $500 job to take a free course that needs $80 of books. What is the opportunity cost of the course, in dollars? | = 580 dollars ~0

@@ -1,0 +1,91 @@
+# Course: APMICRO | AP Microeconomics
+# Unit: costs | Unit 3: Production, Cost, and the Perfect Competition Model
+
+## INPUTS TO OUTPUTS
+1 | The extra output from hiring one more worker | MARGINAL PRODUCT | AVERAGE PRODUCT; TOTAL PRODUCT; MARGINAL COST
+2 | Adding workers to a fixed amount of capital eventually makes marginal product fall. This is the law of ___ | DIMINISHING MARGINAL RETURNS / DIMINISHING RETURNS / DIMINISHING MARGINAL PRODUCT
+3 | The short run is a period in which at least one input is this | FIXED | VARIABLE; FREE; UNLIMITED
+4 | When marginal product is above average product, average product is doing this | RISING | FALLING; STAYING CONSTANT; BECOMING NEGATIVE
+5 | Total product is at its maximum when marginal product equals this | ZERO | AVERAGE PRODUCT; ITS MAXIMUM; ONE
+
+## PRODUCT MATH
+1 | 3 workers make 30 units and 4 workers make 38. What is the marginal product of the 4th worker? | = 8 units ~0
+2 | 5 workers make 60 units. What is the average product of labour? | = 12 units ~0
+3 | Workers 1, 2 and 3 have marginal products of 10, 15 and 12. What is total product with 3 workers? | = 37 units ~0
+4 | Each worker is paid $60 and the 4th worker's marginal product is 12 units. What is the marginal cost of a unit that worker makes, in dollars? | = 5 dollars ~0
+5 | With 1, 2, 3 and 4 workers, total product is 10, 24, 36 and 44. With which worker do diminishing marginal returns begin? | = 3 ~0
+
+## SHORT-RUN COSTS
+1 | Costs that don't change with output, like rent | FIXED COSTS | VARIABLE COSTS; MARGINAL COSTS; SUNK REVENUES
+2 | Costs that rise with output, like raw materials and hourly wages | VARIABLE COSTS / VARIABLE COST / VARIABLE
+3 | Average total cost equals average variable cost plus this | AVERAGE FIXED COST | MARGINAL COST; TOTAL FIXED COST; MARGINAL PRODUCT
+4 | As output grows, average fixed cost does this | ALWAYS FALLS | ALWAYS RISES; FALLS AND THEN RISES; STAYS CONSTANT
+5 | The marginal cost curve eventually rises because of this | DIMINISHING MARGINAL RETURNS | ECONOMIES OF SCALE; RISING FIXED COSTS; FALLING DEMAND
+
+## NAME THAT CURVE
+1 | [graph: cost-curves] Curve 4 keeps falling as output rises. Which cost is it? | AVERAGE FIXED COST | MARGINAL COST; AVERAGE TOTAL COST; AVERAGE VARIABLE COST
+2 | [graph: cost-curves] Which curve is marginal cost? | CURVE 1 | CURVE 2; CURVE 3; CURVE 4
+3 | [graph: cost-curves] Which curve is average total cost? | CURVE 2 | CURVE 1; CURVE 3; CURVE 4
+4 | [graph: cost-curves] The vertical gap between curves 2 and 3 equals this | AVERAGE FIXED COST | MARGINAL COST; TOTAL FIXED COST; PROFIT PER UNIT
+5 | [graph: cost-curves] Curve 1 crosses curves 2 and 3 at these points | THEIR MINIMUM POINTS | THEIR MAXIMUM POINTS; WHERE THEY EQUAL ZERO; WHERE PROFIT IS ZERO
+
+## COST MATH
+1 | Total fixed cost is $100 and total variable cost is $150. What is total cost, in dollars? | = 250 dollars ~0
+2 | Total cost for 10 units is $300. What is average total cost, in dollars? | = 30 dollars ~0
+3 | Total cost is $200 for 4 units and $230 for 5 units. What is the marginal cost of the 5th unit, in dollars? | = 30 dollars ~0
+4 | At 20 units, ATC is $15 and AVC is $11. What is total fixed cost, in dollars? | = 80 dollars ~0
+5 | A firm's fixed cost doubles. What happens to its marginal cost at every output? | IT DOES NOT CHANGE | IT DOUBLES; IT RISES BY THE NEW FIXED COST; IT FALLS BY HALF
+
+## LONG-RUN COSTS
+1 | In the long run, all inputs are this | VARIABLE | FIXED; FREE; SUNK
+2 | When long-run average total cost falls as a firm grows, the firm has these | ECONOMIES OF SCALE / ECONOMY OF SCALE
+3 | When a firm grows too big to manage well and its long-run average cost rises, it has these | DISECONOMIES OF SCALE | ECONOMIES OF SCALE; CONSTANT RETURNS TO SCALE; DIMINISHING MARGINAL RETURNS
+4 | The lowest output at which long-run average total cost reaches its minimum | MINIMUM EFFICIENT SCALE | PROFIT-MAXIMIZING OUTPUT; SHUTDOWN POINT; BREAK-EVEN QUANTITY
+5 | Doubling all inputs exactly doubles output. This is called this | CONSTANT RETURNS TO SCALE | ECONOMIES OF SCALE; DISECONOMIES OF SCALE; DIMINISHING MARGINAL RETURNS
+
+## TYPES OF PROFIT
+1 | Accounting profit is total revenue minus this | EXPLICIT COSTS | IMPLICIT COSTS; ALL OPPORTUNITY COSTS; FIXED COSTS ONLY
+2 | When economic profit is zero, the firm is earning this kind of profit | NORMAL PROFIT / NORMAL
+3 | Revenue is $200,000, explicit costs are $150,000, and the owner gave up a $60,000 salary. What is economic profit, in dollars? (Use a minus sign for a loss.) | = -10000 dollars ~0
+4 | Revenue is $200,000, explicit costs are $150,000, and the owner gave up a $60,000 salary. What is accounting profit, in dollars? | = 50000 dollars ~0
+5 | Compared with accounting profit, economic profit is always this | LESS THAN OR EQUAL TO IT | GREATER THAN IT; EXACTLY EQUAL TO IT; UNRELATED TO IT
+
+## PROFIT MAXIMIZATION
+1 | Every firm maximizes profit by producing where marginal revenue equals this | MARGINAL COST / MC
+2 | For a perfectly competitive firm, marginal revenue equals this | PRICE | AVERAGE TOTAL COST; MARGINAL COST AT EVERY OUTPUT; ZERO
+3 | The price is $20. The marginal costs of units 1 to 5 are $8, $12, $16, $20 and $24. How many units maximize profit? | = 4 units ~0
+4 | If marginal revenue is greater than marginal cost at the current output, the firm should do this | PRODUCE MORE | PRODUCE LESS; SHUT DOWN; RAISE ITS FIXED COSTS
+5 | A competitive firm sells 100 units at $8 with an ATC of $6. What is its economic profit, in dollars? | = 200 dollars ~0
+
+## READING THE FIRM'S GRAPH
+1 | [graph: pc-firm] How many units maximize this competitive firm's profit? | = 50 units ~0
+2 | [graph: pc-firm] What is the firm's total revenue, in dollars? | = 500 dollars ~0
+3 | [graph: pc-firm] The shaded rectangle shows this | ECONOMIC PROFIT | ECONOMIC LOSS; TOTAL REVENUE; TOTAL VARIABLE COST
+4 | [graph: pc-firm] What is the firm's economic profit, in dollars? | = 150 dollars ~0
+5 | [graph: pc-firm] What is the firm's total fixed cost, in dollars? | = 100 dollars ~0
+
+## SHUT DOWN OR NOT?
+1 | In the short run, a firm should shut down if the price falls below the minimum of this | AVERAGE VARIABLE COST | AVERAGE TOTAL COST; MARGINAL COST; AVERAGE FIXED COST
+2 | A firm that shuts down in the short run still has to pay these | FIXED COSTS / FIXED COST / TOTAL FIXED COST
+3 | A competitive firm's short-run supply curve is its MC curve above the minimum of this | AVERAGE VARIABLE COST | AVERAGE TOTAL COST; AVERAGE FIXED COST; MARGINAL REVENUE
+4 | At its best output, the price is $6, ATC is $8 and AVC is $5. In the short run, the firm should do this | KEEP PRODUCING AT A LOSS | SHUT DOWN; RAISE ITS PRICE ABOVE THE MARKET; EXIT THE INDUSTRY TODAY
+5 | At 200 units, price equals a rising MC; ATC is $8, AVC is $5 and the price is $4. By how much can the firm reduce its losses by shutting down, in dollars? | = 200 dollars ~0
+
+## ENTRY AND EXIT
+1 | Economic profits in a competitive industry attract this in the long run | ENTRY OF NEW FIRMS | EXIT OF FIRMS; HIGHER PRICES; GOVERNMENT REGULATION
+2 | In long-run equilibrium, a perfectly competitive firm earns this much economic profit | ZERO | A POSITIVE AMOUNT; A NEGATIVE AMOUNT; THE MOST POSSIBLE
+3 | When firms leave an industry because of losses, the market supply curve shifts this way | LEFT / TO THE LEFT / LEFTWARD / INWARD
+4 | An industry whose input prices rise as it expands (an increasing-cost industry) has a long-run supply curve that slopes this way | UPWARD | DOWNWARD; NOT AT ALL (HORIZONTAL); STRAIGHT UP (VERTICAL)
+5 | In long-run equilibrium in perfect competition, price equals marginal cost and also this | MINIMUM AVERAGE TOTAL COST | MAXIMUM AVERAGE TOTAL COST; AVERAGE FIXED COST; MARGINAL PRODUCT
+
+## THE IDEAL MARKET
+1 | Perfectly competitive firms are price ___, because each is too small to change the market price | TAKERS / TAKER / PRICE TAKERS / PRICE TAKER
+2 | Which is a feature of perfect competition? | IDENTICAL PRODUCTS | A SINGLE SELLER; HIGH BARRIERS TO ENTRY; DIFFERENTIATED PRODUCTS
+3 | Producing where price equals marginal cost achieves this kind of efficiency | ALLOCATIVE EFFICIENCY | PRODUCTIVE EFFICIENCY; TECHNICAL INEFFICIENCY; X-INEFFICIENCY
+4 | Producing at the minimum of average total cost is this kind of efficiency | PRODUCTIVE EFFICIENCY / PRODUCTIVE
+5 | The demand curve facing one perfectly competitive firm is this | PERFECTLY ELASTIC (HORIZONTAL) | PERFECTLY INELASTIC (VERTICAL); DOWNWARD SLOPING; UPWARD SLOPING
+
+FINAL | PROFIT | A competitive firm's price is $12. It makes 40 units, with an ATC of $10 and an AVC of $7. What is its economic profit, in dollars? | = 80 dollars ~0
+FINAL | SHUTDOWN | [graph: pc-firm] If the market price fell to $6, what would this firm do in the short run? | KEEP PRODUCING AT A LOSS | SHUT DOWN; EARN AN ECONOMIC PROFIT; LEAVE THE INDUSTRY AT ONCE
+FINAL | COSTS | When marginal cost is below average total cost, average total cost is doing this | FALLING | RISING; AT ITS MINIMUM; STAYING CONSTANT
+FINAL | THE LONG RUN | Firms in a perfectly competitive industry are making losses. In the long run, what happens to the market price? | IT RISES | IT FALLS; IT STAYS THE SAME; IT FALLS TO ZERO

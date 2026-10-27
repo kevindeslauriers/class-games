@@ -24,7 +24,7 @@ function connect() {
       try { localStorage.setItem('class-host', JSON.stringify({ code: m.code, key: m.key })); } catch (e) {}
       $('#ovConnect').hidden = true;
       setJoin();
-    } else if (m.t === 'state') render(m.view);
+    } else if (m.t === 'state') { render(m.view); restoreSettings(m.view); }
     else if (m.t === 'fx') onFx(m);
     else if (m.t === 'error') toast(m.msg);
     else if (m.t === 'closed') { V.closed = true; try { localStorage.removeItem('class-host'); } catch (e) {} $('#ovClosed').hidden = false; }
@@ -156,7 +156,7 @@ function renderLobby(v) {
   const sel = $('#course');
   if (sel.options.length !== v.courses.length) {
     sel.innerHTML = '';
-    v.courses.forEach(c => sel.append(new Option(`${c.id}: ${c.title}`, c.id)));
+    v.courses.forEach(c => sel.append(new Option(c.title, c.id)));
   }
   sel.value = st.course;
   $('#courseRow').hidden = v.courses.length < 2;
@@ -181,6 +181,21 @@ function renderLobby(v) {
   $('#secs').value = String(st.secs);
   $('#dd').checked = st.dd;
   $('#final').checked = st.final;
+}
+// The teacher's last settings (course, units and options) come back next time.
+function restoreSettings(v) {
+  if (V.restored || v.phase !== 'lobby') return;
+  V.restored = true;
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem('class-settings') || 'null'); } catch (e) {}
+  if (!saved || !v.courses.some(c => c.id === saved.course)) return;
+  const same = Object.keys(saved).every(k => JSON.stringify(saved[k]) === JSON.stringify(v.settings[k]));
+  if (!same) cmd('settings', { settings: saved });
+}
+function saveSettings(v) {
+  if (!V.restored || v.phase !== 'lobby') return;
+  const { course, units, teams, rounds, secs, dd, final } = v.settings;
+  try { localStorage.setItem('class-settings', JSON.stringify({ course, units, teams, rounds, secs, dd, final })); } catch (e) {}
 }
 $('#course').onchange = e => cmd('settings', { settings: { course: e.target.value } });
 $('#teamsN').onchange = e => cmd('settings', { settings: { teams: +e.target.value } });
@@ -264,7 +279,17 @@ function renderClue(v) {
   }
 
   const open = ['open', 'finalClue'].includes(v.phase);
-  if (c.type === 'mc') body.append(choiceGrid(c));
+  // A clue with a graph: the graph on the left, everything else beside it.
+  let out = body;
+  body.classList.toggle('withgraph', !!c.img);
+  if (c.img) {
+    const g = el('img', 'graph');
+    g.src = `/graphs/${c.img}.svg`;
+    g.alt = 'The graph for this clue';
+    out = el('div', 'gcol');
+    body.append(g, out);
+  }
+  if (c.type === 'mc') out.append(choiceGrid(c));
   else if (open) {
     const p = el('div', 'prompt');
     p.append(el('div', 'big', c.type === 'num' ? 'Type a number on your device' : 'Type your answer on your device'));
@@ -272,7 +297,7 @@ function renderClue(v) {
     const sm = el('div', 'small');
     sm.innerHTML = c.type === 'num' ? `Scientific notation: 3e8 or 3 x 10^8 (for 3 × 10<sup>8</sup>)` : 'Spelling doesn’t have to be perfect.';
     p.append(sm);
-    body.append(p);
+    out.append(p);
   }
 
   if (open) {
@@ -285,12 +310,12 @@ function renderClue(v) {
   // Results
   const st = c.stats;
   const a = el('div', 'ca'); a.innerHTML = rich(c.a);
-  body.prepend(a);
+  out.prepend(a);
   const pct = el('p', 'pct'); pct.innerHTML = `<b>${st.pct}%</b> of the class got it · ${st.right} of ${st.n}`;
-  body.append(pct);
-  if (v.phase === 'reveal') body.append(teamResults(v, st, c));
-  if (c.type !== 'mc' && st.groups && st.groups.length) body.append(groupList(c, v.phase === 'finalReveal' && v.final.shown > 0));
-  if (v.phase === 'finalReveal') body.append(finalTeams(v));
+  out.append(pct);
+  if (v.phase === 'reveal') out.append(teamResults(v, st, c));
+  if (c.type !== 'mc' && st.groups && st.groups.length) out.append(groupList(c, v.phase === 'finalReveal' && v.final.shown > 0));
+  if (v.phase === 'finalReveal') out.append(finalTeams(v));
   if (v.phase === 'reveal') tools.append(btn('Back to the board', () => cmd('next'), 'btn primary'));
   if (v.phase === 'finalReveal') tools.append(btn(v.final.shown < v.final.order.length ? `Reveal ${team(v.final.order[v.final.shown]).name}` : 'Final scores', () => cmd('next'), 'btn primary'));
   const rk = `${c.n}|${v.phase}`;
@@ -417,7 +442,7 @@ function render(v) {
     });
   }
   $('#ovChamp').hidden = v.phase !== 'champ';
-  if (v.phase === 'lobby') renderLobby(v);
+  if (v.phase === 'lobby') { renderLobby(v); saveSettings(v); }
   if (!$('#ovRoster').hidden) renderRoster($('#gameRoster'), v);
   renderBoard(v);
   renderSide(v);

@@ -1,0 +1,91 @@
+# Course: APMICRO | AP Microeconomics
+# Unit: imperfect | Unit 4: Imperfect Competition
+
+## KEEPING RIVALS OUT
+1 | A market with a single seller and no close substitutes | MONOPOLY | OLIGOPOLY; MONOPSONY; MONOPOLISTIC COMPETITION
+2 | When one firm can supply a whole market more cheaply than two or more firms could, it is this | NATURAL MONOPOLY / A NATURAL MONOPOLY
+3 | Which of these is a barrier to entry? | A PATENT | LOW START-UP COSTS; MANY SMALL FIRMS; FREE INFORMATION
+4 | Natural monopolies exist because of large ___ | ECONOMIES OF SCALE | DISECONOMIES OF SCALE; VARIABLE COSTS; CONSUMER SURPLUSES
+5 | Because of barriers to entry, a monopoly can keep this in the long run | ECONOMIC PROFIT / ECONOMIC PROFITS / PROFIT / PROFITS
+
+## THE SINGLE SELLER
+1 | [graph: monopoly] How many units does this profit-maximizing monopoly produce? | = 30 units ~0
+2 | [graph: monopoly] What price does the monopoly charge, in dollars? | = 70 dollars ~0
+3 | [graph: monopoly] What does the shaded rectangle show? | ECONOMIC PROFIT | CONSUMER SURPLUS; DEADWEIGHT LOSS; TOTAL COST
+4 | [graph: monopoly] What is the monopoly's economic profit, in dollars? | = 540 dollars ~0
+5 | [graph: monopoly] What quantity would be allocatively efficient? | = 45 units ~0
+
+## MONOPOLY BEHAVIOUR
+1 | For a monopoly facing a downward-sloping demand curve, marginal revenue is this | LESS THAN PRICE | EQUAL TO PRICE; GREATER THAN PRICE; ALWAYS ZERO
+2 | A profit-maximizing monopoly always produces where demand is this | ELASTIC | INELASTIC; UNIT ELASTIC; PERFECTLY INELASTIC
+3 | [graph: monopoly] At what quantity would total revenue be greatest? | = 50 units ~0
+4 | Compared with perfect competition, a monopoly charges a higher price and produces this | A SMALLER QUANTITY | A LARGER QUANTITY; THE SAME QUANTITY; AS MUCH AS BUYERS WANT
+5 | [graph: monopoly] The triangle between the demand curve and MC, from 30 to 45 units, is this | DEADWEIGHT LOSS | CONSUMER SURPLUS; ECONOMIC PROFIT; PRODUCER SURPLUS
+
+## MARGINAL REVENUE
+1 | A firm can sell 10 units at $8 each or 11 units at $7.50 each. What is the marginal revenue of the 11th unit, in dollars? | = 2.5 dollars ~1%
+2 | A monopoly's demand is P = 100 − Q. What is total revenue when Q = 40, in dollars? | = 2400 dollars ~0
+3 | Demand is P = 100 − Q. What is the marginal revenue equation? | MR = 100 − 2Q | MR = 100 − Q; MR = 50 − Q; MR = 100 + 2Q
+4 | Demand is P = 100 − Q and marginal cost is a constant $20. What quantity maximizes profit? | = 40 units ~0
+5 | Demand is P = 100 − Q and marginal cost is a constant $20. What price maximizes profit, in dollars? | = 60 dollars ~0
+
+## DIFFERENT PRICES, SAME GOOD
+1 | Charging different customers different prices for the same good, for reasons other than cost | PRICE DISCRIMINATION / DISCRIMINATION
+2 | Student and senior discounts at a movie theatre are an example of this | PRICE DISCRIMINATION | A PRICE CEILING; PREDATORY PRICING; COLLUSION
+3 | To price discriminate, a firm must be able to prevent this | RESALE BETWEEN CUSTOMERS | ADVERTISING; NEW FIRMS ENTERING; CUSTOMERS FROM BUYING
+4 | Charging every customer exactly their maximum willingness to pay is called this | PERFECT PRICE DISCRIMINATION / FIRST-DEGREE PRICE DISCRIMINATION / PERFECT / FIRST DEGREE
+5 | Under perfect price discrimination, consumer surplus is this | ZERO | AT ITS MAXIMUM; UNCHANGED; EQUAL TO PROFIT
+
+## MANY SELLERS, DIFFERENT PRODUCTS
+1 | Restaurants, hair salons and clothing brands are examples of this market structure | MONOPOLISTIC COMPETITION | PERFECT COMPETITION; MONOPOLY; OLIGOPOLY
+2 | Firms in monopolistic competition sell products that are this | DIFFERENTIATED | IDENTICAL; ILLEGAL; PRICE-CONTROLLED
+3 | [graph: monopolistic-competition] This firm is in long-run equilibrium. Its economic profit is this | ZERO | POSITIVE; NEGATIVE; AT ITS MAXIMUM
+4 | [graph: monopolistic-competition] Name the gap between Q₁ and Q₂ | EXCESS CAPACITY / EXCESS
+5 | [graph: monopolistic-competition] At Q₁, how does price compare with marginal cost? | PRICE IS GREATER THAN MARGINAL COST | PRICE EQUALS MARGINAL COST; PRICE IS LESS THAN MARGINAL COST; MARGINAL COST IS ZERO
+
+## A FEW BIG FIRMS
+1 | A market dominated by a few large firms that react to each other | OLIGOPOLY | MONOPOLY; PERFECT COMPETITION; MONOPSONY
+2 | When oligopolists secretly agree to fix prices, it is called this | COLLUSION / PRICE FIXING
+3 | A formal group of firms that agree to limit output and raise prices, like OPEC | A CARTEL | A UNION; A CONGLOMERATE; A FRANCHISE
+4 | Cartels tend to break down because each member has an incentive to do this | CHEAT BY PRODUCING MORE | RAISE ITS PRICE EVEN HIGHER; SHUT DOWN; ADVERTISE LESS
+5 | The key feature that sets oligopoly apart from other market structures | MUTUAL INTERDEPENDENCE | IDENTICAL PRODUCTS; NO BARRIERS TO ENTRY; A SINGLE BUYER
+
+## GAME THEORY
+1 | [graph: payoff-matrix] If Firm A advertises and Firm B doesn't, what is Firm B's profit, in dollars? | = 20 dollars ~0
+2 | [graph: payoff-matrix] A strategy that is best no matter what the other player does | DOMINANT STRATEGY / A DOMINANT STRATEGY / DOMINANT
+3 | [graph: payoff-matrix] Does Firm A have a dominant strategy? | YES: ADVERTISE | YES: DON'T ADVERTISE; NO; ONLY IF FIRM B ADVERTISES
+4 | [graph: payoff-matrix] Does Firm B have a dominant strategy? | YES: ADVERTISE | YES: DON'T ADVERTISE; NO; ONLY IF FIRM A DOESN'T ADVERTISE
+5 | [graph: payoff-matrix] Where is the Nash equilibrium? | BOTH ADVERTISE | NEITHER ADVERTISES; ONLY FIRM A ADVERTISES; ONLY FIRM B ADVERTISES
+
+## STRATEGY
+1 | An outcome where no player can do better by changing only their own strategy | NASH EQUILIBRIUM / NASH / A NASH EQUILIBRIUM
+2 | [graph: payoff-matrix] At the Nash equilibrium, what is Firm A's profit, in dollars? | = 40 dollars ~0
+3 | [graph: payoff-matrix] If the firms could cooperate, they would both choose this | DON'T ADVERTISE | ADVERTISE; FIRM A ADVERTISES ONLY; FIRM B ADVERTISES ONLY
+4 | [graph: payoff-matrix] Both firms would be better off not advertising, but each advertises anyway. This is called the ___ dilemma | PRISONER'S / PRISONERS / PRISONER'S DILEMMA / PRISONER
+5 | [graph: payoff-matrix] If Firm B's payoff in the bottom-left cell fell from $60 to $45, would Firm B still have a dominant strategy? | NO | YES: ADVERTISE; YES: DON'T ADVERTISE; ONLY IF FIRM A ADVERTISES
+
+## MARKET STRUCTURES
+1 | Which market structure has the most firms? | PERFECT COMPETITION | MONOPOLISTIC COMPETITION; OLIGOPOLY; MONOPOLY
+2 | Advertising and brand names matter most in these two market structures | MONOPOLISTIC COMPETITION AND OLIGOPOLY | PERFECT COMPETITION AND MONOPOLY; PERFECT COMPETITION ONLY; MONOPOLY ONLY
+3 | Which market structure is both allocatively and productively efficient in the long run? | PERFECT COMPETITION | MONOPOLY; OLIGOPOLY; MONOPOLISTIC COMPETITION
+4 | A firm that can choose its own price because it faces a downward-sloping demand curve is a price ___ | MAKER / SETTER / PRICE MAKER / PRICE SETTER / SEARCHER
+5 | In which market structures does a firm face a downward-sloping demand curve? | ALL EXCEPT PERFECT COMPETITION | ONLY MONOPOLY; ONLY PERFECT COMPETITION; NONE OF THEM
+
+## REGULATING MONOPOLY
+1 | Laws that break up monopolies and ban price fixing (in Canada, the Competition Act) | ANTITRUST LAWS / ANTITRUST / COMPETITION LAW / COMPETITION LAWS / ANTITRUST LAW
+2 | A regulator that sets a monopoly's price equal to marginal cost is aiming for this kind of efficiency | ALLOCATIVE | PRODUCTIVE; DYNAMIC; TECHNICAL
+3 | Setting a natural monopoly's price where it equals average total cost is called this kind of pricing | FAIR-RETURN | SOCIALLY OPTIMAL; PREDATORY; LIMIT
+4 | [graph: monopoly] If a regulator set the price where demand meets MC, what price would that be, in dollars? | = 55 dollars ~0
+5 | Setting P = MC for a natural monopoly usually forces it to do this, because MC is below ATC | TAKE A LOSS | EARN HUGE PROFITS; BREAK EVEN EXACTLY; LEAVE ITS PRICE UNCHANGED
+
+## INEFFICIENCY
+1 | Monopolies create this because they produce less than the efficient quantity | DEADWEIGHT LOSS | CONSUMER SURPLUS; ECONOMIES OF SCALE; NORMAL PROFIT
+2 | Producing where price is greater than marginal cost is inefficient in this way | ALLOCATIVELY | PRODUCTIVELY; TECHNICALLY; DYNAMICALLY
+3 | [graph: monopoly] What is the deadweight loss of this monopoly, in dollars? | = 225 dollars ~0
+4 | [graph: monopoly] At the monopoly's output, what is marginal cost, in dollars? | = 40 dollars ~0
+5 | [graph: monopoly] Is this monopoly productively efficient? | NO: IT DOESN'T PRODUCE AT MINIMUM ATC | YES: IT PRODUCES AT MINIMUM ATC; YES: PRICE EQUALS MC; NO: IT MAKES A LOSS
+
+FINAL | MONOPOLY | [graph: monopoly] What is the monopoly's total revenue at its profit-maximizing output, in dollars? | = 2100 dollars ~0
+FINAL | GAME THEORY | [graph: payoff-matrix] What is the two firms' combined profit at the Nash equilibrium, in dollars? | = 70 dollars ~0
+FINAL | MONOPOLISTIC COMPETITION | In the long run, monopolistically competitive firms earn zero economic profit because of this | EASY ENTRY AND EXIT | GOVERNMENT PRICE CONTROLS; IDENTICAL PRODUCTS; PRICE DISCRIMINATION
+FINAL | PRICE DISCRIMINATION | Compared with a single-price monopoly, a perfectly price-discriminating monopoly produces this | THE ALLOCATIVELY EFFICIENT QUANTITY | A SMALLER QUANTITY; THE SAME QUANTITY; NOTHING AT ALL

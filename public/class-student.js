@@ -202,6 +202,12 @@ function wagerBox(id, max, onGo, label) {
     h('div', { className: 'row' }, field(id, { inputMode: 'numeric', placeholder: `0 to ${pts(max)}`, on: { keydown: e => { if (e.key === 'Enter') go(); } } }), btn('Lock it in', go, 'btn primary')));
 }
 
+// The graph that goes with a clue, if it has one.
+function graph(c, small) {
+  if (!c.img) return null;
+  return h('img', { className: 'graph' + (small ? ' small' : ''), src: `/graphs/${c.img}.svg`, alt: 'The graph for this clue' });
+}
+
 function catLine(c) {
   return h('div', { className: 'cat' }, h('span', {}, c.final ? `Final clue · ${c.cat}` : c.cat), h('b', {}, c.final ? '' : c.dd ? 'Daily Double' : String(c.value)));
 }
@@ -216,7 +222,7 @@ function ddWager(v, me) {
 
 function answerScreen(v, me) {
   const c = v.clue;
-  const card = h('div', { className: 'card' }, catLine(c), h('p', { className: 'q', html: rich(c.q) }));
+  const card = h('div', { className: 'card' }, catLine(c), h('p', { className: 'q', html: rich(c.q) }), graph(c));
   const mine = me.answer;
   if (c.type === 'mc') {
     card.append(h('div', { className: 'choices' }, c.choices.map((ch, i) => {
@@ -250,7 +256,7 @@ function results(v, me) {
   if (!a) card.append(h('p', { className: 'result no' }, 'No answer'));
   else if (a.right) card.append(h('p', { className: 'result ok' }, `Right! +${pts(c.value)}`));
   else card.append(h('p', { className: 'result no' }, 'Not quite'));
-  card.append(h('p', { className: 'q small', html: rich(c.q) }));
+  card.append(h('p', { className: 'q small', html: rich(c.q) }), graph(c, true));
   card.append(h('p', { className: 'answer', html: `Answer: <b>${rich(c.a)}</b>` }));
   if (a && !a.right && c.type !== 'mc') card.append(h('p', { className: 'hint' }, `You wrote: ${a.text}`));
   if (c.type === 'mc') {

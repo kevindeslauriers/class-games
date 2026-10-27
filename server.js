@@ -24,6 +24,8 @@ function createServer({ classOpts = {} } = {}) {
   // Students type the bare address, so the home page is the join page.
   app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'join.html')));
   app.use(express.static(path.join(__dirname, 'public'), { extensions: ['html'] }));
+  // Graphs that go with clues ([graph: name] in a clue file).
+  app.use('/graphs', express.static(path.join(__dirname, 'class-clues', 'images'), { maxAge: '1h' }));
 
   app.get('/class/qr.svg', async (req, res) => {
     const proto = (req.headers['x-forwarded-proto'] || req.protocol).split(',')[0];

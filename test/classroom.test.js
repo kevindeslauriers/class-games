@@ -59,6 +59,45 @@ test('the SNC1W clue bank loads every unit', () => {
   });
 });
 
+test('the AP Micro bank loads all six units, and every graph it names exists', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const c = bank.course('APMICRO');
+  assert.ok(c, 'APMICRO course');
+  assert.deepStrictEqual(c.units.map(u => u.id), ['basics', 'supply', 'costs', 'imperfect', 'factors', 'failure']);
+  c.units.forEach(u => {
+    assert.ok(u.cats.length >= 12, `${u.id} has enough categories for two boards`);
+    assert.ok(u.finals.length >= 3, `${u.id} finals`);
+  });
+  const graphs = c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals]).filter(x => x.img);
+  assert.ok(graphs.length > 50, 'plenty of graph clues');
+  graphs.forEach(x => assert.ok(bank.images.has(x.img), x.img));
+});
+
+test('the teacher can switch courses; graph clues reach the screens', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
+  assert.strictEqual(g.settings.course, 'APMICRO', 'the first course alphabetically');
+  g.updateSettings({ course: 'SNC1W' });
+  assert.deepStrictEqual(g.settings.units, ['bio', 'space', 'chem', 'elec']);
+  g.updateSettings({ course: 'APMICRO' });
+  g.updateSettings({ units: ['imperfect'] });
+  assert.deepStrictEqual(g.settings.units, ['imperfect']);
+  assert.strictEqual(g.teacherView().courses.length, 2);
+  const a = g.join('Ann', 0);
+  g.updateSettings({ rounds: 1, dd: false });
+  g.start();
+  const c = g.round().cats.findIndex(k => k.name === 'THE SINGLE SELLER');
+  assert.ok(c >= 0, 'the monopoly graph category is on the board');
+  g.choose(null, c, 0);
+  const v = g.studentView(a.id);
+  assert.strictEqual(v.clue.img, 'monopoly');
+  assert.ok(!v.clue.q.includes('[graph'));
+});
+
+test('a clue naming a missing graph is rejected', () => {
+  assert.throws(() => parseBank('# Course: X\n# Unit: a | A\nFINAL | C | [graph: nope] Q | A', 'x.txt', new Set(['ppc'])), /no graph called "nope"/);
+});
+
 test('bad clue lines are reported with their line number', () => {
   assert.throws(() => parseBank('# Course: X\n# Unit: a | A\n## C\n1 | q | = lots', 'x.txt'), /x\.txt line 4/);
   assert.throws(() => parseBank('## C\n1 | q | A', 'x.txt'), /Course/);

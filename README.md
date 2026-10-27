@@ -1,6 +1,13 @@
 # Class Board
 
-A quiz board for a whole class, built for SNC1W (Grade 9 Science, de-streamed). The teacher's computer drives the projector; every student answers every clue on their own laptop or phone.
+A quiz board for a whole class. The teacher's computer drives the projector; every student answers every clue on their own laptop or phone.
+
+Courses so far:
+
+- **SNC1W**, Grade 9 Science (de-streamed): four units (ecosystems, space, chemistry, electricity).
+- **AP Microeconomics**: the six College Board units, with about a quarter of clues needing a calculation (as on the exam) and over 80 clues built around graphs: supply and demand, surplus, price controls, taxes, cost curves, the competitive firm, monopoly, monopolistic competition, monopsony, externalities, the Lorenz curve and a payoff matrix.
+
+The teacher picks the course and which units the board draws from in the lobby; the screen remembers the last choice.
 
 - **Teacher:** open `/class`. Each teacher gets their own room and code, so classes never meet. Choose the units, the number of teams, one or two boards, the time per clue, Daily Doubles and the final clue. Click a student's name to move, rename or remove them. Use **New class (new code)** when the next class arrives.
 - **Students:** go to the site's home page or scan the QR code, and type the code and their first name, then pick their team (table group). A simple name filter blocks rude names.
@@ -27,7 +34,17 @@ Each file in `class-clues/` is one unit of a course:
 FINAL | ENERGY FLOW | clue | answer
 ```
 
-Each category has one clue at each level 1 to 5 (worth 100 to 500, doubled on the second board). An answer with `| WRONG; WRONG; WRONG` after it is multiple choice; `= number unit ~tolerance` is a number (tolerance `~2%` by default, `~0` for exact); anything else is typed, with other accepted answers after slashes. `^` in a clue shows as a superscript (`10^8`). SNC1W has four units with 12 categories and 4 final clues each. Another course is just more files with a different `# Course:` line.
+Each category has one clue at each level 1 to 5 (worth 100 to 500, doubled on the second board). An answer with `| WRONG; WRONG; WRONG` after it is multiple choice; `= number unit ~tolerance` is a number (tolerance `~2%` by default, `~0` for exact); anything else is typed, with other accepted answers after slashes. `^` in a clue shows as a superscript (`10^8`). Every unit has 12 categories and 4 final clues, so one unit can fill two boards. Another course is just more files with a different `# Course:` line; the course menu appears once there are two.
+
+### Graphs
+
+Put `[graph: name]` anywhere in a clue to show `class-clues/images/name.svg` beside it, on the projector and on every student's screen:
+
+```
+1 | [graph: monopoly] How many units does this profit-maximizing monopoly produce? | = 30 units ~0
+```
+
+The AP Micro graphs are drawn by `tools/graphs.js` from real equations, so every labelled number matches the curves (for example, the monopoly's MR = MC at 30 units, P = $70, ATC = $52). Run `npm run graphs` after changing it. Any other SVG dropped into `class-clues/images/` works too, and `npm test` fails if a clue names a graph that isn't there.
 
 ## Sounds
 
