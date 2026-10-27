@@ -1,0 +1,92 @@
+# Course: MDM4U | Grade 12 Data Management
+# Unit: normal | Unit 7: Normal Distributions
+// Percents to 1 decimal place are accepted within about 1%.
+
+## THE NORMAL CURVE
+1 | A normal distribution has this shape | BELL-SHAPED AND SYMMETRIC | SKEWED RIGHT; FLAT (UNIFORM); TWO-PEAKED
+2 | In a normal distribution, the mean, median and mode are this | ALL EQUAL | ALL DIFFERENT; MEAN > MEDIAN > MODE; MODE > MEDIAN > MEAN
+3 | The total area under a normal curve equals this | = 1 ~0
+4 | A larger standard deviation makes a normal curve do this | WIDER AND FLATTER | TALLER AND NARROWER; SHIFT RIGHT; SKEW LEFT
+5 | Changing only the mean of a normal distribution does this to the curve | SHIFTS IT LEFT OR RIGHT | MAKES IT WIDER; MAKES IT TALLER; SKEWS IT
+
+## THE 68-95-99.7 RULE
+1 | [graph: normal-rule] About what percent of scores fall in region A, within 1 standard deviation of the mean? | = 68 % ~0.5%
+2 | [graph: normal-rule] About what percent of scores fall between 60 and 80? | = 95 % ~0.5%
+3 | [graph: normal-rule] About what percent of scores fall in region B, between 75 and 80? | = 13.5 % ~1%
+4 | [graph: normal-rule] About what percent of scores are above 80? | = 2.5 % ~1%
+5 | [graph: normal-rule] About what percent of scores fall in region C, between 80 and 85? | = 2.35 % ~3%
+
+## STANDARD NORMAL
+1 | The standard normal distribution has mean 0 and standard deviation this | = 1 ~0
+2 | Using the z-table, what is P(z < 1), to 4 decimal places? | = 0.8413 ~0.2%
+3 | What is P(z > 2), to 4 decimal places? | = 0.0228 ~2%
+4 | What is P(z < −1.5), to 4 decimal places? | = 0.0668 ~1%
+5 | What is P(−1 < z < 2), to 4 decimal places? | = 0.8185 ~0.2%
+
+## AREA UNDER THE CURVE
+1 | [graph: normal-shade] What are the z-scores of the two ends of the shaded region? | −1 AND 2 | 1 AND 2; −2 AND 1; 65 AND 80
+2 | [graph: normal-shade] What percent of scores are in the shaded region, to 1 decimal place? | = 81.9 % ~0.5%
+3 | [graph: normal-shade] What percent of scores are below 65, to 1 decimal place? | = 15.9 % ~1%
+4 | [graph: normal-shade] What percent of scores are above 80, to 1 decimal place? | = 2.3 % ~3%
+5 | [graph: normal-shade] In a class of 200, about how many students scored in the shaded region? | = 164 students ~1%
+
+## NORMAL PROBLEMS
+1 | Heights have mean 170 cm and SD 8 cm. What is the z-score of 182 cm? | = 1.5 ~0
+2 | Heights have mean 170 cm and SD 8 cm. What percent of people are shorter than 160 cm, to 1 decimal place? | = 10.6 % ~1%
+3 | Scores have mean 70 and SD 5. What percent scored above 78, to 1 decimal place? | = 5.5 % ~2%
+4 | Heights have mean 170 cm and SD 8 cm. What percent are between 160 and 180 cm, to 1 decimal place? | = 78.9 % ~0.5%
+5 | A machine fills bottles with mean 500 mL and SD 4 mL. What percent of bottles contain less than 492 mL, to 1 decimal place? | = 2.3 % ~3%
+
+## WORKING BACKWARDS
+1 | To find the score at a given percentile, you first find this from the table | THE z-SCORE | THE MEAN; THE RANGE; THE MEDIAN
+2 | x = μ + zσ. The mean is 70, the SD is 5 and z = 1.2. What is x? | = 76 ~0
+3 | Which z-score has about 90% of the area below it, to 2 decimal places? | = 1.28 ~1%
+4 | Scores have mean 70 and SD 5. What score marks the 90th percentile, to 1 decimal place? | = 76.4 ~0.5%
+5 | Scores have mean 70 and SD 5. The top 5% get an award. What is the lowest award score, to 1 decimal place? | = 78.2 ~0.5%
+
+## NORMAL APPROXIMATION
+1 | A binomial distribution can be approximated by a normal one when np and nq are both greater than this | = 5 ~0
+2 | For a binomial distribution with n = 100 and p = 0.5, what is the mean of the normal approximation? | = 50 ~0
+3 | For n = 100 and p = 0.5, what is the standard deviation, √(npq)? | = 5 ~0
+4 | Using a normal curve for a discrete count, P(X ≥ 60) becomes P(X > 59.5). This adjustment is called the ___ correction | CONTINUITY
+5 | A coin is tossed 100 times. Using the normal approximation with continuity correction, what is P(at least 60 heads), to 3 decimal places? | = 0.029 ~5%
+
+## HOW SURE ARE WE?
+1 | A range of values likely to contain the true population value is called a ___ interval | CONFIDENCE
+2 | For a 95% confidence interval, the z-value used is this | 1.96 | 1.28; 1.645; 2.58
+3 | A poll says 52% support a plan, accurate to within 3 percentage points, 19 times out of 20. What confidence level is that? | 95% | 90%; 99%; 68%
+4 | 42 of the next 350 cars on the DVP are blue. What is the sample proportion of blue cars? | = 0.12 ~0.5%
+5 | For p̂ = 0.12 and n = 350, the 95% margin of error is 1.96 √(p̂(1 − p̂) ÷ n). What is it, to 3 decimal places? | = 0.034 ~2%
+
+## PLUS OR MINUS
+1 | The "plus or minus" part of a poll result is called the ___ of error | MARGIN
+2 | Increasing the sample size does this to the margin of error | DECREASES IT | INCREASES IT; LEAVES IT UNCHANGED; DOUBLES IT
+3 | Raising the confidence level from 90% to 99% does this to the interval | MAKES IT WIDER | MAKES IT NARROWER; LEAVES IT THE SAME; SHIFTS IT RIGHT
+4 | A poll finds 40% support with a margin of error of 4%. What is the upper end of the interval, in percent? | = 44 % ~0
+5 | To cut the margin of error in half, the sample size must be multiplied by this | = 4 ~0
+
+## Z-TABLE SKILLS
+1 | The z-table gives the area to this side of a z-score | THE LEFT | THE RIGHT; BOTH SIDES; THE MIDDLE ONLY
+2 | P(z < 1.2) = 0.8849. What is P(z > 1.2)? | = 0.1151 ~0.5%
+3 | By symmetry, P(z < −0.8) equals this | P(z > 0.8) | P(z < 0.8); 1 − P(z > 0.8); 0.8
+4 | P(z < 0.5) = 0.6915. What is P(−0.5 < z < 0.5)? | = 0.383 ~0.5%
+5 | About what percent of the standard normal distribution lies more than 1.96 from the mean? | = 5 % ~1%
+
+## NORMAL OR NOT?
+1 | Which is most likely to be normally distributed? | HEIGHTS OF ADULT WOMEN | HOUSEHOLD INCOMES; ROLLS OF ONE DIE; WAITING TIMES FOR A BUS
+2 | A graph that checks normality by plotting data against expected z-scores is called a normal ___ plot | PROBABILITY / QUANTILE
+3 | A data set's mean is much larger than its median. The distribution is probably this | SKEWED RIGHT | NORMAL; SKEWED LEFT; UNIFORM
+4 | For normal data, about how many standard deviations wide is the middle 99.7%? | = 6 ~0
+5 | Measurements are normal with SD 2 mm. About what range (max minus min) would you expect in a large sample, in mm? | = 12 mm ~0
+
+## COMPARING WITH Z-SCORES
+1 | On the same test, Ana's z-score is 1.5 and Ben's is 0.8. Who scored higher? | ANA | BEN; THEY SCORED THE SAME; IT CAN'T BE TOLD
+2 | A score with z = −2 is how many standard deviations below the mean? | = 2 ~0
+3 | Test A has mean 60 and SD 8. Ana scored 72. What is her z-score? | = 1.5 ~0
+4 | About what percent of a normal population has a z-score above 1, to 1 decimal place? | = 15.9 % ~1%
+5 | Ana scored 72 on a test with mean 60 and SD 8. Ben scored 81 on a test with mean 70 and SD 5. Who did better relative to their class? | BEN | ANA; THEY DID EQUALLY WELL; IT CAN'T BE TOLD
+
+FINAL | NORMAL PROBLEMS | Bags of chips are filled with mean 250 g and SD 5 g. What percent of bags weigh less than 240 g, to 1 decimal place? | = 2.3 % ~3%
+FINAL | WORKING BACKWARDS | IQ scores have mean 100 and SD 15. What IQ score marks the 95th percentile, to 1 decimal place? | = 124.7 ~0.5%
+FINAL | HOW SURE ARE WE? | 420 of 1000 voters support a candidate. What is the 95% margin of error, in percentage points, to 1 decimal place? | = 3.1 % ~3%
+FINAL | NORMAL APPROXIMATION | For a binomial distribution with n = 200 and p = 0.1, what is the standard deviation, to 2 decimal places? | = 4.24 ~0.5%

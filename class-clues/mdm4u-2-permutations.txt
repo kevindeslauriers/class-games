@@ -1,0 +1,91 @@
+# Course: MDM4U | Grade 12 Data Management
+# Unit: perm | Unit 2: Permutations and Organized Counting
+
+## FACTORIALS
+1 | What is 5! ? | = 120 ~0
+2 | By definition, what is 0! ? | = 1 ~0
+3 | Simplify 8! ÷ 6! | = 56 ~0
+4 | 10! ÷ 8! equals this | 90 | 80; 2; 20
+5 | n! ÷ (n − 1)! simplifies to this | n | n − 1; 1; n!
+
+## MULTIPLYING CHOICES
+1 | If one task can be done in m ways and another in n ways, both can be done in m × n ways. This is the fundamental ___ principle | COUNTING
+2 | A meal has 3 appetizers, 4 mains and 2 desserts. How many different three-course meals are there? | = 24 meals ~0
+3 | How many ways can 3 coins land? | = 8 ways ~0
+4 | A password is 4 digits, and digits can repeat. How many passwords are possible? | = 10000 ~0
+5 | A licence plate has 3 letters then 3 digits, with repeats allowed. How many plates are possible? | = 17576000 ~0
+
+## ORDER MATTERS
+1 | An arrangement of objects where order matters is called this | PERMUTATION / A PERMUTATION
+2 | In a swim race with 8 competitors, how many finishing orders exist? | = 40320 ~0
+3 | How many ways can gold, silver and bronze be awarded among 8 swimmers? | = 336 ~0
+4 | nPr equals this | n! ÷ (n − r)! | n! ÷ r!; n! ÷ (r!(n − r)!); (n − r)!
+5 | A club of 10 chooses a president, vice-president, secretary and treasurer. How many ways can this be done? | = 5040 ~0
+
+## WORDS WITH REPEATS
+1 | How many ways can the letters of MATH be arranged? | = 24 ~0
+2 | How many ways can the letters of BANANA be arranged? | = 60 ~0
+3 | How many ways can the letters of TORONTO be arranged? | = 420 ~0
+4 | For n objects with a alike and b alike, the number of arrangements is this | n! ÷ (a! b!) | n! − a! − b!; n! × a! × b!; (n − a − b)!
+5 | How many ways can the letters of MISSISSIPPI be arranged? | = 34650 ~0
+
+## KEEP THEM TOGETHER
+1 | To count arrangements where some items must be together, treat those items as this | ONE UNIT | SEPARATE GROUPS; IDENTICAL; IMPOSSIBLE
+2 | 6 friends line up, and Ana and Ben must stand together. How many arrangements are there? | = 240 ~0
+3 | 3 math books and 2 novels go on a shelf with the math books together. How many arrangements are there? | = 36 ~0
+4 | 5 people sit in a row and 3 of them must sit together. How many arrangements are there? | = 36 ~0
+5 | 4 couples sit in a row, and each couple sits together. How many arrangements are there? | = 384 ~0
+
+## KEEP THEM APART
+1 | To count arrangements where two people must be apart, a common method is total arrangements minus this | ARRANGEMENTS WITH THEM TOGETHER | ARRANGEMENTS WITH THEM APART; THE NUMBER OF PEOPLE; 1
+2 | 6 friends line up, and Ana and Ben refuse to stand together. How many arrangements are there? | = 480 ~0
+3 | 4 people line up, and two of them refuse to stand together. How many arrangements are there? | = 12 ~0
+4 | In how many arrangements of the letters A, B, C, D, E are A and B not next to each other? | = 72 ~0
+5 | 3 boys and 3 girls stand in a row, alternating boy, girl, boy... starting with a boy. How many arrangements are there? | = 36 ~0
+
+## FIRST AND LAST
+1 | How many 4-letter arrangements of the letters in FRIEND start with F? | = 60 ~0
+2 | 5 people line up, and Sam must be first. How many arrangements are there? | = 24 ~0
+3 | How many arrangements of the letters in NUMBER begin and end with a vowel? | = 48 ~0
+4 | How many 3-digit numbers can be made from 1 to 9 with no repeated digits? | = 504 ~0
+5 | How many odd 3-digit numbers can be made from the digits 1 to 6 with no repeats? | = 60 ~0
+
+## CASE BY CASE
+1 | When a count splits into cases that can't happen together, the cases are combined by doing this | ADDING | MULTIPLYING; SUBTRACTING; DIVIDING
+2 | The principle above is called the ___ counting principle (or rule of sum) | ADDITIVE / ADDITION / SUM
+3 | A restaurant has 4 soups or 3 salads to start. How many ways can you choose one starter? | = 7 ~0
+4 | How many numbers with 1, 2 or 3 digits can be made from the digits 1 to 5 with no repeats? | = 85 ~0
+5 | How many even 3-digit numbers can be made from the digits 0 to 5 with no repeats? | = 52 ~0
+
+## CODES AND PLATES
+1 | A bike lock has 3 dials, each 0 to 9. How many codes are possible? | = 1000 ~0
+2 | How many 3-letter "words" can be made from the 26 letters with no letter repeated? | = 15600 ~0
+3 | A plate has 3 letters then 3 digits, with no letter or digit repeated. How many plates are possible? | = 11232000 ~0
+4 | A PIN has 4 digits and can't start with 0. How many PINs are possible if digits may repeat? | = 9000 ~0
+5 | How many 4-digit PINs have at least one repeated digit? | = 4960 ~0
+
+## NOTATION
+1 | P(n, r), nPr and ₙPᵣ all mean this | THE NUMBER OF PERMUTATIONS OF n ITEMS TAKEN r AT A TIME | THE NUMBER OF COMBINATIONS; THE PROBABILITY OF n; n TO THE POWER r
+2 | What is P(7, 2)? | = 42 ~0
+3 | What is P(5, 5)? | = 120 ~0
+4 | What is P(9, 1)? | = 9 ~0
+5 | If P(n, 2) = 30, what is n? | = 6 ~0
+
+## PERMUTATION PROBABILITY
+1 | 4 students line up at random. What is the probability they are in alphabetical order? | = 1/24 ~1%
+2 | The letters of MATH are arranged at random. What is the probability the word starts with M? | = 1/4 ~1%
+3 | 6 friends line up at random. What is the probability Ana and Ben are together? | = 1/3 ~1%
+4 | 8 swimmers race. If every order is equally likely, what is the probability of guessing the top 3 in order? | = 1/336 ~1%
+5 | The letters of BANANA are arranged at random. What is the probability it spells BANANA? | = 1/60 ~1%
+
+## CIRCLES AND SPECIAL CASES
+1 | How many ways can 5 people sit around a round table, if only their order around the table matters? | = 24 ~0
+2 | n people around a round table can be arranged in this many ways | (n − 1)! | n!; n! ÷ 2; n
+3 | How many ways can 6 different keys be put on a key ring (flipping the ring over counts as the same)? | = 60 ~0
+4 | How many ways can 8 people sit around a round table? | = 5040 ~0
+5 | How many diagonals can be drawn in an octagon? | = 20 ~0
+
+FINAL | WORDS WITH REPEATS | How many ways can the letters of the word STATISTICS be arranged? | = 50400 ~0
+FINAL | KEEP THEM APART | 4 boys and 3 girls line up, and no two girls may stand together. How many arrangements are there? | = 1440 ~0
+FINAL | ORDER MATTERS | A 9-player baseball team's coach must choose a batting order, and the pitcher always bats last. How many batting orders are possible? | = 40320 ~0
+FINAL | MULTIPLYING CHOICES | A test has 10 true-or-false questions. How many different answer keys are possible? | = 1024 ~0

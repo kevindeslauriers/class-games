@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450" width="640" height="450" font-family="Arial, Helvetica, sans-serif">
+<rect x="1" y="1" width="638" height="448" rx="14" fill="#ffffff" stroke="#c9d3ff" stroke-width="2"/>
+<text x="120" y="70" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">A</text>
+<rect x="36" y="332" width="22" height="28" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="60" y="332" width="22" height="28" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="84" y="304" width="22" height="56" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="108" y="276" width="22" height="84" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="132" y="220" width="22" height="140" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="156" y="136" width="22" height="224" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="180" y="108" width="22" height="252" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<line x1="30" y1="360" x2="210" y2="360" stroke="#111" stroke-width="2.5"/>
+<text x="320" y="70" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">B</text>
+<rect x="236" y="332" width="22" height="28" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="260" y="276" width="22" height="84" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="284" y="192" width="22" height="168" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="308" y="136" width="22" height="224" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="332" y="192" width="22" height="168" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="356" y="276" width="22" height="84" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="380" y="332" width="22" height="28" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<line x1="230" y1="360" x2="410" y2="360" stroke="#111" stroke-width="2.5"/>
+<text x="520" y="70" font-size="26" font-weight="bold" text-anchor="middle" fill="#111">C</text>
+<rect x="436" y="108" width="22" height="252" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="460" y="136" width="22" height="224" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="484" y="220" width="22" height="140" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="508" y="276" width="22" height="84" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="532" y="304" width="22" height="56" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="556" y="332" width="22" height="28" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<rect x="580" y="332" width="22" height="28" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>
+<line x1="430" y1="360" x2="610" y2="360" stroke="#111" stroke-width="2.5"/>
+</svg>

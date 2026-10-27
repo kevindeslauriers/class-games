@@ -1,0 +1,91 @@
+# Course: MDM4U | Grade 12 Data Management
+# Unit: discrete | Unit 4: Discrete Probability Distributions
+
+## WHAT X MEANS
+1 | A variable whose value is a numerical outcome of a random experiment | RANDOM VARIABLE / A RANDOM VARIABLE
+2 | A random variable that can take only separate, countable values is called this | DISCRETE | CONTINUOUS; NORMAL; CATEGORICAL
+3 | Which is a continuous random variable? | A PERSON'S HEIGHT | THE NUMBER OF HEADS IN 10 TOSSES; THE ROLL OF A DIE; THE NUMBER OF CARS IN A LOT
+4 | In any probability distribution, the probabilities of all the outcomes add up to this | = 1 ~0
+5 | P(X = 0) = 0.2, P(X = 1) = 0.5 and P(X = 2) = k. What is k? | = 0.3 ~0.5%
+
+## IN THE LONG RUN
+1 | The long-run average outcome of a random variable is called its ___ value | EXPECTED / EXPECTATION / MEAN
+2 | What is the expected value of one roll of a fair die? | = 3.5 ~0
+3 | E(X) for a discrete random variable is found by this | ADDING EACH x × P(x) | ADDING ALL THE x VALUES; MULTIPLYING ALL THE PROBABILITIES; TAKING THE MOST LIKELY x
+4 | X is 0, 1 or 2 with probabilities 0.2, 0.5 and 0.3. What is E(X)? | = 1.1 ~0.5%
+5 | A ticket costs $2 and wins $50 with probability 0.02; otherwise nothing. What is the expected net gain per ticket, in dollars? (Use a minus sign for a loss.) | = -1 dollars ~0
+
+## FAIR GAMES
+1 | A game is fair when the expected value of a player's net winnings is this | ZERO | POSITIVE; NEGATIVE; ONE
+2 | You win $5 if a coin lands heads and lose $5 if tails. Is the game fair? | YES | NO, IT FAVOURS YOU; NO, IT FAVOURS THE HOUSE; IT CAN'T BE TOLD
+3 | You pay $1 to roll a die and win $4 if you roll a 6. What is your expected net gain, in dollars, to 2 decimal places? | = -0.33 dollars ~2%
+4 | You pay $1 to roll a die and win w dollars if you roll a 6. What w makes the game fair (the prize includes your dollar back)? | = 6 dollars ~0
+5 | A casino game has an expected value of −$0.05 per $1 bet. If people bet $10,000, how much does the casino expect to keep, in dollars? | = 500 dollars ~0
+
+## EQUALLY LIKELY
+1 | A distribution where every outcome is equally likely is called this | UNIFORM / A UNIFORM DISTRIBUTION / UNIFORM DISTRIBUTION
+2 | Which of these has a uniform distribution? | ONE ROLL OF A FAIR DIE | THE SUM OF TWO DICE; HEIGHTS OF STUDENTS; NUMBER OF HEADS IN 3 TOSSES
+3 | A spinner has 8 equal sections numbered 1 to 8. What is P(X = 3)? | = 1/8 ~1%
+4 | For a uniform distribution on 1, 2, ..., n, the expected value is this | (n + 1) ÷ 2 | n ÷ 2; n; (n − 1) ÷ 2
+5 | A random integer from 1 to 20 is chosen. What is its expected value? | = 10.5 ~0
+
+## BINOMIAL BASICS
+1 | A binomial experiment has a fixed number of independent trials, each with how many outcomes? | = 2 ~0
+2 | In a binomial experiment, the probability of success on each trial is this | THE SAME EVERY TRIAL | DIFFERENT EVERY TRIAL; ALWAYS 0.5; HIGHER AFTER A FAILURE
+3 | The binomial probability formula is P(x) = C(n, x) pˣ qⁿ⁻ˣ. What does q stand for? | THE PROBABILITY OF FAILURE | THE NUMBER OF TRIALS; THE NUMBER OF SUCCESSES; THE PROBABILITY OF SUCCESS
+4 | Which is a binomial experiment? | COUNTING HEADS IN 10 COIN TOSSES | DRAWING CARDS UNTIL YOU GET AN ACE; DRAWING 5 CARDS WITHOUT REPLACEMENT; MEASURING HEIGHTS
+5 | The expected number of successes in a binomial experiment is this | np | npq; n ÷ p; p ÷ n
+
+## BINOMIAL PROBABILITY
+1 | A coin is tossed 5 times. What is the probability of exactly 3 heads? | = 0.3125 ~0.5%
+2 | A die is rolled 4 times. What is the probability of no 6s, to 3 decimal places? | = 0.482 ~0.5%
+3 | 20% of bulbs are defective. In a sample of 10, what is the probability exactly 2 are defective, to 3 decimal places? | = 0.302 ~0.5%
+4 | A multiple-choice test has 4 questions with 4 choices each. Guessing, what is the probability of getting all 4 right? | = 1/256 ~1%
+5 | A player makes 80% of free throws. In 5 shots, what is the probability of making at least 4, to 3 decimal places? | = 0.737 ~0.5%
+
+## BINOMIAL EXPECTATION
+1 | A coin is tossed 50 times. How many heads are expected? | = 25 heads ~0
+2 | 30% of students walk to school. In a class of 30, how many are expected to walk? | = 9 students ~0
+3 | A die is rolled 120 times. How many 6s are expected? | = 20 ~0
+4 | Guessing on a 20-question test with 5 choices each, how many questions do you expect to get right? | = 4 questions ~0
+5 | The variance of a binomial distribution is npq. What is the variance for n = 100 and p = 0.5? | = 25 ~0
+
+## WAITING FOR SUCCESS
+1 | A distribution that counts the number of trials (or failures) before the first success is called this | GEOMETRIC / A GEOMETRIC DISTRIBUTION / GEOMETRIC DISTRIBUTION
+2 | A die is rolled until a 6 appears. This is a ___ experiment | GEOMETRIC | BINOMIAL; HYPERGEOMETRIC; UNIFORM
+3 | A die is rolled until a 6 appears. What is the probability the first 6 comes on the 3rd roll, to 3 decimal places? | = 0.116 ~1%
+4 | A die is rolled until a 6 appears. What is the expected number of failures (non-6 rolls) before the first 6? | = 5 ~0
+5 | A coin is tossed until it lands heads. What is the probability the first head comes on the 4th toss? | = 1/16 ~1%
+
+## DRAWING FROM SMALL GROUPS
+1 | A distribution for counting successes when selecting without replacement from a small group | HYPERGEOMETRIC / HYPERGEOMETRIC DISTRIBUTION
+2 | Which is hypergeometric? | DRAWING 5 CARDS AND COUNTING HEARTS | TOSSING A COIN 10 TIMES; ROLLING UNTIL A 6; SPINNING A SPINNER 4 TIMES
+3 | A box has 5 red and 5 blue marbles. 4 are drawn without replacement. What is the probability exactly 2 are red, to 3 decimal places? | = 0.476 ~0.5%
+4 | A box has 5 red and 5 blue marbles. 4 are drawn without replacement. What is the expected number of red marbles? | = 2 ~0
+5 | A committee of 4 is chosen from 6 women and 4 men. What is the expected number of women on it? | = 2.4 ~0.5%
+
+## WITH OR WITHOUT REPLACEMENT
+1 | Drawing with replacement keeps the probability the same on every draw, so the trials are ___ | INDEPENDENT | DEPENDENT; MUTUALLY EXCLUSIVE; IMPOSSIBLE
+2 | Counting hearts in 5 cards drawn WITH replacement follows this distribution | BINOMIAL | HYPERGEOMETRIC; GEOMETRIC; UNIFORM
+3 | Counting hearts in 5 cards drawn WITHOUT replacement follows this distribution | HYPERGEOMETRIC | BINOMIAL; GEOMETRIC; UNIFORM
+4 | When the population is very large compared with the sample, a hypergeometric distribution is close to this | BINOMIAL | UNIFORM; GEOMETRIC; SKEWED LEFT
+5 | 2 cards are drawn. Is P(both aces) higher with or without replacement? | WITH REPLACEMENT | WITHOUT REPLACEMENT; THEY ARE EQUAL; IT DEPENDS ON THE SUIT
+
+## WHICH DISTRIBUTION?
+1 | Counting how many of 20 random people are left-handed | BINOMIAL | GEOMETRIC; HYPERGEOMETRIC; UNIFORM
+2 | Counting how many calls a telemarketer makes until the first sale | GEOMETRIC | BINOMIAL; HYPERGEOMETRIC; UNIFORM
+3 | Counting how many of the 4 aces are in a 13-card hand | HYPERGEOMETRIC | BINOMIAL; GEOMETRIC; UNIFORM
+4 | Picking a random day of the week | UNIFORM | BINOMIAL; GEOMETRIC; HYPERGEOMETRIC
+5 | Counting girls in a group of 5 chosen from a class of 12 girls and 10 boys | HYPERGEOMETRIC | BINOMIAL; GEOMETRIC; UNIFORM
+
+## VALUES AND CHANCES
+1 | A table listing each value of X with its probability is called this | PROBABILITY DISTRIBUTION / A PROBABILITY DISTRIBUTION / DISTRIBUTION
+2 | A graph of a discrete probability distribution is usually drawn as this | A BAR GRAPH (HISTOGRAM) | A LINE GRAPH; A PIE CHART; A SCATTER PLOT
+3 | Two coins are tossed and X is the number of heads. What is P(X = 1)? | = 1/2 ~1%
+4 | Two coins are tossed and X is the number of heads. What is E(X)? | = 1 ~0
+5 | Three coins are tossed and X is the number of heads. What is P(X ≥ 2)? | = 1/2 ~1%
+
+FINAL | BINOMIAL PROBABILITY | 10% of a factory's phones are defective. In a box of 8, what is the probability that at least one is defective, to 3 decimal places? | = 0.570 ~0.5%
+FINAL | DRAWING FROM SMALL GROUPS | A 13-card hand is dealt. What is the expected number of hearts? | = 3.25 ~0
+FINAL | IN THE LONG RUN | A raffle sells 500 tickets at $5. There is one $1000 prize. What is the expected net gain for one ticket, in dollars? (Use a minus sign for a loss.) | = -3 dollars ~0
+FINAL | WAITING FOR SUCCESS | A die is rolled until a 6 appears. What is the probability it takes more than 3 rolls, to 3 decimal places? | = 0.579 ~0.5%

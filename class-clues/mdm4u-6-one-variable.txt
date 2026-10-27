@@ -1,0 +1,92 @@
+# Course: MDM4U | Grade 12 Data Management
+# Unit: onevar | Unit 6: Statistics of One Variable
+
+## CENTRAL TENDENCY
+1 | The data are 3, 7, 7, 10, 13. What is the mean? | = 8 ~0
+2 | The data are 3, 7, 7, 10, 13. What is the median? | = 7 ~0
+3 | The data are 3, 7, 7, 10, 13. What is the mode? | = 7 ~0
+4 | The data are 4, 8, 10, 12, 15, 21. What is the median? | = 11 ~0
+5 | Which measure of centre is most affected by an outlier? | THE MEAN | THE MEDIAN; THE MODE; ALL EQUALLY
+
+## MARKS THAT COUNT MORE
+1 | A mean where some values count more than others is called a ___ mean | WEIGHTED
+2 | Tests count 70% and assignments 30%. A student has 80 on tests and 90 on assignments. What is the final mark? | = 83 % ~0
+3 | Term work counts 65%, participation 10% and the exam 25%. Marks are 80, 100 and 60. What is the final mark? | = 77 % ~0
+4 | 10 students averaged 70 and 20 students averaged 85. What is the mean of all 30? | = 80 ~0
+5 | A student needs a 75 overall. Term work (75% weight) is 72. What exam mark (25% weight) is needed? | = 84 % ~0
+
+## FROM LOWEST TO HIGHEST
+1 | The difference between the largest and smallest values | RANGE / THE RANGE
+2 | The data are 2, 5, 9, 14, 20. What is the range? | = 18 ~0
+3 | The interquartile range is Q3 minus this | Q1 | THE MEDIAN; THE MINIMUM; Q2
+4 | Q1 is 20 and Q3 is 34. What is the interquartile range? | = 14 ~0
+5 | Which measure of spread is NOT affected by extreme outliers? | THE INTERQUARTILE RANGE | THE RANGE; THE STANDARD DEVIATION; THE VARIANCE
+
+## BOX PLOTS
+1 | [graph: box-plot] What is the median? | = 26 minutes ~0
+2 | [graph: box-plot] What is the range? | = 33 minutes ~0
+3 | [graph: box-plot] What is the interquartile range? | = 14 minutes ~0
+4 | [graph: box-plot] About what percent of students spend more than 34 minutes on homework? | = 25 % ~0
+5 | [graph: box-plot] Using the 1.5 × IQR rule, values above what number would be outliers? | = 55 minutes ~0
+
+## HOW SPREAD OUT
+1 | The most common measure of how far data values are from the mean | STANDARD DEVIATION / SD / STANDARD DEVIATIONS
+2 | The variance is this | THE STANDARD DEVIATION SQUARED | THE SQUARE ROOT OF THE STANDARD DEVIATION; THE RANGE ÷ 2; THE MEAN SQUARED
+3 | A population has a variance of 36. What is its standard deviation? | = 6 ~0
+4 | The data 2, 4, 4, 4, 5, 5, 7, 9 have a mean of 5. What is their population standard deviation? | = 2 ~0
+5 | Every value in a data set is increased by 10. What happens to the standard deviation? | IT STAYS THE SAME | IT INCREASES BY 10; IT DOUBLES; IT INCREASES BY 100
+
+## Z-SCORES
+1 | A z-score measures how many of these a value is from the mean | STANDARD DEVIATIONS | RANGES; PERCENTILES; QUARTILES
+2 | The mean is 70 and the standard deviation is 5. What is the z-score of 80? | = 2 ~0
+3 | The mean is 70 and the standard deviation is 5. What is the z-score of 62.5? | = -1.5 ~0
+4 | A value has a z-score of 0. Where is it? | AT THE MEAN | AT THE MINIMUM; ONE STANDARD DEVIATION ABOVE; AT Q1
+5 | Ana scored 80 on a test with mean 70 and SD 5. Ben scored 85 on a test with mean 75 and SD 10. Who did better relative to their class? | ANA | BEN; THEY DID EQUALLY WELL; IT CAN'T BE TOLD
+
+## PERCENTILES AND QUARTILES
+1 | The median is also called this percentile | 50th / FIFTIETH / 50
+2 | Q1 is the same as this percentile | THE 25th | THE 10th; THE 50th; THE 75th
+3 | Being in the 90th percentile means this | YOU SCORED AS WELL AS OR BETTER THAN 90% OF THE GROUP | YOU GOT 90% ON THE TEST; 90 PEOPLE SCORED BELOW YOU; YOU ARE IN THE TOP 90%
+4 | Dividing ordered data into 10 equal parts gives these | DECILES / DECILE
+5 | In a class of 25, a student's mark is higher than 20 others' marks. To the nearest whole number, what percentile is that? | = 80 ~0
+
+## UNUSUAL VALUES
+1 | A value far from the rest of the data | OUTLIER / AN OUTLIER
+2 | The data are 10, 12, 13, 14, 60. Removing the 60 does this to the mean | LOWERS IT A LOT | RAISES IT; LEAVES IT THE SAME; LOWERS IT SLIGHTLY
+3 | Q1 = 10 and Q3 = 18. Using the 1.5 × IQR rule, values below what number are outliers? | = -2 ~0
+4 | Q1 = 10 and Q3 = 18. Using the 1.5 × IQR rule, values above what number are outliers? | = 30 ~0
+5 | Using z-scores, a value is often called an outlier if its z-score is beyond this | ±3 | ±0.5; ±1; ±1.5
+// "±3" is the usual rule of thumb; some texts use ±2.
+
+## SHAPES OF DISTRIBUTIONS
+1 | [graph: histograms] Which histogram is symmetric? | B | A; C; NONE
+2 | [graph: histograms] Histogram C has a long tail on the right. It is ___ skewed | RIGHT / RIGHT-SKEWED / POSITIVELY / POSITIVE
+3 | [graph: histograms] In histogram A, how does the mean compare with the median? | THE MEAN IS LESS THAN THE MEDIAN | THE MEAN IS GREATER THAN THE MEDIAN; THEY ARE EQUAL; THERE IS NO MEDIAN
+4 | [graph: histograms] Household incomes usually look most like which histogram? | C | A; B; NONE OF THEM
+5 | A distribution with two peaks is called this | BIMODAL | UNIFORM; SKEWED; NORMAL
+
+## GROUPED DATA
+1 | A table showing how many values fall in each interval | FREQUENCY TABLE / FREQUENCY DISTRIBUTION / A FREQUENCY TABLE
+2 | A graph that shows running totals of frequencies | A CUMULATIVE FREQUENCY GRAPH (OGIVE) | A PIE CHART; A SCATTER PLOT; A BOX PLOT
+3 | Intervals 0–10, 10–20 and 20–30 have frequencies 2, 5 and 3. Using midpoints, what is the estimated mean? | = 16 ~0
+4 | In grouped data, the interval with the highest frequency is called the modal ___ | CLASS / INTERVAL / GROUP
+5 | A stem-and-leaf plot has stem 6 with leaves 2, 5, 8. What values does that row show? | 62, 65 AND 68 | 6, 2, 5 AND 8; 26, 56 AND 86; 6.2, 6.5 AND 6.8
+
+## CHANGING THE DATA
+1 | Every value in a data set is increased by 5. What happens to the mean? | IT INCREASES BY 5 | IT STAYS THE SAME; IT DOUBLES; IT INCREASES BY 25
+2 | Every value is doubled. What happens to the standard deviation? | IT DOUBLES | IT STAYS THE SAME; IT IS SQUARED; IT HALVES
+3 | The mean of 4 values is 12. A fifth value of 22 is added. What is the new mean? | = 14 ~0
+4 | Every value is multiplied by 3. The variance was 4. What is the new variance? | = 36 ~0
+5 | A teacher adds 5 marks to every test. The median was 68. What is the new median? | = 73 ~0
+
+## CHOOSING A MEASURE
+1 | For house prices, which measure of centre is usually best? | THE MEDIAN | THE MEAN; THE MODE; THE RANGE
+2 | A store wants the most commonly sold shoe size. Which measure is that? | THE MODE | THE MEAN; THE MEDIAN; THE RANGE
+3 | The mean of 5 numbers is 20. What is their sum? | = 100 ~0
+4 | Four marks are 70, 80, 85 and 90. What fifth mark makes the mean 80? | = 75 ~0
+5 | In a right-skewed distribution, which measure of centre is usually largest? | THE MEAN | THE MEDIAN; THE MODE; THEY ARE EQUAL
+
+FINAL | HOW SPREAD OUT | Given a record of kilometres driven by Toronto drivers (mean 15 000 km, SD 4 000 km), what distance is 2.5 standard deviations below the mean, in km? | = 5000 km ~0
+FINAL | Z-SCORES | A student's z-score on a test was 1.2. The mean was 64 and the standard deviation was 10. What was the mark? | = 76 ~0
+FINAL | BOX PLOTS | [graph: box-plot] What percent of students spend between 20 and 34 minutes on homework? | = 50 % ~0
+FINAL | MARKS THAT COUNT MORE | A course mark is 65% term work, 10% participation and 25% exam. A student has 84 and 90 on the first two. What exam mark gives them 80 overall? | = 65.6 % ~0.5%

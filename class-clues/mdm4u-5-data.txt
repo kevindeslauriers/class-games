@@ -1,0 +1,91 @@
+# Course: MDM4U | Grade 12 Data Management
+# Unit: data | Unit 5: Organization of Data for Analysis
+
+## TYPES OF DATA
+1 | Data that are numbers you can measure or count are called this | NUMERICAL / QUANTITATIVE / NUMERIC
+2 | Favourite colour is this kind of data | CATEGORICAL | NUMERICAL; CONTINUOUS; DISCRETE
+3 | The number of siblings a student has is this kind of numerical data | DISCRETE | CONTINUOUS; CATEGORICAL; ORDINAL
+4 | A student's height in centimetres is this kind of numerical data | CONTINUOUS | DISCRETE; CATEGORICAL; NOMINAL
+5 | Categorical data with a natural order, like "poor, fair, good, excellent", is called this | ORDINAL | NOMINAL; CONTINUOUS; DISCRETE
+
+## WHO GETS STUDIED
+1 | The entire group you want to learn about | POPULATION / THE POPULATION
+2 | A part of the population that is actually studied | SAMPLE | CENSUS; PARAMETER; STRATUM
+3 | A survey of every member of a population is called this | A CENSUS | A SAMPLE; A STRATUM; A CLUSTER
+4 | A number that describes a whole population, like the true mean height of all Canadians, is called this | PARAMETER / A PARAMETER
+5 | A number calculated from a sample, used to estimate a parameter, is called this | STATISTIC | PARAMETER; VARIABLE; CENSUS
+
+## SAMPLING METHODS
+1 | Every member of the population has an equal chance of being chosen. This is a ___ random sample | SIMPLE
+2 | Choosing every 10th name on a list after a random start is this kind of sample | SYSTEMATIC | STRATIFIED; CLUSTER; CONVENIENCE
+3 | Splitting Bayview Glen students by grade and randomly sampling from each grade in proportion is this kind of sample | STRATIFIED | SYSTEMATIC; CLUSTER; VOLUNTARY
+4 | Randomly choosing 3 homerooms and surveying everyone in them is this kind of sample | CLUSTER | STRATIFIED; SYSTEMATIC; MULTI-STAGE
+5 | A school of 600 has 150 Grade 12s. A stratified sample of 60 students should include how many Grade 12s? | = 15 students ~0
+
+## NON-RANDOM SAMPLES
+1 | Surveying whoever is easiest to reach, like friends in the cafeteria, is this kind of sample | CONVENIENCE | STRATIFIED; SYSTEMATIC; CLUSTER
+2 | An online poll where people choose whether to respond is this kind of sample | VOLUNTARY RESPONSE / VOLUNTARY / SELF-SELECTED
+3 | Voluntary response samples tend to over-represent people with this | STRONG OPINIONS | NO OPINIONS; THE MOST TIME; RANDOM VIEWS
+4 | Convenience and voluntary samples are both likely to be this | BIASED | UNBIASED; STRATIFIED; TOO LARGE
+5 | The main benefit of random sampling is that it reduces this | SAMPLING BIAS | SAMPLE SIZE; COST TO ZERO; THE POPULATION
+
+## BIAS
+1 | Error that pushes results consistently in one direction is called this | BIAS
+2 | A survey about school lunches asks only students in the cafeteria. This is ___ bias | SAMPLING | RESPONSE; NON-RESPONSE; MEASUREMENT
+3 | Many people who were sent a survey never return it. This can cause ___ bias | NON-RESPONSE | SAMPLING; MEASUREMENT; RESPONSE
+4 | People give answers they think are socially acceptable instead of the truth. This is ___ bias | RESPONSE | SAMPLING; NON-RESPONSE; MEASUREMENT
+5 | A scale that always reads 1 kg too heavy creates this kind of bias | MEASUREMENT | SAMPLING; RESPONSE; NON-RESPONSE
+
+## SURVEY QUESTIONS
+1 | "Don't you agree that homework is a waste of time?" is this kind of question | LEADING | NEUTRAL; OPEN; CLOSED
+2 | A question with a fixed set of answers to choose from is called this | CLOSED / A CLOSED QUESTION / CLOSED-ENDED
+3 | A question that lets people answer in their own words is called this | OPEN / OPEN-ENDED / AN OPEN QUESTION
+4 | "How often do you exercise and eat vegetables?" is a problem because it is this | DOUBLE-BARRELLED (TWO QUESTIONS IN ONE) | TOO SHORT; NEUTRAL; CLOSED
+5 | Asking a question in person instead of anonymously is most likely to increase this kind of bias | RESPONSE | SAMPLING; MEASUREMENT; NON-RESPONSE
+
+## WHERE DATA COME FROM
+1 | Data you collect yourself, for example with your own survey, are called ___ data | PRIMARY
+2 | Data collected by someone else, like Statistics Canada, are called ___ data | SECONDARY
+3 | Canada's national statistics agency, which runs the census | STATISTICS CANADA / STATSCAN / STATCAN
+4 | An organized collection of data, often stored in a spreadsheet or on a computer, is called this | DATABASE / A DATABASE / DATA BASE
+5 | A study that observes people without changing anything is called this | AN OBSERVATIONAL STUDY | AN EXPERIMENT; A CENSUS; A SIMULATION
+
+## EXPERIMENTS
+1 | In an experiment, the group that gets no treatment is called this | CONTROL GROUP / THE CONTROL GROUP / CONTROL
+2 | The group that receives the treatment is called this | THE EXPERIMENTAL GROUP | THE CONTROL GROUP; THE POPULATION; THE CLUSTER
+3 | A fake treatment, like a sugar pill, given to the control group | PLACEBO / A PLACEBO
+4 | Neither the subjects nor the researchers know who got the real treatment. This is a ___ study | DOUBLE-BLIND | SINGLE-BLIND; OBSERVATIONAL; CONTROLLED
+5 | A factor that is not studied but affects the results, making cause and effect unclear, is called this | A CONFOUNDING VARIABLE | AN INDEPENDENT VARIABLE; A DEPENDENT VARIABLE; A PARAMETER
+
+## VARIABLES
+1 | The variable that is changed or controlled in an experiment | INDEPENDENT / INDEPENDENT VARIABLE / MANIPULATED
+2 | The variable that is measured to see the effect | DEPENDENT | INDEPENDENT; CONFOUNDING; CONTROL
+3 | On a scatter plot, the independent variable usually goes on this axis | THE x-AXIS (HORIZONTAL) | THE y-AXIS (VERTICAL); EITHER AXIS; NEITHER AXIS
+4 | A study looks at hours of sleep and test scores. Which is the independent variable? | HOURS OF SLEEP | TEST SCORES; BOTH; NEITHER
+5 | A variable that is linked to both the independent and dependent variables, like temperature for ice cream sales and drownings | LURKING VARIABLE / HIDDEN VARIABLE / CONFOUNDING VARIABLE / LURKING
+
+## GRAPHING DATA
+1 | The best graph for showing parts of a whole, like a budget, is this | A PIE CHART (CIRCLE GRAPH) | A SCATTER PLOT; A LINE GRAPH; A BOX PLOT
+2 | A bar graph of grouped continuous data, with no gaps between bars | HISTOGRAM / A HISTOGRAM
+3 | The best graph for showing how one variable changes over time | A LINE GRAPH | A PIE CHART; A HISTOGRAM; A STEM-AND-LEAF PLOT
+4 | The best graph for showing the relationship between two numerical variables | A SCATTER PLOT | A PIE CHART; A BAR GRAPH; A BOX PLOT
+5 | A frequency table of 40 students has a class "60 to 69" with frequency 10. What is its relative frequency, as a percent? | = 25 % ~0
+
+## MISLEADING STATISTICS
+1 | A bar graph whose vertical axis starts at 90 instead of 0 makes small differences look this | BIGGER | SMALLER; THE SAME; INVISIBLE
+2 | An ad says "4 out of 5 dentists recommend" but surveyed only 5 dentists. The main problem is this | THE SAMPLE IS TOO SMALL | THE QUESTION IS OPEN; THE DATA ARE PRIMARY; THE SAMPLE IS STRATIFIED
+3 | A picture graph doubles both the height and width of an icon to show doubled sales. The icon's area grows by what factor? | = 4 ~0
+4 | Choosing only the data that support your claim and ignoring the rest is called this | CHERRY-PICKING | STRATIFYING; RANDOMIZING; SAMPLING
+5 | A claim that ice cream causes drownings because both rise together confuses correlation with this | CAUSATION / CAUSE / CAUSE AND EFFECT
+
+## DATA IN THE REAL WORLD
+1 | An index that tracks the average change in prices over time, used to measure inflation | CONSUMER PRICE INDEX / CPI / THE CONSUMER PRICE INDEX
+2 | Insurance companies use data about risk to set these | PREMIUMS | TAXES; TUITION FEES; INTEREST-FREE LOANS
+3 | A professional who uses statistics to measure risk for insurance companies | ACTUARY | ARCHITECT; ARCHIVIST; AUDITOR
+4 | Polls, sports analytics and medical trials all draw conclusions about a population from this | A SAMPLE | A CENSUS ONLY; A SINGLE CASE; PERSONAL OPINIONS
+5 | A poll is "accurate to within 3%, 19 times out of 20." The "19 times out of 20" part is the ___ level | CONFIDENCE
+
+FINAL | SAMPLING METHODS | A school has 300 Grade 9s, 250 Grade 10s, 250 Grade 11s and 200 Grade 12s. A stratified sample of 80 is taken. How many Grade 9s should be in it? | = 24 students ~0
+FINAL | BIAS | A phone survey reaches only landlines during the workday. What kind of bias is this most likely to cause? | SAMPLING BIAS | RESPONSE BIAS; MEASUREMENT BIAS; NO BIAS
+FINAL | EXPERIMENTS | Randomly assigning subjects to the treatment and control groups is mainly done to reduce the effect of these | CONFOUNDING VARIABLES | PLACEBOS; DEPENDENT VARIABLES; LARGE SAMPLES
+FINAL | TYPES OF DATA | A survey asks for postal codes. Postal codes are this kind of data | CATEGORICAL | CONTINUOUS NUMERICAL; DISCRETE NUMERICAL; ORDINAL NUMERICAL

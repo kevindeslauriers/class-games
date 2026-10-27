@@ -239,7 +239,7 @@ function answerScreen(v, me) {
         on: { keydown: e => { if (e.key === 'Enter') go(); } } }),
       btn('Submit', go, 'btn primary')));
     card.append(h('p', { className: 'kbd' }, c.type === 'num'
-      ? 'Scientific notation: type 3e8 or 3 x 10^8. You don’t need the unit.'
+      ? 'Fractions (3/8), decimals (0.375) and scientific notation (3e8 or 3 x 10^8) all work. You don’t need the unit.'
       : 'Spelling doesn’t have to be perfect. No need to write “What is…”.'));
     setTimeout(() => { const e = document.getElementById(id); if (e && !(document.activeElement && document.activeElement.closest('.row'))) e.focus(); });
   }

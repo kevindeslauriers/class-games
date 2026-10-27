@@ -41,6 +41,9 @@ test('numbers in any notation', () => {
   assert.ok(Math.abs(parseNumber('1.5 × 10^-3').value - 0.0015) < 1e-12);
   assert.strictEqual(parseNumber('$0.96').value, 0.96);
   assert.strictEqual(parseNumber('twelve'), null);
+  assert.strictEqual(parseNumber('3/8').value, 0.375);
+  assert.strictEqual(parseNumber('20 deer/km^2').value, 20);
+  assert.strictEqual(parseNumber('1 / 4').value, 0.25);
 });
 
 test('the name filter catches rude names but not real ones', () => {
@@ -73,16 +76,29 @@ test('the AP Micro bank loads all six units, and every graph it names exists', (
   graphs.forEach(x => assert.ok(bank.images.has(x.img), x.img));
 });
 
+test('the MDM4U bank loads all eight units, and every graph it names exists', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const c = bank.course('MDM4U');
+  assert.ok(c, 'MDM4U course');
+  assert.deepStrictEqual(c.units.map(u => u.id), ['prob', 'perm', 'comb', 'discrete', 'data', 'onevar', 'normal', 'twovar']);
+  c.units.forEach(u => {
+    assert.strictEqual(u.cats.length, 12, `${u.id} categories`);
+    assert.ok(u.finals.length >= 3, `${u.id} finals`);
+  });
+  [...c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals])].filter(x => x.img).forEach(x => assert.ok(bank.images.has(x.img), x.img));
+});
+
 test('the teacher can switch courses; graph clues reach the screens', () => {
   const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
   const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
-  assert.strictEqual(g.settings.course, 'APMICRO', 'the first course alphabetically');
-  g.updateSettings({ course: 'SNC1W' });
+  assert.strictEqual(g.settings.course, 'SNC1W', 'marked "# Default course"');
   assert.deepStrictEqual(g.settings.units, ['bio', 'space', 'chem', 'elec']);
+  g.updateSettings({ course: 'MDM4U' });
+  assert.strictEqual(g.settings.units.length, 8);
   g.updateSettings({ course: 'APMICRO' });
   g.updateSettings({ units: ['imperfect'] });
   assert.deepStrictEqual(g.settings.units, ['imperfect']);
-  assert.strictEqual(g.teacherView().courses.length, 2);
+  assert.strictEqual(g.teacherView().courses.length, 3);
   const a = g.join('Ann', 0);
   g.updateSettings({ rounds: 1, dd: false });
   g.start();

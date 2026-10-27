@@ -165,6 +165,8 @@ function renderLobby(v) {
   if (V.unitKey !== key) {
     V.unitKey = key;
     units.innerHTML = '';
+    // Long unit lists go in two columns so Start stays on screen.
+    units.classList.toggle('many', !!course && course.units.length > 6);
     (course ? course.units : []).forEach(u => {
       const l = el('label', 'choice');
       const cb = el('input'); cb.type = 'checkbox'; cb.checked = st.units.includes(u.id);
@@ -172,7 +174,8 @@ function renderLobby(v) {
         const ids = [...units.querySelectorAll('input')].map((x, i) => x.checked && course.units[i].id).filter(Boolean);
         cmd('settings', { settings: { units: ids } });
       };
-      l.append(cb, ` ${u.title} `, el('small', '', `(${u.cats} categories)`));
+      l.append(cb, ` ${u.title}`);
+      l.title = `${u.cats} categories`;
       units.append(l);
     });
   }
@@ -295,7 +298,7 @@ function renderClue(v) {
     p.append(el('div', 'big', c.type === 'num' ? 'Type a number on your device' : 'Type your answer on your device'));
     if (c.type === 'num' && c.unit) { const u = el('div', 'unit'); u.innerHTML = `Answer in ${rich(c.unit)}`; p.append(u); }
     const sm = el('div', 'small');
-    sm.innerHTML = c.type === 'num' ? `Scientific notation: 3e8 or 3 x 10^8 (for 3 × 10<sup>8</sup>)` : 'Spelling doesn’t have to be perfect.';
+    sm.innerHTML = c.type === 'num' ? 'Fractions (3/8), decimals and scientific notation (3e8) all work' : 'Spelling doesn’t have to be perfect.';
     p.append(sm);
     out.append(p);
   }

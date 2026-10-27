@@ -1,0 +1,92 @@
+# Course: MDM4U | Grade 12 Data Management
+# Unit: twovar | Unit 8: Statistics of Two Variables
+
+## SCATTER PLOTS
+1 | [graph: scatter-four] Which scatter plot shows a strong positive correlation? | A | B; C; D
+2 | [graph: scatter-four] Which scatter plot shows little or no correlation? | C | A; B; D
+3 | [graph: scatter-four] Which scatter plot best matches r = −0.98? | D | A; B; C
+4 | [graph: scatter-four] Which scatter plot best matches r = −0.6? | B | A; C; D
+5 | [graph: scatter-four] For plot A, the correlation coefficient is closest to this | 0.98 | 0.5; 0; −0.98
+
+## THE CORRELATION COEFFICIENT
+1 | The letter used for the correlation coefficient | r / R
+2 | The correlation coefficient always falls between these values | −1 AND 1 | 0 AND 1; 0 AND 100; −100 AND 100
+3 | r = 0.92 describes this kind of correlation | STRONG POSITIVE | WEAK POSITIVE; STRONG NEGATIVE; NO CORRELATION
+4 | Which r shows the strongest linear relationship? | −0.95 | 0.8; 0.5; −0.3
+5 | The correlation coefficient measures the strength of this kind of relationship only | LINEAR | QUADRATIC; EXPONENTIAL; ANY CURVE
+
+## LINES OF BEST FIT
+1 | [graph: best-fit] Using the line, what mark is predicted for 6 hours of study? | = 80 % ~0
+2 | [graph: best-fit] What does the slope, 5, mean? | EACH EXTRA HOUR ADDS ABOUT 5 MARKS | THE MARK WITH NO STUDY; THE NUMBER OF STUDENTS; THE AVERAGE HOURS STUDIED
+3 | [graph: best-fit] What mark does the line predict for 0 hours of study? | = 50 % ~0
+4 | [graph: best-fit] Using the line, how many hours of study would be needed for a mark of 85? | = 7 hours ~0
+5 | [graph: best-fit] The line predicts 110% for 12 hours. Predicting far outside the data like this is called this | EXTRAPOLATION / EXTRAPOLATING
+
+## REGRESSION
+1 | The line of best fit found by minimizing the sum of squared residuals is called the ___ line | LEAST SQUARES / LEAST-SQUARES / REGRESSION / LEAST SQUARES REGRESSION
+2 | The line of best fit always passes through the point (x̄, ȳ), which is this | THE MEANS OF x AND y | THE ORIGIN; THE FIRST DATA POINT; THE MEDIANS OF x AND y
+3 | The line is y = 2x + 3. What y-value does it predict when x = 10? | = 23 ~0
+4 | The points (1, 2), (2, 4), (3, 5), (4, 4) and (5, 5) have a line of best fit y = 0.6x + b. What is b? | = 2.2 ~0.5%
+5 | For the points (1, 2), (2, 4), (3, 5), (4, 4), (5, 5), r is about 0.77. What is r², to 2 decimal places? | = 0.6 ~2%
+
+## RESIDUALS
+1 | A residual is the actual y-value minus this | THE PREDICTED y-VALUE | THE MEAN OF y; THE x-VALUE; THE SLOPE
+2 | [graph: best-fit] A student studied 4 hours and scored 72. What is the residual? | = 2 ~0
+3 | [graph: best-fit] A student studied 2 hours and scored 58. What is the residual? | = -2 ~0
+4 | A residual plot with a clear curved pattern suggests this | A LINEAR MODEL IS NOT A GOOD FIT | A LINEAR MODEL IS PERFECT; THERE ARE NO OUTLIERS; r = 1
+5 | A point with a very large residual is called this | AN OUTLIER / OUTLIER
+
+## COEFFICIENT OF DETERMINATION
+1 | The coefficient of determination is written as this | r² | r; √r; 1 − r
+2 | r = 0.9. What is r²? | = 0.81 ~0.5%
+3 | r² = 0.64 means about this percent of the variation in y is explained by x | = 64 % ~0
+4 | r² = 0.49 and the correlation is negative. What is r? | = -0.7 ~0.5%
+5 | An r² close to 0 means this | THE LINE EXPLAINS LITTLE OF THE VARIATION | THE LINE FITS PERFECTLY; THE SLOPE IS ZERO; THERE ARE NO RESIDUALS
+
+## CORRELATION OR CAUSATION?
+1 | Ice cream sales and drownings both rise on hot days. Does ice cream cause drowning? | NO | YES; ONLY ON WEEKENDS; ONLY AT BEACHES
+2 | In the ice cream and drowning data, temperature is an example of this | A LURKING (HIDDEN) VARIABLE | THE DEPENDENT VARIABLE; A RESIDUAL; AN OUTLIER
+3 | When both variables are caused by a third variable, the relationship is called this | COMMON-CAUSE FACTOR | CAUSE AND EFFECT; REVERSE CAUSE AND EFFECT; ACCIDENTAL
+4 | A strong correlation between two unrelated things, like cheese eaten and lawyers in a town, by pure chance is called this | ACCIDENTAL RELATIONSHIP | CAUSE AND EFFECT; COMMON-CAUSE FACTOR; REVERSE CAUSE AND EFFECT
+5 | People with more fire trucks at a fire have more damage, but big fires bring more trucks. Saying trucks cause damage is this mistake | REVERSE CAUSE AND EFFECT | ACCIDENTAL RELATIONSHIP; PRESUMED RELATIONSHIP; NO MISTAKE
+// The Ontario MDM4U types: cause and effect, common-cause factor, reverse cause and effect, accidental, presumed.
+
+## TYPES OF RELATIONSHIPS
+1 | When a change in x directly produces a change in y, the relationship is this | CAUSE AND EFFECT / CAUSE-AND-EFFECT / CAUSAL
+2 | A relationship that seems logical but has no clear causal link and isn't accidental is called this | PRESUMED RELATIONSHIP | ACCIDENTAL RELATIONSHIP; COMMON-CAUSE FACTOR; REVERSE CAUSE AND EFFECT
+3 | The best way to show that x causes y is this | A CONTROLLED EXPERIMENT | A SCATTER PLOT; A HIGH r VALUE; A LARGE SURVEY
+4 | A variable that is mixed up with the independent variable, so their effects can't be separated, is called this | CONFOUNDING / CONFOUNDING VARIABLE / A CONFOUNDING VARIABLE
+5 | Shoe size and reading ability are correlated in children. The most likely explanation is this | AGE IS A COMMON CAUSE | BIG FEET HELP READING; READING MAKES FEET GROW; IT IS ACCIDENTAL
+
+## INTERPOLATION AND EXTRAPOLATION
+1 | Predicting within the range of the data is called this | INTERPOLATION / INTERPOLATING
+2 | Predicting outside the range of the data is called this | EXTRAPOLATION | INTERPOLATION; REGRESSION; CORRELATION
+3 | Which kind of prediction is usually more reliable? | INTERPOLATION | EXTRAPOLATION; THEY ARE EQUALLY RELIABLE; NEITHER IS EVER RELIABLE
+4 | The line for a child's height is h = 6a + 80 (cm, age in years), based on ages 2 to 10. What height does it predict at age 8, in cm? | = 128 cm ~0
+5 | Using h = 6a + 80, what height does it predict at age 40, and why is that unreliable? | 320 CM, BECAUSE PEOPLE STOP GROWING | 320 CM, BECAUSE THE SLOPE IS TOO SMALL; 240 CM, BECAUSE THE DATA ARE OLD; 320 CM, BECAUSE IT IS INTERPOLATION
+
+## OUTLIERS IN TWO VARIABLES
+1 | A point far from the trend of a scatter plot is called this | OUTLIER / AN OUTLIER
+2 | Removing an outlier that lies far from the line usually does this to the strength of r (its size, ignoring the sign) | INCREASES IT | DECREASES IT; MAKES IT ZERO; MAKES IT NEGATIVE
+3 | An outlier should only be removed if there is a good reason, such as this | A RECORDING OR MEASUREMENT ERROR | IT MAKES r SMALLER; IT DOESN'T FIT THE THEORY; IT IS THE LARGEST VALUE
+4 | A point that greatly changes the slope of the regression line when removed is called this | AN INFLUENTIAL POINT | A RESIDUAL; THE MEAN; A LURKING VARIABLE
+5 | Outliers in two-variable data are easiest to spot on this graph | A SCATTER PLOT | A PIE CHART; A BAR GRAPH; A STEM-AND-LEAF PLOT
+
+## NON-LINEAR MODELS
+1 | Bacteria doubling every hour fit this kind of model best | EXPONENTIAL | LINEAR; QUADRATIC; CONSTANT
+2 | The height of a thrown ball over time fits this kind of model | QUADRATIC | LINEAR; EXPONENTIAL; CONSTANT
+3 | For a curved pattern, which statistic shows how well a model fits? | THE COEFFICIENT OF DETERMINATION (r²) | THE SLOPE ONLY; THE MEDIAN; THE RANGE
+4 | A graphing calculator command that fits a curve to data is called this | REGRESSION / A REGRESSION
+5 | A model fits data with r² = 0.98. About what percent of the variation does it explain? | = 98 % ~0
+
+## READING THE RELATIONSHIP
+1 | Plotting paired x and y values as points gives this graph | A SCATTER PLOT | A HISTOGRAM; A BOX PLOT; A PIE CHART
+2 | When y tends to decrease as x increases, the correlation is this | NEGATIVE | POSITIVE; ZERO; UNDEFINED
+3 | Outdoor temperature and hot chocolate sales most likely have this kind of correlation | NEGATIVE | POSITIVE; NONE; PERFECT POSITIVE
+4 | r = 1 means this | EVERY POINT LIES EXACTLY ON A RISING LINE | THERE IS NO RELATIONSHIP; EVERY POINT LIES ON A FALLING LINE; x CAUSES y
+5 | A least-squares line of best fit has a slope of 0. What is r? | = 0 ~0
+
+FINAL | CORRELATION OR CAUSATION? | Towns with more churches have more crime. The most likely explanation is this | POPULATION SIZE IS A COMMON CAUSE | CHURCHES CAUSE CRIME; CRIME CAUSES CHURCHES; IT IS ACCIDENTAL
+FINAL | LINES OF BEST FIT | [graph: best-fit] The line predicts a mark for 9 hours of study. What is it? | = 95 % ~0
+FINAL | COEFFICIENT OF DETERMINATION | A regression has r = −0.8. What percent of the variation in y is explained by x? | = 64 % ~0
+FINAL | REGRESSION | The regression line is y = 3x − 4, and the mean of x is 10. What is the mean of y? | = 26 ~0

@@ -1,0 +1,91 @@
+# Course: MDM4U | Grade 12 Data Management
+# Unit: comb | Unit 3: Combinations and Pascal's Triangle
+
+## ORDER DOESN'T MATTER
+1 | A selection of objects where order does not matter is called this | COMBINATION / A COMBINATION
+2 | Which situation is a combination? | CHOOSING 3 TOPPINGS FOR A PIZZA | AWARDING GOLD, SILVER AND BRONZE; MAKING A 4-DIGIT PIN; ARRANGING BOOKS ON A SHELF
+3 | nCr equals this | n! ÷ (r!(n − r)!) | n! ÷ (n − r)!; n! ÷ r!; r! ÷ n!
+4 | What is C(10, 3)? | = 120 ~0
+5 | C(n, r) always equals this | C(n, n − r) | C(r, n); P(n, r); C(n − r, r)
+
+## COMMITTEES
+1 | How many ways can 2 students be chosen from 8 for a project? | = 28 ~0
+2 | How many ways can a 4-person committee be chosen from 12 people? | = 495 ~0
+3 | A committee of 5 is chosen from 6 boys and 4 girls. How many committees have exactly 2 girls? | = 120 ~0
+4 | A committee of 5 is chosen from 6 boys and 4 girls. How many have at least 1 girl? | = 246 ~0
+5 | A committee of 4 is chosen from 7 people, and Ana and Ben refuse to serve together. How many committees are possible? | = 25 ~0
+
+## CARD HANDS
+1 | How many different 5-card hands can be dealt from a standard deck? | = 2598960 ~0
+2 | How many 5-card hands contain only hearts? | = 1287 ~0
+3 | How many 5-card hands contain exactly 2 aces? | = 103776 ~0
+4 | What is the probability a 5-card hand is all one suit (a flush, including straight flushes), to 4 decimal places? | = 0.0020 ~3%
+5 | What is the probability a 5-card hand has exactly one ace, to 3 decimal places? | = 0.299 ~0.5%
+
+## AT LEAST ONE
+1 | "At least one" counts are often found as the total minus this | THE CASES WITH NONE | THE CASES WITH ALL; THE CASES WITH EXACTLY ONE; ZERO
+2 | A pizza place has 8 toppings. How many pizzas with at least one topping are possible? | = 255 ~0
+3 | How many subsets does a set of 6 elements have (including the empty set)? | = 64 ~0
+4 | From a choice of 3 roses, 6 tulips and 5 daffodils (all of each kind identical), how many different bouquets of at least one flower can be made? | = 167 ~0
+5 | From 4 different shirts and 3 different hats, how many selections include at least one shirt and at least one hat? | = 105 ~0
+
+## PASCAL'S TRIANGLE
+1 | [graph: pascal] Each number in Pascal's triangle is found by doing this | ADDING THE TWO NUMBERS ABOVE IT | MULTIPLYING THE TWO NUMBERS ABOVE IT; DOUBLING THE NUMBER ABOVE IT; COUNTING ITS ROW
+2 | [graph: pascal] What number is hidden at the "?" | = 15 ~0
+3 | [graph: pascal] What is the sum of the numbers in row 7? | = 128 ~0
+4 | [graph: pascal] The entries of row n are these numbers | C(n, 0) TO C(n, n) | P(n, 0) TO P(n, n); n! TO 0!; THE POWERS OF 2
+5 | [graph: pascal] The third number in row 7 is C(7, 2). What is its value? | = 21 ~0
+
+## PATHWAYS
+1 | On a grid, you can only move right or down. How many routes go from one corner of a 2 by 2 block grid to the opposite corner? | = 6 ~0
+2 | Routes moving only right or down through a 4 by 3 block grid. How many are there? | = 35 ~0
+3 | How many right-or-down routes cross a 5 by 5 block grid? | = 252 ~0
+4 | Pathway counts can be found by building this on the grid | PASCAL'S TRIANGLE | A TREE DIAGRAM; A VENN DIAGRAM; A BOX PLOT
+5 | On a 4 by 4 block grid, how many right-or-down routes pass through the centre point? | = 36 ~0
+
+## THE BINOMIAL THEOREM
+1 | The coefficients in the expansion of (a + b)ⁿ come from this | PASCAL'S TRIANGLE | THE NORMAL TABLE; THE FACTORIAL TABLE; THE COUNTING PRINCIPLE
+2 | How many terms are in the expansion of (a + b)¹⁰? | = 11 terms ~0
+3 | What is the coefficient of x² in (x + 1)⁵? | = 10 ~0
+4 | The general term of (a + b)ⁿ is tₖ₊₁ = C(n, k) aⁿ⁻ᵏ bᵏ. What is the coefficient of x³ in (2x + 3)⁴? | = 96 ~0
+5 | What is the constant term in the expansion of (x − 2)⁶? | = 64 ~0
+
+## EXPANSIONS
+1 | What is the sum of the coefficients of (a + b)⁵? | = 32 ~0
+2 | (x + y)² expands to this | x² + 2xy + y² | x² + y²; x² + xy + y²; 2x + 2y
+3 | What is the coefficient of the middle term of (a + b)⁴? | = 6 ~0
+4 | (x + 2y)¹¹ has two middle terms. What is the coefficient of the 6th term, C(11, 5) x⁶ (2y)⁵? | = 14784 ~0
+5 | What is the coefficient of x³ in (1 − x)⁷? | = -35 ~0
+
+## CHOOSING FROM GROUPS
+1 | A team of 3 is chosen from 5 seniors and the coach must also pick 2 of 4 juniors. How many teams are possible? | = 60 ~0
+2 | A quiz has 10 questions and you must answer any 7. How many choices do you have? | = 120 ~0
+3 | You must answer 7 of 10 questions, including at least 3 of the first 5. How many choices do you have? | = 110 ~0
+4 | How many ways can 6 people be split into two teams of 3 (the teams are not named)? | = 10 ~0
+5 | How many ways can 9 people be split into three named groups of 3? | = 1680 ~0
+
+## COMBINATION PROBABILITY
+1 | 2 students are chosen at random from 5 boys and 5 girls. What is the probability both are girls? | = 10/45 ~1%
+2 | 4 cards are drawn from a deck. What is the probability all are hearts, to 4 decimal places? | = 0.0026 ~3%
+3 | A committee of 3 is chosen from 6 people including Ana. What is the probability Ana is on it? | = 1/2 ~1%
+4 | 3 bulbs are chosen from a box of 10, 2 of which are broken. What is the probability none are broken? | = 56/120 ~1%
+5 | 5 cards are dealt. What is the probability of a full house (three of a kind plus a pair), to 4 decimal places? | = 0.00144 ~3%
+
+## PERMUTATION OR COMBINATION?
+1 | Choosing 5 lottery numbers from 49 is a ___ | COMBINATION | PERMUTATION; NEITHER; BOTH
+2 | Electing a president and treasurer from a club is a ___ | PERMUTATION | COMBINATION; NEITHER; BOTH
+3 | How many handshakes happen when 20 people each shake hands once with everyone else? | = 190 ~0
+4 | How many triangles can be formed by joining 3 of 8 points on a circle? | = 56 ~0
+5 | How many 4-digit codes have digits in strictly increasing order? | = 210 ~0
+
+## COUNTING SUBSETS
+1 | The number of subsets of a set with n elements is this | 2ⁿ | n²; n!; 2n
+2 | How many ways can you choose any number of 5 different books, including choosing none? | = 32 ~0
+3 | A coffee shop offers 6 add-ins. How many coffees with at least one add-in are possible? | = 63 ~0
+4 | The sum of C(n, 0) + C(n, 1) + ... + C(n, n) equals this | 2ⁿ | n!; nⁿ; n²
+5 | You have 5 identical red marbles and 3 identical blue ones. How many non-empty selections can you make? | = 23 ~0
+
+FINAL | COMMITTEES | A committee of 4 is chosen from 5 teachers and 6 students and must have at least 2 teachers. How many committees are possible? | = 215 ~0
+FINAL | THE BINOMIAL THEOREM | What is the coefficient of x⁴ in the expansion of (x + 3)⁶? | = 135 ~0
+FINAL | CARD HANDS | What is the probability that a 13-card bridge hand has at least 6 hearts, to 3 decimal places? | = 0.052 ~2%
+FINAL | PATHWAYS | How many right-or-down routes cross a 6 by 4 block grid? | = 210 ~0

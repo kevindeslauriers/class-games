@@ -4,10 +4,11 @@ A quiz board for a whole class. The teacher's computer drives the projector; eve
 
 Courses so far:
 
-- **SNC1W**, Grade 9 Science (de-streamed): four units (ecosystems, space, chemistry, electricity).
+- **SNC1W**, Grade 9 Science (de-streamed): four units (ecosystems, space, chemistry, electricity). This is the default course.
+- **MDM4U**, Grade 12 Data Management: the eight units of the course outline (probability, permutations, combinations and Pascal's triangle, discrete distributions, organizing data, one-variable statistics, normal distributions, two-variable statistics). Most clues are calculations; graph clues use a Venn diagram, a tree diagram, Pascal's triangle, a box plot, histograms, normal curves and scatter plots.
 - **AP Microeconomics**: the six College Board units, with about a quarter of clues needing a calculation (as on the exam) and over 80 clues built around graphs: supply and demand, surplus, price controls, taxes, cost curves, the competitive firm, monopoly, monopolistic competition, monopsony, externalities, the Lorenz curve and a payoff matrix.
 
-The teacher picks the course and which units the board draws from in the lobby; the screen remembers the last choice.
+The teacher picks the course and which units the board draws from in the lobby; the screen remembers the last choice. A `# Default course` line in any of a course's files makes it the one a new teacher screen starts on.
 
 - **Teacher:** open `/class`. Each teacher gets their own room and code, so classes never meet. Choose the units, the number of teams, one or two boards, the time per clue, Daily Doubles and the final clue. Click a student's name to move, rename or remove them. Use **New class (new code)** when the next class arrives.
 - **Students:** go to the site's home page or scan the QR code, and type the code and their first name, then pick their team (table group). A simple name filter blocks rude names.
@@ -34,7 +35,7 @@ Each file in `class-clues/` is one unit of a course:
 FINAL | ENERGY FLOW | clue | answer
 ```
 
-Each category has one clue at each level 1 to 5 (worth 100 to 500, doubled on the second board). An answer with `| WRONG; WRONG; WRONG` after it is multiple choice; `= number unit ~tolerance` is a number (tolerance `~2%` by default, `~0` for exact); anything else is typed, with other accepted answers after slashes. `^` in a clue shows as a superscript (`10^8`). Every unit has 12 categories and 4 final clues, so one unit can fill two boards. Another course is just more files with a different `# Course:` line; the course menu appears once there are two.
+Each category has one clue at each level 1 to 5 (worth 100 to 500, doubled on the second board). An answer with `| WRONG; WRONG; WRONG` after it is multiple choice; `= number unit ~tolerance` is a number (tolerance `~2%` by default, `~0` for exact; students can type fractions like `3/8`, decimals or scientific notation); anything else is typed, with other accepted answers after slashes. `^` in a clue shows as a superscript (`10^8`). Every unit has 12 categories and 4 final clues, so one unit can fill two boards. Another course is just more files with a different `# Course:` line; the course menu appears once there are two.
 
 ### Graphs
 
@@ -44,7 +45,7 @@ Put `[graph: name]` anywhere in a clue to show `class-clues/images/name.svg` bes
 1 | [graph: monopoly] How many units does this profit-maximizing monopoly produce? | = 30 units ~0
 ```
 
-The AP Micro graphs are drawn by `tools/graphs.js` from real equations, so every labelled number matches the curves (for example, the monopoly's MR = MC at 30 units, P = $70, ATC = $52). Run `npm run graphs` after changing it. Any other SVG dropped into `class-clues/images/` works too, and `npm test` fails if a clue names a graph that isn't there.
+The AP Micro and MDM4U graphs are drawn by `tools/graphs.js` from real equations, so every labelled number matches the curves (for example, the monopoly's MR = MC at 30 units, P = $70, ATC = $52). Run `npm run graphs` after changing it. Any other SVG dropped into `class-clues/images/` works too, and `npm test` fails if a clue names a graph that isn't there.
 
 ## Sounds
 

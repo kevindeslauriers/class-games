@@ -259,6 +259,138 @@ function matrix({ rowName, colName, rows, cols, cells }) {
 G['payoff-matrix'] = matrix({ rowName: 'Firm A', colName: 'Firm B', rows: ['Advertise', 'Don’t'], cols: ['Advertise', 'Don’t'],
   cells: [[[40, 30], [70, 20]], [[30, 60], [50, 50]]] });
 
+
+/* ---------- MDM4U: Data Management ---------- */
+const svgOpen = () => [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" font-family="Arial, Helvetica, sans-serif">`,
+  `<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="14" fill="#ffffff" stroke="#c9d3ff" stroke-width="2"/>`];
+const txt = (x, y, t, o = {}) => `<text x="${x}" y="${y}" font-size="${o.size || 18}" font-weight="${o.bold === false ? 'normal' : 'bold'}" text-anchor="${o.anchor || 'middle'}" fill="${o.color || '#111'}"${o.halo ? ' stroke="#fff" stroke-width="5" paint-order="stroke"' : ''}>${esc(t)}</text>`;
+
+// A normal curve with mean 70 and standard deviation 5, plotted as x - 50.
+{
+  const bell = x => 100 * Math.exp(-((((x + 50) - 70) / 5) ** 2) / 2);
+  const ticks = [55, 60, 65, 70, 75, 80, 85].map(v => [v - 50, String(v)]);
+  const under = (a, b) => { const pts = [[a - 50, 0]]; for (let i = 0; i <= 60; i++) { const x = a - 50 + (b - a) * i / 60; pts.push([x, bell(x)]); } pts.push([b - 50, 0]); return pts; };
+  G['normal-rule'] = graph({ xmax: 40, ymax: 118, xlabel: 'Test score (mean 70, standard deviation 5)', ylabel: '',
+    regions: [{ pts: under(55, 85), fill: '#dbeafe', opacity: 1 }, { pts: under(60, 80), fill: '#93c5fd', opacity: 1 }, { pts: under(65, 75), fill: '#3b82f6', opacity: 0.85, label: 'A', at: [20, 40] },
+      { pts: under(75, 80), fill: '#93c5fd', opacity: 0, label: 'B', at: [27.5, 18], size: 20 }, { pts: under(80, 85), fill: '#dbeafe', opacity: 0, label: 'C', at: [32.4, 9], size: 18 }],
+    curves: [{ f: bell, range: [3, 37], color: '#111', width: 3 }],
+    xticks: ticks });
+  G['normal-shade'] = graph({ xmax: 40, ymax: 118, xlabel: 'Test score (mean 70, standard deviation 5)', ylabel: '',
+    regions: [{ pts: under(65, 80), fill: '#fbbf24', opacity: 0.85 }],
+    curves: [{ f: bell, range: [3, 37], color: '#111', width: 3 }],
+    xticks: ticks });
+}
+
+// Four scatter plots, A to D, for matching correlation coefficients.
+{
+  const out = svgOpen();
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const panels = [
+    { label: 'A', f: x => x, noise: 0.06 },
+    { label: 'B', f: x => 0.85 - 0.5 * x, noise: 0.22 },
+    { label: 'C', f: () => 0.5, noise: 0.45 },
+    { label: 'D', f: x => 1 - x, noise: 0.05 }];
+  panels.forEach((pn, i) => {
+    const x0 = 30 + (i % 2) * 300, y0 = 22 + Math.floor(i / 2) * 212, w = 280, h = 190;
+    out.push(`<rect x="${x0}" y="${y0}" width="${w}" height="${h}" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" rx="8"/>`);
+    out.push(txt(x0 + w - 22, y0 + 32, pn.label, { size: 26 }));
+    out.push(`<path d="M${x0 + 30},${y0 + 15} V${y0 + h - 20} H${x0 + w - 12}" fill="none" stroke="#111" stroke-width="2"/>`);
+    for (let k = 0; k < 22; k++) {
+      const x = 0.05 + 0.9 * rnd(); let y = pn.f(x) + (rnd() - 0.5) * 2 * pn.noise; y = Math.max(0.03, Math.min(0.97, y));
+      out.push(`<circle cx="${(x0 + 38 + x * (w - 56)).toFixed(1)}" cy="${(y0 + h - 26 - y * (h - 50)).toFixed(1)}" r="5" fill="#1f4fd1"/>`);
+    }
+  });
+  out.push('</svg>');
+  G['scatter-four'] = out.join('\n');
+}
+
+// Hours studied and test marks, with a line of best fit: mark = 5(hours) + 50.
+{
+  const pts = [[1, 57], [2, 58], [2, 62], [3, 63], [4, 72], [4, 68], [5, 73], [6, 82], [7, 83], [8, 88]];
+  G['best-fit'] = graph({ xmax: 10.5, ymax: 105, xlabel: 'Hours studied', ylabel: 'Test mark (%)',
+    curves: [{ f: x => 5 * x + 50, range: [0, 10], color: COL.S, width: 3, label: 'mark = 5h + 50', labelAt: [6.2, 81], dx: -165, dy: -14 }],
+    points: pts.map(([x, y]) => ({ x, y })),
+    xticks: [0, 2, 4, 6, 8, 10].map(v => [v, String(v)]), yticks: [50, 60, 70, 80, 90, 100].map(v => [v, String(v)]) });
+}
+
+// A box plot: min 12, Q1 20, median 26, Q3 34, max 45.
+{
+  const out = svgOpen();
+  const X = v => 70 + (v - 10) * (500 / 40), y = 190;
+  out.push(`<line x1="${X(12)}" y1="${y}" x2="${X(20)}" y2="${y}" stroke="#111" stroke-width="3"/><line x1="${X(34)}" y1="${y}" x2="${X(45)}" y2="${y}" stroke="#111" stroke-width="3"/>`);
+  out.push(`<rect x="${X(20)}" y="${y - 55}" width="${X(34) - X(20)}" height="110" fill="#bfdbfe" stroke="#111" stroke-width="3"/>`);
+  out.push(`<line x1="${X(26)}" y1="${y - 55}" x2="${X(26)}" y2="${y + 55}" stroke="#d1342f" stroke-width="4"/>`);
+  [12, 45].forEach(v => out.push(`<line x1="${X(v)}" y1="${y - 25}" x2="${X(v)}" y2="${y + 25}" stroke="#111" stroke-width="3"/>`));
+  out.push(`<line x1="${X(10)}" y1="330" x2="${X(50)}" y2="330" stroke="#111" stroke-width="2.5"/>`);
+  for (let v = 10; v <= 50; v += 5) out.push(`<line x1="${X(v)}" y1="330" x2="${X(v)}" y2="338" stroke="#111" stroke-width="2"/>` + txt(X(v), 358, String(v), { size: 16, bold: false }));
+  out.push(txt(W / 2, 400, 'Minutes spent on homework', { size: 17 }));
+  out.push('</svg>');
+  G['box-plot'] = out.join('\n');
+}
+
+// Three histograms: skewed left, symmetric, skewed right.
+{
+  const out = svgOpen();
+  const shapes = { A: [1, 1, 2, 3, 5, 8, 9], B: [1, 3, 6, 8, 6, 3, 1], C: [9, 8, 5, 3, 2, 1, 1] };
+  Object.entries(shapes).forEach(([lab, bars], i) => {
+    const x0 = 30 + i * 200, base = 360, bw = 24;
+    out.push(txt(x0 + 90, 70, lab, { size: 26 }));
+    bars.forEach((b, k) => out.push(`<rect x="${x0 + 6 + k * bw}" y="${base - b * 28}" width="${bw - 2}" height="${b * 28}" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1.5"/>`));
+    out.push(`<line x1="${x0}" y1="${base}" x2="${x0 + 180}" y2="${base}" stroke="#111" stroke-width="2.5"/>`);
+  });
+  out.push('</svg>');
+  G['histograms'] = out.join('\n');
+}
+
+// A Venn diagram for a class of 30: hockey and soccer.
+{
+  const out = svgOpen();
+  out.push(`<rect x="40" y="40" width="560" height="360" rx="10" fill="#f8fafc" stroke="#111" stroke-width="2.5"/>`);
+  out.push(txt(64, 384, 'Class of 30 students', { size: 17, anchor: 'start', bold: false }));
+  out.push(`<circle cx="250" cy="225" r="130" fill="#1f4fd1" fill-opacity="0.22" stroke="#1f4fd1" stroke-width="3"/>`);
+  out.push(`<circle cx="390" cy="225" r="130" fill="#d1342f" fill-opacity="0.22" stroke="#d1342f" stroke-width="3"/>`);
+  out.push(txt(180, 84, 'Hockey', { color: '#1f4fd1', size: 20, halo: true }), txt(460, 84, 'Soccer', { color: '#d1342f', size: 20, halo: true }));
+  out.push(txt(190, 235, '12', { size: 34 }), txt(320, 235, '8', { size: 34 }), txt(450, 235, '6', { size: 34 }), txt(560, 380, '4', { size: 30 }));
+  out.push('</svg>');
+  G['venn'] = out.join('\n');
+}
+
+// A tree diagram: two marbles drawn without replacement from 3 red and 2 blue.
+{
+  const out = svgOpen();
+  const line = (x1, y1, x2, y2) => out.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#111" stroke-width="2.5"/>`);
+  const node = (x, y, t, c) => out.push(`<circle cx="${x}" cy="${y}" r="22" fill="${c}"/>` + txt(x, y + 7, t, { color: '#fff', size: 20 }));
+  const lab = (x, y, t) => out.push(txt(x, y, t, { size: 19, halo: true }));
+  const R = '#d1342f', B = '#1f4fd1';
+  line(60, 225, 250, 125); line(60, 225, 250, 325);
+  line(272, 125, 470, 70); line(272, 125, 470, 180); line(272, 325, 470, 270); line(272, 325, 470, 380);
+  out.push(`<circle cx="60" cy="225" r="8" fill="#111"/>`);
+  node(272, 125, 'R', R); node(272, 325, 'B', B);
+  node(492, 70, 'R', R); node(492, 180, 'B', B); node(492, 270, 'R', R); node(492, 380, 'B', B);
+  lab(150, 155, '3/5'); lab(150, 305, '2/5'); lab(370, 82, '2/4'); lab(370, 170, '2/4'); lab(370, 282, '3/4'); lab(370, 370, '1/4');
+  out.push(txt(272, 40, '1st draw', { size: 17, bold: false }), txt(492, 30, '2nd draw', { size: 17, bold: false }));
+  out.push(txt(320, 432, '3 red and 2 blue marbles; draw two without replacement', { size: 15, bold: false }));
+  out.push('</svg>');
+  G['tree'] = out.join('\n');
+}
+
+// Pascal's triangle, rows 0 to 7, with one entry hidden.
+{
+  const out = svgOpen();
+  const C = (n, k) => { let r = 1; for (let i = 1; i <= k; i++) r = r * (n - i + 1) / i; return r; };
+  for (let n = 0; n <= 7; n++) {
+    out.push(txt(40, 52 + n * 50, `row ${n}`, { size: 14, bold: false, anchor: 'start', color: '#555' }));
+    for (let k = 0; k <= n; k++) {
+      const x = 340 + (k - n / 2) * 66, y = 50 + n * 50;
+      const hide = n === 6 && k === 2;
+      out.push(`<circle cx="${x}" cy="${y - 7}" r="21" fill="${hide ? '#fde68a' : '#eef2ff'}" stroke="${hide ? '#b45309' : '#94a3b8'}" stroke-width="2"/>`);
+      out.push(txt(x, y, hide ? '?' : String(C(n, k)), { size: 18 }));
+    }
+  }
+  out.push('</svg>');
+  G['pascal'] = out.join('\n');
+}
+
 fs.mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(G)) fs.writeFileSync(path.join(OUT, name + '.svg'), svg + '\n');
 console.log(`Wrote ${Object.keys(G).length} graphs to ${path.relative(process.cwd(), OUT)}`);

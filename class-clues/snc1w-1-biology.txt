@@ -1,5 +1,6 @@
 # Course: SNC1W | Grade 9 Science (De-streamed)
 # Unit: bio | Biology: Sustainable Ecosystems
+# Default course
 // Strand B. "## CATEGORY" then five clues, level 1 (easiest) to 5:
 //   level | clue | ANSWER | WRONG; WRONG; WRONG      four choices
 //   level | clue | ANSWER / other ways to say it      typed answer
