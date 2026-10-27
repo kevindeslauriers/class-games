@@ -1,0 +1,92 @@
+# Course: SCH4U | Grade 12 Chemistry
+# Unit: equilibrium | Unit 5: Chemical Equilibrium
+// Small numbers can be typed like 1.3e-5 or 1.3 x 10^-5.
+
+## WHAT IS EQUILIBRIUM?
+1 | At equilibrium, the forward and reverse rates are this | EQUAL | ZERO; AS FAST AS POSSIBLE; DIFFERENT
+2 | Equilibrium is called ___ because reactions keep happening in both directions | DYNAMIC
+3 | At equilibrium, the concentrations of reactants and products are this | CONSTANT | EQUAL; ZERO; ALWAYS CHANGING
+4 | Equilibrium can only be reached in this kind of system | CLOSED | OPEN; ISOLATED FROM LIGHT; COLD
+5 | Which reaction goes to completion rather than reaching equilibrium? | BURNING METHANE IN AIR | N2O4 ⇌ 2NO2 IN A SEALED FLASK; H2 + I2 ⇌ 2HI; DISSOLVING SALT IN A SATURATED SOLUTION
+
+## THE GRAPH
+1 | [graph: equilibrium-graph] At about what time is equilibrium reached, in seconds? | = 10 s ~0
+2 | [graph: equilibrium-graph] What is the equilibrium concentration of NO2, in mol/L? | = 0.8 ~0
+3 | [graph: equilibrium-graph] What is the equilibrium concentration of N2O4, in mol/L? | = 0.6 ~0
+4 | [graph: equilibrium-graph] Why did NO2 rise twice as much as N2O4 fell? | THE EQUATION MAKES 2 NO2 FOR EACH N2O4 | NO2 IS LIGHTER; THE GRAPH IS WRONG; NO2 IS A CATALYST
+5 | [graph: equilibrium-graph] For N2O4 ⇌ 2NO2, K = [NO2]² ÷ [N2O4]. To 2 decimal places, what is K? | = 1.07 ~1%
+
+## EQUILIBRIUM EXPRESSIONS
+1 | For aA + bB ⇌ cC + dD, K = [C]ᶜ[D]ᵈ ÷ this | [A]ᵃ[B]ᵇ | [A][B]; [C][D]; [A]ᵇ[B]ᵃ
+2 | Which substances are left out of an equilibrium expression? | PURE SOLIDS AND LIQUIDS | GASES; IONS IN SOLUTION; PRODUCTS
+3 | For N2 + 3H2 ⇌ 2NH3, what is the exponent on [H2] in K? | = 3 ~0
+4 | [N2] = 0.50, [H2] = 0.30 and [NH3] = 0.20 mol/L at equilibrium. To 2 decimal places, what is K? | = 2.96 ~1%
+5 | K = 4 for A ⇌ B. What is K for B ⇌ A? | = 0.25 ~0
+
+## SIZE OF K
+1 | A very large K (like 10¹⁰) means the equilibrium lies this way | TOWARD PRODUCTS | TOWARD REACTANTS; IN THE MIDDLE; IT DOESN'T MEAN ANYTHING
+2 | A very small K means mostly these are present at equilibrium | REACTANTS | PRODUCTS; CATALYSTS; IONS
+3 | K = 3 for A ⇌ 2B. What is K for 2A ⇌ 4B? | = 9 ~0
+4 | Does adding a catalyst change K? | NO | YES, IT INCREASES K; YES, IT DECREASES K; ONLY FOR GASES
+5 | The only thing that changes the value of K for a reaction is this | TEMPERATURE | CONCENTRATION; PRESSURE; A CATALYST
+
+## THE REACTION QUOTIENT
+1 | Q has the same form as K but uses concentrations at this moment | ANY MOMENT (NOT NECESSARILY EQUILIBRIUM) | EQUILIBRIUM ONLY; THE START ONLY; ZERO
+2 | If Q < K, the reaction shifts this way | TOWARD PRODUCTS (FORWARD) | TOWARD REACTANTS; IT DOESN'T SHIFT; IT STOPS
+3 | If Q > K, the reaction shifts this way | TOWARD REACTANTS (REVERSE) | TOWARD PRODUCTS; IT DOESN'T SHIFT; IT SPEEDS UP
+4 | For A ⇌ 2B with K = 1, [A] = 0.20 and [B] = 0.40 mol/L. What is Q? | = 0.8 ~0.5%
+5 | For A ⇌ 2B with K = 1 and Q = 0.8, which way does the reaction shift? | TOWARD B | TOWARD A; NO SHIFT; IT CAN'T BE TOLD
+
+## LE CHÂTELIER'S PRINCIPLE
+1 | When a system at equilibrium is disturbed, it shifts to do this | REDUCE THE DISTURBANCE | MAKE IT WORSE; STOP REACTING; DOUBLE THE PRODUCTS
+2 | Adding more reactant shifts the equilibrium this way | TOWARD PRODUCTS | TOWARD REACTANTS; NO SHIFT; IT STOPS
+3 | For N2 + 3H2 ⇌ 2NH3, increasing the pressure shifts it this way | TOWARD NH3 | TOWARD N2 AND H2; NO SHIFT; IT DEPENDS ON THE CATALYST
+4 | For an exothermic reaction, raising the temperature shifts it this way | TOWARD REACTANTS | TOWARD PRODUCTS; NO SHIFT; IT STOPS
+5 | For H2 + I2 ⇌ 2HI (all gases), increasing the pressure does this | NOTHING (EQUAL MOLES OF GAS ON EACH SIDE) | SHIFTS TOWARD HI; SHIFTS TOWARD H2 AND I2; DOUBLES K
+
+## ICE TABLES
+1 | ICE stands for Initial, Change and this | EQUILIBRIUM
+2 | For H2 + I2 ⇌ 2HI, if H2 changes by −x, how does HI change? | +2x | +x; −2x; −x
+3 | H2 + I2 ⇌ 2HI, K = 64. Starting with 0.50 mol/L each of H2 and I2, what is [HI] at equilibrium, in mol/L? | = 0.8 ~0.5%
+4 | For that same reaction, what is [H2] at equilibrium, in mol/L? | = 0.1 ~1%
+5 | PCl5 ⇌ PCl3 + Cl2, K = 0.040. Starting with 1.0 mol/L PCl5, to 2 decimal places what is [Cl2] at equilibrium? | = 0.18 ~2%
+
+## SOLUBILITY EQUILIBRIUM
+1 | The equilibrium constant for a slightly soluble salt dissolving | Ksp / SOLUBILITY PRODUCT / SOLUBILITY PRODUCT CONSTANT
+2 | For AgCl(s) ⇌ Ag⁺ + Cl⁻, Ksp equals this | [Ag⁺][Cl⁻] | [Ag⁺][Cl⁻] ÷ [AgCl]; [Ag⁺] + [Cl⁻]; [AgCl]
+3 | Ksp for AgCl is 1.8 × 10⁻¹⁰. What is its molar solubility, in mol/L? | = 1.3e-5 ~3%
+4 | PbI2 has a solubility of 1.5 × 10⁻³ mol/L. What is its Ksp? (Ksp = 4s³) | = 1.35e-8 ~1%
+5 | Ksp for BaSO4 is 1.1 × 10⁻¹⁰. What is its molar solubility, in mol/L? | = 1.05e-5 ~2%
+
+## PRECIPITATES
+1 | A precipitate forms when the ion product Q is this compared with Ksp | GREATER | LESS; EQUAL ONLY; ZERO
+2 | [Ag⁺] = 1.0 × 10⁻⁴ and [Cl⁻] = 1.0 × 10⁻⁴ mol/L (Ksp of AgCl = 1.8 × 10⁻¹⁰). Will a precipitate form? | YES | NO; ONLY IF HEATED; IT CAN'T BE TOLD
+3 | Adding NaCl to a saturated AgCl solution makes less AgCl dissolve. This is the ___ ion effect | COMMON
+4 | What is the solubility of AgCl in 0.10 mol/L NaCl, in mol/L? (Ksp = 1.8 × 10⁻¹⁰) | = 1.8e-9 ~1%
+5 | A solution that holds exactly as much solute as it can at that temperature | SATURATED
+
+## INDUSTRY AND LIFE
+1 | The Haber process makes this compound | AMMONIA / NH3
+2 | The Haber process uses high pressure because it shifts the equilibrium toward this | AMMONIA (FEWER GAS MOLES) | NITROGEN; HYDROGEN; HEAT
+3 | Haber plants run at about 450°C even though lower temperatures give more NH3. Why? | THE REACTION IS FASTER | K IS LARGER; IT IS SAFER; NH3 IS A LIQUID THERE
+4 | CO binds to hemoglobin so strongly that it shifts this equilibrium | OXYGEN TRANSPORT IN BLOOD | DIGESTION; PHOTOSYNTHESIS; THE WATER CYCLE
+5 | Stalactites form as dissolved calcium carbonate does this when CO2 escapes | PRECIPITATES OUT | DISSOLVES MORE; EVAPORATES; BURNS
+
+## K WITH GASES
+1 | Kp uses these instead of concentrations | PARTIAL PRESSURES | MASSES; VOLUMES; TEMPERATURES
+2 | Adding an inert gas like argon at constant volume does this to the equilibrium | NOTHING | SHIFTS IT TO PRODUCTS; SHIFTS IT TO REACTANTS; DOUBLES K
+3 | Decreasing the volume of a gas mixture shifts it toward the side with this | FEWER MOLES OF GAS | MORE MOLES OF GAS; MORE PRODUCTS; HIGHER ENERGY
+4 | For CaCO3(s) ⇌ CaO(s) + CO2(g), K equals this | [CO2] | [CaO][CO2] ÷ [CaCO3]; [CaCO3]; 1
+5 | For 2SO2 + O2 ⇌ 2SO3, how many moles of gas are on the reactant side? | = 3 ~0
+
+## TEMPERATURE AND K
+1 | For an endothermic reaction, raising the temperature does this to K | INCREASES IT | DECREASES IT; NOTHING; MAKES IT NEGATIVE
+2 | For an exothermic reaction, lowering the temperature does this to K | INCREASES IT | DECREASES IT; NOTHING; MAKES IT ZERO
+3 | N2O4 (colourless) ⇌ 2NO2 (brown) is endothermic. Heating the flask makes it look this | DARKER BROWN | LIGHTER; COLOURLESS; BLUE
+4 | Cooling that flask shifts the equilibrium toward this | N2O4 | NO2; NEITHER; BOTH EQUALLY
+5 | In Le Châtelier problems, you can treat heat as a reactant or product. In an exothermic reaction it is a ___ | PRODUCT
+
+FINAL | ICE TABLES | CO + H2O ⇌ CO2 + H2, K = 4.0. Starting with 1.0 mol/L each of CO and H2O, to 2 decimal places what is [CO2] at equilibrium? | = 0.67 ~1%
+FINAL | SOLUBILITY EQUILIBRIUM | CaF2 has Ksp = 3.9 × 10⁻¹¹. What is its molar solubility, in mol/L? (Ksp = 4s³) | = 2.1e-4 ~2%
+FINAL | LE CHÂTELIER'S PRINCIPLE | For 2SO2 + O2 ⇌ 2SO3 (ΔH < 0), which change increases the amount of SO3? | INCREASING THE PRESSURE | RAISING THE TEMPERATURE; REMOVING O2; ADDING A CATALYST
+FINAL | THE GRAPH | [graph: equilibrium-graph] At t = 15 s, NO2 is suddenly removed. Which way does the equilibrium shift? | TOWARD NO2 (FORWARD) | TOWARD N2O4; NO SHIFT; IT STOPS

@@ -1,0 +1,91 @@
+# Course: SCH4U | Grade 12 Chemistry
+# Unit: rates | Unit 4: Rates of Reactions
+
+## MEASURING RATE
+1 | A reaction rate is the change in concentration divided by this | TIME / THE CHANGE IN TIME
+2 | [A] drops from 0.50 to 0.30 mol/L in 40 s. What is the average rate, in mol/(L·s)? | = 0.005 ~0.5%
+3 | A rate found from the slope of a tangent line at one moment is the ___ rate | INSTANTANEOUS
+4 | For 2A → B, if A is used up at 0.10 mol/(L·s), how fast is B made? | = 0.05 ~0.5%
+5 | Which is a way to measure the rate of a reaction that makes a gas? | MEASURE THE GAS VOLUME OVER TIME | WEIGH THE BEAKER ONCE; MEASURE THE FINAL pH ONLY; COUNT THE BUBBLES AT THE END
+
+## WHAT AFFECTS RATE
+1 | Raising the temperature does this to the reaction rate | INCREASES IT | DECREASES IT; HAS NO EFFECT; STOPS IT
+2 | Grinding a solid into powder speeds a reaction by increasing this | SURFACE AREA | ACTIVATION ENERGY; ΔH; MASS
+3 | A substance that speeds up a reaction without being used up | CATALYST / A CATALYST
+4 | Increasing the concentration of reactants increases the rate by causing more of these | COLLISIONS | PRODUCTS AT ONCE; CATALYSTS; BONDS
+5 | Biological catalysts made of protein | ENZYMES / ENZYME
+
+## COLLISION THEORY
+1 | For a reaction to happen, particles must collide with enough energy and this | THE RIGHT ORIENTATION | THE SAME MASS; OPPOSITE CHARGES; THE SAME SPEED
+2 | The minimum energy needed for a successful collision | ACTIVATION ENERGY / Ea
+3 | The high-energy arrangement at the top of the energy barrier | THE ACTIVATED COMPLEX (TRANSITION STATE) | THE PRODUCT; THE CATALYST; THE INTERMEDIATE
+4 | A catalyst speeds a reaction by doing this | PROVIDING A PATH WITH LOWER ACTIVATION ENERGY | RAISING THE TEMPERATURE; CHANGING ΔH; ADDING MORE REACTANTS
+5 | Raising temperature speeds reactions mainly because more particles have this | ENERGY ABOVE THE ACTIVATION ENERGY | MORE MASS; MORE BONDS; LOWER ΔH
+
+## RATE LAWS
+1 | In rate = k[A]ᵐ[B]ⁿ, the exponents m and n are found this way | BY EXPERIMENT | FROM THE BALANCED EQUATION; FROM ΔH; BY GUESSING
+2 | Rate = k[A]². If [A] doubles, by what factor does the rate change? | = 4 ~0
+3 | Rate = k[A][B]. If [A] doubles and [B] triples, by what factor does the rate change? | = 6 ~0
+4 | Tripling [A] makes the rate 9 times faster. What is the order with respect to A? | = 2 ~0
+5 | Rate = k[A][B]². What is the overall order? | = 3 ~0
+
+## READING RATE DATA
+1 | Doubling [A] doubles the rate. What is the order in A? | = 1 ~0
+2 | Doubling [B] doesn't change the rate. What is the order in B? | = 0 ~0
+3 | Rate = k[A]. When [A] = 0.20 mol/L the rate is 0.010 mol/(L·s). What is k, in 1/s? | = 0.05 ~0.5%
+4 | Rate = k[A]²[B]. If [A] is halved and [B] doubled, by what factor does the rate change? | = 0.5 ~0
+5 | Rate = k[A]². What are the units of k if the rate is in mol/(L·s)? | L/(mol·s) | 1/s; mol/(L·s); L²/(mol²·s)
+
+## HALF-LIFE
+1 | The time for half of a reactant to be used up | HALF-LIFE / HALF LIFE
+2 | For a first-order reaction, the half-life does this as concentration falls | STAYS THE SAME | GETS LONGER; GETS SHORTER; DOUBLES EACH TIME
+3 | A first-order reaction has k = 0.0231 per second. To the nearest second, what is its half-life? | = 30 s ~1%
+4 | After 3 half-lives, what fraction of a reactant remains? (A fraction or a decimal) | = 1/8 ~0.5%
+5 | A first-order reaction's half-life is 10 min. Starting at 0.80 mol/L, what is the concentration after 30 min, in mol/L? | = 0.1 ~0.5%
+
+## STEP BY STEP
+1 | The series of simple steps that make up an overall reaction | REACTION MECHANISM / MECHANISM
+2 | The slowest step in a mechanism, which controls the overall rate | RATE-DETERMINING STEP | ELEMENTARY STEP; FIRST STEP ALWAYS; FAST EQUILIBRIUM
+3 | A substance made in one step and used up in a later step | INTERMEDIATE / AN INTERMEDIATE / REACTION INTERMEDIATE
+4 | A catalyst is used in an early step and this in a later step | REGENERATED | DESTROYED; TURNED INTO PRODUCT; ADDED AGAIN
+5 | A step involving two particles colliding is called this | BIMOLECULAR | UNIMOLECULAR; TERMOLECULAR; ZERO-ORDER
+
+## CATALYSTS AT WORK
+1 | Cars use these devices with platinum and palladium to clean exhaust | CATALYTIC CONVERTERS / CATALYTIC CONVERTER
+2 | Does a catalyst change ΔH for a reaction? | NO | YES, IT LOWERS IT; YES, IT RAISES IT; ONLY FOR GASES
+3 | The enzyme in saliva that starts breaking down starch | AMYLASE / SALIVARY AMYLASE
+4 | Iron is the catalyst in this industrial process for making ammonia | THE HABER PROCESS | THE CONTACT PROCESS; THE SOLVAY PROCESS; ELECTROLYSIS
+5 | Enzymes stop working well at high temperatures because they become this | DENATURED | ACTIVATED; CATALYZED; FROZEN
+
+## EVERYDAY RATES
+1 | Food lasts longer in the fridge because cold does this to spoilage reactions | SLOWS THEM | SPEEDS THEM; STOPS THEM FOREVER; REVERSES THEM
+2 | Flour dust can explode in a mill because of its huge ___ | SURFACE AREA
+3 | Steel wool burns in pure oxygen but not in air because of a higher concentration of this | OXYGEN / O2
+4 | Antacid tablets dissolve faster in warm water because of higher this | TEMPERATURE | PRESSURE; ΔH; MASS
+5 | A rough rule: many reactions about double their rate for every rise of this many °C | = 10 °C ~0
+
+## GRAPHS OF RATE
+1 | On a concentration-versus-time graph, the reaction is fastest here | AT THE START | AT THE END; IN THE MIDDLE; ALWAYS THE SAME
+2 | The slope of a concentration–time graph for a reactant is this | NEGATIVE | POSITIVE; ZERO; UNDEFINED
+3 | A Maxwell–Boltzmann graph shows the spread of particles' ___ | KINETIC ENERGIES / ENERGIES / SPEEDS
+4 | On a Maxwell–Boltzmann graph, a higher temperature curve is this | FLATTER AND SHIFTED RIGHT | TALLER AND SHIFTED LEFT; THE SAME SHAPE; NARROWER
+5 | A straight line for ln[A] against time means the reaction is this order | FIRST | ZERO; SECOND; THIRD
+
+## RATE CONSTANT
+1 | The rate constant k depends on this | TEMPERATURE | CONCENTRATION; TIME; VOLUME
+2 | Raising the temperature does this to k | INCREASES IT | DECREASES IT; NOTHING; MAKES IT ZERO
+3 | A catalyst does this to k | INCREASES IT | DECREASES IT; NOTHING; MAKES IT NEGATIVE
+4 | Rate = k[A]. With k = 0.20 per second and [A] = 0.50 mol/L, what is the rate, in mol/(L·s)? | = 0.1 ~0.5%
+5 | For a zero-order reaction, the rate equals this | k | k[A]; k[A]²; ZERO
+
+## THE HILL TO CLIMB
+1 | A reaction with a very high activation energy is usually this | SLOW | FAST; EXPLOSIVE; EXOTHERMIC
+2 | Activation energy is the difference between the energy of the reactants and this | THE ACTIVATED COMPLEX | THE PRODUCTS; ZERO; THE CATALYST
+3 | [graph: energy-diagram] What is the energy of the activated complex, in kJ? | = 90 kJ ~0
+4 | Does a catalyst change the activation energy of the reverse reaction? | YES, IT LOWERS IT TOO | NO; IT RAISES IT; ONLY IN ENZYMES
+5 | Gasoline doesn't burn at room temperature even though combustion is exothermic, because of this | A HIGH ACTIVATION ENERGY | A POSITIVE ΔH; NO OXYGEN; A CATALYST
+
+FINAL | RATE LAWS | In trials, doubling [A] quadruples the rate and doubling [B] doubles it. What is the overall order? | = 3 ~0
+FINAL | HALF-LIFE | A first-order reaction has a half-life of 20 s. To 4 decimal places, what is k, in 1/s? | = 0.0347 ~0.5%
+FINAL | READING RATE DATA | Rate = k[A]²[B]. k = 2.0 L²/(mol²·s), [A] = 0.10 and [B] = 0.30 mol/L. What is the rate, in mol/(L·s)? | = 0.006 ~0.5%
+FINAL | STEP BY STEP | Step 1: NO2 + NO2 → NO3 + NO (slow). Step 2: NO3 + CO → NO2 + CO2 (fast). What is the rate law? | rate = k[NO2]² | rate = k[NO2][CO]; rate = k[NO3][CO]; rate = k[CO]

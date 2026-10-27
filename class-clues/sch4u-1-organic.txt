@@ -1,0 +1,93 @@
+# Course: SCH4U | Grade 12 Chemistry
+# Unit: organic | Unit 1: Organic Chemistry
+# Teams: Catalysts, Isomers, Buffers, Orbitals, Anodes, Cathodes, Titrants, Polymers
+// Formulas use plain digits (C2H6) where subscripts would be hard to type.
+
+## THE BASICS
+1 | Organic chemistry is the study of compounds containing this element | CARBON | NITROGEN; OXYGEN; SILICON
+2 | How many bonds does a carbon atom usually form? | = 4 ~0
+3 | Compounds of only carbon and hydrogen | HYDROCARBONS / HYDROCARBON
+4 | Hydrocarbons with only single bonds are called this | ALKANES | ALKENES; ALKYNES; AROMATICS
+5 | Alkanes with only single bonds are described as ___, because they hold as much hydrogen as possible | SATURATED
+
+## NAMING ALKANES
+1 | What is the name of CH4? | METHANE
+2 | What is the name of the alkane with 3 carbons? | PROPANE
+3 | How many carbon atoms are in octane? | = 8 ~0
+4 | What is the molecular formula of hexane? | C6H14 | C6H12; C6H10; C6H6
+5 | CH3–CH(CH3)–CH2–CH3 is named this | 2-METHYLBUTANE | 3-METHYLBUTANE; PENTANE; 2-ETHYLPROPANE
+
+## MULTIPLE BONDS
+1 | A hydrocarbon with a carbon–carbon double bond | ALKENE / ALKENES
+2 | Ethyne, used in welding torches, is also commonly called this | ACETYLENE
+3 | The general formula of alkenes is this | CnH2n | CnH2n+2; CnH2n−2; CnHn
+4 | Which is the correct name for CH2=CH–CH2–CH3? | BUT-1-ENE | BUT-2-ENE; BUTANE; BUT-3-ENE
+5 | Alkenes can have cis and trans forms because this can't rotate | THE DOUBLE BOND | A SINGLE BOND; A METHYL GROUP; THE WHOLE MOLECULE
+
+## FUNCTIONAL GROUPS
+1 | The –OH group makes a compound this kind of molecule | ALCOHOL | ALDEHYDE; KETONE; ETHER
+2 | The –COOH group belongs to this family | CARBOXYLIC ACIDS | ESTERS; ALCOHOLS; AMINES
+3 | A C=O group in the middle of a carbon chain (R–CO–R) is this family | KETONE / KETONES
+4 | The –NH2 group belongs to this family | AMINES | AMIDES; ALCOHOLS; NITRILES
+5 | R–COO–R′, which often smells fruity, is this family | ESTERS | ETHERS; KETONES; ALDEHYDES
+
+## NAMING FUNCTIONAL GROUPS
+1 | Ethanol belongs to this family | ALCOHOLS | ALKANES; ESTERS; ETHERS
+2 | What is the name of CH3COOH? | ETHANOIC ACID | METHANOIC ACID; ETHANOL; PROPANOIC ACID
+3 | Propanone, a common solvent, is better known as this | ACETONE
+4 | Methyl ethanoate is made from methanol and this acid | ETHANOIC ACID | METHANOIC ACID; PROPANOIC ACID; BUTANOIC ACID
+5 | CH3CH2CHO is named this | PROPANAL | PROPANONE; PROPANOL; PROPANOIC ACID
+
+## SAME FORMULA, NEW SHAPE
+1 | Compounds with the same molecular formula but different structures | ISOMERS / STRUCTURAL ISOMERS
+2 | How many structural isomers does C4H10 have? | = 2 ~0
+3 | How many structural isomers does C5H12 have? | = 3 ~0
+4 | Ethanol and dimethyl ether are isomers. What is their shared formula? | C2H6O | C2H4O; C2H6O2; CH4O
+5 | Mirror-image isomers, like left and right hands, are called this | OPTICAL ISOMERS (ENANTIOMERS) | CIS-TRANS ISOMERS; CHAIN ISOMERS; POSITION ISOMERS
+
+## REACTIONS
+1 | Adding H2 across a double bond is this kind of reaction | ADDITION | SUBSTITUTION; ELIMINATION; CONDENSATION
+2 | An alcohol plus a carboxylic acid forms an ester and this | WATER / H2O
+3 | Replacing a hydrogen on an alkane with a halogen is this kind of reaction | SUBSTITUTION | ADDITION; ELIMINATION; HYDROLYSIS
+4 | Removing water from an alcohol to make an alkene is this kind of reaction | ELIMINATION (DEHYDRATION) | ADDITION; SUBSTITUTION; ESTERIFICATION
+5 | Oxidizing a primary alcohol first gives this | AN ALDEHYDE | A KETONE; AN ALKANE; AN ETHER
+
+## COMBUSTION
+1 | Complete combustion of a hydrocarbon produces carbon dioxide and this | WATER / H2O
+2 | Combustion without enough oxygen can produce this poisonous gas | CARBON MONOXIDE / CO
+3 | Balance CH4 + __O2 → CO2 + 2H2O. What is the coefficient of O2? | = 2 ~0
+4 | Balance C3H8 + __O2 → 3CO2 + 4H2O. What is the coefficient of O2? | = 5 ~0
+5 | Balance 2C8H18 + __O2 → 16CO2 + 18H2O. What is the coefficient of O2? | = 25 ~0
+
+## PHYSICAL PROPERTIES
+1 | Which has the higher boiling point: ethanol or ethane? | ETHANOL | ETHANE; THEY ARE THE SAME; IT CAN'T BE TOLD
+2 | Alcohols have higher boiling points than alkanes of similar size because of this force | HYDROGEN BONDING | LONDON DISPERSION ONLY; IONIC BONDING; METALLIC BONDING
+3 | As alkanes get longer, their boiling points do this | INCREASE / RISE / GO UP / INCREASES
+4 | Which is most soluble in water? | METHANOL | HEXANE; OCTANOL; PENTANE
+5 | Branched alkanes have lower boiling points than straight-chain isomers because they have less of this | SURFACE AREA FOR DISPERSION FORCES | MASS; HYDROGEN BONDING; IONIC CHARGE
+
+## GIANT MOLECULES
+1 | Long chains made of many repeating small units | POLYMERS / POLYMER
+2 | The small repeating units that make up a polymer | MONOMERS / MONOMER
+3 | Polyethylene is made by this kind of polymerization | ADDITION | CONDENSATION; ESTERIFICATION; COMBUSTION
+4 | Nylon and polyester form by this kind of polymerization, which releases water | CONDENSATION | ADDITION; COMBUSTION; SUBSTITUTION
+5 | Proteins are natural polymers of these | AMINO ACIDS | GLUCOSE MOLECULES; FATTY ACIDS; NUCLEOTIDES ONLY
+
+## AROMATICS
+1 | The six-carbon ring with alternating double bonds | BENZENE
+2 | What is the molecular formula of benzene? | C6H6 | C6H12; C6H14; C6H10
+3 | Benzene usually undergoes this kind of reaction rather than addition | SUBSTITUTION | ADDITION; ELIMINATION; POLYMERIZATION
+4 | A benzene ring with one methyl group is called this | TOLUENE / METHYLBENZENE
+5 | Benzene is extra stable because its electrons are this | DELOCALIZED AROUND THE RING | FIXED IN THREE DOUBLE BONDS; ALL UNPAIRED; IONIC
+
+## ORGANICS AND SOCIETY
+1 | Plastics made from fossil fuels that persist for centuries create this environmental problem | PLASTIC POLLUTION / PLASTIC WASTE / POLLUTION
+2 | Fuel made from fermenting corn or sugar cane | ETHANOL / BIOETHANOL
+3 | Plastic pieces smaller than 5 mm found in oceans and food | MICROPLASTICS / MICROPLASTIC
+4 | Trans fats, linked to heart disease, form when this process adds hydrogen to vegetable oils | PARTIAL HYDROGENATION | ESTERIFICATION; COMBUSTION; FERMENTATION
+5 | Compounds like PCBs that stay in the environment for a long time are called persistent organic ___ | POLLUTANTS
+
+FINAL | SAME FORMULA, NEW SHAPE | How many structural isomers does C6H14 have? | = 5 ~0
+FINAL | COMBUSTION | Balance C2H5OH + __O2 → 2CO2 + 3H2O. What is the coefficient of O2? | = 3 ~0
+FINAL | REACTIONS | Ethanoic acid and ethanol react with an acid catalyst. Which ester forms? | ETHYL ETHANOATE | METHYL ETHANOATE; ETHYL METHANOATE; PROPYL ETHANOATE
+FINAL | NAMING ALKANES | What is the IUPAC name of CH3–C(CH3)2–CH2–CH(CH3)–CH3 (isooctane)? | 2,2,4-TRIMETHYLPENTANE | 2,4,4-TRIMETHYLPENTANE; 2,2,4-TRIMETHYLHEXANE; 1,1,1,3-TETRAMETHYLBUTANE

@@ -606,6 +606,63 @@ G['oblique-triangle'] = triangle({ pts: [[90, 370], [560, 370], [330, 70]],
   sides: [[325, 405, 'c = 12'], [180, 205, 'b = 10'], [480, 205, 'a = ?']],
   angles: [[70, 395, 'A'], [585, 395, 'B'], [330, 52, 'C'], [150, 355, '50°']] });
 
+
+/* ---------- SCH4U: Grade 12 Chemistry ---------- */
+// Potential energy diagram: reactants 40 kJ, products 10 kJ, peak 90 kJ (Ea = 50, ΔH = −30).
+{
+  const smooth = (a, b, t) => a + (b - a) * (1 - Math.cos(Math.PI * Math.min(1, Math.max(0, t)))) / 2;
+  const E = x => x < 25 ? 40 : x < 50 ? smooth(40, 90, (x - 25) / 25) : x < 75 ? smooth(90, 10, (x - 50) / 25) : 10;
+  G['energy-diagram'] = graph({ xmax: 100, ymax: 100, xlabel: 'Reaction progress', ylabel: 'Potential energy (kJ)',
+    hlines: [{ y: 40, color: '#888', width: 2, dash: '6 6', to: 60 }, { y: 90, color: '#888', width: 2, dash: '6 6', to: 50 }],
+    curves: [{ f: E, range: [3, 97], color: COL.D, width: 4 }],
+    notes: [{ x: 8, y: 44, text: 'Reactants', bold: true }, { x: 78, y: 14, text: 'Products', bold: true }, { x: 50, y: 95, text: 'Activated complex', anchor: 'middle', size: 15 }],
+    yticks: [[10, '10'], [40, '40'], [90, '90']] });
+}
+// Titration of 25.0 mL of 0.10 mol/L acetic acid (Ka = 1.8 × 10⁻⁵) with 0.10 mol/L NaOH.
+{
+  const Ka = 1.8e-5, Kw = 1e-14, ca = 0.10, va = 25, cb = 0.10;
+  const pH = v => {
+    const na = ca * va, nb = cb * v, vt = (va + v);
+    if (v === 0) return -Math.log10(Math.sqrt(Ka * ca));
+    if (nb < na - 1e-9) { const ha = (na - nb) / vt, a = nb / vt; return -Math.log10(Ka) + Math.log10(a / ha); }
+    if (Math.abs(nb - na) < 1e-9) { const a = na / vt, oh = Math.sqrt(Kw / Ka * a); return 14 + Math.log10(oh); }
+    return 14 + Math.log10((nb - na) / vt);
+  };
+  G['titration'] = graph({ xmax: 50, ymax: 14, xlabel: 'Volume of NaOH added (mL)', ylabel: 'pH',
+    curves: [{ f: v => pH(Math.max(v, 0.05)), range: [0, 50], color: COL.D, width: 4 }],
+    guides: [[12.5, pH(12.5)], [25, pH(25)]],
+    points: [{ x: 12.5, y: pH(12.5), label: 'A', dx: -24, dy: -12 }, { x: 25, y: pH(25), label: 'B', dx: 12, dy: 6 }],
+    xticks: [[0, '0'], [12.5, '12.5'], [25, '25'], [37.5, '37.5'], [50, '50']],
+    yticks: [2, 4, 6, 7, 8, 10, 12, 14].map(v => [v, String(v)]) });
+}
+// N2O4 ⇌ 2 NO2 in a 1 L flask, reaching equilibrium at about t = 10 s.
+{
+  const k = t => 1 - Math.exp(-t / 1.6);
+  G['equilibrium-graph'] = graph({ xmax: 20, ymax: 1.1, xlabel: 'Time (s)', ylabel: 'Concentration (mol/L)',
+    curves: [{ f: t => 1 - 0.4 * k(t), range: [0, 20], color: COL.D, label: 'N₂O₄', labelAt: [16, 0.6], dy: -12 },
+      { f: t => 0.8 * k(t), range: [0, 20], color: COL.S, label: 'NO₂', labelAt: [16, 0.8], dy: -12 }],
+    guides: [[10, 0.8], [10, 0.6]],
+    xticks: [0, 5, 10, 15, 20].map(v => [v, String(v)]), yticks: [[0.2, '0.2'], [0.4, '0.4'], [0.6, '0.6'], [0.8, '0.8'], [1, '1.0']] });
+}
+// A zinc–copper galvanic cell.
+{
+  const out = svgOpen();
+  const beaker = (x, fill) => out.push(`<path d="M${x},170 V380 Q${x},400 ${x + 20},400 H${x + 160} Q${x + 180},400 ${x + 180},380 V170" fill="none" stroke="#111" stroke-width="3"/><rect x="${x + 3}" y="230" width="174" height="167" rx="16" fill="${fill}" opacity="0.55"/>`);
+  beaker(60, '#cbd5e1'); beaker(400, '#93c5fd');
+  out.push(`<rect x="120" y="130" width="26" height="210" fill="#94a3b8" stroke="#111" stroke-width="2"/>`);
+  out.push(`<rect x="494" y="130" width="26" height="210" fill="#c2410c" stroke="#111" stroke-width="2"/>`);
+  out.push(`<path d="M210,330 V200 Q210,170 240,170 H400 Q430,170 430,200 V330" fill="none" stroke="#a16207" stroke-width="26" stroke-linecap="round" opacity="0.75"/>`);
+  out.push(txt(320, 160, 'Salt bridge (KNO₃)', { size: 15 }));
+  out.push(`<path d="M133,130 V60 H280" fill="none" stroke="#111" stroke-width="3"/><path d="M360,60 H507 V130" fill="none" stroke="#111" stroke-width="3"/>`);
+  out.push(`<circle cx="320" cy="60" r="34" fill="#fff" stroke="#111" stroke-width="3"/>` + txt(320, 68, 'V', { size: 24 }));
+  out.push(`<line x1="190" y1="38" x2="270" y2="38" stroke="#d1342f" stroke-width="4"/><polygon points="280,38 266,30 266,46" fill="#d1342f"/>` + txt(230, 28, 'e⁻', { size: 18, color: '#d1342f' }));
+  out.push(txt(133, 300, 'Zn', { size: 20, halo: true }), txt(507, 300, 'Cu', { size: 20, halo: true }));
+  out.push(txt(150, 425, 'Zn²⁺(aq)', { size: 17 }), txt(490, 425, 'Cu²⁺(aq)', { size: 17 }));
+  out.push(txt(70, 120, 'A', { size: 26, anchor: 'start' }), txt(570, 120, 'B', { size: 26, anchor: 'end' }));
+  out.push('</svg>');
+  G['galvanic-cell'] = out.join('\n');
+}
+
 fs.mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(G)) fs.writeFileSync(path.join(OUT, name + '.svg'), svg + '\n');
 console.log(`Wrote ${Object.keys(G).length} graphs to ${path.relative(process.cwd(), OUT)}`);

@@ -1,0 +1,91 @@
+# Course: SCH4U | Grade 12 Chemistry
+# Unit: structure | Unit 2: Structure and Properties of Matter
+
+## HISTORY OF THE ATOM
+1 | He proposed that electrons orbit the nucleus in fixed energy levels | NIELS BOHR / BOHR
+2 | The current model of the atom, where electrons are found in orbitals described by probability | QUANTUM MECHANICAL MODEL | BOHR MODEL; PLUM PUDDING MODEL; PLANETARY MODEL
+3 | He wrote the wave equation that describes electrons in atoms | ERWIN SCHRÖDINGER | WERNER HEISENBERG; LOUIS DE BROGLIE; MAX PLANCK
+4 | You can't know both the exact position and momentum of an electron. This is Heisenberg's ___ principle | UNCERTAINTY
+5 | Bohr's model worked well for this element only | HYDROGEN | HELIUM; CARBON; SODIUM
+
+## QUANTUM NUMBERS
+1 | The principal quantum number n describes an orbital's energy level and this | SIZE | SHAPE; ORIENTATION; SPIN
+2 | The quantum number l = 1 describes this kind of orbital | p | s; d; f
+3 | How many orbitals are in a d sublevel? | = 5 ~0
+4 | What is the maximum number of electrons in the n = 3 level? | = 18 ~0
+5 | The spin quantum number can have only these two values | +½ AND −½ | 0 AND 1; 1 AND −1; +2 AND −2
+
+## ELECTRON CONFIGURATIONS
+1 | Electrons fill the lowest energy orbitals first. This is the ___ principle | AUFBAU
+2 | What is the electron configuration of oxygen? | 1s² 2s² 2p⁴ | 1s² 2s² 2p⁶; 1s² 2s⁴ 2p²; 1s² 2p⁶
+3 | Which sublevel fills right after 4s? | 3d | 4p; 4d; 3p
+4 | No two electrons in an atom can have the same four quantum numbers. This is the Pauli ___ principle | EXCLUSION
+5 | Chromium's configuration ends in 4s¹ 3d⁵ instead of 4s² 3d⁴ because of this | THE STABILITY OF A HALF-FILLED d SUBLEVEL | A TYPING ERROR; ITS HIGH MASS; HUND'S RULE BEING BROKEN
+
+## HUND'S RULE AND ORBITALS
+1 | Electrons spread out across orbitals of equal energy before pairing up. This is ___'s rule | HUND / HUNDS / HUND'S
+2 | How many unpaired electrons does nitrogen have? | = 3 ~0
+3 | How many unpaired electrons does oxygen have? | = 2 ~0
+4 | The shape of an s orbital is this | A SPHERE | A DUMBBELL; A CLOVER; A RING
+5 | The shape of a p orbital is this | A DUMBBELL | A SPHERE; A CLOVER; A CUBE
+
+## PERIODIC TRENDS
+1 | Atomic radius does this going down a group | INCREASES | DECREASES; STAYS THE SAME; DOUBLES
+2 | The energy needed to remove an electron from an atom | IONIZATION ENERGY / FIRST IONIZATION ENERGY
+3 | Which element has the highest electronegativity? | FLUORINE | OXYGEN; CHLORINE; CESIUM
+4 | Atomic radius does this going across a period from left to right | DECREASES | INCREASES; STAYS THE SAME; DOUBLES
+5 | Why does atomic radius decrease across a period? | GREATER NUCLEAR CHARGE PULLS ELECTRONS IN | MORE ELECTRON SHELLS; FEWER PROTONS; ELECTRONS REPEL MORE
+
+## CHEMICAL BONDS
+1 | A bond formed by transferring electrons from a metal to a non-metal | IONIC / IONIC BOND
+2 | A bond where electrons are shared unequally is called this | POLAR COVALENT | NON-POLAR COVALENT; IONIC; METALLIC
+3 | An electronegativity difference above about 1.7 suggests this kind of bond | IONIC | NON-POLAR COVALENT; POLAR COVALENT; METALLIC
+4 | Metals conduct electricity because of their sea of ___ electrons | DELOCALIZED / FREE / MOBILE
+5 | Which bond is most polar? | H–F | H–Cl; H–Br; H–H
+
+## VSEPR SHAPES
+1 | VSEPR theory says electron pairs around an atom arrange themselves to do this | GET AS FAR APART AS POSSIBLE | GET AS CLOSE AS POSSIBLE; FORM RINGS; LINE UP IN A ROW
+2 | What is the shape of CH4? | TETRAHEDRAL | TRIGONAL PLANAR; LINEAR; BENT
+3 | What is the shape of H2O? | BENT (V-SHAPED) | LINEAR; TETRAHEDRAL; TRIGONAL PYRAMIDAL
+4 | What is the shape of NH3? | TRIGONAL PYRAMIDAL | TRIGONAL PLANAR; TETRAHEDRAL; BENT
+5 | What is the bond angle in CO2, in degrees? | = 180 ° ~0
+
+## POLARITY
+1 | Is CO2 polar or non-polar? | NON-POLAR | POLAR; IONIC; IT DEPENDS ON TEMPERATURE
+2 | Is H2O polar or non-polar? | POLAR | NON-POLAR; IONIC; METALLIC
+3 | CCl4 has polar bonds but is non-polar overall because of this | ITS SYMMETRICAL SHAPE | IT HAS NO ELECTRONS; CHLORINE IS NON-POLAR; ITS SMALL SIZE
+4 | Polar substances dissolve best in polar solvents. This is the rule "like dissolves ___" | LIKE
+5 | Which molecule is polar? | NH3 | CH4; CO2; BF3
+
+## BETWEEN MOLECULES
+1 | The weakest intermolecular force, present in all molecules | LONDON DISPERSION FORCES | HYDROGEN BONDS; DIPOLE–DIPOLE FORCES; IONIC BONDS
+2 | The strong attraction between H bonded to N, O or F and a lone pair on another N, O or F | HYDROGEN BONDING / HYDROGEN BOND / HYDROGEN BONDS
+3 | Which has the highest boiling point? | H2O | H2S; CH4; HCl
+4 | Polar molecules attract each other with these forces | DIPOLE–DIPOLE FORCES | LONDON FORCES ONLY; IONIC BONDS; METALLIC BONDS
+5 | Ice floats because hydrogen bonding makes the solid this | LESS DENSE THAN LIQUID WATER | MORE DENSE THAN LIQUID WATER; IONIC; NON-POLAR
+
+## TYPES OF SOLIDS
+1 | Table salt is this kind of solid | IONIC | MOLECULAR; METALLIC; COVALENT NETWORK
+2 | Diamond and quartz are this kind of solid, with very high melting points | COVALENT NETWORK | MOLECULAR; IONIC; METALLIC
+3 | Ice and sugar are this kind of solid | MOLECULAR | IONIC; METALLIC; COVALENT NETWORK
+4 | Which kind of solid conducts electricity when solid? | METALLIC | IONIC; MOLECULAR; COVALENT NETWORK
+5 | Ionic solids conduct electricity when melted or dissolved, because these can move | IONS | ELECTRONS ONLY; NEUTRONS; MOLECULES
+
+## SPECTRA
+1 | When an electron drops to a lower energy level, it does this | GIVES OFF A PHOTON (LIGHT) | ABSORBS A PHOTON; LEAVES THE ATOM; GAINS MASS
+2 | The bright lines in an element's spectrum are called its ___ spectrum | EMISSION / LINE / BRIGHT-LINE
+3 | Which has more energy per photon: red light or blue light? | BLUE LIGHT | RED LIGHT; THEY ARE EQUAL; IT DEPENDS ON THE SOURCE
+4 | Light acts as both a wave and a particle. This is called wave–particle ___ | DUALITY
+5 | E = hf. What does f stand for? | FREQUENCY | FORCE; FIELD STRENGTH; FINAL ENERGY
+
+## TECHNOLOGY FROM THE ATOM
+1 | Medical scans like MRI use this property of nuclei in a magnetic field | NUCLEAR SPIN (MAGNETIC RESONANCE) | RADIOACTIVE DECAY; ELECTRON CAPTURE; FISSION
+2 | Lasers work because electrons are stimulated to release photons of the same ___ | WAVELENGTH / ENERGY / FREQUENCY / COLOUR / COLOR
+3 | Neon signs glow because excited electrons do this | DROP TO LOWER ENERGY LEVELS AND GIVE OFF LIGHT | BURN; SPLIT ATOMS; ABSORB HEAT
+4 | Fireworks get their colours from these | METAL IONS | NOBLE GASES; CARBON CHAINS; WATER VAPOUR
+5 | Which metal ion gives fireworks a red colour? | STRONTIUM | SODIUM; COPPER; BARIUM
+
+FINAL | ELECTRON CONFIGURATIONS | What is the electron configuration of iron (26 electrons), using the noble gas shortcut? | [Ar] 4s² 3d⁶ | [Ar] 4s² 3d⁸; [Ar] 3d⁸; [Kr] 4s² 3d⁶
+FINAL | VSEPR SHAPES | What is the shape of SF6? | OCTAHEDRAL | TRIGONAL BIPYRAMIDAL; TETRAHEDRAL; SQUARE PLANAR
+FINAL | BETWEEN MOLECULES | Why does iodine (I2) have a higher boiling point than fluorine (F2)? | LARGER LONDON DISPERSION FORCES | HYDROGEN BONDING; IONIC BONDS; IT IS POLAR
+FINAL | QUANTUM NUMBERS | How many electrons can have n = 4 and l = 2? | = 10 ~0

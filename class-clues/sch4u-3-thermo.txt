@@ -1,0 +1,92 @@
+# Course: SCH4U | Grade 12 Chemistry
+# Unit: thermo | Unit 3: Thermochemistry
+// Use c = 4.18 J/(g·°C) for water.
+
+## ENERGY WORDS
+1 | A reaction that releases heat to its surroundings | EXOTHERMIC | ENDOTHERMIC; ISOTHERMAL; ADIABATIC
+2 | A reaction that absorbs heat from its surroundings | ENDOTHERMIC
+3 | The heat content of a system at constant pressure | ENTHALPY | ENTROPY; KINETIC ENERGY; ACTIVATION ENERGY
+4 | For an exothermic reaction, ΔH is this | NEGATIVE | POSITIVE; ZERO; UNDEFINED
+5 | Melting ice is this kind of process | ENDOTHERMIC | EXOTHERMIC; NEITHER; BOTH
+
+## q = mcΔT
+1 | In q = mcΔT, what does c stand for? | SPECIFIC HEAT CAPACITY | CONCENTRATION; THE SPEED OF LIGHT; CHARGE
+2 | How much heat, in J, raises 100 g of water from 25°C to 35°C? | = 4180 J ~0.5%
+3 | 50 g of a metal absorbs 450 J and warms by 20°C. What is its specific heat, in J/(g·°C)? | = 0.45 ~1%
+4 | 200 g of water absorbs 8360 J. By how many degrees does it warm? | = 10 °C ~0.5%
+5 | Which heats up faster with the same heat added: 1 kg of water or 1 kg of iron? | IRON | WATER; THEY HEAT EQUALLY; IT DEPENDS ON THE SHAPE
+
+## CALORIMETRY
+1 | A device that measures the heat of a reaction | CALORIMETER / A CALORIMETER
+2 | In a coffee-cup calorimeter, heat released by the reaction is absorbed mainly by this | THE WATER | THE CUP; THE AIR; THE THERMOMETER
+3 | 2.00 g of NaOH (molar mass 40.0 g/mol) dissolves in 100 g of water, which warms by 5.0°C. What is ΔH of solution, in kJ/mol? | = -41.8 kJ/mol ~1%
+4 | A calorimeter that keeps the volume constant, used for combustion, is called this | A BOMB CALORIMETER | A COFFEE-CUP CALORIMETER; A BUNSEN BURNER; A BURETTE
+5 | If heat is lost to the surroundings, the measured ΔH will be this compared with the true value | SMALLER IN SIZE | LARGER IN SIZE; THE SAME; POSITIVE INSTEAD OF NEGATIVE
+
+## REACTION PROFILES
+1 | [graph: energy-diagram] Is this reaction exothermic or endothermic? | EXOTHERMIC | ENDOTHERMIC; NEITHER; BOTH
+2 | [graph: energy-diagram] What is ΔH, in kJ? | = -30 kJ ~0
+3 | [graph: energy-diagram] What is the activation energy of the forward reaction, in kJ? | = 50 kJ ~0
+4 | [graph: energy-diagram] What is the activation energy of the reverse reaction, in kJ? | = 80 kJ ~0
+5 | [graph: energy-diagram] A catalyst would lower which value? | THE PEAK (ACTIVATION ENERGY) | ΔH; THE REACTANTS' ENERGY; THE PRODUCTS' ENERGY
+
+## HESS'S LAW
+1 | Hess's law says ΔH for a reaction is the same no matter this | WHICH STEPS (PATH) ARE TAKEN | THE TEMPERATURE; THE CATALYST USED; HOW FAST IT GOES
+2 | If you reverse a reaction, ΔH does this | CHANGES SIGN | STAYS THE SAME; DOUBLES; BECOMES ZERO
+3 | If you multiply a reaction by 2, ΔH does this | DOUBLES | STAYS THE SAME; CHANGES SIGN; HALVES
+4 | C + O2 → CO2, ΔH = −393.5 kJ. CO + ½O2 → CO2, ΔH = −283.0 kJ. What is ΔH for C + ½O2 → CO, in kJ? | = -110.5 kJ ~0.5%
+5 | A → B has ΔH = +50 kJ and B → C has ΔH = −80 kJ. What is ΔH for A → C, in kJ? | = -30 kJ ~0
+
+## HEATS OF FORMATION
+1 | The standard enthalpy of formation of an element in its standard state is this | ZERO | ONE; NEGATIVE; POSITIVE
+2 | ΔH = ΣnΔHf(products) − this | ΣnΔHf(REACTANTS) | ΣnΔHf(PRODUCTS); ΔHf OF WATER; ACTIVATION ENERGY
+3 | ΔHf: CH4 = −74.8, CO2 = −393.5, H2O(l) = −285.8 kJ/mol. What is ΔH for CH4 + 2O2 → CO2 + 2H2O(l), in kJ? | = -890.3 kJ ~0.5%
+4 | The standard conditions for ΔHf values are 25°C and this pressure | 100 kPa | 0 kPa; 1000 kPa; 50 kPa
+5 | What is ΔHf for O2(g)? | = 0 ~0
+
+## BOND ENERGIES
+1 | Breaking bonds ___ energy | ABSORBS / REQUIRES / TAKES / USES
+2 | Making bonds ___ energy | RELEASES | ABSORBS; DESTROYS; STORES
+3 | ΔH = bonds broken − bonds formed. H–H = 436, Cl–Cl = 243, H–Cl = 432 kJ/mol. What is ΔH for H2 + Cl2 → 2HCl, in kJ? | = -185 kJ ~0
+4 | If the bonds formed are stronger than those broken, the reaction is this | EXOTHERMIC | ENDOTHERMIC; NEITHER; IMPOSSIBLE
+5 | Bond energy calculations are less accurate than ΔHf ones because bond energies are this | AVERAGES | EXACT; MEASURED IN WATER; ALWAYS ZERO
+
+## THERMOCHEMICAL EQUATIONS
+1 | 2H2 + O2 → 2H2O + 572 kJ. Is this exothermic or endothermic? | EXOTHERMIC | ENDOTHERMIC; NEITHER; IT CAN'T BE TOLD
+2 | 2H2 + O2 → 2H2O, ΔH = −572 kJ. How much heat is released per mole of H2O formed, in kJ? | = 286 kJ ~0.5%
+3 | CH4 + 2O2 → CO2 + 2H2O, ΔH = −890 kJ. How much heat comes from burning 2.0 mol of CH4, in kJ? | = 1780 kJ ~0.5%
+4 | Burning 16.0 g of CH4 (molar mass 16.0 g/mol) releases how much heat, in kJ? (ΔH = −890 kJ/mol) | = 890 kJ ~0.5%
+5 | Photosynthesis is endothermic. Where does its energy come from? | SUNLIGHT | THE SOIL; OXYGEN; GLUCOSE
+
+## PHASE CHANGES
+1 | During melting, the temperature does this | STAYS CONSTANT | RISES; FALLS; DOUBLES
+2 | The heat needed to melt 1 mol of a solid is called the molar enthalpy of ___ | FUSION
+3 | Steam at 100°C burns more than water at 100°C because condensing releases this | THE ENTHALPY OF VAPORIZATION | NOTHING EXTRA; COLD; ACTIVATION ENERGY
+4 | Which releases energy? | FREEZING | MELTING; BOILING; SUBLIMATION
+5 | ΔHfus of water is 6.01 kJ/mol. How much energy melts 2.0 mol of ice, in kJ? | = 12.02 kJ ~0.5%
+
+## FUELS AND ENERGY
+1 | Burning fossil fuels for energy is this kind of reaction | EXOTHERMIC COMBUSTION | ENDOTHERMIC DECOMPOSITION; NEUTRALIZATION; ELECTROLYSIS
+2 | The energy released per gram of a fuel is called its fuel ___ | VALUE / ENERGY DENSITY
+3 | Which fuel releases only water when it burns? | HYDROGEN | METHANE; ETHANOL; COAL
+4 | Instant cold packs use this kind of dissolving | ENDOTHERMIC | EXOTHERMIC; NEUTRAL; NUCLEAR
+5 | Hand warmers work by the exothermic rusting of this metal | IRON | COPPER; ZINC; ALUMINUM
+
+## ENERGY IN SOCIETY
+1 | Cars waste much of their fuel's energy as this | HEAT | LIGHT; SOUND ONLY; ELECTRICITY
+2 | Nuclear reactions release far more energy per gram than chemical ones because they change this | THE NUCLEUS | ELECTRON SHELLS ONLY; CHEMICAL BONDS; PHASE
+3 | Which fuel adds the most CO2 per unit of energy? | COAL | NATURAL GAS; HYDROGEN; URANIUM
+4 | Capturing waste heat from power plants to heat buildings is called this | COGENERATION (DISTRICT HEATING) | CALORIMETRY; FISSION; COMBUSTION
+5 | A heat pump moves heat from a cold place to a warm one using this | ELECTRICAL WORK | COMBUSTION; NUCLEAR FUSION; SUNLIGHT ONLY
+
+## SPECIFIC HEAT PROBLEMS
+1 | Water's specific heat is 4.18 J/(g·°C). How much heat raises 1.0 kg by 1.0°C, in J? | = 4180 J ~0.5%
+2 | A 100 g metal at 90°C goes into 100 g of water at 20°C and both end at 25°C. How much heat did the water gain, in J? | = 2090 J ~0.5%
+3 | In that same experiment, what is the metal's specific heat, in J/(g·°C)? To 2 decimal places | = 0.32 ~2%
+4 | Heat always flows from this to that | HOT TO COLD | COLD TO HOT; BIG TO SMALL; LIQUID TO SOLID
+5 | Which has the highest specific heat? | WATER | IRON; COPPER; ALUMINUM
+
+FINAL | HESS'S LAW | ΔHf: C2H5OH(l) = −277.7, CO2 = −393.5, H2O(l) = −285.8 kJ/mol. What is ΔH for C2H5OH + 3O2 → 2CO2 + 3H2O(l), in kJ? | = -1366.7 kJ ~0.5%
+FINAL | CALORIMETRY | 50.0 mL of 1.0 mol/L HCl and 50.0 mL of 1.0 mol/L NaOH mix and warm by 6.8°C. Taking 100 g of water, what is ΔH of neutralization, in kJ/mol? | = -56.8 kJ/mol ~1%
+FINAL | BOND ENERGIES | C–H = 413, O=O = 498, C=O = 799, O–H = 467 kJ/mol. What is ΔH for CH4 + 2O2 → CO2 + 2H2O(g), in kJ? | = -818 kJ ~0.5%
+FINAL | REACTION PROFILES | [graph: energy-diagram] A catalyst lowers the peak to 70 kJ. What is the new forward activation energy, in kJ? | = 30 kJ ~0

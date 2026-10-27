@@ -1,0 +1,92 @@
+# Course: SCH4U | Grade 12 Chemistry
+# Unit: acidbase | Unit 7: Acid–Base Equilibrium
+// pH answers are accepted within about 1%. Kw = 1.0 × 10⁻¹⁴ at 25°C.
+
+## BRØNSTED–LOWRY
+1 | A Brønsted–Lowry acid is a proton ___ | DONOR | ACCEPTOR; DESTROYER; CARRIER
+2 | A Brønsted–Lowry base is a proton ___ | ACCEPTOR
+3 | What is the conjugate base of HCl? | Cl⁻ | H⁺; H2Cl⁺; OH⁻
+4 | What is the conjugate acid of NH3? | NH4⁺ | NH2⁻; H3O⁺; N2
+5 | A substance that can act as an acid or a base, like water | AMPHOTERIC / AMPHIPROTIC
+
+## pH AND pOH
+1 | pH = −log of this | [H3O⁺] (OR [H⁺]) | [OH⁻]; Kw; Ka
+2 | What is the pH of 0.010 mol/L HCl? | = 2 ~0
+3 | At 25°C, pH + pOH equals this | = 14 ~0
+4 | What is the pH of 0.0010 mol/L NaOH? | = 11 ~0.5%
+5 | What is [H⁺] at pH 3.5, in mol/L? | = 3.16e-4 ~1%
+
+## STRONG ACIDS AND BASES
+1 | A strong acid does this completely in water | IONIZES (DISSOCIATES) | EVAPORATES; NEUTRALIZES; FREEZES
+2 | Which is a strong acid? | HNO3 | CH3COOH; HF; H2CO3
+3 | What is the pH of 0.025 mol/L HCl, to 2 decimal places? | = 1.6 ~1%
+4 | What is the pH of 0.050 mol/L Ba(OH)2? | = 13 ~0.5%
+5 | Diluting a strong acid by a factor of 10 changes its pH by this much | = 1 ~0
+
+## WEAK ACIDS
+1 | A weak acid only partly ___ in water | IONIZES / DISSOCIATES / IONISES
+2 | The equilibrium constant for a weak acid ionizing | Ka / ACID DISSOCIATION CONSTANT / ACID IONIZATION CONSTANT
+3 | Acetic acid has Ka = 1.8 × 10⁻⁵. To 2 decimal places, what is the pH of 0.10 mol/L acetic acid? | = 2.87 ~1%
+4 | To 2 decimal places, what is the pKa of acetic acid? | = 4.74 ~0.5%
+5 | A 0.10 mol/L weak acid has pH 3.0. What is its Ka? | = 1.0e-5 ~2%
+
+## WEAK BASES
+1 | The equilibrium constant for a weak base reacting with water | Kb / BASE DISSOCIATION CONSTANT / BASE IONIZATION CONSTANT
+2 | Ka × Kb for a conjugate pair equals this | Kw (1.0 × 10⁻¹⁴) | 1; 7; ZERO
+3 | NH3 has Kb = 1.8 × 10⁻⁵. To 2 decimal places, what is the pH of 0.10 mol/L NH3? | = 11.13 ~1%
+4 | What is Kb for the acetate ion, if Ka of acetic acid is 1.8 × 10⁻⁵? | = 5.6e-10 ~2%
+5 | Which is a weak base? | NH3 | NaOH; KOH; Ca(OH)2
+
+## SALTS IN WATER
+1 | A solution of NaCl is this | NEUTRAL | ACIDIC; BASIC; IT DEPENDS ON THE AMOUNT
+2 | A solution of sodium acetate is this | BASIC | ACIDIC; NEUTRAL; IT DEPENDS ON THE TEMPERATURE
+3 | A solution of NH4Cl is this | ACIDIC | BASIC; NEUTRAL; AMPHOTERIC
+4 | Salts of a strong acid and a weak base give solutions that are this | ACIDIC | BASIC; NEUTRAL; INSOLUBLE
+5 | The reaction of an ion with water that changes the pH is called this | HYDROLYSIS
+
+## TITRATION CURVES
+1 | [graph: titration] Is this a strong or a weak acid being titrated? | WEAK | STRONG; NEITHER; IT'S A BASE
+2 | [graph: titration] Point B is the equivalence point. What volume of NaOH was added, in mL? | = 25 mL ~0
+3 | [graph: titration] Why is the pH at point B above 7? | THE ACETATE ION IS A WEAK BASE | EXTRA NaOH WAS ADDED; THE ACID IS STRONG; WATER IS BASIC
+4 | [graph: titration] At point A, half of the acid is neutralized, so pH equals this | pKa | 7; pKb; 14
+5 | [graph: titration] To 2 decimal places, what is the pH at point A? | = 4.74 ~1%
+
+## TITRATIONS
+1 | The point where moles of acid equal moles of base added | EQUIVALENCE POINT / THE EQUIVALENCE POINT
+2 | The point where the indicator changes colour | ENDPOINT / END POINT / THE ENDPOINT
+3 | 25.0 mL of 0.10 mol/L HCl is titrated with 0.20 mol/L NaOH. What volume is needed to reach equivalence, in mL? | = 12.5 mL ~0.5%
+4 | For a weak acid with a strong base, which indicator is best? | PHENOLPHTHALEIN (CHANGES NEAR pH 8–10) | METHYL ORANGE (pH 3–4); BROMOCRESOL GREEN (pH 4–5); NONE WORK
+5 | 20.0 mL of 0.10 mol/L NaOH is added to 25.0 mL of 0.10 mol/L HCl. To 2 decimal places, what is the pH? | = 1.95 ~1%
+
+## RESISTING CHANGE
+1 | A solution that resists changes in pH | BUFFER / A BUFFER
+2 | A buffer is made of a weak acid and this | ITS CONJUGATE BASE | A STRONG BASE ONLY; A STRONG ACID; PURE WATER
+3 | Henderson–Hasselbalch: pH = pKa + log of this | [A⁻] ÷ [HA] | [HA] ÷ [A⁻]; [H⁺]; Ka
+4 | A buffer has 0.10 mol/L acetic acid and 0.20 mol/L acetate (pKa 4.74). To 2 decimal places, what is its pH? | = 5.05 ~1%
+5 | A buffer works best when the pH is close to this | pKa | 7; 14; 0
+
+## ACID RAIN AND BLOOD
+1 | Blood is kept near pH 7.4 mainly by this buffer system | CARBONIC ACID / BICARBONATE | ACETIC ACID / ACETATE; AMMONIA / AMMONIUM; PHOSPHORIC ACID ALONE
+2 | Blood pH dropping below normal is called this | ACIDOSIS | ALKALOSIS; HYPOXIA; ANEMIA
+3 | Ocean water absorbs CO2 and becomes more acidic. This is called ocean ___ | ACIDIFICATION
+4 | Lakes on Canadian Shield granite suffer more from acid rain because they lack this | LIMESTONE TO BUFFER THEM | FISH; SUNLIGHT; SALT
+5 | Adding lime (CaCO3) to an acidic lake does this | NEUTRALIZES THE ACID | MAKES IT MORE ACIDIC; ADDS SALT; REMOVES OXYGEN
+
+## ACID STRENGTH
+1 | The larger the Ka, the ___ the acid | STRONGER
+2 | Which acid is stronger: Ka = 1.8 × 10⁻⁴ or Ka = 1.8 × 10⁻⁵? | Ka = 1.8 × 10⁻⁴ | Ka = 1.8 × 10⁻⁵; THEY ARE EQUAL; IT CAN'T BE TOLD
+3 | The stronger the acid, the ___ its conjugate base | WEAKER
+4 | To 1 decimal place, what is the percent ionization of 0.10 mol/L acetic acid? | = 1.3 % ~3%
+5 | Among HF, HCl, HBr and HI, which is the weakest acid? | HF | HCl; HBr; HI
+
+## ACIDS AND BASES IN LIFE
+1 | Stomach acid is mainly this | HYDROCHLORIC ACID (HCl) | SULFURIC ACID; ACETIC ACID; CITRIC ACID
+2 | Vinegar is a dilute solution of this acid | ACETIC ACID / ETHANOIC ACID
+3 | Antacids work because they are this | BASES | ACIDS; BUFFERS OF PURE WATER; SALTS OF STRONG ACIDS ONLY
+4 | Baking soda is this compound | SODIUM HYDROGEN CARBONATE (NaHCO3) | SODIUM CHLORIDE; SODIUM HYDROXIDE; CALCIUM CARBONATE
+5 | Pool water is kept slightly basic, around this pH | = 7.5 ~2%
+
+FINAL | WEAK ACIDS | Formic acid has Ka = 1.8 × 10⁻⁴. To 2 decimal places, what is the pH of 0.10 mol/L formic acid? | = 2.37 ~1%
+FINAL | RESISTING CHANGE | A buffer has equal amounts of NH3 and NH4⁺ (Kb of NH3 = 1.8 × 10⁻⁵). To 2 decimal places, what is its pH? | = 9.26 ~0.5%
+FINAL | TITRATION CURVES | [graph: titration] To 2 decimal places, what is the pH at the equivalence point (0.050 mol/L acetate)? | = 8.72 ~1%
+FINAL | pH AND pOH | A solution has pOH 4.2. What is [H⁺], in mol/L? | = 1.58e-10 ~2%

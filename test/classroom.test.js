@@ -119,6 +119,18 @@ test('the MCF3M and MHF4U banks load every unit, and slashes in math answers sta
   assert.ok(Math.abs(rad.value - 5 * Math.PI / 6) < 1e-9);
 });
 
+test('the SCH4U bank loads all seven units with its own teams and graphs', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const c = bank.course('SCH4U');
+  assert.ok(c, 'SCH4U course');
+  assert.deepStrictEqual(c.units.map(u => u.id), ['organic', 'structure', 'thermo', 'rates', 'equilibrium', 'electro', 'acidbase']);
+  assert.strictEqual(c.teams[0], 'Catalysts');
+  c.units.forEach(u => { assert.strictEqual(u.cats.length, 12, u.id); assert.ok(u.finals.length >= 3, u.id); });
+  const imgs = c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals]).filter(x => x.img);
+  assert.ok(imgs.some(x => x.img === 'titration'));
+  imgs.forEach(x => assert.ok(bank.images.has(x.img), x.img));
+});
+
 test('the teacher can switch courses; graph clues reach the screens', () => {
   const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
   const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
@@ -130,7 +142,7 @@ test('the teacher can switch courses; graph clues reach the screens', () => {
   g.updateSettings({ course: 'APMICRO' });
   g.updateSettings({ units: ['imperfect'] });
   assert.deepStrictEqual(g.settings.units, ['imperfect']);
-  assert.strictEqual(g.teacherView().courses.length, 6);
+  assert.strictEqual(g.teacherView().courses.length, 7);
   const a = g.join('Ann', 0);
   g.updateSettings({ rounds: 1, dd: false });
   g.start();

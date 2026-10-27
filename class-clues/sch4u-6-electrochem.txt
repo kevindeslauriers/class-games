@@ -1,0 +1,92 @@
+# Course: SCH4U | Grade 12 Chemistry
+# Unit: electro | Unit 6: Electrochemistry
+// Standard reduction potentials: Zn²⁺/Zn −0.76 V, Fe²⁺/Fe −0.45 V, Cu²⁺/Cu +0.34 V, Ag⁺/Ag +0.80 V.
+
+## REDOX BASICS
+1 | Losing electrons is called this | OXIDATION | REDUCTION; NEUTRALIZATION; IONIZATION
+2 | Gaining electrons is called this | REDUCTION
+3 | A memory aid for redox: "LEO the lion says ___" | GER
+4 | The substance that gets reduced is called the ___ agent | OXIDIZING | REDUCING; NEUTRALIZING; CATALYTIC
+5 | In Zn + Cu²⁺ → Zn²⁺ + Cu, which species is oxidized? | Zn | Cu²⁺; Zn²⁺; Cu
+
+## OXIDATION NUMBERS
+1 | What is the oxidation number of an element on its own, like O2 or Fe? | = 0 ~0
+2 | What is the oxidation number of S in H2SO4? | = 6 ~0
+3 | What is the oxidation number of Mn in KMnO4? | = 7 ~0
+4 | What is the oxidation number of N in NH3? | = -3 ~0
+5 | What is the oxidation number of Cr in Cr2O7²⁻? | = 6 ~0
+
+## BALANCING REDOX
+1 | Redox equations are often balanced by splitting them into two of these | HALF-REACTIONS / HALF REACTIONS / HALF-EQUATIONS
+2 | In acidic solution, oxygen atoms are balanced by adding this | WATER (H2O) | H⁺ IONS; OH⁻ IONS; O2 GAS
+3 | In acidic solution, hydrogen atoms are balanced by adding this | H⁺ IONS | WATER; OH⁻ IONS; H2 GAS
+4 | In a balanced redox equation, the electrons lost must equal this | THE ELECTRONS GAINED | ZERO; THE PROTONS; THE NUMBER OF ATOMS
+5 | Fe²⁺ → Fe³⁺ + e⁻ and MnO4⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H2O. How many Fe²⁺ react with each MnO4⁻? | = 5 ~0
+
+## THE GALVANIC CELL
+1 | [graph: galvanic-cell] Which metal is the anode? | ZINC | COPPER; THE SALT BRIDGE; NEITHER
+2 | [graph: galvanic-cell] At which electrode does reduction happen? | THE COPPER (CATHODE) | THE ZINC; THE SALT BRIDGE; THE VOLTMETER
+3 | [graph: galvanic-cell] What is the cell potential, in volts? | = 1.1 V ~1%
+4 | [graph: galvanic-cell] What does the salt bridge do? | KEEPS EACH HALF-CELL ELECTRICALLY NEUTRAL | CARRIES ELECTRONS; PRODUCES ENERGY; STOPS THE REACTION
+5 | [graph: galvanic-cell] Over time, the mass of the zinc electrode does this | DECREASES | INCREASES; STAYS THE SAME; DOUBLES
+
+## CELL POTENTIALS
+1 | E°cell = E°(cathode) minus this | E°(ANODE) | E°(CATHODE); ZERO; THE VOLTAGE
+2 | What is E°cell for an Ag/Cu cell, in volts? | = 0.46 V ~1%
+3 | What is E°cell for a Cu/Fe cell, in volts? | = 0.79 V ~1%
+4 | A positive E°cell means the reaction is this | SPONTANEOUS | NON-SPONTANEOUS; AT EQUILIBRIUM; IMPOSSIBLE
+5 | The reference electrode with E° = 0.00 V | STANDARD HYDROGEN ELECTRODE / HYDROGEN ELECTRODE / SHE
+
+## WHICH IS STRONGER?
+1 | The strongest oxidizing agent has the most ___ reduction potential | POSITIVE
+2 | Of Zn²⁺, Fe²⁺, Cu²⁺ and Ag⁺, which is the strongest oxidizing agent? | Ag⁺ | Zn²⁺; Fe²⁺; Cu²⁺
+3 | Of Zn, Fe, Cu and Ag, which is the strongest reducing agent? | Zn | Fe; Cu; Ag
+4 | Will copper metal react with Zn²⁺ ions? | NO | YES; ONLY WHEN HEATED; ONLY IN A SALT BRIDGE
+5 | Will zinc metal react with Cu²⁺ ions? | YES | NO; ONLY WITH A CATALYST; ONLY IN BASE
+
+## FORCED REACTIONS
+1 | Using electricity to drive a non-spontaneous reaction | ELECTROLYSIS
+2 | In an electrolytic cell, the anode is this sign | POSITIVE | NEGATIVE; NEUTRAL; IT ALTERNATES
+3 | Electrolysis of water produces these two gases | HYDROGEN AND OXYGEN | OXYGEN AND NITROGEN; HYDROGEN AND HELIUM; CARBON DIOXIDE AND OXYGEN
+4 | Electrolysis of water gives what ratio of H2 to O2 by volume? | 2 : 1 | 1 : 1; 1 : 2; 3 : 1
+5 | Aluminum is made by electrolysis of molten Al2O3 in this process | THE HALL–HÉROULT PROCESS | THE HABER PROCESS; THE CONTACT PROCESS; THE BESSEMER PROCESS
+
+## CHARGE AND MASS
+1 | The charge on one mole of electrons, about 96 500 C | THE FARADAY CONSTANT / FARADAY CONSTANT / FARADAY / F
+2 | Charge (C) = current (A) × this | TIME (s) | VOLTAGE; RESISTANCE; MASS
+3 | A current of 2.00 A runs for 965 s. How many moles of electrons pass? (F = 96 485 C/mol) | = 0.02 ~1%
+4 | Cu²⁺ + 2e⁻ → Cu. To 2 decimal places, how many grams of copper are plated by 0.0200 mol of electrons? (Cu = 63.55 g/mol) | = 0.64 g ~1%
+5 | How many moles of electrons are needed to plate 1 mol of silver from Ag⁺? | = 1 ~0
+
+## CORROSION
+1 | The corrosion of iron is commonly called this | RUSTING / RUST
+2 | Rusting needs iron, oxygen and this | WATER / MOISTURE
+3 | Coating iron with zinc to protect it is called this | GALVANIZING | ANODIZING; ELECTROPLATING WITH GOLD; RUSTING
+4 | Attaching a more reactive metal, like magnesium, to protect a ship's hull is called ___ protection | CATHODIC / SACRIFICIAL
+5 | Salt on Canadian roads makes cars rust faster because it does this | MAKES WATER A BETTER ELECTROLYTE | ADDS OXYGEN; COOLS THE METAL; REMOVES PAINT ONLY
+
+## BATTERIES
+1 | A battery that can be recharged is called a ___ cell | SECONDARY / RECHARGEABLE
+2 | Phones and electric cars mostly use this kind of battery | LITHIUM-ION | LEAD–ACID; ALKALINE; NICKEL–CADMIUM
+3 | A cell that runs on a continuous supply of fuel like hydrogen | FUEL CELL / A FUEL CELL / HYDROGEN FUEL CELL
+4 | A car's starter battery is usually this kind | LEAD–ACID | LITHIUM-ION; ALKALINE; MERCURY
+5 | The only product of a hydrogen fuel cell is this | WATER / H2O
+
+## METAL COATINGS
+1 | Coating an object with a thin layer of metal using electricity | ELECTROPLATING
+2 | The object being plated is connected as this electrode | THE CATHODE | THE ANODE; THE SALT BRIDGE; NEITHER
+3 | To plate a spoon with silver, the electrolyte should contain these ions | Ag⁺ | Cu²⁺; Zn²⁺; Na⁺
+4 | Plating 1 mol of Cu from Cu²⁺ needs how many moles of electrons? | = 2 ~0
+5 | Purifying copper by electrolysis uses an impure copper ___ | ANODE
+
+## ELECTROCHEMISTRY AT WORK
+1 | Chlorine gas and sodium hydroxide are made by electrolysis of this | BRINE (SALT WATER) | PURE WATER; MOLTEN IRON; SEA SAND
+2 | Anodizing aluminum makes a protective layer of this | ALUMINUM OXIDE | ALUMINUM CHLORIDE; RUST; ZINC
+3 | A breathalyzer fuel cell detects ethanol by doing this to it | OXIDIZING IT | REDUCING IT; FREEZING IT; NEUTRALIZING IT
+4 | Electric car batteries store energy as this kind of energy | CHEMICAL | NUCLEAR; THERMAL; MECHANICAL
+5 | The voltage of a single cell depends mainly on this | THE METALS (HALF-REACTIONS) USED | THE SIZE OF THE ELECTRODES; THE LENGTH OF THE WIRE; THE SHAPE OF THE BEAKER
+
+FINAL | CELL POTENTIALS | What is E°cell for a Zn/Ag cell, in volts? | = 1.56 V ~1%
+FINAL | CHARGE AND MASS | To the nearest minute, how long must 5.00 A run to plate 10.0 g of silver (107.9 g/mol)? | = 30 min ~1%
+FINAL | OXIDATION NUMBERS | What is the oxidation number of C in C2O4²⁻ (oxalate)? | = 3 ~0
+FINAL | BALANCING REDOX | Cu + Ag⁺ → Cu²⁺ + Ag. In the balanced equation, what is the coefficient of Ag⁺? | = 2 ~0
