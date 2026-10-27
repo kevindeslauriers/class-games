@@ -391,6 +391,130 @@ const txt = (x, y, t, o = {}) => `<text x="${x}" y="${y}" font-size="${o.size ||
   G['pascal'] = out.join('\n');
 }
 
+
+/* ---------- CGC1W: Exploring Canadian Geography ---------- */
+// Climate graphs: temperature line (left axis) and precipitation bars (right axis).
+const CLIMATE = {
+  // Inland near the Great Lakes (based on Toronto's normals).
+  'climate-a': { name: 'City A', t: [-3.7, -2.6, 1.4, 7.9, 14.1, 19.4, 22.3, 21.5, 17.2, 10.7, 4.9, -0.5], p: [61, 51, 57, 69, 74, 71, 77, 79, 77, 65, 76, 62] },
+  // On the Pacific coast (based on Vancouver's normals).
+  'climate-b': { name: 'City B', t: [4.1, 4.9, 6.9, 9.4, 12.8, 15.7, 18.0, 18.1, 15.1, 10.6, 6.4, 3.6], p: [168, 105, 113, 88, 65, 54, 40, 41, 54, 112, 191, 172] },
+};
+for (const [key, c] of Object.entries(CLIMATE)) {
+  const out = svgOpen();
+  const L0 = 78, R0 = 562, T0 = 40, B0 = 380;
+  const X = i => L0 + (i + 0.5) * (R0 - L0) / 12;
+  const YT = t => B0 - (t + 10) / 40 * (B0 - T0);          // −10 to 30 °C
+  const YP = p => B0 - p / 200 * (B0 - T0);                // 0 to 200 mm
+  for (let t = -10; t <= 30; t += 10) out.push(`<line x1="${L0}" y1="${YT(t)}" x2="${R0}" y2="${YT(t)}" stroke="#e2e8f0" stroke-width="1.5"/>` + txt(L0 - 10, YT(t) + 5, String(t), { size: 15, bold: false, anchor: 'end', color: '#d1342f' }));
+  for (let p = 0; p <= 200; p += 50) out.push(txt(R0 + 10, YP(p) + 5, String(p), { size: 15, bold: false, anchor: 'start', color: '#1f4fd1' }));
+  out.push(`<line x1="${L0}" y1="${YT(0)}" x2="${R0}" y2="${YT(0)}" stroke="#94a3b8" stroke-width="2"/>`);
+  c.p.forEach((p, i) => out.push(`<rect x="${(X(i) - 15).toFixed(1)}" y="${YP(p).toFixed(1)}" width="30" height="${(B0 - YP(p)).toFixed(1)}" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>`));
+  out.push(`<polyline points="${c.t.map((t, i) => `${X(i).toFixed(1)},${YT(t).toFixed(1)}`).join(' ')}" fill="none" stroke="#d1342f" stroke-width="3.5"/>`);
+  c.t.forEach((t, i) => out.push(`<circle cx="${X(i).toFixed(1)}" cy="${YT(t).toFixed(1)}" r="4.5" fill="#d1342f"/>`));
+  out.push(`<path d="M${L0},${T0} V${B0} H${R0} V${T0}" fill="none" stroke="#111" stroke-width="2.5"/>`);
+  'JFMAMJJASOND'.split('').forEach((m, i) => out.push(txt(X(i), B0 + 22, m, { size: 16 })));
+  out.push(txt(W / 2, 26, c.name, { size: 20 }));
+  out.push(`<text x="22" y="${(T0 + B0) / 2}" font-size="16" font-weight="bold" text-anchor="middle" fill="#d1342f" transform="rotate(-90 22 ${(T0 + B0) / 2})">Temperature (°C)</text>`);
+  out.push(`<text x="622" y="${(T0 + B0) / 2}" font-size="16" font-weight="bold" text-anchor="middle" fill="#1f4fd1" transform="rotate(90 622 ${(T0 + B0) / 2})">Precipitation (mm)</text>`);
+  out.push(txt(W / 2, H - 14, 'Month', { size: 16 }));
+  out.push('</svg>');
+  G[key] = out.join('\n');
+}
+
+// The three kinds of plate boundary, A to C, drawn as blocks with arrows.
+{
+  const out = svgOpen();
+  const arrow = (x1, y, x2, color = '#111') => {
+    const d = x2 > x1 ? 1 : -1;
+    out.push(`<line x1="${x1}" y1="${y}" x2="${x2 - d * 10}" y2="${y}" stroke="${color}" stroke-width="5"/><polygon points="${x2},${y} ${x2 - d * 16},${y - 9} ${x2 - d * 16},${y + 9}" fill="${color}"/>`);
+  };
+  const plate = (x, y, w, h, fill) => out.push(`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}" stroke="#111" stroke-width="2"/>`);
+  // A: plates pulling apart, magma rising.
+  out.push(txt(30, 60, 'A', { size: 26, anchor: 'start' }));
+  plate(70, 70, 230, 40, '#d6b48a'); plate(340, 70, 230, 40, '#d6b48a');
+  out.push(`<path d="M300,110 Q320,60 340,110 Z" fill="#ef4444"/>`);
+  arrow(200, 90, 110); arrow(440, 90, 530);
+  // B: plates pushing together, one sinking under the other.
+  out.push(txt(30, 190, 'B', { size: 26, anchor: 'start' }));
+  out.push(`<polygon points="70,200 320,200 330,240 70,240" fill="#94a3b8" stroke="#111" stroke-width="2"/>`);
+  out.push(`<polygon points="320,200 380,190 570,190 570,240 380,240 330,240" fill="#d6b48a" stroke="#111" stroke-width="2"/>`);
+  out.push(`<polygon points="330,240 320,200 300,250 340,300" fill="#94a3b8" stroke="#111" stroke-width="2"/>`);
+  out.push(`<polygon points="380,190 410,150 440,190" fill="#a16207" stroke="#111" stroke-width="2"/>`);
+  arrow(130, 220, 250); arrow(530, 215, 440);
+  // C: plates sliding past each other (seen from above).
+  out.push(txt(30, 330, 'C', { size: 26, anchor: 'start' }));
+  plate(70, 330, 500, 40, '#d6b48a'); plate(70, 370, 500, 40, '#c4a174');
+  out.push(`<line x1="70" y1="370" x2="570" y2="370" stroke="#ef4444" stroke-width="3" stroke-dasharray="10 6"/>`);
+  arrow(380, 350, 500); arrow(260, 390, 140);
+  out.push('</svg>');
+  G['plate-boundaries'] = out.join('\n');
+}
+
+// Two population pyramids: A (young, fast-growing) and B (older, slow-growing).
+{
+  const out = svgOpen();
+  const shapes = { A: [16, 14, 12, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1.5, 1, 0.7, 0.4], B: [5, 5.2, 5.5, 6, 6.5, 6.8, 7, 7, 7.2, 7.3, 7.4, 7.2, 6.6, 5.6, 4.4, 3.4] };
+  const ages = ['0', '', '10', '', '20', '', '30', '', '40', '', '50', '', '60', '', '70', '75+'];
+  Object.entries(shapes).forEach(([lab, bars], j) => {
+    const cx = 175 + j * 300, base = 395, bh = 20, scale = 7.5;
+    out.push(txt(cx, 40, lab, { size: 26 }));
+    bars.forEach((v, k) => {
+      const y = base - (k + 1) * bh;
+      out.push(`<rect x="${(cx - v * scale).toFixed(1)}" y="${y}" width="${(v * scale).toFixed(1)}" height="${bh - 2}" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>`);
+      out.push(`<rect x="${cx}" y="${y}" width="${(v * scale).toFixed(1)}" height="${bh - 2}" fill="#fecaca" stroke="#d1342f" stroke-width="1"/>`);
+      if (j === 0 && ages[k]) out.push(txt(30, y + 15, ages[k], { size: 13, bold: false, anchor: 'start', color: '#555' }));
+    });
+    out.push(`<line x1="${cx}" y1="${base - 16 * bh}" x2="${cx}" y2="${base}" stroke="#111" stroke-width="2"/>`);
+    out.push(txt(cx - 60, base + 22, 'Male', { size: 14, bold: false, color: '#1f4fd1' }), txt(cx + 60, base + 22, 'Female', { size: 14, bold: false, color: '#d1342f' }));
+  });
+  out.push(txt(30, 50, 'Age', { size: 14, anchor: 'start', color: '#555' }));
+  out.push('</svg>');
+  G['pyramids'] = out.join('\n');
+}
+
+// The demographic transition model, stages 1 to 4.
+{
+  const out = svgOpen();
+  const L0 = 60, R0 = 600, T0 = 50, B0 = 370;
+  const X = s => L0 + s * (R0 - L0) / 4;   // s from 0 to 4
+  const Y = v => B0 - v / 50 * (B0 - T0);  // rate per 1000, 0 to 50
+  const curve = (pts, color, dash) => out.push(`<polyline points="${pts.map(([s, v]) => `${X(s).toFixed(1)},${Y(v).toFixed(1)}`).join(' ')}" fill="none" stroke="${color}" stroke-width="4"${dash ? ' stroke-dasharray="10 7"' : ''} stroke-linejoin="round"/>`);
+  const smooth = (f, a, b) => { const p = []; for (let i = 0; i <= 80; i++) { const s = a + (b - a) * i / 80; p.push([s, f(s)]); } return p; };
+  const birth = s => s < 1.6 ? 42 + Math.sin(s * 9) * 1.5 : s < 3.4 ? 42 - 30 * ((s - 1.6) / 1.8) ** 1.2 : 12 + Math.sin(s * 8);
+  const death = s => s < 1 ? 38 + Math.sin(s * 11) * 3 : s < 2.2 ? 38 - 27 * ((s - 1) / 1.2) ** 0.8 : 11 - (s - 2.2) * 0.4;
+  for (let k = 1; k < 4; k++) out.push(`<line x1="${X(k)}" y1="${T0}" x2="${X(k)}" y2="${B0}" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 6"/>`);
+  for (let k = 0; k < 4; k++) out.push(txt((X(k) + X(k + 1)) / 2, T0 - 14, `Stage ${k + 1}`, { size: 17 }));
+  out.push(`<polygon points="${[...smooth(birth, 0, 4), ...smooth(death, 0, 4).reverse()].map(([s, v]) => `${X(s).toFixed(1)},${Y(v).toFixed(1)}`).join(' ')}" fill="#fde68a" fill-opacity="0.7"/>`);
+  curve(smooth(birth, 0, 4), '#1f4fd1');
+  curve(smooth(death, 0, 4), '#d1342f', true);
+  out.push(txt(X(0.5), Y(46), 'Birth rate', { size: 16, color: '#1f4fd1', halo: true }), txt(X(0.5), Y(31), 'Death rate', { size: 16, color: '#d1342f', halo: true }));
+  out.push(txt(X(2.05), Y(25), 'Natural', { size: 15, halo: true }), txt(X(2.05), Y(21.5), 'increase', { size: 15, halo: true }));
+  out.push(`<path d="M${L0},${T0} V${B0} H${R0}" fill="none" stroke="#111" stroke-width="2.5"/>`);
+  out.push(txt(W / 2, B0 + 30, 'Time', { size: 17 }));
+  out.push(`<text x="24" y="${(T0 + B0) / 2}" font-size="16" font-weight="bold" text-anchor="middle" fill="#111" transform="rotate(-90 24 ${(T0 + B0) / 2})">Rate per 1000 people</text>`);
+  out.push('</svg>');
+  G['dtm'] = out.join('\n');
+}
+
+// Canadian jobs by economic sector (approximate shares).
+{
+  const out = svgOpen();
+  const bars = [['Primary', 4, '#22b573'], ['Secondary', 18, '#f2b705'], ['Tertiary', 78, '#2f7de1']];
+  const L0 = 150, R0 = 580;
+  bars.forEach(([name, v, color], i) => {
+    const y = 80 + i * 105;
+    out.push(txt(L0 - 14, y + 42, name, { size: 19, anchor: 'end' }));
+    out.push(`<rect x="${L0}" y="${y}" width="${(v / 100 * (R0 - L0)).toFixed(1)}" height="64" fill="${color}" rx="4"/>`);
+    out.push(txt(L0 + v / 100 * (R0 - L0) + 12, y + 42, '?', { size: 22, anchor: 'start' }));
+  });
+  out.push(`<line x1="${L0}" y1="60" x2="${L0}" y2="395" stroke="#111" stroke-width="2.5"/>`);
+  out.push(txt(W / 2, 36, 'Jobs in Canada by economic sector', { size: 19 }));
+  out.push(txt(W / 2, 425, 'Share of all jobs (approximate)', { size: 15, bold: false }));
+  out.push('</svg>');
+  G['sectors'] = out.join('\n');
+}
+
 fs.mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(G)) fs.writeFileSync(path.join(OUT, name + '.svg'), svg + '\n');
 console.log(`Wrote ${Object.keys(G).length} graphs to ${path.relative(process.cwd(), OUT)}`);

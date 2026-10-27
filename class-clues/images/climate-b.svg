@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450" width="640" height="450" font-family="Arial, Helvetica, sans-serif">
+<rect x="1" y="1" width="638" height="448" rx="14" fill="#ffffff" stroke="#c9d3ff" stroke-width="2"/>
+<line x1="78" y1="380" x2="562" y2="380" stroke="#e2e8f0" stroke-width="1.5"/><text x="68" y="385" font-size="15" font-weight="normal" text-anchor="end" fill="#d1342f">-10</text>
+<line x1="78" y1="295" x2="562" y2="295" stroke="#e2e8f0" stroke-width="1.5"/><text x="68" y="300" font-size="15" font-weight="normal" text-anchor="end" fill="#d1342f">0</text>
+<line x1="78" y1="210" x2="562" y2="210" stroke="#e2e8f0" stroke-width="1.5"/><text x="68" y="215" font-size="15" font-weight="normal" text-anchor="end" fill="#d1342f">10</text>
+<line x1="78" y1="125" x2="562" y2="125" stroke="#e2e8f0" stroke-width="1.5"/><text x="68" y="130" font-size="15" font-weight="normal" text-anchor="end" fill="#d1342f">20</text>
+<line x1="78" y1="40" x2="562" y2="40" stroke="#e2e8f0" stroke-width="1.5"/><text x="68" y="45" font-size="15" font-weight="normal" text-anchor="end" fill="#d1342f">30</text>
+<text x="572" y="385" font-size="15" font-weight="normal" text-anchor="start" fill="#1f4fd1">0</text>
+<text x="572" y="300" font-size="15" font-weight="normal" text-anchor="start" fill="#1f4fd1">50</text>
+<text x="572" y="215" font-size="15" font-weight="normal" text-anchor="start" fill="#1f4fd1">100</text>
+<text x="572" y="130" font-size="15" font-weight="normal" text-anchor="start" fill="#1f4fd1">150</text>
+<text x="572" y="45" font-size="15" font-weight="normal" text-anchor="start" fill="#1f4fd1">200</text>
+<line x1="78" y1="295" x2="562" y2="295" stroke="#94a3b8" stroke-width="2"/>
+<rect x="83.2" y="94.4" width="30" height="285.6" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="123.5" y="201.5" width="30" height="178.5" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="163.8" y="187.9" width="30" height="192.1" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="204.2" y="230.4" width="30" height="149.6" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="244.5" y="269.5" width="30" height="110.5" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="284.8" y="288.2" width="30" height="91.8" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="325.2" y="312.0" width="30" height="68.0" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="365.5" y="310.3" width="30" height="69.7" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="405.8" y="288.2" width="30" height="91.8" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="446.2" y="189.6" width="30" height="190.4" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="486.5" y="55.3" width="30" height="324.7" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<rect x="526.8" y="87.6" width="30" height="292.4" fill="#93c5fd" stroke="#1f4fd1" stroke-width="1"/>
+<polyline points="98.2,260.1 138.5,253.3 178.8,236.3 219.2,215.1 259.5,186.2 299.8,161.6 340.2,142.0 380.5,141.2 420.8,166.6 461.2,204.9 501.5,240.6 541.8,264.4" fill="none" stroke="#d1342f" stroke-width="3.5"/>
+<circle cx="98.2" cy="260.1" r="4.5" fill="#d1342f"/>
+<circle cx="138.5" cy="253.3" r="4.5" fill="#d1342f"/>
+<circle cx="178.8" cy="236.3" r="4.5" fill="#d1342f"/>
+<circle cx="219.2" cy="215.1" r="4.5" fill="#d1342f"/>
+<circle cx="259.5" cy="186.2" r="4.5" fill="#d1342f"/>
+<circle cx="299.8" cy="161.6" r="4.5" fill="#d1342f"/>
+<circle cx="340.2" cy="142.0" r="4.5" fill="#d1342f"/>
+<circle cx="380.5" cy="141.2" r="4.5" fill="#d1342f"/>
+<circle cx="420.8" cy="166.6" r="4.5" fill="#d1342f"/>
+<circle cx="461.2" cy="204.9" r="4.5" fill="#d1342f"/>
+<circle cx="501.5" cy="240.6" r="4.5" fill="#d1342f"/>
+<circle cx="541.8" cy="264.4" r="4.5" fill="#d1342f"/>
+<path d="M78,40 V380 H562 V40" fill="none" stroke="#111" stroke-width="2.5"/>
+<text x="98.16666666666667" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">J</text>
+<text x="138.5" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">F</text>
+<text x="178.83333333333331" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">M</text>
+<text x="219.16666666666666" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">A</text>
+<text x="259.5" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">M</text>
+<text x="299.83333333333337" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">J</text>
+<text x="340.1666666666667" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">J</text>
+<text x="380.5" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">A</text>
+<text x="420.8333333333333" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">S</text>
+<text x="461.1666666666667" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">O</text>
+<text x="501.5" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">N</text>
+<text x="541.8333333333333" y="402" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">D</text>
+<text x="320" y="26" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">City B</text>
+<text x="22" y="210" font-size="16" font-weight="bold" text-anchor="middle" fill="#d1342f" transform="rotate(-90 22 210)">Temperature (°C)</text>
+<text x="622" y="210" font-size="16" font-weight="bold" text-anchor="middle" fill="#1f4fd1" transform="rotate(90 622 210)">Precipitation (mm)</text>
+<text x="320" y="436" font-size="16" font-weight="bold" text-anchor="middle" fill="#111">Month</text>
+</svg>

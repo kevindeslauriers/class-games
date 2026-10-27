@@ -5,6 +5,7 @@ A quiz board for a whole class. The teacher's computer drives the projector; eve
 Courses so far:
 
 - **SNC1W**, Grade 9 Science (de-streamed): four units (ecosystems, space, chemistry, electricity). This is the default course.
+- **CGC1W**, Grade 9 Geography (Exploring Canadian Geography): the three units of the course outline (the physical environment, resources and industries, changing populations), with climate graphs, plate boundaries, population pyramids, the demographic transition model and jobs by economic sector.
 - **MDM4U**, Grade 12 Data Management: the eight units of the course outline (probability, permutations, combinations and Pascal's triangle, discrete distributions, organizing data, one-variable statistics, normal distributions, two-variable statistics). Most clues are calculations; graph clues use a Venn diagram, a tree diagram, Pascal's triangle, a box plot, histograms, normal curves and scatter plots.
 - **AP Microeconomics**: the six College Board units, with about a quarter of clues needing a calculation (as on the exam) and over 80 clues built around graphs: supply and demand, surplus, price controls, taxes, cost curves, the competitive firm, monopoly, monopolistic competition, monopsony, externalities, the Lorenz curve and a payoff matrix.
 

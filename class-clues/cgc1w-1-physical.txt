@@ -1,0 +1,91 @@
+# Course: CGC1W | Grade 9 Geography (Exploring Canadian Geography)
+# Unit: physical | Unit 1: Sustainable Physical Environment
+
+## A GOOD PLACE TO LIVE
+1 | How suitable a place is for people to live, based on things like safety, jobs, health care and the environment | LIVABILITY / LIVEABILITY
+2 | Meeting today's needs without harming the ability of future generations to meet theirs | SUSTAINABILITY | URBANIZATION; GLOBALIZATION; INDUSTRIALIZATION
+3 | Which of these most affects a place's physical livability? | ITS CLIMATE AND LANDFORMS | ITS POSTAL CODE; ITS SPORTS TEAMS; ITS TIME ZONE
+4 | The part of the Earth where people live and work permanently is called this | ECUMENE / THE ECUMENE
+5 | Much of Canada's North has few people mainly because of this | A HARSH CLIMATE AND PERMAFROST | A LACK OF FRESH WATER; FREQUENT EARTHQUAKES; VOLCANOES
+
+## A RESTLESS EARTH
+1 | The giant supercontinent that broke apart about 200 million years ago | PANGAEA / PANGEA
+2 | The German scientist who proposed continental drift in 1912 | ALFRED WEGENER | CHARLES DARWIN; ISAAC NEWTON; ALBERT EINSTEIN
+3 | Earth's rigid outer layer is broken into pieces called these | TECTONIC PLATES / PLATES / PLATE
+4 | Heat rising and sinking in the mantle that moves the plates is called this | CONVECTION CURRENTS | OCEAN CURRENTS; JET STREAMS; TIDES
+5 | The small oceanic plate sinking under British Columbia, causing earthquake risk there | JUAN DE FUCA PLATE | PACIFIC PLATE; COCOS PLATE; NAZCA PLATE
+
+## PLATE BOUNDARIES
+1 | [graph: plate-boundaries] Which diagram shows a divergent boundary, where plates move apart? | A | B; C; NONE OF THEM
+2 | [graph: plate-boundaries] Diagram B shows plates colliding. This is a ___ boundary | CONVERGENT
+3 | [graph: plate-boundaries] Diagram C shows plates sliding past each other. This is a ___ boundary | TRANSFORM | DIVERGENT; CONVERGENT; SUBDUCTING
+4 | [graph: plate-boundaries] In diagram B, the denser plate sinks under the other. This process is called this | SUBDUCTION | EROSION; DEPOSITION; GLACIATION
+5 | [graph: plate-boundaries] The Mid-Atlantic Ridge, where new sea floor forms, is the kind of boundary in which diagram? | A | B; C; ALL THREE
+
+## ROCKS
+1 | Rock formed when magma or lava cools and hardens | IGNEOUS | SEDIMENTARY; METAMORPHIC; FOSSILIZED
+2 | Rock formed from layers of sediment pressed together, often containing fossils | SEDIMENTARY
+3 | Rock changed by great heat and pressure, like marble from limestone | METAMORPHIC | IGNEOUS; SEDIMENTARY; VOLCANIC
+4 | The continuous process by which rocks change from one type to another | THE ROCK CYCLE / ROCK CYCLE
+5 | Coal, oil and natural gas are found mainly in this kind of rock | SEDIMENTARY | IGNEOUS; METAMORPHIC; VOLCANIC
+
+## GLACIATION
+1 | A huge sheet of ice that covered most of Canada during the last ice age | LAURENTIDE ICE SHEET | GREENLAND ICE SHEET; CORDILLERAN SHELF; ARCTIC PACK
+2 | A ridge of rock and soil pushed and dropped by a glacier | MORAINE / A MORAINE / MORAINES
+3 | A long, winding ridge of sand and gravel left by a river flowing under a glacier | ESKER | DRUMLIN; ERRATIC; MORAINE
+4 | A large boulder carried by a glacier and dropped far from where it came from | ERRATIC / AN ERRATIC / GLACIAL ERRATIC
+5 | Land slowly rising after the weight of the glaciers was removed is called this | ISOSTATIC REBOUND | SUBDUCTION; CONTINENTAL DRIFT; SEA FLOOR SPREADING
+
+## NATURAL DISASTERS
+1 | A giant ocean wave usually caused by an undersea earthquake | TSUNAMI / A TSUNAMI
+2 | The ring of volcanoes and earthquakes around the Pacific Ocean | THE RING OF FIRE | THE PACIFIC RIDGE; THE MID-ATLANTIC RIDGE; THE CANADIAN SHIELD
+3 | In 2016, a huge wildfire forced about 88,000 people to leave this Alberta city | FORT MCMURRAY | CALGARY; RED DEER; LETHBRIDGE
+4 | In 2021, Lytton, B.C. set Canada's all-time high temperature during this event | A HEAT DOME | A HURRICANE; A TSUNAMI; AN ICE STORM
+5 | The scale used today to measure the energy released by an earthquake | MOMENT MAGNITUDE | BEAUFORT; FUJITA; SAFFIR-SIMPSON
+
+## LANDFORM REGIONS
+1 | The huge, ancient region of rock around Hudson Bay, rich in minerals | CANADIAN SHIELD / THE CANADIAN SHIELD / SHIELD
+2 | The flat region of the Prairies, good for growing wheat | INTERIOR PLAINS | HUDSON BAY LOWLANDS; ARCTIC LOWLANDS; GREAT LAKES-ST. LAWRENCE LOWLANDS
+3 | The young, high mountains of western Canada, including the Rockies | WESTERN CORDILLERA / CORDILLERA / THE WESTERN CORDILLERA
+4 | The region where most Canadians live, with fertile soil and a mild climate, between Windsor and Quebec City | GREAT LAKES-ST. LAWRENCE LOWLANDS | INTERIOR PLAINS; CANADIAN SHIELD; APPALACHIANS
+5 | The old, worn-down mountains of Atlantic Canada | APPALACHIANS / APPALACHIAN MOUNTAINS / THE APPALACHIANS
+
+## NORTHERN LANDFORMS
+1 | The high, ice-covered mountains of Canada's far north, on Ellesmere Island | INNUITIAN MOUNTAINS | ROCKY MOUNTAINS; APPALACHIANS; LAURENTIANS
+2 | Swampy, flat land south of Hudson Bay, full of muskeg | HUDSON BAY LOWLANDS / HUDSON BAY LOWLAND
+3 | Wet, spongy ground of moss and peat common in the North | MUSKEG | TUNDRA; CHERNOZEM; LOESS
+4 | The flat islands of the Arctic made of sedimentary rock are part of this region | ARCTIC LOWLANDS | INTERIOR PLAINS; CANADIAN SHIELD; INNUITIAN MOUNTAINS
+5 | The Canadian Shield's rocks are mostly this old | OVER A BILLION YEARS | ABOUT 10,000 YEARS; ABOUT 1 MILLION YEARS; ABOUT 100 YEARS
+
+## CLIMATE FACTORS
+1 | The memory aid LOWERN lists the factors that affect climate. What does the L stand for? | LATITUDE | LAKES; LANDFORMS; LONGITUDE
+2 | Places near large bodies of water have milder winters and cooler summers. This is called a ___ climate | MARITIME | CONTINENTAL; POLAR; DESERT
+3 | Places far from the ocean, with very hot summers and very cold winters, have this kind of climate | CONTINENTAL
+4 | Temperature drops about 6.5°C for every 1000 m you climb. This shows the effect of this factor | ELEVATION | LATITUDE; OCEAN CURRENTS; WINDS
+5 | Moist air rises over mountains, cools and drops rain on the windward side, leaving a dry ___ on the other side | RAIN SHADOW / RAINSHADOW
+
+## CLIMATE GRAPHS
+1 | [graph: climate-a] Which month is warmest in City A? | JULY | JUNE; AUGUST; SEPTEMBER
+2 | [graph: climate-a] What is City A's temperature range (warmest month minus coldest), in °C? | = 26 °C ~1%
+3 | [graph: climate-a] How many months have an average temperature below 0°C? | = 3 months ~0
+4 | [graph: climate-a] What is City A's total yearly precipitation, in mm? | = 819 mm ~1%
+5 | [graph: climate-a] City A's large temperature range suggests this kind of climate | CONTINENTAL | MARITIME; POLAR; TROPICAL
+
+## COMPARING CLIMATES
+1 | [graph: climate-b] Which month is wettest in City B? | NOVEMBER | JULY; MARCH; DECEMBER
+2 | [graph: climate-b] What is City B's temperature range, in °C? | = 14.5 °C ~1%
+3 | [graph: climate-b] City B has mild, wet winters and a small temperature range. Its climate is this | MARITIME | CONTINENTAL; ARCTIC; SEMI-ARID
+4 | [graph: climate-b] Which Canadian city is City B most likely to be? | VANCOUVER | WINNIPEG; TORONTO; IQALUIT
+5 | [graph: climate-b] What is City B's total yearly precipitation, in mm? | = 1203 mm ~1%
+
+## SOILS AND VEGETATION
+1 | Ground that stays frozen all year long | PERMAFROST
+2 | The treeless northern region of mosses, lichens and low shrubs | TUNDRA | BOREAL FOREST; GRASSLAND; TEMPERATE RAINFOREST
+3 | Canada's largest vegetation region, a band of coniferous trees across the country | BOREAL FOREST / BOREAL / TAIGA
+4 | The rich, black soil of the Prairie grasslands, excellent for farming | CHERNOZEM | PODZOL; TUNDRA SOIL; CLAY
+5 | Huge trees like Douglas fir and western red cedar grow on B.C.'s coast because of this | MILD TEMPERATURES AND HEAVY RAINFALL | DEEP PERMAFROST; VERY COLD WINTERS; DRY SUMMER WINDS
+
+FINAL | LANDFORM REGIONS | This landform region covers about half of Canada and is the source of much of its mining wealth | CANADIAN SHIELD | INTERIOR PLAINS; WESTERN CORDILLERA; HUDSON BAY LOWLANDS
+FINAL | CLIMATE GRAPHS | [graph: climate-b] City B gets heavy winter rain because moist air comes from here | THE PACIFIC OCEAN | THE ARCTIC OCEAN; HUDSON BAY; THE GREAT LAKES
+FINAL | GLACIATION | These five huge lakes on the Canada–U.S. border were carved out by glaciers | THE GREAT LAKES / GREAT LAKES
+FINAL | A RESTLESS EARTH | Which Canadian province has the highest risk of a major earthquake? | BRITISH COLUMBIA | SASKATCHEWAN; MANITOBA; PRINCE EDWARD ISLAND

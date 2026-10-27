@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450" width="640" height="450" font-family="Arial, Helvetica, sans-serif">
+<rect x="1" y="1" width="638" height="448" rx="14" fill="#ffffff" stroke="#c9d3ff" stroke-width="2"/>
+<text x="30" y="60" font-size="26" font-weight="bold" text-anchor="start" fill="#111">A</text>
+<rect x="70" y="70" width="230" height="40" fill="#d6b48a" stroke="#111" stroke-width="2"/>
+<rect x="340" y="70" width="230" height="40" fill="#d6b48a" stroke="#111" stroke-width="2"/>
+<path d="M300,110 Q320,60 340,110 Z" fill="#ef4444"/>
+<line x1="200" y1="90" x2="120" y2="90" stroke="#111" stroke-width="5"/><polygon points="110,90 126,81 126,99" fill="#111"/>
+<line x1="440" y1="90" x2="520" y2="90" stroke="#111" stroke-width="5"/><polygon points="530,90 514,81 514,99" fill="#111"/>
+<text x="30" y="190" font-size="26" font-weight="bold" text-anchor="start" fill="#111">B</text>
+<polygon points="70,200 320,200 330,240 70,240" fill="#94a3b8" stroke="#111" stroke-width="2"/>
+<polygon points="320,200 380,190 570,190 570,240 380,240 330,240" fill="#d6b48a" stroke="#111" stroke-width="2"/>
+<polygon points="330,240 320,200 300,250 340,300" fill="#94a3b8" stroke="#111" stroke-width="2"/>
+<polygon points="380,190 410,150 440,190" fill="#a16207" stroke="#111" stroke-width="2"/>
+<line x1="130" y1="220" x2="240" y2="220" stroke="#111" stroke-width="5"/><polygon points="250,220 234,211 234,229" fill="#111"/>
+<line x1="530" y1="215" x2="450" y2="215" stroke="#111" stroke-width="5"/><polygon points="440,215 456,206 456,224" fill="#111"/>
+<text x="30" y="330" font-size="26" font-weight="bold" text-anchor="start" fill="#111">C</text>
+<rect x="70" y="330" width="500" height="40" fill="#d6b48a" stroke="#111" stroke-width="2"/>
+<rect x="70" y="370" width="500" height="40" fill="#c4a174" stroke="#111" stroke-width="2"/>
+<line x1="70" y1="370" x2="570" y2="370" stroke="#ef4444" stroke-width="3" stroke-dasharray="10 6"/>
+<line x1="380" y1="350" x2="490" y2="350" stroke="#111" stroke-width="5"/><polygon points="500,350 484,341 484,359" fill="#111"/>
+<line x1="260" y1="390" x2="150" y2="390" stroke="#111" stroke-width="5"/><polygon points="140,390 156,381 156,399" fill="#111"/>
+</svg>

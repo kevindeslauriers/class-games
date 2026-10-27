@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450" width="640" height="450" font-family="Arial, Helvetica, sans-serif">
+<rect x="1" y="1" width="638" height="448" rx="14" fill="#ffffff" stroke="#c9d3ff" stroke-width="2"/>
+<text x="136" y="122" font-size="19" font-weight="bold" text-anchor="end" fill="#111">Primary</text>
+<rect x="150" y="80" width="17.2" height="64" fill="#22b573" rx="4"/>
+<text x="179.2" y="122" font-size="22" font-weight="bold" text-anchor="start" fill="#111">?</text>
+<text x="136" y="227" font-size="19" font-weight="bold" text-anchor="end" fill="#111">Secondary</text>
+<rect x="150" y="185" width="77.4" height="64" fill="#f2b705" rx="4"/>
+<text x="239.39999999999998" y="227" font-size="22" font-weight="bold" text-anchor="start" fill="#111">?</text>
+<text x="136" y="332" font-size="19" font-weight="bold" text-anchor="end" fill="#111">Tertiary</text>
+<rect x="150" y="290" width="335.4" height="64" fill="#2f7de1" rx="4"/>
+<text x="497.40000000000003" y="332" font-size="22" font-weight="bold" text-anchor="start" fill="#111">?</text>
+<line x1="150" y1="60" x2="150" y2="395" stroke="#111" stroke-width="2.5"/>
+<text x="320" y="36" font-size="19" font-weight="bold" text-anchor="middle" fill="#111">Jobs in Canada by economic sector</text>
+<text x="320" y="425" font-size="15" font-weight="normal" text-anchor="middle" fill="#111">Share of all jobs (approximate)</text>
+</svg>

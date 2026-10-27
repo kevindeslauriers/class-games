@@ -1,0 +1,91 @@
+# Course: CGC1W | Grade 9 Geography (Exploring Canadian Geography)
+# Unit: resources | Unit 2: Sustainability of our Resources and Industries
+
+## TYPES OF RESOURCES
+1 | A resource that can replace itself in a human lifetime if managed well, like forests | RENEWABLE | NON-RENEWABLE; FLOW; SYNTHETIC
+2 | A resource that cannot be replaced once used up, like oil or nickel | NON-RENEWABLE / NONRENEWABLE
+3 | Wind, sunlight and moving water are called this kind of resource, because they're there whether we use them or not | FLOW RESOURCES | NON-RENEWABLE RESOURCES; FOSSIL RESOURCES; STOCK RESOURCES
+4 | Fish stocks are renewable only if they are harvested at this kind of rate | SUSTAINABLE | MAXIMUM; INCREASING; UNLIMITED
+5 | Raw materials taken directly from nature, like logs and ore, are called this | NATURAL RESOURCES / RESOURCES / RAW MATERIALS
+
+## FORESTRY
+1 | Cutting down every tree in an area at once | CLEAR-CUTTING / CLEARCUTTING / CLEAR CUTTING
+2 | Cutting only certain mature trees and leaving the rest | SELECTIVE CUTTING | CLEAR-CUTTING; SHELTERWOOD CUTTING; SLASH BURNING
+3 | Removing mature trees in stages so young trees grow under the shelter of older ones | SHELTERWOOD CUTTING | CLEAR-CUTTING; SELECTIVE CUTTING; STRIP MINING
+4 | Planting trees to replace those that were cut down | REFORESTATION / REPLANTING
+5 | Canada's boreal forest is important to fighting climate change because it stores huge amounts of this | CARBON | NITROGEN; OXYGEN; MERCURY
+
+## FARMING
+1 | Growing one crop over a large area, year after year | MONOCULTURE | CROP ROTATION; POLYCULTURE; AQUACULTURE
+2 | Canada's best farmland, Class 1 soil, is mostly found in this province | ONTARIO | ALBERTA; BRITISH COLUMBIA; NEWFOUNDLAND AND LABRADOR
+3 | The protected band of farmland and nature around the Golden Horseshoe, created in 2005 | GREENBELT / THE GREENBELT / ONTARIO GREENBELT
+4 | Large farms run by corporations using machines and science are part of this | AGRIBUSINESS | SUBSISTENCE FARMING; HUNTING AND GATHERING; COTTAGE INDUSTRY
+5 | The Niagara Peninsula is good for growing fruit because Lake Ontario does this | MODERATES THE TEMPERATURE | FREEZES THE SOIL; BLOCKS ALL RAIN; RAISES THE ELEVATION
+
+## FISHING
+1 | Raising fish in pens or tanks, like salmon farms | AQUACULTURE / FISH FARMING
+2 | In 1992, Canada banned fishing for this species off Newfoundland after its numbers collapsed | NORTHERN COD / COD / ATLANTIC COD
+3 | Fish and other animals caught by accident in fishing nets | BYCATCH | OVERFISHING; QUOTAS; AQUACULTURE
+4 | A limit on how many fish can be caught in a season | QUOTA | TARIFF; MORATORIUM; LICENCE
+5 | The rich fishing area off Newfoundland, where cold and warm currents meet | GRAND BANKS / THE GRAND BANKS
+
+## MINING
+1 | Mining from a huge hole dug at the surface | OPEN-PIT MINING | UNDERGROUND MINING; STRIP FARMING; PLACER MINING
+2 | The waste rock and sludge left after minerals are removed from ore | TAILINGS
+3 | Sudbury, Ontario is famous for mining this metal | NICKEL | GOLD; URANIUM; IRON
+4 | Rock that contains enough metal to be mined for a profit | ORE
+5 | Most of Canada's metal mines are found in this landform region | CANADIAN SHIELD | INTERIOR PLAINS; GREAT LAKES-ST. LAWRENCE LOWLANDS; ARCTIC LOWLANDS
+
+## OIL AND GAS
+1 | Coal, oil and natural gas are called these | FOSSIL FUELS / FOSSIL FUEL
+2 | Alberta's huge deposits of thick, sticky oil mixed with sand | OIL SANDS / TAR SANDS / THE OIL SANDS
+3 | Pumping water, sand and chemicals underground to crack rock and release gas | FRACKING | REFINING; DRILLING OFFSHORE; SMELTING
+4 | Long pipes used to move oil and gas across the country | PIPELINES / PIPELINE
+5 | Burning fossil fuels releases this main greenhouse gas | CARBON DIOXIDE | OXYGEN; NITROGEN; OZONE
+
+## WATER
+1 | Canada has about this share of the world's fresh water (counting lakes, rivers and glaciers) | ABOUT 20% | ABOUT 2%; ABOUT 50%; ABOUT 90%
+2 | Water that is hidden in the products we buy, like the water used to grow cotton for a T-shirt | VIRTUAL WATER / HIDDEN WATER / EMBEDDED WATER
+3 | In 2000, E. coli in the town water killed 7 people in this Ontario town | WALKERTON | GUELPH; BARRIE; KINGSTON
+4 | Many First Nations communities have lived for years under these, meaning their tap water isn't safe | BOIL WATER ADVISORIES / BOIL-WATER ADVISORIES / BOIL WATER ADVISORY / DRINKING WATER ADVISORIES
+5 | The area of land that drains into a particular river or lake | WATERSHED / DRAINAGE BASIN / A WATERSHED
+
+## MANUFACTURING
+1 | The secondary sector turns raw materials into these | FINISHED PRODUCTS | NATURAL RESOURCES; SERVICES; RAW ORE
+2 | The heavily populated, industrial area around the west end of Lake Ontario, from Oshawa to Niagara | GOLDEN HORSESHOE / THE GOLDEN HORSESHOE
+3 | Ontario's biggest manufacturing industry, with plants in places like Oakville, Windsor and Alliston | AUTOMOTIVE | STEEL TOOLS ONLY; TEXTILES; SHIPBUILDING
+4 | An industry that can locate almost anywhere, because it doesn't depend on heavy raw materials | FOOTLOOSE / A FOOTLOOSE INDUSTRY / FOOTLOOSE INDUSTRY
+5 | Companies moving factories to countries with lower wages is called this | OUTSOURCING | INSOURCING; UNIONIZING; RECYCLING
+
+## ECONOMIC SECTORS
+1 | [graph: sectors] Forestry, fishing, farming and mining belong to this sector | PRIMARY | SECONDARY; TERTIARY; QUATERNARY
+2 | [graph: sectors] Teachers, nurses and store clerks work in this sector | TERTIARY / SERVICE / SERVICES / THE SERVICE SECTOR
+3 | [graph: sectors] About what percent of Canadian jobs are in the tertiary (service) sector? | ABOUT 78% | ABOUT 4%; ABOUT 18%; ABOUT 50%
+4 | [graph: sectors] About what percent of Canadian jobs are in the primary sector? | ABOUT 4% | ABOUT 18%; ABOUT 40%; ABOUT 78%
+5 | [graph: sectors] Jobs creating and sharing information and research, like software developers, are sometimes called this sector | QUATERNARY | PRIMARY; SECONDARY; RAW MATERIALS
+
+## BEYOND FACTORIES
+1 | The economy that sells services instead of goods is often called the ___ economy | SERVICE
+2 | Tourism belongs to this sector | TERTIARY | PRIMARY; SECONDARY; RESOURCE
+3 | An economy dominated by services, like Canada's, is often called this | POST-INDUSTRIAL | PRE-INDUSTRIAL; AGRICULTURAL; RESOURCE-BASED
+4 | Selling goods and services to other countries | EXPORTING / EXPORTS / EXPORT
+5 | An economy that depends heavily on selling raw materials is often described as this | RESOURCE-BASED | SERVICE-BASED; POST-INDUSTRIAL; KNOWLEDGE-BASED
+
+## SUSTAINABLE CHOICES
+1 | The 3 Rs, in order of importance | REDUCE, REUSE, RECYCLE | RECYCLE, REUSE, REDUCE; REUSE, RECYCLE, REDUCE; RECYCLE, REDUCE, REUSE
+2 | Designing products so materials are kept in use instead of thrown away is called a ___ economy | CIRCULAR
+3 | A label like FSC on wood tells buyers the forest was this | MANAGED SUSTAINABLY | CLEAR-CUT; GOVERNMENT-OWNED; PLANTED LAST YEAR
+4 | The total amount of greenhouse gases caused by a person or product | CARBON FOOTPRINT / FOOTPRINT
+5 | The Haudenosaunee Seventh Generation principle asks leaders to think about the effects of a decision on people how many generations into the future? | = 7 generations ~0
+
+## GEOGRAPHY AT WORK
+1 | Computer systems that layer and analyze map data | GIS / GEOGRAPHIC INFORMATION SYSTEMS / GEOGRAPHIC INFORMATION SYSTEM
+2 | The satellite system that tells your phone exactly where you are | GPS / GLOBAL POSITIONING SYSTEM
+3 | Gathering information about Earth from satellites or aircraft | REMOTE SENSING | GEOCACHING; SURVEYING BY FOOT; CENSUS TAKING
+4 | A skilled trade often found in the resource sector, like heavy-equipment operator or this | ELECTRICIAN | LAWYER; ACCOUNTANT; PHARMACIST
+5 | A job that plans how land in a city will be used | URBAN PLANNER | GEOLOGIST; FORESTER; METEOROLOGIST
+
+FINAL | FISHING | The 1992 cod moratorium put about 30,000 people out of work, mostly in this province | NEWFOUNDLAND AND LABRADOR | NOVA SCOTIA; PRINCE EDWARD ISLAND; BRITISH COLUMBIA
+FINAL | MINING | Ontario's "Ring of Fire" is a large mineral deposit in this region, near several First Nations | THE HUDSON BAY LOWLANDS | THE NIAGARA PENINSULA; THE GOLDEN HORSESHOE; THE OTTAWA VALLEY
+FINAL | ECONOMIC SECTORS | [graph: sectors] A worker at a car assembly plant in Oakville is in this sector | SECONDARY | PRIMARY; TERTIARY; QUATERNARY
+FINAL | WATER | The world's largest group of freshwater lakes, shared by Canada and the U.S. | THE GREAT LAKES / GREAT LAKES

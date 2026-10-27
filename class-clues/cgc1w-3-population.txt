@@ -1,0 +1,91 @@
+# Course: CGC1W | Grade 9 Geography (Exploring Canadian Geography)
+# Unit: population | Unit 3: Sustainability of our Changing Populations
+
+## WHERE CANADIANS LIVE
+1 | Canada's largest city | TORONTO | MONTREAL; VANCOUVER; CALGARY
+2 | About three-quarters of Canadians live within about 160 km of this | THE U.S. BORDER | THE ARCTIC OCEAN; HUDSON BAY; THE ROCKY MOUNTAINS
+3 | The three Canadian cities where most immigrants settle | TORONTO, MONTREAL AND VANCOUVER | OTTAWA, HALIFAX AND WINNIPEG; CALGARY, EDMONTON AND REGINA; QUEBEC CITY, VICTORIA AND IQALUIT
+4 | The way people are spread out across an area is called population ___ | DISTRIBUTION
+5 | Canada's least populated province or territory | NUNAVUT | YUKON; PRINCE EDWARD ISLAND; NORTHWEST TERRITORIES
+
+## POPULATION DENSITY
+1 | Population density is the number of people divided by this | AREA / LAND AREA / THE AREA
+2 | A town has 5000 people living on 25 km². What is its population density, in people per km²? | = 200 people/km² ~0
+3 | Canada has about 40 million people on about 9 million km² of land. About what is its population density, in people per km²? | = 4.4 people/km² ~10%
+4 | Which has the higher population density? | TORONTO | NUNAVUT; CANADA AS A WHOLE; RURAL SASKATCHEWAN
+5 | A city of 2,800,000 people has a density of 4,400 people per km². About what is its area, in km²? | = 636 km² ~2%
+
+## POPULATION STATISTICS
+1 | The number of births per 1000 people in a year | BIRTH RATE / CRUDE BIRTH RATE
+2 | Natural increase is the birth rate minus this | THE DEATH RATE | THE MIGRATION RATE; THE FERTILITY RATE; THE GROWTH RATE
+3 | A country's birth rate is 10 per 1000 and its death rate is 8 per 1000. What is its natural increase rate, per 1000? | = 2 ~0
+4 | The average number of children born to each woman in her lifetime | FERTILITY RATE / TOTAL FERTILITY RATE
+5 | Using the rule of 70, a population growing at 2% a year doubles in how many years? | = 35 years ~0
+
+## POPULATION PYRAMIDS
+1 | [graph: pyramids] Which pyramid shows a young, fast-growing population? | A | B; BOTH; NEITHER
+2 | [graph: pyramids] Pyramid A's wide base shows this | A HIGH BIRTH RATE | A HIGH DEATH RATE FOR SENIORS; MANY OLDER PEOPLE; A LOW BIRTH RATE
+3 | [graph: pyramids] Which pyramid looks most like Canada's today? | B | A; NEITHER; BOTH EQUALLY
+4 | [graph: pyramids] Pyramid B's bulge in the middle-age groups in Canada comes mostly from this post-war generation | THE BABY BOOM | GENERATION Z; THE GREATEST GENERATION; THE MILLENNIALS
+5 | [graph: pyramids] Children and seniors who depend on working-age people make up this | THE DEPENDENCY LOAD | THE BIRTH RATE; THE LABOUR FORCE; THE NATURAL INCREASE
+
+## DEMOGRAPHIC TRANSITION
+1 | [graph: dtm] In which stage are both birth and death rates high? | STAGE 1 | STAGE 2; STAGE 3; STAGE 4
+2 | [graph: dtm] In stage 2, the death rate falls mainly because of this | BETTER FOOD, MEDICINE AND CLEAN WATER | MORE WARS; FEWER BIRTHS; HIGHER TAXES
+3 | [graph: dtm] The population grows fastest when the gap between birth and death rates is largest. Which stage is that? | STAGE 2 | STAGE 1; STAGE 3; STAGE 4
+4 | [graph: dtm] Canada is in this stage of the model | STAGE 4 | STAGE 1; STAGE 2; STAGE 3
+5 | [graph: dtm] In stage 3, birth rates fall. Which is a main reason? | MORE EDUCATION FOR WOMEN AND ACCESS TO BIRTH CONTROL | MORE DISEASE; LESS FOOD; HIGHER DEATH RATES
+
+## IMMIGRATION
+1 | Reasons that drive people away from their home country, like war or poverty | PUSH FACTORS / PUSH / PUSH FACTOR
+2 | Reasons that attract people to a new country, like jobs and safety | PULL FACTORS | PUSH FACTORS; BARRIERS; QUOTAS
+3 | The largest category of immigrants to Canada, chosen for their skills | ECONOMIC | FAMILY CLASS; REFUGEES; TEMPORARY VISITORS
+4 | A person forced to flee their country because of persecution, war or violence | REFUGEE / A REFUGEE
+5 | In recent years, the country sending the most permanent residents to Canada | INDIA | THE UNITED STATES; THE UNITED KINGDOM; FRANCE
+
+## POPULATION CHANGE
+1 | Population growth = natural increase + this | NET MIGRATION | THE DEATH RATE; THE DEPENDENCY LOAD; THE FERTILITY RATE
+2 | Most of Canada's population growth today comes from this | IMMIGRATION | NATURAL INCREASE; FALLING DEATH RATES; RISING FERTILITY
+3 | Canada's fertility rate is well below 2.1, which is the level needed to do this | REPLACE THE POPULATION | DOUBLE THE POPULATION; STOP ALL IMMIGRATION; END THE BABY BOOM
+4 | A country gains 300,000 immigrants and loses 50,000 emigrants. What is its net migration? | = 250000 ~0
+5 | As Canadians get older, which service will most likely be in higher demand? | HEALTH CARE | ELEMENTARY SCHOOLS; DAYCARES; YOUTH SPORTS LEAGUES
+
+## URBAN ISSUES
+1 | The share of people living in cities, which keeps rising, is called the rate of this | URBANIZATION
+2 | Low-density suburbs spreading out over farmland | URBAN SPRAWL / SPRAWL
+3 | Cities are warmer than the countryside around them because of pavement and buildings. This is the urban ___ effect | HEAT ISLAND / HEAT-ISLAND
+4 | Building more homes on land already in the city, instead of spreading out, is called this | INTENSIFICATION | SPRAWL; DECENTRALIZATION; ANNEXATION
+5 | Old industrial land that may be polluted and needs cleaning before reuse | BROWNFIELD | GREENFIELD; GREENBELT; FLOODPLAIN
+
+## LAND USE
+1 | Land used for homes is this kind of land use | RESIDENTIAL | COMMERCIAL; INDUSTRIAL; INSTITUTIONAL
+2 | Land used for stores and offices | COMMERCIAL | RESIDENTIAL; INDUSTRIAL; RECREATIONAL
+3 | Schools, hospitals and places of worship are this kind of land use | INSTITUTIONAL
+4 | Rules that control how land in each part of a city may be used | ZONING / ZONING BYLAWS / ZONING LAWS
+5 | A community where homes, shops and jobs are within walking distance, with good transit, follows this approach | SMART GROWTH / COMPLETE COMMUNITIES / NEW URBANISM
+
+## CANADA IN THE WORLD
+1 | The United Nations measure that combines life expectancy, education and income | HUMAN DEVELOPMENT INDEX / HDI
+2 | Canada's largest trading partner by far | THE UNITED STATES / UNITED STATES / USA / U.S. / AMERICA
+3 | The 2020 trade agreement between Canada, the U.S. and Mexico that replaced NAFTA | CUSMA / USMCA / CANADA-UNITED STATES-MEXICO AGREEMENT
+4 | Canada sends trained personnel to help keep peace in conflict zones as part of this organization | THE UNITED NATIONS | OPEC; FIFA; THE COMMONWEALTH GAMES
+5 | Money that a country gives to help other countries develop is called this | FOREIGN AID / DEVELOPMENT AID / AID / OFFICIAL DEVELOPMENT ASSISTANCE
+
+## A CONNECTED WORLD
+1 | The growing connection of the world's economies and cultures | GLOBALIZATION / GLOBALISATION
+2 | A company that operates in many countries, like Apple or Tim Hortons' owner | MULTINATIONAL CORPORATION / MULTINATIONAL / TRANSNATIONAL CORPORATION / MNC / TNC
+3 | Buying goods from other countries | IMPORTING | EXPORTING; OUTSOURCING; TARIFFING
+4 | A tax on imported goods | TARIFF | QUOTA; SUBSIDY; DUTY-FREE ZONE
+5 | Canada's largest export to the United States by value is usually this | CRUDE OIL AND ENERGY | MAPLE SYRUP; FISH; WHEAT
+
+## WHO WE ARE
+1 | Part of Canada's Constitution since 1982, it protects freedoms like speech and religion | CHARTER OF RIGHTS AND FREEDOMS / THE CHARTER / CANADIAN CHARTER OF RIGHTS AND FREEDOMS / CHARTER
+2 | In 1971, Canada became the first country to adopt an official policy of this | MULTICULTURALISM | BILINGUALISM; FREE TRADE; CONSCRIPTION
+3 | The three groups of Indigenous Peoples recognized in Canada's Constitution | FIRST NATIONS, INUIT AND MÉTIS | FIRST NATIONS, CREE AND OJIBWE; INUIT, DENE AND HAIDA; MÉTIS, MI'KMAQ AND MOHAWK
+4 | Created in 1999, this territory has a majority Inuit population | NUNAVUT | YUKON; NORTHWEST TERRITORIES; NUNAVIK
+5 | The Truth and Reconciliation Commission's 2015 report included how many Calls to Action? | = 94 ~0
+
+FINAL | POPULATION STATISTICS | Using the rule of 70, Canada's population growing at 1% a year would double in how many years? | = 70 years ~0
+FINAL | POPULATION DENSITY | A region has 1,200,000 people on 60,000 km². What is its population density, in people per km²? | = 20 people/km² ~0
+FINAL | IMMIGRATION | A Syrian family fleeing civil war to come to Canada is responding mainly to this | PUSH FACTORS | PULL FACTORS ONLY; FAMILY CLASS SPONSORSHIP ONLY; ECONOMIC POINTS
+FINAL | INDIGENOUS PEOPLES | The federal law passed in 1876 that controlled many parts of First Nations people's lives, and is still in force | THE INDIAN ACT / INDIAN ACT

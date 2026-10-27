@@ -88,6 +88,15 @@ test('the MDM4U bank loads all eight units, and every graph it names exists', ()
   [...c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals])].filter(x => x.img).forEach(x => assert.ok(bank.images.has(x.img), x.img));
 });
 
+test('the CGC1W bank loads all three units, and every graph it names exists', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const c = bank.course('CGC1W');
+  assert.ok(c, 'CGC1W course');
+  assert.deepStrictEqual(c.units.map(u => u.id), ['physical', 'resources', 'population']);
+  c.units.forEach(u => { assert.strictEqual(u.cats.length, 12, u.id); assert.ok(u.finals.length >= 3, u.id); });
+  c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals]).filter(x => x.img).forEach(x => assert.ok(bank.images.has(x.img), x.img));
+});
+
 test('the teacher can switch courses; graph clues reach the screens', () => {
   const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
   const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
@@ -98,7 +107,7 @@ test('the teacher can switch courses; graph clues reach the screens', () => {
   g.updateSettings({ course: 'APMICRO' });
   g.updateSettings({ units: ['imperfect'] });
   assert.deepStrictEqual(g.settings.units, ['imperfect']);
-  assert.strictEqual(g.teacherView().courses.length, 3);
+  assert.strictEqual(g.teacherView().courses.length, 4);
   const a = g.join('Ann', 0);
   g.updateSettings({ rounds: 1, dd: false });
   g.start();
