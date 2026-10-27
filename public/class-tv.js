@@ -44,7 +44,7 @@ function toast(text) {
 }
 
 function setJoin() {
-  const url = `${location.host}/join`;
+  const url = location.host;
   $('#lobbyUrl').textContent = url;
   $('#joinUrl').textContent = url;
   $('#lobbyCode').textContent = V.code;
@@ -265,7 +265,15 @@ function renderClue(v) {
 
   const open = ['open', 'finalClue'].includes(v.phase);
   if (c.type === 'mc') body.append(choiceGrid(c));
-  else if (open) body.append(el('p', 'hint', c.type === 'num' ? `Type a number${c.unit ? ' in ' + c.unit.replace(/\^(\d)/g, '^$1') : ''}. Use 3e8 or 3 x 10^8 for scientific notation.` : 'Type your answer on your device. Spelling doesn’t have to be perfect.'));
+  else if (open) {
+    const p = el('div', 'prompt');
+    p.append(el('div', 'big', c.type === 'num' ? 'Type a number on your device' : 'Type your answer on your device'));
+    if (c.type === 'num' && c.unit) { const u = el('div', 'unit'); u.innerHTML = `Answer in ${rich(c.unit)}`; p.append(u); }
+    const sm = el('div', 'small');
+    sm.innerHTML = c.type === 'num' ? `Scientific notation: 3e8 or 3 x 10^8 (for 3 × 10<sup>8</sup>)` : 'Spelling doesn’t have to be perfect.';
+    p.append(sm);
+    body.append(p);
+  }
 
   if (open) {
     countLine(v, c);
@@ -399,6 +407,15 @@ function render(v) {
   $('#btnLobby').hidden = v.phase === 'lobby';
   $('#ovLobby').hidden = v.phase !== 'lobby';
   $('#ovRound').hidden = v.phase !== 'roundBreak';
+  if (v.phase === 'roundBreak') {
+    const ol = $('#roundStandings');
+    ol.innerHTML = '';
+    activeTeams(v).slice().sort((a, b) => b.score - a.score).forEach(t => {
+      const li = el('li'); li.style.borderColor = t.color;
+      li.append(el('span', 'n', t.name), el('b', '', pts(t.score)));
+      ol.append(li);
+    });
+  }
   $('#ovChamp').hidden = v.phase !== 'champ';
   if (v.phase === 'lobby') renderLobby(v);
   if (!$('#ovRoster').hidden) renderRoster($('#gameRoster'), v);
@@ -413,12 +430,17 @@ function render(v) {
 function renderChamp(v, entering) {
   const teams = activeTeams(v).slice().sort((a, b) => b.score - a.score);
   $('#champTitle').textContent = teams.length ? `${teams[0].name} win!` : 'Game over';
-  const pod = $('#podium');
-  pod.innerHTML = '';
-  teams.forEach(t => { const li = el('li'); li.append(el('span', '', t.name), el('b', '', pts(t.score))); li.style.color = t.color; pod.append(li); });
-  const p2 = $('#podium2');
-  p2.innerHTML = '';
-  v.top.forEach(s => { const li = el('li'); li.append(el('span', '', s.name), el('b', '', pts(s.score))); p2.append(li); });
+  const fill = (ol, rows) => {
+    ol.innerHTML = '';
+    rows.forEach((r, i) => {
+      const li = el('li', i ? '' : 'first');
+      li.style.borderColor = r.color;
+      li.append(el('span', 'r', String(i + 1)), el('span', 'n', r.name), el('b', '', pts(r.score)));
+      ol.append(li);
+    });
+  };
+  fill($('#podium'), teams);
+  fill($('#podium2'), v.top.map(s => ({ name: s.name, score: s.score, color: team(s.team).color })));
   if (entering) confetti(true);
 }
 function confettiStop() { const c = $('#confetti'); c.getContext('2d').clearRect(0, 0, c.width, c.height); }

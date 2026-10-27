@@ -73,6 +73,8 @@ const team = t => (S.view && S.view.teams[t]) || { name: '', color: '#888' };
 const LETTERS = 'ABCD';
 
 /* ---------- screens ---------- */
+// Laptops get two columns: the clue on the left, the standings on the right.
+// Phones stack them.
 function render() {
   const app = document.getElementById('app');
   const act = document.activeElement, actId = act && app.contains(act) ? act.id : '';
@@ -81,14 +83,14 @@ function render() {
   const v = S.view;
   const me = v && v.me;
   if (me) document.documentElement.style.setProperty('--team', team(me.team).color);
-  app.append(h('p', { className: 'status' }, S.status));
-  if (!me) app.append(joinScreen());
+  app.classList.toggle('joined', !!me);
+  if (S.status) app.append(h('p', { className: 'status' }, S.status));
+  if (!me) app.append(joinScreen(), h('p', { className: 'toast', role: 'alert' }, S.toast));
   else {
     app.append(topBar(v, me));
-    app.append(screen(v, me));
+    const main = h('main', { className: 'main' }, screen(v, me), h('p', { className: 'toast', role: 'alert' }, S.toast));
+    app.append(main, side(v, me));
   }
-  app.append(h('p', { className: 'toast', role: 'alert' }, S.toast));
-  if (me) app.append(btn('Leave the game', () => { if (confirm('Leave the game? Your points stay in the report.')) send('leave'); }, 'btn small leave'));
   if (actId) { const e = document.getElementById(actId); if (e) { e.focus(); try { if (selS != null) e.setSelectionRange(selS, selE); } catch (er) {} } }
   tickTimer();
 }
@@ -101,14 +103,14 @@ function joinScreen() {
     send('hello', { role: 'student', code, name });
   };
   const onEnter = { keydown: e => { if (e.key === 'Enter') go(); } };
-  const card = h('div', { className: 'card' },
-    h('h1', {}, 'Class Board'),
+  const card = h('div', { className: 'card joincard' },
+    h('h1', { className: 'logo' }, h('small', {}, 'Class'), 'Board'),
     h('label', { className: 'label', htmlFor: 'code' }, 'Game code (on the board)'),
-    field('code', { className: 'field code', maxLength: 6, autocapitalize: 'characters', on: { input: e => { S.drafts.code = e.target.value; }, ...onEnter } }),
+    field('code', { className: 'field code', maxLength: 6, autocapitalize: 'characters', on: onEnter }),
     h('label', { className: 'label', htmlFor: 'name' }, 'Your first name'),
-    field('name', { maxLength: 14, autocomplete: 'given-name', on: { input: e => { S.drafts.name = e.target.value; }, ...onEnter } }),
-    btn('Join', go, 'btn primary'),
-    h('p', { className: 'hint' }, 'Use your real first name or the name your teacher asked for.'));
+    field('name', { maxLength: 14, autocomplete: 'given-name', on: onEnter }),
+    btn('Join the game', go, 'btn primary big'),
+    h('p', { className: 'hint' }, 'Use your real first name, or the name your teacher asked for.'));
   if (S.saved && !S.token) {
     card.append(btn(`Rejoin as ${S.saved.name}`, () => { S.token = S.saved.token; send('hello', { role: 'student', token: S.token }); }, 'btn small'));
   }
@@ -117,10 +119,31 @@ function joinScreen() {
 
 function topBar(v, me) {
   const t = team(me.team);
-  return h('div', { className: 'bar' },
+  return h('header', { className: 'bar' },
+    h('span', { className: 'brand' }, 'Class Board'),
     h('span', { className: 'who' }, me.name),
-    h('span', { className: 'tm' }, h('span', { className: 'dot' }), t.name, h('span', { className: 'sc' }, pts(t.score))),
-    h('span', {}, 'You: ', h('span', { className: 'sc' }, pts(me.score)), v.phase !== 'lobby' && me.score > 0 ? h('span', { className: 'hint' }, ` · #${me.rank}`) : null));
+    h('span', { className: 'tm' }, h('span', { className: 'dot' }), t.name),
+    h('span', { className: 'mine' }, h('small', {}, 'You'), h('b', {}, pts(me.score))));
+}
+
+// The right-hand column: team standings, your stats, the top three.
+function side(v, me) {
+  const ranked = v.teams.filter(t => t.count).slice().sort((a, b) => b.score - a.score);
+  const box = h('aside', { className: 'side' });
+  box.append(h('div', { className: 'panel' },
+    h('p', { className: 'label' }, 'Teams'),
+    h('div', { className: 'scores' }, ranked.map((t, i) =>
+      h('div', { className: 't' + (t.t === me.team ? ' me' : '') }, h('span', { className: 'rank' }, String(i + 1)), h('span', { className: 'dot', style: `background:${t.color}` }), h('span', { className: 'n' }, t.name), h('b', { className: t.score < 0 ? 'neg' : '' }, pts(t.score)))))));
+  const stats = h('div', { className: 'panel stats' },
+    h('div', {}, h('b', {}, pts(me.score)), h('small', {}, 'your points')),
+    h('div', {}, h('b', {}, String(me.right)), h('small', {}, 'right')),
+    h('div', {}, h('b', {}, v.phase === 'lobby' || !me.score ? '–' : `#${me.rank}`), h('small', {}, 'in the class')));
+  box.append(stats);
+  if (v.top.length) box.append(h('div', { className: 'panel' }, h('p', { className: 'label' }, 'Top students'),
+    h('ol', { className: 'top' }, v.top.map(s => h('li', {}, h('span', {}, s.name), h('b', {}, pts(s.score)))))));
+  box.append(h('p', { className: 'mates' }, `${team(me.team).name}: ${me.teammates.join(', ')}`));
+  box.append(btn('Leave the game', () => { if (confirm('Leave the game? Your points stay in the report.')) send('leave'); }, 'linkbtn'));
+  return box;
 }
 
 function screen(v, me) {
@@ -130,38 +153,39 @@ function screen(v, me) {
     case 'ddWager': return ddWager(v, me);
     case 'open': case 'finalClue': return answerScreen(v, me);
     case 'reveal': case 'finalReveal': return results(v, me);
-    case 'roundBreak': return h('div', { className: 'card' }, h('h2', {}, 'End of the first board'), h('p', {}, 'The second board is worth double. Get ready!'), scores(v, me));
+    case 'roundBreak': return waiting('End of the first board', 'The second board is worth double. The team that’s furthest behind picks first.', '★');
     case 'finalWager': return finalWager(v, me);
     case 'champ': return champ(v, me);
   }
-  return h('div', { className: 'card' }, h('p', {}, 'Waiting…'));
+  return waiting('Waiting…', '', '…');
+}
+
+// A big, calm screen for the moments with nothing to do.
+function waiting(title, text, icon, color) {
+  return h('div', { className: 'card wait' },
+    h('div', { className: 'icon', style: color ? `background:${color}` : '' }, icon),
+    h('h2', {}, title), text ? h('p', { className: 'hint big' }, text) : null);
 }
 
 function lobby(v, me) {
   return h('div', { className: 'card' },
-    h('h2', {}, 'You’re in!'),
+    h('h1', {}, 'You’re in!'),
     h('p', {}, 'Pick your team (your table group), then wait for your teacher to start.'),
     h('div', { className: 'teams' }, v.teams.map(t => {
-      const b = btn('', () => send('team', { team: t.t }), 'btn' + (t.t === me.team ? ' on' : ''));
-      b.style.borderColor = t.color;
-      b.append(h('span', { className: 'dot', style: `background:${t.color}` }), t.name, h('small', {}, String(t.count)));
+      const b = btn('', () => send('team', { team: t.t }), 'teambtn' + (t.t === me.team ? ' on' : ''));
+      b.style.setProperty('--c', t.color);
+      b.append(h('span', { className: 'dot' }), h('span', { className: 'n' }, t.name), h('span', { className: 'cnt' }, String(t.count)));
       return b;
-    })),
-    h('p', { className: 'mates' }, `${team(me.team).name}: ${me.teammates.join(', ')}`));
+    })));
 }
 
 function board(v, me) {
-  const mine = v.pickTeam === me.team;
-  const card = h('div', { className: 'card' });
-  if (!mine) {
-    card.append(h('h2', {}, `${team(v.pickTeam).name} are picking a clue`), h('p', { className: 'hint' }, 'Watch the board. Everyone answers every clue.'), scores(v, me));
-    return card;
-  }
-  card.append(h('h2', {}, 'Your team picks!'), h('p', { className: 'hint' }, 'Agree with your team, then one of you taps a clue (or tell your teacher).'));
+  if (v.pickTeam !== me.team) return waiting(`${team(v.pickTeam).name} are picking`, 'Watch the board. Everyone answers every clue, so get ready!', '?', team(v.pickTeam).color);
+  const card = h('div', { className: 'card' }, h('h1', {}, 'Your team picks!'), h('p', { className: 'hint' }, 'Agree with your team, then one of you picks a clue.'));
   const grid = h('div', { className: 'mini' });
   v.board.cats.forEach((cat, c) => {
     grid.append(h('div', { className: 'col' }, h('div', { className: 'h' }, cat),
-      v.board.values.map((val, r) => btn(String(val), () => send('choose', { c, r }), 'btn', { disabled: v.board.taken.includes(`${c},${r}`) }))));
+      v.board.values.map((val, r) => btn(String(val), () => send('choose', { c, r }), 'btn val', { disabled: v.board.taken.includes(`${c},${r}`) }))));
   });
   card.append(grid);
   return card;
@@ -173,84 +197,82 @@ function wagerBox(id, max, onGo, label) {
     if (!(n >= 0 && n <= max) || (S.drafts[id] || '') === '') { S.toast = `Wager from 0 to ${pts(max)}.`; return render(); }
     onGo(n);
   };
-  return h('div', {},
+  return h('div', { className: 'wager' },
     h('label', { className: 'label', htmlFor: id }, label),
-    h('div', { className: 'row' }, field(id, { inputMode: 'numeric', placeholder: `0 to ${pts(max)}`, on: { input: e => { S.drafts[id] = e.target.value; }, keydown: e => { if (e.key === 'Enter') go(); } } }), btn('Lock it in', go, 'btn primary')));
+    h('div', { className: 'row' }, field(id, { inputMode: 'numeric', placeholder: `0 to ${pts(max)}`, on: { keydown: e => { if (e.key === 'Enter') go(); } } }), btn('Lock it in', go, 'btn primary')));
+}
+
+function catLine(c) {
+  return h('div', { className: 'cat' }, h('span', {}, c.final ? `Final clue · ${c.cat}` : c.cat), h('b', {}, c.final ? '' : c.dd ? 'Daily Double' : String(c.value)));
 }
 
 function ddWager(v, me) {
   const c = v.clue;
-  const card = h('div', { className: 'card' }, h('h1', {}, 'Daily Double!'), h('div', { className: 'cat' }, h('span', {}, c.cat)));
-  if (c.dd.team === me.team) {
-    card.append(h('p', {}, 'Your team found it. Agree on a wager, then one of you enters it. Your team wins the wager if at least half of you get it right, and loses it if not.'));
-    card.append(wagerBox('ddw', c.dd.max, n => send('ddWager', { amount: n }), `Team wager (0 to ${pts(c.dd.max)})`));
-  } else {
-    card.append(h('p', {}, `${team(c.dd.team).name} are making a wager. You’ll still answer this clue for your own points.`));
-  }
-  return card;
+  if (c.dd.team !== me.team) return waiting('Daily Double!', `${team(c.dd.team).name} are making a wager on ${c.cat}. You’ll still answer this clue for your own points.`, '×2', team(c.dd.team).color);
+  return h('div', { className: 'card' }, h('h1', {}, 'Daily Double!'), catLine(c),
+    h('p', {}, 'Your team found it. Agree on a wager, then one of you enters it. Your team wins the wager if at least half of you get it right, and loses it if not.'),
+    wagerBox('ddw', c.dd.max, n => send('ddWager', { amount: n }), `Team wager (0 to ${pts(c.dd.max)})`));
 }
 
 function answerScreen(v, me) {
   const c = v.clue;
-  const card = h('div', { className: 'card' });
-  card.append(h('div', { className: 'cat' }, h('span', {}, c.final ? `Final clue · ${c.cat}` : c.cat), h('b', {}, c.final ? '' : c.dd ? `Daily Double` : String(c.value))));
-  card.append(h('p', { className: 'q', html: rich(c.q) }));
+  const card = h('div', { className: 'card' }, catLine(c), h('p', { className: 'q', html: rich(c.q) }));
   const mine = me.answer;
   if (c.type === 'mc') {
     card.append(h('div', { className: 'choices' }, c.choices.map((ch, i) => {
-      const b = btn('', () => { if (!mine) send('answer', { a: ch }); }, 'btn choice' + (mine && mine.text === ch ? ' picked' : ''), { disabled: !!mine && mine.text !== ch });
+      const b = btn('', () => { if (!mine) send('answer', { a: ch }); }, 'choice' + (mine && mine.text === ch ? ' picked' : ''), { disabled: !!mine && mine.text !== ch });
       b.append(h('span', { className: 'k' }, LETTERS[i]), h('span', { html: rich(ch) }));
       return b;
     })));
-    if (!mine) card.append(h('p', { className: 'kbd' }, 'Tip: press A, B, C or D. Your first choice is final.'));
+    if (!mine) card.append(h('p', { className: 'kbd' }, 'Click an answer, or press A, B, C or D. Your first choice is final.'));
   } else if (!mine) {
     const id = 'ans' + c.n + (c.final ? 'f' : '');
     const go = () => { const a = (S.drafts[id] || '').trim(); if (!a) { S.toast = 'Type an answer first.'; return render(); } send('answer', { a }); };
     card.append(h('div', { className: 'row' },
-      field(id, { placeholder: c.type === 'num' ? `Number${c.unit ? ' (' + c.unit + ')' : ''}` : 'Your answer', inputMode: c.type === 'num' ? 'decimal' : 'text', maxLength: 80,
-        on: { input: e => { S.drafts[id] = e.target.value; }, keydown: e => { if (e.key === 'Enter') go(); } } }),
+      field(id, { placeholder: c.type === 'num' ? `A number${c.unit ? ' (in ' + c.unit.replace(/\^(\d)/g, '$1') + ')' : ''}` : 'Your answer', inputMode: c.type === 'num' ? 'decimal' : 'text', maxLength: 80,
+        on: { keydown: e => { if (e.key === 'Enter') go(); } } }),
       btn('Submit', go, 'btn primary')));
-    card.append(h('p', { className: 'hint' }, c.type === 'num'
-      ? 'For scientific notation type 3e8 or 3 x 10^8. You don’t need the unit.'
+    card.append(h('p', { className: 'kbd' }, c.type === 'num'
+      ? 'Scientific notation: type 3e8 or 3 x 10^8. You don’t need the unit.'
       : 'Spelling doesn’t have to be perfect. No need to write “What is…”.'));
-    setTimeout(() => { const e = document.getElementById(id); if (e && !document.activeElement.closest('.row')) e.focus(); });
+    setTimeout(() => { const e = document.getElementById(id); if (e && !(document.activeElement && document.activeElement.closest('.row'))) e.focus(); });
   }
   if (mine && c.type !== 'mc') card.append(h('p', { className: 'locked' }, 'Locked in: ', h('b', {}, mine.text)));
-  if (mine) card.append(h('p', { className: 'hint' }, `Waiting for the others… ${c.answered} answered${c.waiting ? `, ${c.waiting} to go` : ''}.`));
-  card.append(h('div', { className: 'row', style: 'align-items:center' }, h('div', { className: 'timer', style: 'flex:1' }, h('i', { id: 'tfill' })), h('span', { className: 'secs', id: 'tsecs' })));
+  if (mine) card.append(h('p', { className: 'hint' }, `Locked in. Waiting for the others: ${c.answered} answered${c.waiting ? `, ${c.waiting} to go` : ''}.`));
+  card.append(h('div', { className: 'clock' }, h('div', { className: 'timer' }, h('i', { id: 'tfill' })), h('span', { className: 'secs', id: 'tsecs' })));
   return card;
 }
 
 function results(v, me) {
   const c = v.clue;
-  const card = h('div', { className: 'card' });
-  card.append(h('div', { className: 'cat' }, h('span', {}, c.final ? `Final clue · ${c.cat}` : c.cat), h('b', {}, c.final ? '' : c.dd ? 'Daily Double' : String(c.value))));
   const a = me.answer;
+  const card = h('div', { className: 'card' }, catLine(c));
   if (!a) card.append(h('p', { className: 'result no' }, 'No answer'));
   else if (a.right) card.append(h('p', { className: 'result ok' }, `Right! +${pts(c.value)}`));
   else card.append(h('p', { className: 'result no' }, 'Not quite'));
-  card.append(h('p', { className: 'q', html: rich(c.q) }));
+  card.append(h('p', { className: 'q small', html: rich(c.q) }));
   card.append(h('p', { className: 'answer', html: `Answer: <b>${rich(c.a)}</b>` }));
   if (a && !a.right && c.type !== 'mc') card.append(h('p', { className: 'hint' }, `You wrote: ${a.text}`));
-  if (c.type === 'mc' && a) {
-    card.append(h('div', { className: 'choices' }, c.choices.map((ch, i) => {
+  if (c.type === 'mc') {
+    card.append(h('div', { className: 'choices done' }, c.choices.map((ch, i) => {
       const right = ch === c.a;
-      const b = h('div', { className: 'btn choice' + (right ? ' right' : a.text === ch ? ' wrongpick' : '') });
+      const b = h('div', { className: 'choice' + (right ? ' right' : a && a.text === ch ? ' wrongpick' : '') });
       b.append(h('span', { className: 'k' }, LETTERS[i]), h('span', { html: rich(ch) }));
       return b;
     })));
   }
   const st = c.stats;
-  card.append(h('p', {}, `${st.pct}% of the class got it.`));
+  const facts = h('div', { className: 'facts' }, h('div', {}, h('b', {}, `${st.pct}%`), h('small', {}, 'of the class got it')));
   if (v.phase === 'reveal') {
     const tr = st.teams[me.team];
-    if (c.dd && c.dd.team !== me.team) card.append(h('p', { className: 'hint' }, `Only ${team(c.dd.team).name}’s team points were on the line.`));
-    else if (tr) card.append(h('p', {}, `${team(me.team).name}: ${tr.right} of ${tr.n} right, `, h('b', { className: tr.pts < 0 ? 'neg' : '' }, `${tr.pts >= 0 ? '+' : ''}${pts(tr.pts)}`), ' team points.'));
+    if (c.dd && c.dd.team !== me.team) facts.append(h('div', {}, h('b', {}, '–'), h('small', {}, `only ${team(c.dd.team).name}’ points were on the line`)));
+    else if (tr) facts.append(h('div', {}, h('b', { className: tr.pts < 0 ? 'neg' : 'pos' }, `${tr.pts >= 0 ? '+' : ''}${pts(tr.pts)}`), h('small', {}, `${team(me.team).name}: ${tr.right} of ${tr.n} right`)));
   } else if (v.final && v.final.results) {
     const r = v.final.results[me.team];
-    card.append(h('p', {}, r ? `${team(me.team).name}: ${r.right} of ${r.n} right, ${r.pts >= 0 ? 'won' : 'lost'} ${pts(Math.abs(r.pts))}.` : 'Watch the board for your team’s result.'));
+    facts.append(h('div', {}, r ? h('b', { className: r.pts < 0 ? 'neg' : 'pos' }, `${r.pts >= 0 ? '+' : ''}${pts(r.pts)}`) : h('b', {}, '…'),
+      h('small', {}, r ? `${team(me.team).name}: ${r.right} of ${r.n} right` : 'Watch the board for your team')));
   }
-  card.append(scores(v, me));
+  card.append(facts);
   return card;
 }
 
@@ -263,23 +285,18 @@ function finalWager(v, me) {
     if (me.finalWager) card.append(h('p', { className: 'locked' }, `Your team’s wager: ${pts(me.finalWager.amount)} (entered by ${me.finalWager.by})`));
     card.append(wagerBox('fw', max, n => send('finalWager', { amount: n }), `Team wager (0 to ${pts(max)})`));
   }
-  card.append(scores(v, me));
   return card;
 }
 
 function champ(v, me) {
   const ranked = v.teams.filter(t => t.count).slice().sort((a, b) => b.score - a.score);
   const place = ranked.findIndex(t => t.t === me.team) + 1;
-  return h('div', { className: 'card' },
-    h('h1', {}, ranked.length ? `${ranked[0].name} win!` : 'Game over'),
-    h('p', {}, `${team(me.team).name} finished #${place}. You scored ${pts(me.score)} with ${me.right} right answer${me.right === 1 ? '' : 's'}.`),
-    scores(v, me),
-    v.top.length ? h('div', {}, h('p', { className: 'label' }, 'Top students'), h('ol', {}, v.top.map(s => h('li', {}, `${s.name} · ${pts(s.score)}`)))) : null);
-}
-
-function scores(v, me) {
-  return h('div', { className: 'scores' }, v.teams.filter(t => t.count).slice().sort((a, b) => b.score - a.score).map(t =>
-    h('div', { className: 't' + (t.t === me.team ? ' me' : '') }, h('span', { className: 'dot', style: `background:${t.color}` }), h('span', {}, t.name), h('b', { className: t.score < 0 ? 'neg' : '' }, pts(t.score)))));
+  const win = ranked[0];
+  return h('div', { className: 'card wait' },
+    h('div', { className: 'icon', style: win ? `background:${win.color}` : '' }, '🏆'),
+    h('h1', {}, win ? `${win.name} win!` : 'Game over'),
+    h('p', { className: 'big' }, `${team(me.team).name} finished ${['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth'][place - 1] || '#' + place}.`),
+    h('p', { className: 'hint big' }, `You scored ${pts(me.score)} with ${me.right} right answer${me.right === 1 ? '' : 's'}. Thanks for playing!`));
 }
 
 /* ---------- the timer ---------- */
