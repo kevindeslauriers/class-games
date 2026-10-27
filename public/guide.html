@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class Board Teacher Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: one readable column; the board's blue and gold as accents, quick steps up top, reference below. */
+:root {
+  --bg: #f6f7fc; --paper: #ffffff; --fg: #141a3a; --muted: #4c5677; --line: #d7dcef;
+  --blue: #0a1fb5; --blue-soft: #e7ebff; --gold: #b47d00; --gold-soft: #fff4d6;
+  --display: "Anton", Impact, "Arial Narrow", sans-serif;
+  --body: "Lexend", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #070b2a; --paper: #0f1650; --fg: #eef0ff; --muted: #b7bfe6; --line: #2b357e;
+  --blue: #9fb0ff; --blue-soft: #18237a; --gold: #ffcc33; --gold-soft: #3a3214; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #070b2a; --paper: #0f1650; --fg: #eef0ff; --muted: #b7bfe6; --line: #2b357e;
+  --blue: #9fb0ff; --blue-soft: #18237a; --gold: #ffcc33; --gold-soft: #3a3214; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 760px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 36px; }
+h1, h2 { font-family: var(--display); font-weight: 400; letter-spacing: .02em; line-height: 1.1; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(40px, 7vw, 60px); color: var(--blue); }
+h2 { font-size: 30px; color: var(--blue); }
+h3 { font-size: 18px; margin: 0; }
+p, ul, ol { margin: 0; }
+section { display: flex; flex-direction: column; gap: 14px; }
+.lede { font-size: 19px; color: var(--muted); max-width: 62ch; }
+.addr { display: flex; flex-wrap: wrap; gap: 12px; }
+.addr div { flex: 1 1 240px; min-width: 0; background: var(--paper); border: 2px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.label { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.addr code { font-family: var(--body); font-weight: 700; font-size: 18px; color: var(--fg); overflow-wrap: anywhere; }
+.steps { list-style: none; padding: 0; counter-reset: s; display: flex; flex-direction: column; gap: 12px; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start; }
+.steps li::before { content: counter(s); font-family: var(--display); font-size: 22px; color: var(--paper); background: var(--blue); width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; }
+.steps li > div { min-width: 0; padding-top: 4px; }
+ul.plain { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.kv { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; border-top: 1px solid var(--line); }
+.kv > * { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.kv dt { font-weight: 700; padding-right: 14px; }
+.kv dd { margin: 0; color: var(--fg); }
+@media (max-width: 560px) { .kv { grid-template-columns: 1fr; } .kv dt { border-bottom: 0; padding-bottom: 0; } }
+.tip { background: var(--gold-soft); border-left: 4px solid var(--gold); border-radius: 0 10px 10px 0; padding: 12px 16px; }
+.tip b { color: var(--fg); }
+.courses { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 10px; }
+.courses div { background: var(--paper); border: 2px solid var(--line); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.courses .teams { font-size: 14px; color: var(--muted); }
+.ui { font-weight: 700; color: var(--blue); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+.scroll { overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+<style>*,*::before,*::after{box-sizing:border-box}html,body{margin:0}</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:12px">
+    <span class="label">Bayview Glen · Class review game</span>
+    <h1>Class Board: Teacher Guide</h1>
+    <p class="lede">A quiz board for the whole class. Your computer runs the projector, and every student answers every clue on their own laptop or phone, in table-group teams.</p>
+  </header>
+
+  <section>
+    <h2>Two addresses</h2>
+    <div class="addr">
+      <div><span class="label">You (teacher, on the projector)</span><code>class-games.onrender.com/class</code></div>
+      <div><span class="label">Students</span><code>class-games.onrender.com</code></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Run a game in 5 steps</h2>
+    <ol class="steps">
+      <li><div><h3>Open the teacher page on the projector</h3><p>Go to <b>/class</b> on your computer and click <span class="ui">Full screen</span>. Click anywhere once so the sounds can play. A game code and a QR code appear.</p></div></li>
+      <li><div><h3>Students join</h3><p>They scan the QR code or go to the student address, type the code and their <b>first name</b>, then tap their team (their table group). Names appear under each team as they join.</p></div></li>
+      <li><div><h3>Choose the settings</h3><p>Pick the course and the units the categories should come from, then the options (see below). Click <span class="ui">Shuffle into even teams</span> if you'd rather not use table groups.</p></div></li>
+      <li><div><h3>Play</h3><p>Click <span class="ui">Start the game</span>. A team picks a clue (or you do), everyone answers, and the results show on the board. Click <span class="ui">Back to the board</span> after each clue.</p></div></li>
+      <li><div><h3>Download the report</h3><p>At the end, click <span class="ui">Download the report (CSV)</span>. It opens in Excel or Google Sheets. <b>Nothing is saved on the server</b>, so download it before you leave.</p></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Settings in the lobby</h2>
+    <dl class="kv">
+      <dt>Course</dt><dd>Grade 9 Science (the default), Grade 9 Geography, Grade 12 Data Management or AP Microeconomics.</dd>
+      <dt>Units</dt><dd>Tick the units to draw categories from. One unit is enough for two full boards.</dd>
+      <dt>Teams</dt><dd>2 to 8. Students on a team you remove move to the smallest team.</dd>
+      <dt>Boards</dt><dd>One board, or two with the second worth double.</dd>
+      <dt>Time per clue</dt><dd>20 to 90 seconds. Number answers get 50% more time; the final clue gets double.</dd>
+      <dt>Teams pick the clues</dt><dd>On: teams take turns picking on their devices. Off: you click every clue. Teams still take turns for Daily Doubles.</dd>
+      <dt>Daily Doubles</dt><dd>Hidden squares. The team whose turn it is agrees on a wager.</dd>
+      <dt>Final clue</dt><dd>Every team wagers, then everyone answers one last clue.</dd>
+    </dl>
+    <p>Your screen remembers these settings for next time.</p>
+  </section>
+
+  <section>
+    <h2>How scoring works</h2>
+    <ul class="plain">
+      <li><b>Students:</b> a right answer earns the clue's value (100 to 500, doubled on the second board). The board shows only the top three students.</li>
+      <li><b>Teams:</b> the team earns the clue's value times the share of its members who got it right. If 3 of 4 are right on a 400 clue, the team gets 300. So every student's answer counts.</li>
+      <li><b>Daily Double and final clue:</b> the team wins its wager if at least half of its members are right, and loses it if not.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>During a clue</h2>
+    <dl class="kv">
+      <dt>Answers close</dt><dd>When the timer runs out, or as soon as everyone connected has answered.</dd>
+      <dt><span class="ui">Close answers now</span></dt><dd>Ends the clue early.</dd>
+      <dt><span class="ui">Pause</span></dt><dd>Stops the clock, for example to explain a word. Click again to resume.</dd>
+      <dt><span class="ui">Skip this clue</span></dt><dd>Removes it with no points.</dd>
+      <dt><span class="ui">Accept</span></dt><dd>For typed and number answers, the results group what students wrote. If a group is right but was marked wrong, click Accept and it counts for everyone who wrote it (click Undo to take it back).</dd>
+      <dt><span class="ui">End round</span></dt><dd>Ends a board early when you're running out of time.</dd>
+    </dl>
+    <div class="tip"><b>What students can type.</b> Spelling doesn't have to be perfect, and there's no need for "What is…". For numbers, fractions (3/8), decimals (0.375) and scientific notation (3e8 or 3 x 10^8) all work, and units are optional. Multiple choice can be answered with the A to D keys.</div>
+  </section>
+
+  <section>
+    <h2>Managing the class</h2>
+    <ul class="plain">
+      <li>Click <span class="ui">Class list</span> (or a name in the lobby) to <b>move</b> a student to another team, <b>rename</b> them, or <b>remove</b> them.</li>
+      <li>A simple filter blocks rude names. Rename anything that slips through.</li>
+      <li>Grey names have lost their connection. A student who refreshes or reopens the page rejoins automatically with their score.</li>
+      <li>Click <span class="ui">New game</span> to play again with the same students.</li>
+      <li>When the <b>next class</b> arrives, click <span class="ui">New class (new code)</span> in the lobby so the new group gets a fresh code and an empty class list.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Courses and teams</h2>
+    <div class="courses">
+      <div><h3>Grade 9 Science (SNC1W)</h3><span>Ecosystems, space, chemistry, electricity</span><span class="teams">Protons, Neutrons, Electrons, Quarks…</span></div>
+      <div><h3>Grade 9 Geography (CGC1W)</h3><span>Physical environment, resources and industries, changing populations</span><span class="teams">Glaciers, Volcanoes, Canyons, Rapids…</span></div>
+      <div><h3>Grade 12 Data Management (MDM4U)</h3><span>All eight units, from probability to two-variable statistics</span><span class="teams">Outliers, Medians, Modes, Quartiles…</span></div>
+      <div><h3>AP Microeconomics</h3><span>All six College Board units</span><span class="teams">Bulls, Bears, Tycoons, Traders…</span></div>
+    </div>
+    <p>Many clues come with a graph (climate graphs, normal curves, cost curves and more), shown on the projector and on every student's screen.</p>
+  </section>
+
+  <section>
+    <h2>If something goes wrong</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Problem</th><th>What to do</th></tr></thead>
+        <tbody>
+          <tr><td>The first load is slow</td><td>Give it a few seconds; the server may be starting up.</td></tr>
+          <tr><td>"No class has that code"</td><td>Check the code on the board. Codes are 5 letters.</td></tr>
+          <tr><td>A student is stuck on "Reconnecting"</td><td>Have them refresh the page. They keep their name and score.</td></tr>
+          <tr><td>The school network blocks the game</td><td>Nothing to do: the page switches to a slower connection method on its own.</td></tr>
+          <tr><td>A shared laptop rejoins as the last student</td><td>The student taps <b>Leave the game</b> and joins with their own name.</td></tr>
+          <tr><td>No sound</td><td>Click anywhere on the teacher page, and check <span class="ui">Sound on</span>.</td></tr>
+          <tr><td>The teacher page was closed</td><td>Reopen <b>/class</b> on the same computer and browser; you get the same game back.</td></tr>
+          <tr><td>The game says it has closed</td><td>A game with nobody connected closes after 3 hours. Start a new one.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Found a clue that's wrong?</h2>
+    <p>Every clue lives in a plain text file, one clue per line, so fixes are quick. Tell Mr. DesLauriers the course, category and value (for example "Geography, Glaciation, 300") and what it should say.</p>
+  </section>
+
+  <footer><a href="/class" style="color:var(--blue)">Open the teacher page</a> · Class Board · class-games.onrender.com</footer>
+</div>
+
+</body>
+</html>

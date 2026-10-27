@@ -11,6 +11,7 @@ Courses so far:
 
 The teacher picks the course and which units the board draws from in the lobby; the screen remembers the last choice. A `# Teams: name, name, ...` line (up to 8) names the teams for that course: Protons and Neutrons for science, Bulls and Bears for economics, Outliers and Medians for data management, Glaciers and Volcanoes for geography. A `# Default course` line in any of a course's files makes it the one a new teacher screen starts on.
 
+- **Teacher guide:** `/guide` (linked from the teacher page) explains setup, settings, scoring, controls and troubleshooting.
 - **Teacher:** open `/class`. Each teacher gets their own room and code, so classes never meet. Choose the units, the number of teams, one or two boards, the time per clue, Daily Doubles and the final clue. Click a student's name to move, rename or remove them. Use **New class (new code)** when the next class arrives.
 - **Students:** go to the site's home page or scan the QR code, and type the code and their first name, then pick their team (table group). A simple name filter blocks rude names.
 - Teams take turns picking clues on their devices (the teacher can also click one). Untick **Teams pick the clues** in the lobby to have the teacher pick every clue; teams still take turns for Daily Doubles. Everyone answers before the timer runs out; answers close early once everyone has answered. Right answers earn the student the clue's value; the team earns the value × the share of its members who got it right.

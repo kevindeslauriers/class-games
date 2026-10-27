@@ -18,6 +18,7 @@ body{font-size:clamp(14px,1.35vw,30px);overflow:hidden;height:100vh;
 .roundinfo{font-family:"Anton",sans-serif;font-size:1.2em;letter-spacing:.05em;color:var(--qgold);text-transform:uppercase}
 .tools{margin-left:auto;display:flex;gap:.45em;flex-wrap:wrap;justify-content:flex-end}
 .tools .btn{font-size:.62em}
+.tools a.btn{text-decoration:none;display:inline-flex;align-items:center}
 .main{display:grid;grid-template-columns:minmax(0,1fr) clamp(220px,22vw,460px);gap:1.4vw;min-height:0}
 
 /* The board */
@@ -159,6 +160,12 @@ body{font-size:clamp(14px,1.35vw,30px);overflow:hidden;height:100vh;
 .chip{font-size:.72em;padding:.15em .55em;border-radius:1em;background:#1b2a8a;border:1px solid #4b5bd0;color:#fff;cursor:pointer}
 .chip.away{opacity:.45}
 .chip:hover{border-color:var(--qgold)}
+.sethead{display:flex;align-items:baseline;justify-content:space-between;gap:1em;flex-wrap:wrap}
+.guidelink{color:var(--qgold);font-family:"Oswald",sans-serif;font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:.8em;text-decoration:none;border-bottom:2px solid currentColor}
+.guidelink:hover{color:#fff}
+#ovLobby .card h3{margin:.7em 0 .25em}
+#ovLobby .card .actions{margin-top:.7em}
+#ovLobby .rules{margin:.5em 0 0}
 .units{display:grid;gap:.25em}
 .units.many{grid-template-columns:1fr 1fr;column-gap:1em;font-size:.9em}
 .opts{display:grid;grid-template-columns:auto 1fr;gap:.45em .8em;align-items:center}
@@ -191,6 +198,7 @@ body{font-size:clamp(14px,1.35vw,30px);overflow:hidden;height:100vh;
     <div class="roundinfo" id="roundInfo"></div>
     <div class="tools">
       <button class="btn" id="btnEnd" hidden>End round</button>
+      <a class="btn" id="btnGuide" href="/guide" target="_blank" rel="noopener">Teacher guide</a>
       <button class="btn" id="btnRoster">Class list</button>
       <button class="btn" id="btnReport" hidden>Report (CSV)</button>
       <button class="btn" id="btnLobby">New game</button>
@@ -236,7 +244,7 @@ body{font-size:clamp(14px,1.35vw,30px);overflow:hidden;height:100vh;
       <p class="rules">Click a name to move, rename or remove that student.</p>
     </section>
     <section>
-      <h2>Game settings</h2>
+      <div class="sethead"><h2>Game settings</h2><a class="guidelink" href="/guide" target="_blank" rel="noopener">Teacher guide ↗</a></div>
       <div id="courseRow"><h3>Course</h3><select class="field" id="course"></select></div>
       <h3>Units for the categories</h3>
       <div class="units" id="units"></div>
@@ -251,7 +259,7 @@ body{font-size:clamp(14px,1.35vw,30px);overflow:hidden;height:100vh;
       <label class="choice"><input type="checkbox" id="final"> Final clue (every team wagers)</label>
       <p class="rules">Teams take turns (or you pick each clue), then <b>every student answers</b> on their own device. Right answers earn the student the clue’s value; the team earns the value × the share of its members who got it right. Number answers get 50% more time.</p>
       <p class="err" id="lobbyErr"></p>
-      <div class="actions"><button class="btn" id="newClass" title="Use this when the next class arrives">New class (new code)</button><button class="btn" id="balance">Shuffle into even teams</button><button class="btn primary" id="startGame">Start the game</button></div>
+      <div class="actions"><button class="btn primary" id="startGame">Start the game</button><button class="btn" id="balance">Shuffle into even teams</button><button class="btn" id="newClass" title="Use this when the next class arrives">New class (new code)</button></div>
     </section>
   </div>
 </div></div>
