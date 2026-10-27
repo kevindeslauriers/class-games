@@ -55,6 +55,9 @@ table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15p
 .scroll { overflow-x: auto; }
 th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.shot { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.shot img { width: 100%; height: auto; border-radius: 12px; border: 2px solid var(--line); box-shadow: 0 10px 30px rgba(10, 20, 80, .18); }
+.shot figcaption { font-size: 14px; color: var(--muted); }
 footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
 </style>
 <style>*,*::before,*::after{box-sizing:border-box}html,body{margin:0}</style>
@@ -75,6 +78,11 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <div><span class="label">Students</span><code>class-games.onrender.com</code></div>
     </div>
   </section>
+
+  <figure class="shot">
+    <img src="/images/board.jpg" alt="The Class Board on the projector: six categories with values from 100 to 500, the four teams' scores on the right with the team whose turn it is outlined in gold, the top three students below, and the join code and QR code in the corner." width="1600" height="900">
+    <figcaption>The board on the projector. Teams and their scores are on the right (the team whose turn it is has a gold outline), the top three students below them, and the code students join with in the corner. Clues already played disappear.</figcaption>
+  </figure>
 
   <section>
     <h2>Run a game in 5 steps</h2>
