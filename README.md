@@ -2,7 +2,7 @@
 
 A quiz board for a whole class, built for SNC1W (Grade 9 Science, de-streamed). The teacher's computer drives the projector; every student answers every clue on their own laptop or phone.
 
-- **Teacher:** open `/class`. Each teacher gets their own room and code, so classes never meet each other or the family games. Choose the units, the number of teams, one or two boards, the time per clue, Daily Doubles and the final clue. Click a student's name to move, rename or remove them. Use **New class (new code)** when the next class arrives.
+- **Teacher:** open `/class`. Each teacher gets their own room and code, so classes never meet. Choose the units, the number of teams, one or two boards, the time per clue, Daily Doubles and the final clue. Click a student's name to move, rename or remove them. Use **New class (new code)** when the next class arrives.
 - **Students:** go to the site's home page (or `/join`) (or scan the QR code) and type the code and their first name, then pick their team (table group). A simple name filter blocks rude names.
 - A team picks each clue (on a device, or the teacher clicks it). Everyone answers before the timer runs out; answers close early once everyone has answered. Right answers earn the student the clue's value; the team earns the value × the share of its members who got it right.
 - Clues are multiple choice (A to D keys work), typed (spelling is forgiven) or numbers (`3e8` and `3 x 10^8` both work; number clues get 50% more time).
