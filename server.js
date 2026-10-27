@@ -49,7 +49,7 @@ function createServer({ classOpts = {} } = {}) {
   });
 
   const server = http.createServer(app);
-  const wss = new WebSocketServer({ server, path: '/ws', maxPayload: 16 * 1024 });
+  const wss = new WebSocketServer({ server, path: '/ws', maxPayload: 64 * 1024 });
 
   // Every connection, WebSocket or the polling fallback, comes through here.
   function onMessage(c, m) {
@@ -100,7 +100,7 @@ function createServer({ classOpts = {} } = {}) {
     if (p.waiter) { clearTimeout(p.waiter.t); p.waiter.res.json([]); }
     p.waiter = { res, t: setTimeout(() => { if (p.waiter && p.waiter.res === res) { p.waiter = null; res.json([]); } }, 25000) };
   });
-  app.post('/rt/send', express.json({ limit: '16kb' }), (req, res) => {
+  app.post('/rt/send', express.json({ limit: '64kb' }), (req, res) => {
     const p = polls.get(String(req.query.sid));
     if (!p) return res.status(410).json({ error: 'gone' });
     p.last = Date.now();

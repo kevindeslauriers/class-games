@@ -26,6 +26,7 @@ function connect() {
       setJoin();
     } else if (m.t === 'state') { render(m.view); restoreSettings(m.view); }
     else if (m.t === 'fx') onFx(m);
+    else if (m.t === 'clueList') gotClues(m.course);
     else if (m.t === 'error') toast(m.msg);
     else if (m.t === 'closed') { V.closed = true; try { localStorage.removeItem('class-host'); } catch (e) {} $('#ovClosed').hidden = false; }
   };
@@ -185,6 +186,10 @@ function renderLobby(v) {
   $('#dd').checked = st.dd;
   $('#teamsPick').checked = st.teamsPick;
   $('#final').checked = st.final;
+  const p = (v.picks || {})[st.course];
+  const sum = $('#picksSum');
+  if (!p) sum.textContent = 'Every clue can come up.';
+  else sum.innerHTML = [p.off.length && `<b>${p.off.length}</b> skipped`, p.must.length && `<b>${p.must.length}</b> must`].filter(Boolean).join(' · ');
 }
 // The teacher's last settings (course, units and options) come back next time.
 function restoreSettings(v) {
@@ -193,14 +198,142 @@ function restoreSettings(v) {
   let saved = null;
   try { saved = JSON.parse(localStorage.getItem('class-settings') || 'null'); } catch (e) {}
   if (!saved || !v.courses.some(c => c.id === saved.course)) return;
-  const same = Object.keys(saved).every(k => JSON.stringify(saved[k]) === JSON.stringify(v.settings[k]));
+  const cur = { ...v.settings, picks: v.picks };
+  const same = Object.keys(saved).every(k => JSON.stringify(saved[k]) === JSON.stringify(cur[k]));
   if (!same) cmd('settings', { settings: saved });
 }
 function saveSettings(v) {
   if (!V.restored || v.phase !== 'lobby') return;
   const { course, units, teams, rounds, secs, dd, final, teamsPick } = v.settings;
-  try { localStorage.setItem('class-settings', JSON.stringify({ course, units, teams, rounds, secs, dd, final, teamsPick })); } catch (e) {}
+  try { localStorage.setItem('class-settings', JSON.stringify({ course, units, teams, rounds, secs, dd, final, teamsPick, picks: v.picks || {} })); } catch (e) {}
 }
+
+/* ---------- choosing clues ---------- */
+// Every clue in the chosen units, each one Use, Skip or Must.
+const C = { data: {}, open: false };
+function openClues() {
+  C.open = true;
+  $('#ovClues').hidden = false;
+  const id = V.view.settings.course;
+  if (C.data[id]) renderClues(); else { $('#clueList').innerHTML = '<p>Loading the clues…</p>'; cmd('clueList', { course: id }); }
+}
+function closeClues() { C.open = false; $('#ovClues').hidden = true; }
+function gotClues(course) {
+  if (!course) return;
+  C.data[course.id] = course;
+  if (C.open) renderClues();
+}
+function myPicks() {
+  const p = (V.view.picks || {})[V.view.settings.course] || {};
+  return { off: new Set(p.off || []), must: new Set(p.must || []) };
+}
+function setPick(id, state) {
+  const all = JSON.parse(JSON.stringify(V.view.picks || {}));
+  const course = V.view.settings.course;
+  const p = all[course] || { off: [], must: [] };
+  p.off = p.off.filter(x => x !== id);
+  p.must = p.must.filter(x => x !== id);
+  if (state === 'off') p.off.push(id);
+  if (state === 'must') p.must.push(id);
+  all[course] = p;
+  // Show it now; the server's copy follows.
+  V.view.picks = all;
+  renderClues();
+  cmd('settings', { settings: { picks: all } });
+}
+function seg(state, onPick, disabled) {
+  const box = el('div', 'seg');
+  [['on', 'Use'], ['off', 'Skip'], ['must', 'Must']].forEach(([k, label]) => {
+    const b = el('button', k, label);
+    b.type = 'button';
+    b.setAttribute('aria-pressed', String(state === k));
+    b.disabled = !!disabled;
+    b.onclick = () => { if (state !== k) onPick(k); };
+    box.append(b);
+  });
+  return box;
+}
+function clueRow(x, lvl, state, catOff) {
+  const row = el('div', 'crow ' + (catOff ? 'off' : state));
+  row.append(el('span', 'lvl', lvl));
+  const body = el('div');
+  const q = el('div', 'q'); q.innerHTML = rich(x.q); body.append(q);
+  const ans = el('div', 'ans');
+  ans.innerHTML = '✓ ' + rich(x.a) + (x.wrong ? ` <span class="wrong">· also shown: ${x.wrong.map(rich).join('; ')}</span>` : '');
+  body.append(ans);
+  if (x.img) { const im = el('img'); im.src = `/graphs/${encodeURIComponent(x.img)}.svg`; im.alt = 'Graph for this clue'; im.loading = 'lazy'; body.append(im); }
+  row.append(body, seg(state, k => setPick(x.id, k), catOff));
+  return row;
+}
+function renderClues() {
+  const v = V.view, list = $('#clueList');
+  const data = C.data[v.settings.course];
+  if (!data) return;
+  const keep = list.scrollTop;
+  const p = myPicks();
+  const st = id => (p.off.has(id) ? 'off' : p.must.has(id) ? 'must' : 'on');
+  const words = $('#clueSearch').value.trim().toLowerCase();
+  const show = $('#clueShow').value;
+  const hit = (...t) => !words || t.join(' ').toLowerCase().includes(words);
+  const wanted = s => show === 'all' || s === show;
+  list.innerHTML = '';
+  let cats = 0, musts = 0, shown = 0;
+  data.units.filter(u => v.settings.units.includes(u.id)).forEach(u => {
+    const sec = el('section', 'cunit');
+    sec.append(el('h3', '', u.title));
+    u.cats.forEach(k => {
+      const kst = st(k.id);
+      const off = kst === 'off' || k.clues.every(x => p.off.has(x.id));
+      const must = !off && (kst === 'must' || k.clues.some(x => p.must.has(x.id)));
+      if (!off) cats++;
+      if (must) musts++;
+      const catHit = hit(k.name);
+      const rows = k.clues.map((x, i) => ({ x, i, s: st(x.id) })).filter(r => (catHit || hit(r.x.q, r.x.a, (r.x.wrong || []).join(' '))) && (wanted(r.s) || wanted(kst)));
+      if (!rows.length && !(catHit && wanted(kst))) return;
+      const box = el('div', 'ccat ' + (off ? 'off' : must ? 'must' : ''));
+      const head = el('div', 'ccathead');
+      const name = el('div'); name.append(el('b', '', k.name));
+      if (must) name.append(el('span', 'tag', 'ON THE BOARD'));
+      head.append(name, seg(kst, s => setPick(k.id, s)));
+      box.append(head);
+      rows.forEach(r => box.append(clueRow(r.x, String((r.i + 1) * 100), r.s, kst === 'off')));
+      sec.append(box);
+      shown++;
+    });
+    const finals = u.finals.map(f => ({ f, s: st(f.id) })).filter(r => hit(r.f.category, r.f.q, r.f.a) && wanted(r.s));
+    if (finals.length) {
+      const box = el('div', 'ccat');
+      const head = el('div', 'ccathead'); head.append(el('b', '', 'FINAL CLUES'));
+      box.append(head);
+      finals.forEach(r => box.append(clueRow(r.f, 'Final', r.s, false)));
+      const tags = box.querySelectorAll('.crow .q');
+      finals.forEach((r, i) => { const t = el('div', 'wrong', r.f.category); tags[i].prepend(t); });
+      sec.append(box);
+      shown++;
+    }
+    if (sec.children.length > 1) list.append(sec);
+  });
+  if (!shown) list.append(el('p', '', 'No clues match.'));
+  list.scrollTop = keep;
+  const room = 6 * v.settings.rounds;
+  $('#cluesSum').textContent = `${cats} categories in play · ${musts} must`;
+  $('#cluesWarn').textContent = cats < 6 ? `A board needs 6 categories and only ${cats} are in play. Use more clues or tick more units.`
+    : musts > room ? `${musts} categories are musts, but ${v.settings.rounds === 1 ? 'one board holds' : 'two boards hold'} ${room}. Some won’t make it.`
+    : v.settings.rounds === 2 && cats < 12 ? `Two boards need 12 categories and ${cats} are in play, so there will be one board.` : '';
+}
+$('#openClues').onclick = openClues;
+$('#closeClues').onclick = closeClues;
+$('#clueSearch').oninput = () => renderClues();
+$('#clueShow').onchange = () => renderClues();
+$('#clueReset').onclick = () => {
+  if (!confirm('Use every clue in this course again? Your skips and musts for it are cleared.')) return;
+  const all = JSON.parse(JSON.stringify(V.view.picks || {}));
+  delete all[V.view.settings.course];
+  V.view.picks = all;
+  renderClues();
+  cmd('settings', { settings: { picks: all } });
+};
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && C.open) closeClues(); });
 $('#course').onchange = e => cmd('settings', { settings: { course: e.target.value } });
 $('#teamsN').onchange = e => cmd('settings', { settings: { teams: +e.target.value } });
 $('#rounds').onchange = e => cmd('settings', { settings: { rounds: +e.target.value } });
@@ -447,7 +580,8 @@ function render(v) {
     });
   }
   $('#ovChamp').hidden = v.phase !== 'champ';
-  if (v.phase === 'lobby') { renderLobby(v); saveSettings(v); }
+  if (v.phase === 'lobby') { renderLobby(v); saveSettings(v); if (C.open) renderClues(); }
+  else if (C.open) closeClues();
   if (!$('#ovRoster').hidden) renderRoster($('#gameRoster'), v);
   renderBoard(v);
   renderSide(v);

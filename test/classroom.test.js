@@ -154,6 +154,49 @@ test('the teacher can switch courses; graph clues reach the screens', () => {
   assert.ok(!v.clue.q.includes('[graph'));
 });
 
+test('the teacher can skip clues and make categories a must', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
+  g.updateSettings({ course: 'SCH4U', units: ['acidbase'], rounds: 2, dd: true });
+  const list = bank.clueList('SCH4U');
+  const u = list.units.find(x => x.id === 'acidbase');
+  assert.strictEqual(u.cats.length, 12);
+  assert.ok(u.cats[0].clues[0].a, 'answers come with the list');
+  const byName = n => u.cats.find(k => k.name === n);
+  const titr = byName('TITRATION CURVES'), weak = byName('WEAK ACIDS'), life = byName('ACIDS AND BASES IN LIFE'), salts = byName('SALTS IN WATER');
+  const lastFinal = u.finals[3];
+  g.updateSettings({ picks: { SCH4U: {
+    must: [titr.id, weak.clues[2].id, lastFinal.id, 'nonsense'],
+    off: [life.id, ...salts.clues.map(x => x.id), weak.clues[0].id, weak.clues[1].id],
+  } } });
+  assert.deepStrictEqual(g.settings.picks.SCH4U.must, [titr.id, weak.clues[2].id, lastFinal.id], 'unknown ids are dropped');
+  assert.strictEqual(g.studentView ? g.join('Ann', 0) && g.studentView(g.students[0].id).settings.picks : undefined, undefined, 'students never see the picks');
+  g.start();
+  const names = g.rounds.flatMap(r => r.cats.map(k => k.name));
+  assert.ok(g.rounds[0].cats.some(k => k.name === 'TITRATION CURVES'), 'a must category is on the first board');
+  assert.ok(g.rounds[0].cats.some(k => k.name === 'WEAK ACIDS'), 'a must clue brings its category');
+  assert.ok(!names.includes('ACIDS AND BASES IN LIFE') && !names.includes('SALTS IN WATER'), 'skipped categories stay off');
+  assert.strictEqual(g.rounds.length, 1, 'ten categories are too few for two boards');
+  const c = g.round().cats.findIndex(k => k.name === 'WEAK ACIDS');
+  assert.ok(g.taken.has(`${c},0`) && g.taken.has(`${c},1`) && !g.taken.has(`${c},2`), 'skipped clues start empty');
+  assert.ok(![...g.round().dds].some(k => g.taken.has(k)), 'no Daily Double on an empty square');
+  assert.throws(() => g.choose(null, c, 0), /gone/);
+  g.choose(null, c, 2);
+  assert.ok(g.rec.q.includes('2 decimal places'));
+  assert.strictEqual(g.startFinal(), true);
+  assert.strictEqual(g.rec.q, lastFinal.q, 'the final comes from the musts');
+});
+
+test('a board needs six categories in play', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
+  g.updateSettings({ course: 'SCH4U', units: ['acidbase'] });
+  const cats = bank.clueList('SCH4U').units.find(x => x.id === 'acidbase').cats;
+  g.updateSettings({ picks: { SCH4U: { off: cats.slice(0, 7).map(k => k.id) } } });
+  g.join('Ann', 0);
+  assert.throws(() => g.start(), /only 5 are in play/);
+});
+
 test('a clue naming a missing graph is rejected', () => {
   assert.throws(() => parseBank('# Course: X\n# Unit: a | A\nFINAL | C | [graph: nope] Q | A', 'x.txt', new Set(['ppc'])), /no graph called "nope"/);
 });
