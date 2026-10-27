@@ -1,0 +1,92 @@
+# Course: MHF4U | Grade 12 Advanced Functions
+# Unit: logfn | Unit 6: Exponential and Logarithmic Functions
+
+## WHAT A LOG IS
+1 | log₂ 8 asks: 2 to what power gives 8? What is the answer? | = 3 ~0
+2 | Write 10³ = 1000 in logarithmic form | log 1000 = 3 | log 3 = 1000; log₃ 1000 = 10; log 10 = 3
+3 | Write log₅ 25 = 2 in exponential form | 5² = 25 | 2⁵ = 25; 25² = 5; 5²⁵ = 2
+4 | A logarithm with base 10 is called a ___ logarithm | COMMON
+5 | A logarithm with base e is called the ___ logarithm, written ln | NATURAL
+
+## EVALUATE
+1 | What is log 1000? | = 3 ~0
+2 | What is log₂ 32? | = 5 ~0
+3 | What is log₃ 81? | = 4 ~0
+4 | What is log 0.01? | = -2 ~0
+5 | What is log₂(1/8)? | = -3 ~0
+
+## TRICKIER VALUES
+1 | What is log₇ 1? | = 0 ~0
+2 | What is log₄ 4? | = 1 ~0
+3 | What is log₂₅ 5? | = 0.5 ~0
+4 | What is ln(e³)? | = 3 ~0
+5 | What is 10^(log 7)? | = 7 ~0
+
+## INVERSES
+1 | y = log₂ x is the inverse of this function | y = 2^x | y = x²; y = x ÷ 2; y = √x
+2 | The graphs of y = 3^x and y = log₃ x are reflections in this line | y = x | y = 0; x = 0; y = −x
+3 | What is the domain of y = log x? | x > 0 | ALL REAL NUMBERS; x ≥ 0; x > 1
+4 | What is the range of y = log x? | ALL REAL NUMBERS | y > 0; y ≥ 1; y < 0
+5 | The point (2, 9) is on y = 3^x. Which point is on y = log₃ x? | (9, 2) | (2, 9); (−2, 9); (9, −2)
+
+## THE LOG GRAPH
+1 | [graph: log] What is the x-intercept? | = 1 ~0
+2 | [graph: log] What is the vertical asymptote? | x = 0 | y = 0; x = 1; y = 1
+3 | [graph: log] What is the base of this logarithm? | = 2 ~0
+4 | [graph: log] What is y when x = 8? | = 3 ~0
+5 | [graph: log] Which equation matches it? | y = log₂ x | y = 2^x; y = log x; y = log₂(x − 1)
+
+## TRANSFORMATIONS
+1 | y = log(x − 4) has its vertical asymptote at what x-value? | = 4 ~0
+2 | y = log x + 3 is y = log x shifted this way | UP 3 | DOWN 3; LEFT 3; RIGHT 3
+3 | y = −log x is y = log x reflected in this | THE x-AXIS | THE y-AXIS; y = x; THE ORIGIN
+4 | y = log(x + 2) has what domain? | x > −2 | x > 2; x ≥ −2; ALL REAL NUMBERS
+5 | y = 2 log₃(x − 1) + 4. Where does the point (3, 1) on y = log₃ x move? | (4, 6) | (2, 6); (4, 5); (3, 6)
+
+## e AND ln
+1 | To 3 decimal places, what is e? | = 2.718 ~0.05%
+2 | What is ln 1? | = 0 ~0
+3 | Solve e^x = 5, to 3 decimal places | = 1.609 ~0.2%
+4 | What is e^(ln 4)? | = 4 ~0
+5 | Continuous growth uses the formula A = Pe^(rt). $1000 at 5% for 10 years grows to what, to the nearest cent? | = 1648.72 dollars ~0.05%
+
+## CHANGE OF BASE
+1 | log_b a = log a ÷ this | log b | log a; b; a ÷ b
+2 | To 3 decimal places, what is log₂ 10? | = 3.322 ~0.2%
+3 | To 3 decimal places, what is log₃ 20? | = 2.727 ~0.2%
+4 | To 3 decimal places, what is log₅ 2? | = 0.431 ~0.3%
+5 | log₄ 64 ÷ log₂ 8 equals what? | = 1 ~0
+
+## LOG SCALES
+1 | The Richter scale for earthquakes is a ___ scale | LOGARITHMIC / LOG
+2 | A magnitude 6 earthquake is how many times as intense as a magnitude 4? | = 100 ~0
+3 | pH = −log[H⁺]. What is the pH if [H⁺] = 10⁻⁴? | = 4 ~0
+4 | A solution of pH 3 is how many times as acidic as one of pH 6? | = 1000 ~0
+5 | A sound of 80 dB is how many times as intense as one of 60 dB? | = 100 ~0
+
+## EXPONENTIAL MODELS
+1 | In A = A₀(1/2)^(t/h), what does h stand for? | THE HALF-LIFE | THE HEIGHT; THE TIME; THE INITIAL AMOUNT
+2 | 80 g of a substance has a half-life of 3 days. How much is left after 9 days, in g? | = 10 g ~0
+3 | Bacteria double every 20 minutes, starting with 50. How many after 2 hours? | = 3200 ~0
+4 | In P = P₀(1.04)^t, what is the annual growth rate, in percent? | = 4 % ~0
+5 | A bank account grows by a factor of 1.5 every 8 years. By what factor does it grow in 24 years? | = 3.375 ~0
+
+## LOG LAWS PREVIEW
+1 | log a + log b equals this | log(ab) | log(a + b); log a × log b; log(a ÷ b)
+2 | log a − log b equals this | log(a ÷ b) | log(a − b); log a ÷ log b; log(ab)
+3 | log(aⁿ) equals this | n log a | log(na); (log a)ⁿ; log a + n
+4 | What is log 2 + log 50? | = 2 ~0
+5 | What is log₃ 54 − log₃ 2? | = 3 ~0
+
+## GROWTH COMPARISON
+1 | Which grows fastest for large x? | y = 2^x | y = x²; y = log x; y = 100x
+2 | Which grows slowest for large x? | y = log x | y = x; y = √x; y = 2^x
+3 | Exponential functions with base between 0 and 1 show this | DECAY | GROWTH; NO CHANGE; OSCILLATION
+4 | y = log x eventually exceeds any number, but it grows this way | VERY SLOWLY | VERY QUICKLY; NOT AT ALL; LINEARLY
+5 | For x > 0, which is larger at x = 16: 2^x or x²? | 2^x | x²; THEY ARE EQUAL; IT DEPENDS
+// 2^16 = 65 536; 16² = 256.
+
+FINAL | CHANGE OF BASE | To 3 decimal places, what is log₇ 100? | = 2.367 ~0.2%
+FINAL | EXPONENTIAL MODELS | A 200 mg dose has a half-life of 6 hours. How much is left after 1 day, in mg? | = 12.5 mg ~0
+FINAL | LOG SCALES | The 2011 Japan earthquake was magnitude 9.0 and a strong Ontario quake might be 5.0. How many times as intense was Japan's? | = 10000 ~0
+FINAL | e AND ln | $5000 is invested at 4% compounded continuously. To the nearest cent, what is it worth after 6 years? | = 6356.25 dollars ~0.05%

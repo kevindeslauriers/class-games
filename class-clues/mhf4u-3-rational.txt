@@ -1,0 +1,91 @@
+# Course: MHF4U | Grade 12 Advanced Functions
+# Unit: rational | Unit 3: Rational Functions
+
+## RECIPROCAL FUNCTIONS
+1 | The reciprocal of f(x) = x − 3 is this | 1 ÷ (x − 3) | x + 3; 3 − x; (x − 3)²
+2 | y = 1 ÷ x has a vertical asymptote at this line | x = 0 | y = 0; x = 1; y = x
+3 | y = 1 ÷ (x − 3) has a vertical asymptote at what x-value? | = 3 ~0
+4 | Where f(x) = 1, its reciprocal 1 ÷ f(x) equals this | = 1 ~0
+5 | f(x) = x² − 4. Where are the vertical asymptotes of y = 1 ÷ f(x)? | x = −2 AND x = 2 | x = 4 ONLY; x = −4 AND x = 4; x = 0 ONLY
+
+## VERTICAL ASYMPTOTES
+1 | [graph: rational] What is the vertical asymptote? | x = 2 | x = 1; y = 2; x = −1
+2 | Vertical asymptotes occur where the denominator equals this | ZERO / 0
+3 | y = (x + 5) ÷ ((x − 1)(x + 4)) has how many vertical asymptotes? | = 2 ~0
+4 | y = (x − 2) ÷ (x² − 4) has a vertical asymptote at what x-value? | = -2 ~0
+5 | y = (x − 2) ÷ (x² − 4) has a hole, not an asymptote, at what x-value? | = 2 ~0
+
+## AS x GETS HUGE
+1 | [graph: rational] What is the horizontal asymptote? | y = 1 | y = 2; x = 1; y = 0
+2 | When the denominator's degree is higher than the numerator's, the horizontal asymptote is this | y = 0 | y = 1; x = 0; THERE IS NONE
+3 | y = (3x + 1) ÷ (x − 2) has what horizontal asymptote? (Give the y-value) | = 3 ~0
+4 | y = (4x² − 1) ÷ (2x² + x) has what horizontal asymptote? (Give the y-value) | = 2 ~0
+5 | When the numerator's degree is exactly one more than the denominator's, the graph has this | AN OBLIQUE (SLANT) ASYMPTOTE | A HORIZONTAL ASYMPTOTE AT y = 1; NO ASYMPTOTES; A HOLE
+
+## INTERCEPTS
+1 | [graph: rational] What is the x-intercept? | = -1 ~0
+2 | [graph: rational] What is the y-intercept? | = -0.5 ~0
+3 | The x-intercepts of a rational function come from the zeros of this | THE NUMERATOR | THE DENOMINATOR; THE ASYMPTOTES; THE HOLES
+4 | What is the y-intercept of y = (2x − 6) ÷ (x + 3)? | = -2 ~0
+5 | What is the x-intercept of y = (2x − 6) ÷ (x + 3)? | = 3 ~0
+
+## DOMAIN AND RANGE
+1 | What is the domain of y = 1 ÷ (x + 4)? | ALL REALS EXCEPT x = −4 | ALL REALS; x > −4; ALL REALS EXCEPT x = 4
+2 | What is the range of y = 1 ÷ x? | ALL REALS EXCEPT y = 0 | ALL REALS; y > 0; ALL REALS EXCEPT y = 1
+3 | [graph: rational] What is the range? | ALL REALS EXCEPT y = 1 | ALL REALS EXCEPT y = 2; y > 1; ALL REALS
+4 | The domain of y = 1 ÷ (x² + 1) is this | ALL REAL NUMBERS | ALL REALS EXCEPT x = ±1; x > 0; x ≠ 0
+5 | What is the maximum value of y = 1 ÷ (x² + 1)? | = 1 ~0
+
+## BEHAVIOUR NEAR ASYMPTOTES
+1 | [graph: rational] As x approaches 2 from the right, y does this | GOES TO +∞ | GOES TO −∞; APPROACHES 1; APPROACHES 2
+2 | [graph: rational] As x approaches 2 from the left, y does this | GOES TO −∞ | GOES TO +∞; APPROACHES 1; APPROACHES 0
+3 | [graph: rational] As x → +∞, y approaches this value | = 1 ~0
+4 | y = 1 ÷ (x − 3)². As x → 3 from either side, y does this | GOES TO +∞ ON BOTH SIDES | GOES TO −∞ ON BOTH SIDES; +∞ ON ONE SIDE AND −∞ ON THE OTHER; APPROACHES 0
+5 | Can a graph cross its horizontal asymptote? | YES, IT CAN | NO, NEVER; ONLY AT x = 0; ONLY IF THERE IS A HOLE
+
+## SOLVING RATIONAL EQUATIONS
+1 | Solve 6 ÷ x = 3 | = 2 ~0
+2 | Solve (x + 2) ÷ (x − 1) = 4 | = 2 ~0
+3 | Solve 1 ÷ x + 1 ÷ (2x) = 3 | = 0.5 ~0
+4 | Solve x ÷ (x − 2) = 3 ÷ (x − 2). Why is there no solution? | x = 2 MAKES THE DENOMINATOR ZERO | THE GRAPH HAS NO ZEROS; x MUST BE NEGATIVE; THERE ARE TWO SOLUTIONS
+5 | Solve 2 ÷ (x + 1) = x. What is the positive solution? | = 1 ~0
+
+## RATIONAL INEQUALITIES
+1 | Solve 1 ÷ x > 0 | x > 0 | x < 0; x ≠ 0; ALL REALS
+2 | Solve (x − 3) ÷ (x + 2) < 0 | −2 < x < 3 | x < −2 OR x > 3; x < 3; −3 < x < 2
+3 | Solve (x + 1) ÷ (x − 2) ≥ 0 | x ≤ −1 OR x > 2 | −1 ≤ x < 2; x ≥ −1; x < −1 OR x ≥ 2
+4 | When solving a rational inequality, the critical values come from this | THE NUMERATOR AND DENOMINATOR ZEROS | ONLY THE NUMERATOR ZEROS; ONLY THE y-INTERCEPT; THE ASYMPTOTE SLOPES
+5 | Solve 2 ÷ (x − 1) < 1 | x < 1 OR x > 3 | 1 < x < 3; x > 3; x < 3
+
+## HOLES
+1 | A gap in the graph where a common factor cancels is called this | HOLE / A HOLE / POINT OF DISCONTINUITY / REMOVABLE DISCONTINUITY
+2 | y = (x² − 9) ÷ (x − 3) simplifies to this, with a hole | y = x + 3 | y = x − 3; y = x² − 3; y = 3
+3 | y = (x² − 9) ÷ (x − 3) has a hole at what x-value? | = 3 ~0
+4 | What is the y-value of the hole in y = (x² − 9) ÷ (x − 3)? | = 6 ~0
+5 | y = (x + 1) ÷ (x² + 3x + 2) has a hole at what x-value? | = -1 ~0
+
+## MATCH THE EQUATION
+1 | [graph: rational] Which equation matches the graph? | y = (x + 1) ÷ (x − 2) | y = (x − 1) ÷ (x + 2); y = 1 ÷ (x − 2); y = (x + 2) ÷ (x − 1)
+2 | A rational function has a vertical asymptote x = −3 and horizontal asymptote y = 0. Which fits? | y = 5 ÷ (x + 3) | y = 5 ÷ (x − 3); y = x ÷ (x + 3); y = (x + 3) ÷ 5
+3 | Which function has the horizontal asymptote y = 2? | y = (2x + 1) ÷ (x − 4) | y = 2 ÷ (x − 4); y = (x + 2) ÷ (x − 4); y = (x − 4) ÷ 2
+4 | Which function has no vertical asymptote? | y = 1 ÷ (x² + 4) | y = 1 ÷ (x² − 4); y = 1 ÷ x; y = x ÷ (x − 4)
+5 | Which function has an oblique asymptote? | y = (x² + 1) ÷ (x − 1) | y = (x + 1) ÷ (x − 1); y = 1 ÷ (x² − 1); y = (x² + 1) ÷ (x² − 1)
+
+## RATES AND CONTEXT
+1 | The average cost per item is C(x) = (500 + 2x) ÷ x. What is it for 100 items, in dollars? | = 7 dollars ~0
+2 | For C(x) = (500 + 2x) ÷ x, what does the average cost approach as x grows very large, in dollars? | = 2 dollars ~0
+3 | A drug's concentration is C(t) = 5t ÷ (t² + 1). What is C(1)? | = 2.5 ~0
+4 | For C(t) = 5t ÷ (t² + 1), what does the concentration approach as t → ∞? | = 0 ~0
+5 | f(x) = 1 ÷ x. What is the average rate of change from x = 1 to x = 2? | = -0.5 ~0
+
+## OBLIQUE ASYMPTOTES
+1 | y = (x² + 1) ÷ x has this oblique asymptote | y = x | y = x + 1; y = 1; y = 0
+2 | y = (x² + 3x + 1) ÷ (x + 1) has this oblique asymptote | y = x + 2 | y = x + 3; y = x + 1; y = x
+3 | To find an oblique asymptote, you do this | DIVIDE THE NUMERATOR BY THE DENOMINATOR | SET THE NUMERATOR TO ZERO; SET THE DENOMINATOR TO ZERO; FIND THE y-INTERCEPT
+4 | Can a function have both a horizontal and an oblique asymptote? | NO | YES; ONLY IF IT HAS A HOLE; ONLY IF IT IS EVEN
+5 | y = (2x² − x + 3) ÷ (x − 1) has an oblique asymptote y = 2x + b. What is b? | = 1 ~0
+
+FINAL | AS x GETS HUGE | y = (6x² − 5x) ÷ (3 − 2x²). What is the horizontal asymptote? (Give the y-value) | = -3 ~0
+FINAL | SOLVING RATIONAL EQUATIONS | Solve (x + 3) ÷ (x − 1) = (x − 2) ÷ (x + 2) | = -0.5 ~0
+FINAL | HOLES | y = (x² − x − 6) ÷ (x² − 4). What is the y-value of the hole? | = 1.25 ~0
+FINAL | RATIONAL INEQUALITIES | Solve (x − 1) ÷ (x + 3) ≤ 2 | x ≤ −7 OR x > −3 | −7 ≤ x < −3; x > −3 ONLY; x ≤ −7 ONLY

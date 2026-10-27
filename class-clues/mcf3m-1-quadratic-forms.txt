@@ -1,0 +1,93 @@
+# Course: MCF3M | Grade 11 Functions and Applications
+# Unit: forms | Unit 1: Forms of Quadratic Functions
+# Teams: Parabolas, Vertices, Roots, Slopes, Tangents, Radians, Cosines, Sines
+// Number answers accept "x = 3" as well as "3". Expressions are multiple choice.
+
+## EXPAND IT
+1 | Expand 3(x + 4) | 3x + 12 | 3x + 4; x + 12; 3x + 7
+2 | Expand (x + 3)(x + 5) | x² + 8x + 15 | x² + 15x + 8; x² + 8x + 8; x² + 15
+3 | Expand (x − 4)(x + 4) | x² − 16 | x² + 16; x² − 8x − 16; x² − 8x + 16
+4 | Expand (2x − 3)(x + 5) | 2x² + 7x − 15 | 2x² − 7x − 15; 2x² + 13x − 15; 2x² + 7x + 15
+5 | Expand and simplify 2(x − 3)² + 1 | 2x² − 12x + 19 | 2x² − 6x + 10; 2x² − 12x + 10; 2x² + 12x + 19
+
+## TAKE IT OUT
+1 | The first step in factoring any polynomial is to look for this | A COMMON FACTOR / COMMON FACTOR / GCF / GREATEST COMMON FACTOR
+2 | Factor 5x + 20 | 5(x + 4) | 5(x + 20); x(5 + 20); 5x(1 + 4)
+3 | Factor 6x² − 9x | 3x(2x − 3) | 3(2x² − 3x); x(6x − 9); 6x(x − 9)
+4 | What is the greatest common factor of 8x³ and 12x²? | 4x² | 4x; 8x²; 12x³
+5 | Factor 4x² − 16 fully | 4(x − 2)(x + 2) | 4(x² − 4); (2x − 4)(2x + 4); 4(x − 4)(x + 4)
+
+## TRINOMIALS
+1 | Factor x² + 7x + 12 | (x + 3)(x + 4) | (x + 2)(x + 6); (x + 1)(x + 12); (x + 3)(x − 4)
+2 | Factor x² − 5x + 6 | (x − 2)(x − 3) | (x + 2)(x + 3); (x − 1)(x − 6); (x + 1)(x − 6)
+3 | Factor x² + 2x − 15 | (x + 5)(x − 3) | (x − 5)(x + 3); (x + 15)(x − 1); (x − 5)(x − 3)
+4 | Factor x² − x − 20 | (x − 5)(x + 4) | (x + 5)(x − 4); (x − 10)(x + 2); (x − 20)(x + 1)
+5 | Factor 2x² + 10x + 12 fully | 2(x + 2)(x + 3) | (2x + 4)(x + 3); 2(x + 1)(x + 6); (x + 2)(2x + 6)
+
+## WHEN a ISN'T 1
+1 | Factor 2x² + 7x + 3 | (2x + 1)(x + 3) | (2x + 3)(x + 1); (2x + 7)(x + 3); (x + 1)(x + 3)
+2 | Factor 3x² − 10x + 8 | (3x − 4)(x − 2) | (3x − 2)(x − 4); (3x + 4)(x + 2); (3x − 8)(x − 1)
+3 | Factor 6x² + x − 2 | (2x − 1)(3x + 2) | (2x + 1)(3x − 2); (6x − 1)(x + 2); (3x − 1)(2x + 2)
+4 | To factor 4x² + 8x + 3 by decomposition, you need two numbers that multiply to 12 and add to 8. What is the larger one? | = 6 ~0
+5 | Factor 5x² − 13x − 6 | (5x + 2)(x − 3) | (5x − 2)(x + 3); (5x − 3)(x + 2); (5x + 3)(x − 2)
+
+## SPECIAL PRODUCTS
+1 | x² − 25 is a ___ of squares | DIFFERENCE / DIFFERENCE OF SQUARES
+2 | Factor x² − 49 | (x − 7)(x + 7) | (x − 7)²; (x + 7)²; (x − 49)(x + 1)
+3 | x² + 10x + 25 factors as this | (x + 5)² | (x + 25)(x + 1); (x − 5)²; (x + 5)(x − 5)
+4 | Factor 9x² − 4 | (3x − 2)(3x + 2) | (9x − 2)(x + 2); (3x − 2)²; (3x − 4)(3x + 1)
+5 | For what value of c is x² − 12x + c a perfect square trinomial? | = 36 ~0
+
+## COMPLETING THE SQUARE
+1 | To complete the square for x² + 6x, you add and subtract this number | = 9 ~0
+2 | Write y = x² + 8x + 5 in vertex form | y = (x + 4)² − 11 | y = (x + 4)² + 5; y = (x − 4)² − 11; y = (x + 8)² − 59
+3 | Write y = x² − 10x + 30 in vertex form | y = (x − 5)² + 5 | y = (x − 5)² + 30; y = (x + 5)² + 5; y = (x − 10)² − 70
+4 | Write y = 2x² + 12x + 7 in vertex form | y = 2(x + 3)² − 11 | y = 2(x + 3)² + 7; y = 2(x + 6)² − 65; y = 2(x − 3)² − 11
+5 | Completing the square on y = −x² + 4x + 1 gives a maximum value of what? | = 5 ~0
+
+## NAME THE FORM
+1 | y = ax² + bx + c is called this form | STANDARD | VERTEX; FACTORED; INTERCEPT
+2 | y = a(x − h)² + k is called this form | VERTEX / VERTEX FORM
+3 | y = a(x − r)(x − s) is called this form | FACTORED | STANDARD; VERTEX; EXPANDED
+4 | Which form makes the zeros (x-intercepts) easiest to read? | FACTORED FORM | STANDARD FORM; VERTEX FORM; NONE OF THEM
+5 | Which form makes the y-intercept easiest to read? | STANDARD FORM | VERTEX FORM; FACTORED FORM; ALL EQUALLY
+
+## READING VERTEX FORM
+1 | y = (x − 3)² + 2 has its vertex at this point | (3, 2) | (−3, 2); (3, −2); (2, 3)
+2 | y = −2(x + 1)² + 7 opens this way | DOWN / DOWNWARD
+3 | What is the axis of symmetry of y = 4(x − 6)² − 9? (Give the x-value) | = 6 ~0
+4 | What is the minimum value of y = 3(x + 2)² − 8? | = -8 ~0
+5 | What is the y-intercept of y = 2(x − 1)² − 5? | = -3 ~0
+
+## READING FACTORED FORM
+1 | What are the zeros of y = (x − 4)(x + 2)? | 4 AND −2 | −4 AND 2; 4 AND 2; −4 AND −2
+2 | What is the axis of symmetry of y = (x − 4)(x + 2)? (Give the x-value) | = 1 ~0
+3 | What is the y-intercept of y = 3(x − 1)(x − 5)? | = 15 ~0
+4 | y = −(x − 1)(x − 7) has a maximum value of what? | = 9 ~0
+5 | What are the zeros of y = (2x − 3)(x + 4)? | 1.5 AND −4 | 3 AND −4; −1.5 AND 4; 2 AND −4
+
+## READ THE GRAPH
+1 | [graph: parabola-down] What is the vertex of this parabola? | (2, 9) | (9, 2); (−1, 0); (5, 0)
+2 | [graph: parabola-down] What is the y-intercept? | = 5 ~0
+3 | [graph: parabola-down] Which equation matches the graph? | y = −(x − 2)² + 9 | y = (x − 2)² + 9; y = −(x + 2)² + 9; y = −(x − 9)² + 2
+4 | [graph: parabola-up] What is the minimum value? | = -8 ~0
+5 | [graph: parabola-up] Which factored form matches the graph? | y = 0.5(x + 7)(x − 1) | y = 0.5(x − 7)(x + 1); y = (x + 7)(x − 1); y = 0.5(x + 3)(x − 8)
+
+## EQUIVALENT EXPRESSIONS
+1 | Two expressions are equivalent when they give the same value for this | EVERY VALUE OF x | ONE VALUE OF x; x = 0 ONLY; NO VALUE OF x
+2 | Which is equivalent to (x + 2)²? | x² + 4x + 4 | x² + 4; x² + 2x + 4; x² + 4x + 2
+3 | Which is equivalent to y = (x − 1)(x − 3)? | y = (x − 2)² − 1 | y = (x − 2)² + 1; y = (x + 2)² − 1; y = (x − 1)² − 3
+4 | Substituting x = 2 into 2(x + 1)² − 3 gives what? | = 15 ~0
+5 | Is (x − 3)² equivalent to x² − 9? | NO, IT EXPANDS TO x² − 6x + 9 | YES, ALWAYS; ONLY WHEN x = 0; ONLY FOR POSITIVE x
+
+## STANDARD FORM FACTS
+1 | In y = 2x² − 5x + 3, what is the value of c? | = 3 ~0
+2 | In y = ax² + bx + c, a parabola opens down when a is this | NEGATIVE | POSITIVE; ZERO; GREATER THAN 1
+3 | The axis of symmetry is x = −b ÷ 2a. What is it for y = x² − 8x + 1? | = 4 ~0
+4 | What is the vertex's y-coordinate for y = x² − 8x + 1? | = -15 ~0
+5 | A bigger value of a (ignoring its sign) makes the parabola this | NARROWER | WIDER; SHIFT RIGHT; OPEN DOWN
+
+FINAL | COMPLETING THE SQUARE | Write y = 3x² − 18x + 20 in vertex form | y = 3(x − 3)² − 7 | y = 3(x − 3)² + 20; y = 3(x + 3)² − 7; y = 3(x − 9)² − 223
+FINAL | WHEN a ISN'T 1 | Factor 8x² − 2x − 15 | (4x + 5)(2x − 3) | (4x − 5)(2x + 3); (8x − 5)(x + 3); (2x + 5)(4x − 3)
+FINAL | READING FACTORED FORM | y = 2(x + 3)(x − 5). What is the minimum value? | = -32 ~0
+FINAL | THREE FORMS | A parabola has zeros 2 and 8 and passes through (0, 32). What is its vertex's y-coordinate? | = -18 ~0

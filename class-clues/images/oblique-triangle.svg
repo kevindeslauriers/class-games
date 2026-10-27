@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450" width="640" height="450" font-family="Arial, Helvetica, sans-serif">
+<rect x="1" y="1" width="638" height="448" rx="14" fill="#ffffff" stroke="#c9d3ff" stroke-width="2"/>
+<polygon points="90,370 560,370 330,70" fill="#eef2ff" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+<text x="325" y="405" font-size="22" font-weight="bold" text-anchor="middle" fill="#1f4fd1" stroke="#fff" stroke-width="5" paint-order="stroke">c = 12</text>
+<text x="180" y="205" font-size="22" font-weight="bold" text-anchor="middle" fill="#1f4fd1" stroke="#fff" stroke-width="5" paint-order="stroke">b = 10</text>
+<text x="480" y="205" font-size="22" font-weight="bold" text-anchor="middle" fill="#1f4fd1" stroke="#fff" stroke-width="5" paint-order="stroke">a = ?</text>
+<text x="70" y="395" font-size="22" font-weight="bold" text-anchor="middle" fill="#d1342f" stroke="#fff" stroke-width="5" paint-order="stroke">A</text>
+<text x="585" y="395" font-size="22" font-weight="bold" text-anchor="middle" fill="#d1342f" stroke="#fff" stroke-width="5" paint-order="stroke">B</text>
+<text x="330" y="52" font-size="22" font-weight="bold" text-anchor="middle" fill="#d1342f" stroke="#fff" stroke-width="5" paint-order="stroke">C</text>
+<text x="150" y="355" font-size="22" font-weight="bold" text-anchor="middle" fill="#d1342f" stroke="#fff" stroke-width="5" paint-order="stroke">50°</text>
+</svg>

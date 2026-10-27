@@ -300,7 +300,7 @@ function renderClue(v) {
     p.append(el('div', 'big', c.type === 'num' ? 'Type a number on your device' : 'Type your answer on your device'));
     if (c.type === 'num' && c.unit) { const u = el('div', 'unit'); u.innerHTML = `Answer in ${rich(c.unit)}`; p.append(u); }
     const sm = el('div', 'small');
-    sm.innerHTML = c.type === 'num' ? 'Fractions (3/8), decimals and scientific notation (3e8) all work' : 'Spelling doesn’t have to be perfect.';
+    sm.innerHTML = c.type === 'num' ? 'Fractions (3/8), decimals, scientific notation (3e8), x = 3 and π (5π/6) all work' : 'Spelling doesn’t have to be perfect.';
     p.append(sm);
     out.append(p);
   }

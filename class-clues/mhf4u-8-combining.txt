@@ -1,0 +1,93 @@
+# Course: MHF4U | Grade 12 Advanced Functions
+# Unit: combine | Unit 8: Combining Functions
+// In this unit f(x) = x² + 1 and g(x) = 2x − 3 unless the clue says otherwise.
+
+## SUMS AND DIFFERENCES
+1 | f(x) = x² + 1 and g(x) = 2x − 3. What is (f + g)(3)? | = 13 ~0
+2 | What is (f − g)(0)? | = 4 ~0
+3 | (f + g)(x) equals this | x² + 2x − 2 | x² + 2x + 4; x² − 2x + 4; 2x³ − 3
+4 | The domain of f + g is the ___ of the domains of f and g | INTERSECTION / OVERLAP / COMMON PART
+5 | (g − f)(x) equals this | −x² + 2x − 4 | x² − 2x + 4; −x² + 2x − 2; −x² − 2x − 4
+
+## PRODUCTS AND QUOTIENTS
+1 | What is (fg)(1)? | = -2 ~0
+2 | What is (f ÷ g)(2)? | = 5 ~0
+3 | (fg)(x) equals this | 2x³ − 3x² + 2x − 3 | 2x³ + 2x − 3; 2x² − 3x + 1; x³ − 3x² + 2x − 3
+4 | The domain of (f ÷ g)(x) excludes this x-value | 1.5 | 0; −1.5; 3
+5 | y = x sin x is an example of combining functions by this operation | MULTIPLICATION | ADDITION; COMPOSITION; DIVISION
+
+## COMPOSITION
+1 | f(g(x)) means this | APPLY g FIRST, THEN f | APPLY f FIRST, THEN g; MULTIPLY f AND g; ADD f AND g
+2 | What is f(g(2))? | = 2 ~0
+3 | What is g(f(2))? | = 7 ~0
+4 | f(g(x)) equals this | 4x² − 12x + 10 | 2x² − 1; 4x² + 10; 2x² + 1
+5 | g(f(x)) equals this | 2x² − 1 | 4x² − 12x + 10; 2x² − 3; 2x² + 2
+
+## MORE COMPOSITION
+1 | f(x) = 2x + 1. What is f(f(x))? | 4x + 3 | 4x + 2; 2x + 2; 4x² + 1
+2 | f(x) = x² and g(x) = √x. What is f(g(9))? | = 9 ~0
+3 | f(x) = x² and g(x) = √x. What is g(f(−3))? | = 3 ~0
+4 | h(x) = (3x + 1)⁵ can be written as f(g(x)) with g(x) = 3x + 1 and f(x) equal to this | x⁵ | 3x + 1; (x + 1)⁵; 5x
+5 | f(x) = 1 ÷ x and g(x) = x − 2. What is the domain of f(g(x))? | ALL REALS EXCEPT x = 2 | ALL REALS EXCEPT x = 0; x > 2; ALL REAL NUMBERS
+
+## INVERSES AND COMPOSITION
+1 | f(f⁻¹(x)) always equals this | x | 1; 0; f(x)
+2 | f(x) = 2x + 3. What is f⁻¹(x)? | (x − 3) ÷ 2 | (x + 3) ÷ 2; 2x − 3; 1 ÷ (2x + 3)
+3 | f(x) = x³ − 1. What is f⁻¹(7)? | = 2 ~0
+4 | f(x) = 10^x. What is f⁻¹(x)? | log x | 10x; x ÷ 10; x^10
+5 | f(x) = e^x and g(x) = ln x. What is f(g(5))? | = 5 ~0
+
+## COMPARING FUNCTIONS
+1 | Where do y = 2^x and y = x + 2 meet for x > 0? | = 2 ~0
+2 | Solve x² > 2x + 3 | x < −1 OR x > 3 | −1 < x < 3; x > 3; x < −1
+3 | For large x, which is bigger: x³ or 3^x? | 3^x | x³; THEY ARE EQUAL; IT ALTERNATES
+4 | How many times do y = x² and y = 2^x cross? | = 3 ~0
+5 | To solve f(x) > g(x) graphically, find where the graph of f is this | ABOVE THE GRAPH OF g | BELOW THE GRAPH OF g; ON THE x-AXIS; AT ITS MAXIMUM
+// x² and 2^x cross at x = 2, x = 4 and once for a negative x.
+
+## CHARACTERISTICS OF COMBINATIONS
+1 | The sum of two even functions is this | EVEN | ODD; NEITHER; ALWAYS ZERO
+2 | The product of two odd functions is this | EVEN | ODD; NEITHER; ALWAYS ZERO
+3 | y = sin x + x is this | ODD | EVEN; NEITHER; PERIODIC
+4 | y = e^(−x) sin x describes a ___ oscillation | DAMPED / DECAYING
+5 | y = x² + sin x is this | NEITHER EVEN NOR ODD | EVEN; ODD; PERIODIC
+
+## MODELLING WITH COMBINATIONS
+1 | A company's profit P(x) equals revenue R(x) minus this | COST / C(x) / COSTS / THE COST
+2 | R(x) = 50x and C(x) = 20x + 600. For what number of items does the company break even? | = 20 ~0
+3 | R(x) = 50x and C(x) = 20x + 600. What is the profit for 50 items? | = 900 dollars ~0
+4 | A spring's height is h(t) = 10e^(−0.5t) cos(πt) + 20. What height does it settle to as t → ∞? | = 20 ~0
+5 | A sound wave dies away over time. Which function could model it? | y = e^(−t) sin(t) | y = e^t sin t; y = t sin t; y = sin t + t
+
+## RATES AND COMBINATIONS
+1 | f(x) = x² + 1. What is the average rate of change from x = 1 to x = 3? | = 4 ~0
+2 | g(x) = 2x − 3 has a constant rate of change of what? | = 2 ~0
+3 | For (f + g)(x) = x² + 2x − 2, what is the average rate of change from x = 0 to x = 2? | = 4 ~0
+4 | Using points close together, what is the instantaneous rate of change of f(x) = x² + 1 at x = 2? | = 4 ~0.5%
+5 | The rate of change of a sum equals the ___ of the rates of change | SUM
+
+## DECOMPOSING
+1 | h(x) = √(x + 5) can be written as f(g(x)) with g(x) = x + 5 and f(x) equal to this | √x | x + 5; x²; 1 ÷ x
+2 | h(x) = sin(x²) is f(g(x)) where g(x) is this | x² | sin x; x; sin²x
+3 | h(x) = 2^(3x − 1) is f(g(x)) with f(x) = 2^x and g(x) equal to this | 3x − 1 | 2^x; 3x; x − 1
+4 | h(x) = log(x² + 1) is f(g(x)) where f(x) is this | log x | x² + 1; 10^x; log(x² + 1)
+5 | h(x) = 1 ÷ (x − 4)² is f(g(x)) with g(x) = x − 4 and f(x) equal to this | 1 ÷ x² | x²; 1 ÷ x; (x − 4)²
+
+## DOMAINS
+1 | What is the domain of y = √(x − 4)? | x ≥ 4 | x > 4; x ≥ −4; ALL REAL NUMBERS
+2 | What is the domain of y = log(x) + √x? | x > 0 | x ≥ 0; ALL REAL NUMBERS; x > 1
+3 | What is the domain of y = √x ÷ (x − 9)? | x ≥ 0, x ≠ 9 | x > 9; x ≥ 0; ALL REALS EXCEPT x = 9
+4 | f(x) = √x and g(x) = x − 3. What is the domain of f(g(x))? | x ≥ 3 | x ≥ 0; x > 3; ALL REAL NUMBERS
+5 | f(x) = log x and g(x) = x² − 1. What is the domain of f(g(x))? | x < −1 OR x > 1 | x > 1; x > 0; −1 < x < 1
+
+## FUNCTION FAMILIES REVIEW
+1 | y = 3x − 2 is this kind of function | LINEAR | QUADRATIC; EXPONENTIAL; RATIONAL
+2 | y = 5(0.9)^x is this kind of function | EXPONENTIAL | LINEAR; LOGARITHMIC; POLYNOMIAL
+3 | y = 1 ÷ (x + 2) is this kind of function | RATIONAL | POLYNOMIAL; EXPONENTIAL; TRIGONOMETRIC
+4 | y = 4 sin(2x) is this kind of function | SINUSOIDAL / TRIGONOMETRIC / PERIODIC / TRIG
+5 | y = log₂ x is this kind of function | LOGARITHMIC | EXPONENTIAL; RATIONAL; RADICAL
+
+FINAL | COMPOSITION | f(x) = 3x − 1 and g(x) = x² + 2. What is f(g(−2)) − g(f(1))? | = 11 ~0
+FINAL | INVERSES AND COMPOSITION | f(x) = 2^(x − 1) + 3. What is f⁻¹(11)? | = 4 ~0
+FINAL | MODELLING WITH COMBINATIONS | R(x) = −2x² + 100x and C(x) = 20x + 500. To the nearest whole number, how many items give the maximum profit? | = 20 ~0
+FINAL | DOMAINS | f(x) = √(4 − x) and g(x) = x². What is the domain of f(g(x))? | −2 ≤ x ≤ 2 | x ≤ 4; x ≥ −2; ALL REAL NUMBERS

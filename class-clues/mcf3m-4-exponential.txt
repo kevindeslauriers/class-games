@@ -1,0 +1,91 @@
+# Course: MCF3M | Grade 11 Functions and Applications
+# Unit: exponential | Unit 4: Exponential Functions
+
+## EXPONENT LAWS
+1 | Simplify x³ × x⁴ | x⁷ | x¹²; x; 2x⁷
+2 | Simplify x⁹ ÷ x³ | x⁶ | x³; x¹²; x²⁷
+3 | Simplify (x²)⁵ | x¹⁰ | x⁷; x²⁵; x³²
+4 | Simplify (2x³)² | 4x⁶ | 2x⁶; 4x⁵; 2x⁹
+5 | Simplify (3a²b)(4ab³) | 12a³b⁴ | 7a³b⁴; 12a²b³; 12a³b³
+
+## ZERO AND NEGATIVE EXPONENTS
+1 | What is 7⁰? | = 1 ~0
+2 | What is 2⁻³? (A fraction or a decimal) | = 1/8 ~0.5%
+3 | What is (1/3)⁻²? | = 9 ~0
+4 | Write x⁻⁴ with a positive exponent | 1 ÷ x⁴ | −x⁴; x⁴; −4x
+5 | What is 5⁻¹ + 5⁰? (A decimal) | = 1.2 ~0
+
+## RATIONAL EXPONENTS
+1 | What is 25^½? | = 5 ~0
+2 | What is 8^(1/3)? | = 2 ~0
+3 | What is 16^(3/4)? | = 8 ~0
+4 | What is 27^(−2/3)? (A fraction or a decimal) | = 1/9 ~1%
+5 | x^(1/2) is the same as this | √x | x ÷ 2; x²; 1 ÷ x²
+
+## SOLVING EXPONENTIAL EQUATIONS
+1 | Solve 2^x = 32 | = 5 ~0
+2 | Solve 3^x = 81 | = 4 ~0
+3 | Solve 5^(x − 1) = 125 | = 4 ~0
+4 | Solve 4^x = 8. (Write both as powers of 2.) | = 1.5 ~0
+5 | Solve 2^(x + 3) = 1/4 | = -5 ~0
+
+## UP OR DOWN?
+1 | y = 3(2)^x shows exponential ___ | GROWTH | DECAY; LINEAR CHANGE; NO CHANGE
+2 | y = 100(0.8)^x shows exponential ___ | DECAY
+3 | In y = a(b)^x, the graph shows decay when b is this | BETWEEN 0 AND 1 | GREATER THAN 1; NEGATIVE; EQUAL TO 1
+4 | A population grows 5% a year. What is the growth factor b? | = 1.05 ~0
+5 | A car loses 15% of its value each year. What is the decay factor b? | = 0.85 ~0
+
+## GROWTH PROBLEMS
+1 | Bacteria double every hour, starting at 100. How many are there after 3 hours? | = 800 ~0
+2 | A town of 20,000 grows 3% a year. To the nearest whole number, what is its population after 2 years? | = 21218 ~0.1%
+3 | An investment of $500 grows 4% a year. To the nearest cent, what is it worth after 5 years, in dollars? | = 608.33 dollars ~0.1%
+4 | A culture triples every 2 days, starting with 50 cells. How many cells after 6 days? | = 1350 ~0
+5 | A population doubles every 20 years. By what factor does it grow in 60 years? | = 8 ~0
+
+## DECAY PROBLEMS
+1 | The time it takes for half of a substance to decay is its ___ | HALF-LIFE / HALF LIFE / HALFLIFE
+2 | 80 mg of a drug halves every 4 hours. How much is left after 12 hours, in mg? | = 10 mg ~0
+3 | A $30,000 car depreciates 20% a year. What is it worth after 2 years, in dollars? | = 19200 dollars ~0
+4 | A substance with a 5-year half-life starts at 200 g. How much is left after 20 years, in grams? | = 12.5 g ~0
+5 | Coffee cools so the temperature difference drops 10% every minute. A 60° difference becomes what after 3 minutes, to 1 decimal place? | = 43.7 ~0.5%
+
+## GRAPH FEATURES
+1 | [graph: exp-decay] What is the y-intercept? | = 32 ~0
+2 | [graph: exp-decay] By what factor does y change each time x increases by 1? | = 0.5 ~0
+3 | [graph: exp-decay] What is the horizontal asymptote? | y = 0 | x = 0; y = 32; y = 1
+4 | [graph: exp-shift] What is the horizontal asymptote? | y = −4 | y = 0; x = −4; y = −3
+5 | [graph: exp-shift] What is the range? | y > −4 | y ≥ 0; y > 0; ALL REAL NUMBERS
+
+## TRANSFORMING EXPONENTIALS
+1 | y = 2^x + 3 has this horizontal asymptote | y = 3 | y = 0; y = 2; x = 3
+2 | y = 2^(x − 4) is y = 2^x shifted this way | RIGHT 4 | LEFT 4; UP 4; DOWN 4
+3 | y = −2^x is y = 2^x reflected in this | THE x-AXIS | THE y-AXIS; y = x; THE LINE y = 1
+4 | What is the y-intercept of y = 3(2)^x − 1? | = 2 ~0
+5 | y = 2^(−x) is the same as this | y = (½)^x | y = −2^x; y = 2x; y = −½x
+
+## WHICH MODEL?
+1 | First differences are constant. Which kind of relation is it? | LINEAR | QUADRATIC; EXPONENTIAL; PERIODIC
+2 | y-values 3, 6, 12, 24, 48 for x = 0 to 4. What kind of relation? | EXPONENTIAL | LINEAR; QUADRATIC; PERIODIC
+3 | In an exponential relation, the ratio of consecutive y-values is this | CONSTANT | ZERO; INCREASING; ALWAYS 2
+4 | y-values 3, 6, 12, 24, 48 for x = 0 to 4. What is the base b? | = 2 ~0
+5 | y-values 81, 27, 9, 3. What is the base b? (A fraction or a decimal) | = 1/3 ~1%
+
+## RATES AND FACTORS
+1 | In y = a(b)^x, what does a represent? | THE INITIAL VALUE (y-INTERCEPT) | THE GROWTH RATE; THE ASYMPTOTE; THE DOUBLING TIME
+2 | A value grows from 50 to 200. By what factor did it grow? | = 4 ~0
+3 | A value of 1000 is multiplied by 1.1 each year. What is it after 2 years? | = 1210 ~0
+4 | 1.06 as a growth factor means a growth rate of what percent? | = 6 % ~0
+5 | 0.92 as a decay factor means a decay rate of what percent? | = 8 % ~0
+
+## SIMPLIFY AND EVALUATE
+1 | Evaluate 3² × 3³ | = 243 ~0
+2 | Evaluate 2⁵ ÷ 2⁸ (a fraction or a decimal) | = 1/8 ~0.5%
+3 | Evaluate (2³)² | = 64 ~0
+4 | Evaluate 4^(5/2) | = 32 ~0
+5 | Evaluate (−8)^(2/3) | = 4 ~0
+
+FINAL | GROWTH PROBLEMS | A $2000 investment grows 6% a year. To the nearest dollar, what is it worth after 10 years? | = 3582 dollars ~0.1%
+FINAL | DECAY PROBLEMS | Carbon-14 has a half-life of about 5730 years. What fraction of the original is left after 17,190 years? (A fraction or a decimal) | = 1/8 ~1%
+FINAL | SOLVING EXPONENTIAL EQUATIONS | Solve 9^(x + 1) = 27^x | = 2 ~0
+FINAL | TRANSFORMING EXPONENTIALS | y = 5(2)^(x − 1) + 3. What is its y-intercept? | = 5.5 ~0

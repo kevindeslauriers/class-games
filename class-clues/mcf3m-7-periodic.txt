@@ -1,0 +1,91 @@
+# Course: MCF3M | Grade 11 Functions and Applications
+# Unit: periodic | Unit 7: Periodic Functions
+
+## CYCLE VOCABULARY
+1 | A function whose graph repeats in a regular pattern | PERIODIC / PERIODIC FUNCTION
+2 | The length of one complete cycle | PERIOD / THE PERIOD
+3 | Half the distance between the maximum and minimum values | AMPLITUDE | PERIOD; AXIS; PHASE SHIFT
+4 | The horizontal line halfway between the maximum and minimum | AXIS OF THE CURVE / AXIS / MIDLINE / EQUATION OF THE AXIS
+5 | A function has max 22 and min 2. What is the equation of its axis? | y = 12 | y = 10; y = 20; y = 2
+
+## THE FERRIS WHEEL
+1 | [graph: sinusoid] What is the maximum height, in metres? | = 22 m ~0
+2 | [graph: sinusoid] What is the period, in seconds? | = 12 s ~0
+3 | [graph: sinusoid] What is the amplitude, in metres? | = 10 m ~0
+4 | [graph: sinusoid] What is the equation of the axis? | h = 12 | h = 10; h = 22; h = 2
+5 | [graph: sinusoid] How high is the rider at t = 3 s, in metres? | = 12 m ~0
+
+## BIG ANGLES
+1 | An angle in standard position starts on the positive x-axis and turns this way | COUNTERCLOCKWISE | CLOCKWISE; EITHER WAY; DOWNWARD
+2 | The acute angle between the terminal arm and the x-axis | REFERENCE ANGLE / THE REFERENCE ANGLE / RELATED ACUTE ANGLE
+3 | What is the reference angle for 150°? | = 30 ° ~0
+4 | In which quadrant is sin θ positive and cos θ negative? | QUADRANT 2 | QUADRANT 1; QUADRANT 3; QUADRANT 4
+5 | What is the reference angle for 225°? | = 45 ° ~0
+
+## CAST RULE
+1 | The CAST rule shows where trig ratios are positive. In quadrant 1, which ratios are positive? | ALL OF THEM | ONLY SINE; ONLY COSINE; ONLY TANGENT
+2 | In quadrant 3, which ratio is positive? | TANGENT / TAN
+3 | Is cos 300° positive or negative? | POSITIVE | NEGATIVE; ZERO; UNDEFINED
+4 | sin 150° equals this | sin 30° | −sin 30°; cos 30°; −cos 30°
+5 | What is cos 180°? | = -1 ~0
+
+## y = sin x
+1 | What is the period of y = sin x, in degrees? | = 360 ° ~0
+2 | What is the amplitude of y = sin x? | = 1 ~0
+3 | What is the maximum value of y = sin x? | = 1 ~0
+4 | At what angle between 0° and 360° does y = sin x reach its minimum? | = 270 ° ~0
+5 | What are the zeros of y = sin x between 0° and 360°, inclusive? | 0°, 180° AND 360° | 90° AND 270°; 0° AND 360° ONLY; 45°, 135° AND 225°
+
+## y = cos x
+1 | What is cos 0°? | = 1 ~0
+2 | What is the period of y = cos x, in degrees? | = 360 ° ~0
+3 | At what angle between 0° and 360° does y = cos x reach its minimum? | = 180 ° ~0
+4 | y = cos x is y = sin x shifted this way | LEFT 90° | RIGHT 90°; UP 1; LEFT 180°
+5 | What are the zeros of y = cos x between 0° and 360°? | 90° AND 270° | 0° AND 180°; 180° ONLY; 0°, 180° AND 360°
+
+## TRANSFORMATIONS
+1 | y = 3 sin x has what amplitude? | = 3 ~0
+2 | y = sin x + 4 has its axis at this line | y = 4 | y = 0; y = 1; x = 4
+3 | y = sin(2x) has what period, in degrees? | = 180 ° ~0
+4 | y = sin(x − 30°) is y = sin x shifted this way | RIGHT 30° | LEFT 30°; UP 30; DOWN 30
+5 | y = 2 sin(3x) − 1 has what maximum value? | = 1 ~0
+
+## READING EQUATIONS
+1 | In y = a sin(k(x − d)) + c, which letter controls the amplitude? | a | k; d; c
+2 | In y = a sin(k(x − d)) + c, the period is 360° ÷ this | k | a; d; c
+3 | y = 5 cos(4x) + 2. What is the period, in degrees? | = 90 ° ~0
+4 | y = 5 cos(4x) + 2. What is the minimum value? | = -3 ~0
+5 | y = −4 sin(x + 45°) + 6. What is the maximum value? | = 10 ~0
+
+## MODELLING
+1 | Which of these is periodic? | THE TIDES | A BALL BEING THROWN; COMPOUND INTEREST; A CAR'S DEPRECIATION
+2 | Hours of daylight in Toronto over a year are best modelled with this kind of function | SINUSOIDAL | LINEAR; QUADRATIC; EXPONENTIAL
+3 | A tide goes from 1 m at low tide to 9 m at high tide. What is its amplitude, in m? | = 4 m ~0
+4 | High tides are 12.4 hours apart. What is the period, in hours? | = 12.4 h ~0
+5 | A pendulum swings back and forth 30 times a minute. What is its period, in seconds? | = 2 s ~0
+
+## BUILD THE EQUATION
+1 | A wheel's centre is 15 m up and its radius is 12 m. What is the amplitude, in m? | = 12 m ~0
+2 | A wheel's centre is 15 m up and its radius is 12 m. What is the maximum height, in m? | = 27 m ~0
+3 | A wheel turns once every 40 s. In y = a sin(kt) + c with t in seconds and k in degrees per second, what is k? | = 9 ~0
+4 | Max 18, min 4, period 360°, starting at the axis going up. Which equation fits? | y = 7 sin x + 11 | y = 11 sin x + 7; y = 7 cos x + 11; y = 14 sin x + 4
+5 | A sinusoid has max 5 and min −1. What is c, the vertical shift? | = 2 ~0
+
+## SPECIAL ANGLES
+1 | What is sin 90°? | = 1 ~0
+2 | What is cos 120°? | = -0.5 ~0
+3 | What is sin 210°? | = -0.5 ~0
+4 | What is tan 135°? | = -1 ~0
+5 | What is sin 330°? | = -0.5 ~0
+
+## SOLVE FOR θ
+1 | sin θ = 1, 0° ≤ θ ≤ 360°. What is θ? | = 90 ° ~0
+2 | cos θ = −1, 0° ≤ θ ≤ 360°. What is θ? | = 180 ° ~0
+3 | sin θ = 0.5, 0° ≤ θ ≤ 360°. What are the solutions? | 30° AND 150° | 30° AND 330°; 60° AND 120°; 30° AND 210°
+4 | cos θ = 0.5, 0° ≤ θ ≤ 360°. What are the solutions? | 60° AND 300° | 60° AND 120°; 30° AND 330°; 60° AND 240°
+5 | tan θ = 1, 0° ≤ θ ≤ 360°. What are the solutions? | 45° AND 225° | 45° AND 135°; 45° AND 315°; 135° AND 315°
+
+FINAL | MODELLING | Daylight in a city varies from 9 h to 15 h over a 365-day year. What is the amplitude, in hours? | = 3 h ~0
+FINAL | BUILD THE EQUATION | A Ferris wheel of radius 20 m has its centre 22 m up and turns once every 60 s. What is the lowest height of a rider, in m? | = 2 m ~0
+FINAL | READING EQUATIONS | y = 3 sin(6(x − 10°)) − 2. What is the period, in degrees? | = 60 ° ~0
+FINAL | SOLVE FOR θ | sin θ = −√3 ÷ 2 for 0° ≤ θ ≤ 360°. What are the solutions? | 240° AND 300° | 60° AND 120°; 210° AND 330°; 120° AND 240°

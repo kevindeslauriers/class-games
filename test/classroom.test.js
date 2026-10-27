@@ -42,6 +42,12 @@ test('numbers in any notation', () => {
   assert.strictEqual(parseNumber('$0.96').value, 0.96);
   assert.strictEqual(parseNumber('twelve'), null);
   assert.strictEqual(parseNumber('3/8').value, 0.375);
+  assert.strictEqual(parseNumber('x = 3').value, 3);
+  assert.strictEqual(parseNumber('y=-2.5').value, -2.5);
+  assert.strictEqual(parseNumber('f(2) = 17').value, 17);
+  assert.ok(Math.abs(parseNumber('2π/3').value - 2 * Math.PI / 3) < 1e-12);
+  assert.ok(Math.abs(parseNumber('pi/6').value - Math.PI / 6) < 1e-12);
+  assert.ok(Math.abs(parseNumber('-π').value + Math.PI) < 1e-12);
   assert.strictEqual(parseNumber('20 deer/km^2').value, 20);
   assert.strictEqual(parseNumber('1 / 4').value, 0.25);
 });
@@ -97,6 +103,22 @@ test('the CGC1W bank loads all three units, and every graph it names exists', ()
   c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals]).filter(x => x.img).forEach(x => assert.ok(bank.images.has(x.img), x.img));
 });
 
+test('the MCF3M and MHF4U banks load every unit, and slashes in math answers stay whole', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const units = { MCF3M: 7, MHF4U: 8 };
+  for (const [id, n] of Object.entries(units)) {
+    const c = bank.course(id);
+    assert.ok(c, id);
+    assert.strictEqual(c.units.length, n, id);
+    c.units.forEach(u => { assert.strictEqual(u.cats.length, 12, `${id} ${u.id}`); assert.ok(u.finals.length >= 3, `${id} ${u.id}`); });
+    c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals]).filter(x => x.img).forEach(x => assert.ok(bank.images.has(x.img), x.img));
+  }
+  const all = bank.course('MHF4U').units.flatMap(u => u.cats.flatMap(k => k.clues));
+  assert.ok(all.some(x => x.a === 'π/6 AND 5π/6'), 'a choice with slashes is kept whole');
+  const rad = all.find(x => x.q.startsWith('Convert 150° to radians'));
+  assert.ok(Math.abs(rad.value - 5 * Math.PI / 6) < 1e-9);
+});
+
 test('the teacher can switch courses; graph clues reach the screens', () => {
   const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
   const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
@@ -108,7 +130,7 @@ test('the teacher can switch courses; graph clues reach the screens', () => {
   g.updateSettings({ course: 'APMICRO' });
   g.updateSettings({ units: ['imperfect'] });
   assert.deepStrictEqual(g.settings.units, ['imperfect']);
-  assert.strictEqual(g.teacherView().courses.length, 4);
+  assert.strictEqual(g.teacherView().courses.length, 6);
   const a = g.join('Ann', 0);
   g.updateSettings({ rounds: 1, dd: false });
   g.start();

@@ -1,0 +1,91 @@
+# Course: MCF3M | Grade 11 Functions and Applications
+# Unit: working | Unit 2: Working with Quadratic Functions
+
+## SOLVE BY FACTORING
+1 | Solve (x − 3)(x + 5) = 0. What is the positive root? | = 3 ~0
+2 | Solve x² − 9x + 20 = 0 | x = 4 OR x = 5 | x = −4 OR x = −5; x = 2 OR x = 10; x = 4 OR x = −5
+3 | Solve x² + 4x = 21 | x = 3 OR x = −7 | x = −3 OR x = 7; x = 21 OR x = −4; x = 7 OR x = 3
+4 | Solve 2x² − 18 = 0. What is the positive root? | = 3 ~0
+5 | Solve 3x² + 5x − 2 = 0 | x = 1/3 OR x = −2 | x = −1/3 OR x = 2; x = 3 OR x = −2; x = 2/3 OR x = −1
+
+## THE QUADRATIC FORMULA
+1 | The quadratic formula is x = (−b ± √(b² − 4ac)) ÷ this | 2a | a; 2; 4a
+2 | The expression b² − 4ac is called the ___ | DISCRIMINANT
+3 | What is the discriminant of x² + 6x + 9? | = 0 ~0
+4 | Solve x² − 4x − 1 = 0. To 2 decimal places, what is the larger root? | = 4.24 ~0.5%
+5 | Solve 2x² + 3x − 4 = 0. To 2 decimal places, what is the larger root? | = 0.85 ~1%
+
+## HOW MANY ZEROS?
+1 | If the discriminant is negative, how many real zeros are there? | = 0 ~0
+2 | If the discriminant is positive, how many real zeros are there? | = 2 ~0
+3 | How many zeros does y = x² + 2x + 5 have? | = 0 ~0
+4 | A parabola's vertex is (3, −4) and it opens up. How many zeros does it have? | = 2 ~0
+5 | For what value of k does x² + kx + 16 = 0 have exactly one solution, if k is positive? | = 8 ~0
+
+## MAX AND MIN
+1 | The maximum or minimum of a parabola is found at this point | THE VERTEX | THE y-INTERCEPT; A ZERO; THE ORIGIN
+2 | A ball's height is h = −5(t − 2)² + 25. What is its maximum height, in metres? | = 25 m ~0
+3 | In h = −5(t − 2)² + 25, when does the ball reach its maximum height, in seconds? | = 2 s ~0
+4 | A company's profit is P = −2x² + 40x − 50, in thousands of dollars. What value of x gives the maximum profit? | = 10 ~0
+5 | P = −2x² + 40x − 50 (in thousands of dollars). What is the maximum profit, in thousands of dollars? | = 150 ~0
+
+## THROWN AND DROPPED
+1 | A ball is thrown and its height is h = −5t² + 20t + 1. What was its height when thrown (t = 0), in metres? | = 1 m ~0
+2 | h = −5t² + 20t + 1. What is its height after 1 s, in metres? | = 16 m ~0
+3 | h = −5t² + 20t + 1. When does the ball reach its maximum height, in seconds? | = 2 s ~0
+4 | h = −5t² + 20t + 1. What is the maximum height, in metres? | = 21 m ~0
+5 | h = −5t² + 20t + 1. To 2 decimal places, when does the ball hit the ground, in seconds? | = 4.05 s ~0.5%
+
+## AREA PROBLEMS
+1 | A rectangle is x m wide and (x + 3) m long. Which expression gives its area? | x² + 3x | 2x + 3; 4x + 6; x² + 3
+2 | A rectangle is x m wide and (x + 3) m long, with an area of 40 m². What is x? | = 5 m ~0
+3 | 40 m of fencing makes a rectangle against a wall (3 sides fenced). If the width is x, which is the area? | A = x(40 − 2x) | A = x(40 − x); A = x(20 − x); A = 2x(40 − x)
+4 | For A = x(40 − 2x), what width x gives the largest area, in m? | = 10 m ~0
+5 | For A = x(40 − 2x), what is the largest possible area, in m²? | = 200 m² ~0
+
+## REVENUE
+1 | Revenue equals price times this | QUANTITY SOLD / QUANTITY / NUMBER SOLD / UNITS SOLD
+2 | Tickets cost $10 and 200 sell. For each $1 price increase, 10 fewer sell. Which expression gives revenue after x increases? | (10 + x)(200 − 10x) | (10 − x)(200 + 10x); 10x(200 − x); (10 + x)(200 − x)
+3 | For R = (10 + x)(200 − 10x), how many $1 increases give the maximum revenue? | = 5 ~0
+4 | For R = (10 + x)(200 − 10x), what is the maximum revenue, in dollars? | = 2250 dollars ~0
+5 | For R = (10 + x)(200 − 10x), what ticket price gives the maximum revenue, in dollars? | = 15 dollars ~0
+
+## EQUATION FROM A GRAPH
+1 | [graph: parabola-down] What are the zeros? | −1 AND 5 | 1 AND −5; 2 AND 9; 0 AND 5
+2 | [graph: parabola-down] What is the value of a in y = a(x + 1)(x − 5)? | = -1 ~0
+3 | [graph: parabola-up] What is the axis of symmetry? (Give the x-value) | = -3 ~0
+4 | [graph: parabola-up] What is the y-intercept? | = -3.5 ~0
+5 | [graph: parabola-up] What is the value of a? | = 0.5 ~0
+
+## EQUATION FROM A DESCRIPTION
+1 | A parabola has vertex (1, 4) and a = −2. Which equation is it? | y = −2(x − 1)² + 4 | y = −2(x + 1)² + 4; y = 2(x − 1)² + 4; y = −2(x − 4)² + 1
+2 | A parabola has vertex (0, 3) and passes through (1, 5). What is a? | = 2 ~0
+3 | A parabola has zeros 0 and 6 and its vertex is at (3, 9). What is a? | = -1 ~0
+4 | A parabola has vertex (2, −1) and passes through (4, 7). What is a? | = 2 ~0
+5 | A parabola has zeros −1 and 3 and passes through (1, −8). What is a? | = 2 ~0
+
+## TABLES OF VALUES
+1 | In a table of values with equal x-steps, a linear relation has constant ___ differences | FIRST
+2 | A quadratic relation has constant ___ differences | SECOND
+3 | y-values are 1, 4, 9, 16, 25. What is the constant second difference? | = 2 ~0
+4 | y-values are 3, 7, 15, 27 for x = 0, 1, 2, 3. What is the second difference? | = 4 ~0
+5 | For y = ax², with x-steps of 1, the second difference equals this | 2a | a; a²; 4a
+
+## CURVE OF BEST FIT
+1 | Using technology to find the curve of best fit for data is called this | REGRESSION / QUADRATIC REGRESSION
+2 | Data that rise and then fall, like a ball's height over time, are best modelled by this kind of function | QUADRATIC | LINEAR; EXPONENTIAL; CONSTANT
+3 | A regression gives R² = 0.99. This means the model is this | A VERY GOOD FIT | A POOR FIT; WRONG; LINEAR
+4 | A regression of h = −4.9t² + 15t + 2 models a ball. What is h at t = 0, in metres? | = 2 m ~0
+5 | Using h = −4.9t² + 15t + 2, to 2 decimal places, when is the ball highest, in seconds? | = 1.53 s ~1%
+
+## WORD PROBLEM SETUP
+1 | Two numbers differ by 3 and their product is 54. If the smaller is x, which equation fits? | x(x + 3) = 54 | x + 3 = 54; 2x + 3 = 54; x² + 3 = 54
+2 | Two numbers differ by 3 and their product is 54. What is the smaller positive number? | = 6 ~0
+3 | The sum of a number and its square is 30. What is the positive number? | = 5 ~0
+4 | A square's side is increased by 3 cm and its area becomes 64 cm². What was the original side, in cm? | = 5 cm ~0
+5 | Two consecutive even numbers have a product of 168. What is the smaller positive one? | = 12 ~0
+
+FINAL | THROWN AND DROPPED | A rocket's height is h = −5t² + 40t + 2. What is its maximum height, in metres? | = 82 m ~0
+FINAL | REVENUE | A store sells 300 shirts at $20. Each $1 drop in price sells 20 more. What price, in dollars, maximizes revenue? | = 17.5 dollars ~0
+FINAL | QUADRATIC FORMULA | To 2 decimal places, what is the smaller root of 3x² − 7x + 1 = 0? | = 0.15 ~2%
+FINAL | AREA PROBLEMS | A 100 m rope encloses a rectangle. What is the largest area it can enclose, in m²? | = 625 m² ~0

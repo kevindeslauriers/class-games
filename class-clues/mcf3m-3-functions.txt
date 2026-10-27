@@ -1,0 +1,91 @@
+# Course: MCF3M | Grade 11 Functions and Applications
+# Unit: functions | Unit 3: Introduction to Functions
+
+## ONE OUTPUT EACH?
+1 | A relation where every x-value has exactly one y-value | FUNCTION / A FUNCTION
+2 | The test that checks if a graph is a function by sliding a line across it | VERTICAL LINE TEST | HORIZONTAL LINE TEST; SLOPE TEST; SECOND DIFFERENCE TEST
+3 | Is {(1, 2), (2, 4), (1, 5)} a function? | NO | YES; ONLY FOR POSITIVE x; IT CAN'T BE TOLD
+4 | Which of these is NOT a function? | A CIRCLE | A PARABOLA; A STRAIGHT LINE; AN EXPONENTIAL CURVE
+5 | Is {(1, 3), (2, 3), (3, 3)} a function? | YES | NO; ONLY IF x IS POSITIVE; ONLY IF IT IS LINEAR
+
+## FUNCTION NOTATION
+1 | f(x) = 2x + 3. What is f(4)? | = 11 ~0
+2 | f(x) = x² − 1. What is f(−3)? | = 8 ~0
+3 | g(x) = 5 − 2x. For what x is g(x) = −7? | = 6 ~0
+4 | f(x) = 3x − 4. What is f(2) + f(0)? | = -2 ~0
+5 | h(t) = −5t² + 30t. What is h(2)? | = 40 ~0
+
+## ALLOWED VALUES
+1 | The set of all possible x-values is called the ___ | DOMAIN
+2 | The set of all possible y-values is called the ___ | RANGE
+3 | What is the range of y = (x − 1)² + 4? | y ≥ 4 | y ≤ 4; y ≥ 1; ALL REAL NUMBERS
+4 | What is the domain of any quadratic function y = ax² + bx + c? | ALL REAL NUMBERS | x ≥ 0; x ≥ THE VERTEX; ONLY INTEGERS
+5 | What is the range of y = −2(x + 3)² + 7? | y ≤ 7 | y ≥ 7; y ≤ −3; ALL REAL NUMBERS
+
+## TRANSFORMATIONS
+1 | y = x² + 5 is y = x² shifted this way | UP 5 | DOWN 5; LEFT 5; RIGHT 5
+2 | y = (x − 3)² is y = x² shifted this way | RIGHT 3 | LEFT 3; UP 3; DOWN 3
+3 | y = −x² is y = x² reflected in this | THE x-AXIS | THE y-AXIS; THE LINE y = x; THE ORIGIN ONLY
+4 | y = 4x² is y = x² stretched vertically by a factor of what? | = 4 ~0
+5 | y = ½(x + 2)² − 3 is y = x² compressed by ½, then shifted this way | LEFT 2 AND DOWN 3 | RIGHT 2 AND DOWN 3; LEFT 2 AND UP 3; RIGHT 2 AND UP 3
+
+## MAPPING POINTS
+1 | The point (1, 1) on y = x² moves where under y = x² + 3? | (1, 4) | (4, 1); (1, −2); (−2, 1)
+2 | The point (2, 4) on y = x² moves where under y = (x − 5)²? | (7, 4) | (−3, 4); (2, 9); (2, −1)
+3 | The point (1, 1) on y = x² moves where under y = 2x²? | (1, 2) | (2, 1); (1, 1); (2, 2)
+4 | The point (2, 4) on y = x² moves where under y = −x² + 1? | (2, −3) | (2, −5); (−2, 5); (2, 5)
+5 | The point (3, 9) on y = x² moves where under y = 2(x + 1)² − 4? | (2, 14) | (4, 14); (2, 22); (4, 5)
+
+## VERTEX AND TRANSFORMATIONS
+1 | What is the vertex of y = (x + 4)² − 1? | (−4, −1) | (4, −1); (−4, 1); (4, 1)
+2 | y = x² is shifted right 2 and up 6. Which equation results? | y = (x − 2)² + 6 | y = (x + 2)² + 6; y = (x − 6)² + 2; y = (x + 6)² − 2
+3 | y = x² is reflected in the x-axis and shifted down 3. Which equation results? | y = −x² − 3 | y = −x² + 3; y = (−x − 3)²; y = x² − 3
+4 | Which transformation changes the range of y = x² from y ≥ 0 to y ≤ 0? | A REFLECTION IN THE x-AXIS | A SHIFT RIGHT; A VERTICAL STRETCH; A SHIFT LEFT
+5 | y = −3(x − 4)² + 2 has its vertex where? | (4, 2) | (−4, 2); (4, −2); (2, 4)
+
+## PARENT FUNCTIONS
+1 | y = x is the parent function for this kind of relation | LINEAR | QUADRATIC; EXPONENTIAL; PERIODIC
+2 | y = x² is the parent function for this kind of relation | QUADRATIC
+3 | The graph of y = x² is called this | A PARABOLA | A HYPERBOLA; A LINE; A CIRCLE
+4 | The vertex of the parent function y = x² is at this point | (0, 0) | (1, 1); (0, 1); (1, 0)
+5 | The parent function y = √x has this domain | x ≥ 0 | ALL REAL NUMBERS; x ≤ 0; x > 1
+
+## MAXIMA AND MINIMA
+1 | A parabola that opens down has a ___ value | MAXIMUM / MAX
+2 | What is the maximum value of y = −(x − 3)² + 10? | = 10 ~0
+3 | At what x-value does y = −(x − 3)² + 10 reach its maximum? | = 3 ~0
+4 | The sum of two numbers is 20. What is the largest possible product? | = 100 ~0
+5 | Two numbers differ by 8. What is the smallest possible product? | = -16 ~0
+
+## INVERSE FUNCTIONS
+1 | The inverse of a function swaps these | x AND y | THE SIGNS; DOMAIN AND x; SLOPE AND INTERCEPT
+2 | f(x) = x + 5. Its inverse is this | f⁻¹(x) = x − 5 | f⁻¹(x) = x + 5; f⁻¹(x) = 5x; f⁻¹(x) = 1 ÷ (x + 5)
+3 | f(x) = 2x − 6. What is f⁻¹(4)? | = 5 ~0
+4 | The graph of an inverse is a reflection in this line | y = x | y = 0; x = 0; y = −x
+5 | f(x) = 3x + 1. Which is f⁻¹(x)? | (x − 1) ÷ 3 | 3x − 1; (x + 1) ÷ 3; 1 ÷ (3x + 1)
+
+## DOMAIN IN CONTEXT
+1 | A ball is in the air from t = 0 to t = 4 s. What is the domain? | 0 ≤ t ≤ 4 | t ≥ 0; ALL REAL NUMBERS; 0 ≤ t ≤ 20
+2 | You buy x tickets at $5 each. Why is the domain whole numbers only? | YOU CAN'T BUY PART OF A TICKET | PRICES CAN'T BE NEGATIVE; THE GRAPH IS A LINE; THE SLOPE IS 5
+3 | A rectangle has a perimeter of 20. Its width w must be less than what? | = 10 ~0
+4 | h(t) = −5t² + 20t models a ball until it lands. What is the domain? | 0 ≤ t ≤ 4 | 0 ≤ t ≤ 2; t ≥ 0; 0 ≤ t ≤ 20
+5 | For h(t) = −5t² + 20t, what is the largest value in the range, in metres? | = 20 m ~0
+
+## READ THE GRAPH
+1 | [graph: parabola-down] What is the range? | y ≤ 9 | y ≥ 9; y ≤ 2; ALL REAL NUMBERS
+2 | [graph: parabola-down] For what x-values is y positive? | BETWEEN −1 AND 5 | LESS THAN −1; GREATER THAN 5; ALL x
+3 | [graph: parabola-up] What is the range? | y ≥ −8 | y ≤ −8; y ≥ −3; ALL REAL NUMBERS
+4 | [graph: parabola-up] This parabola is y = x² compressed by what factor? | = 0.5 ~0
+5 | [graph: parabola-up] Shifting this parabola up 8 units would give how many zeros? | = 1 ~0
+
+## LINEAR REVIEW
+1 | What is the slope of y = 3x − 7? | = 3 ~0
+2 | What is the y-intercept of y = −2x + 5? | = 5 ~0
+3 | What is the slope through (1, 2) and (4, 11)? | = 3 ~0
+4 | A line has slope 2 and passes through (3, 1). What is its y-intercept? | = -5 ~0
+5 | Where do y = 2x + 1 and y = −x + 7 cross? Give the x-value | = 2 ~0
+
+FINAL | MAPPING POINTS | The point (−2, 4) on y = x² maps to where under y = −2(x − 3)² + 5? | (1, −3) | (−5, −3); (1, 13); (−5, 13)
+FINAL | INVERSE FUNCTIONS | f(x) = (x − 4) ÷ 2. What is f⁻¹(3)? | = 10 ~0
+FINAL | MAXIMA AND MINIMA | A farmer has 120 m of fence for a rectangular pen. What is the largest area, in m²? | = 900 m² ~0
+FINAL | FUNCTION NOTATION | f(x) = x² − 3x. What is f(a + 1) when a = 2? | = 0 ~0

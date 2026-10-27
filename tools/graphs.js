@@ -515,6 +515,97 @@ for (const [key, c] of Object.entries(CLIMATE)) {
   G['sectors'] = out.join('\n');
 }
 
+
+/* ---------- MCF3M and MHF4U: functions on a grid ---------- */
+// A coordinate grid with axes through the origin. xticks/yticks: [value, label].
+function plot({ xmin, xmax, ymin, ymax, xstep = 1, ystep = 1, xticks = [], yticks = [], curves = [], points = [], vlines = [], hlines = [], xlabel = 'x', ylabel = 'y' }) {
+  const out = svgOpen();
+  const L0 = 50, R0 = 610, T0 = 22, B0 = 410;
+  const X = x => L0 + (x - xmin) / (xmax - xmin) * (R0 - L0);
+  const Y = y => B0 - (y - ymin) / (ymax - ymin) * (B0 - T0);
+  for (let x = Math.ceil(xmin / xstep) * xstep; x <= xmax + 1e-9; x += xstep) out.push(`<line x1="${X(x).toFixed(1)}" y1="${T0}" x2="${X(x).toFixed(1)}" y2="${B0}" stroke="#e5e9f5" stroke-width="1"/>`);
+  for (let y = Math.ceil(ymin / ystep) * ystep; y <= ymax + 1e-9; y += ystep) out.push(`<line x1="${L0}" y1="${Y(y).toFixed(1)}" x2="${R0}" y2="${Y(y).toFixed(1)}" stroke="#e5e9f5" stroke-width="1"/>`);
+  const ax = Math.min(Math.max(0, xmin), xmax), ay = Math.min(Math.max(0, ymin), ymax);
+  out.push(`<line x1="${L0}" y1="${Y(ay).toFixed(1)}" x2="${R0}" y2="${Y(ay).toFixed(1)}" stroke="#111" stroke-width="2"/>`);
+  out.push(`<line x1="${X(ax).toFixed(1)}" y1="${T0}" x2="${X(ax).toFixed(1)}" y2="${B0}" stroke="#111" stroke-width="2"/>`);
+  out.push(txt(R0 - 2, Y(ay) - 10, xlabel, { size: 17, anchor: 'end', bold: false, halo: true }));
+  out.push(txt(X(ax) + 10, T0 + 14, ylabel, { size: 17, anchor: 'start', bold: false }));
+  for (const [v, lab] of xticks) out.push(`<line x1="${X(v).toFixed(1)}" y1="${Y(ay) - 5}" x2="${X(v).toFixed(1)}" y2="${Y(ay) + 5}" stroke="#111" stroke-width="2"/>` + txt(X(v), Y(ay) + 22, lab, { size: 15, bold: false, halo: true }));
+  for (const [v, lab] of yticks) out.push(`<line x1="${X(ax) - 5}" y1="${Y(v).toFixed(1)}" x2="${X(ax) + 5}" y2="${Y(v).toFixed(1)}" stroke="#111" stroke-width="2"/>` + txt(X(ax) - 9, Y(v) + 5, lab, { size: 15, bold: false, anchor: 'end', halo: true }));
+  for (const v of vlines) out.push(`<line x1="${X(v).toFixed(1)}" y1="${T0}" x2="${X(v).toFixed(1)}" y2="${B0}" stroke="#d1342f" stroke-width="2.5" stroke-dasharray="8 6"/>`);
+  for (const v of hlines) out.push(`<line x1="${L0}" y1="${Y(v).toFixed(1)}" x2="${R0}" y2="${Y(v).toFixed(1)}" stroke="#d1342f" stroke-width="2.5" stroke-dasharray="8 6"/>`);
+  for (const c of curves) {
+    // Break the line where it leaves the window (for asymptotes).
+    let seg = [];
+    const flush = () => { if (seg.length > 1) out.push(`<polyline points="${seg.join(' ')}" fill="none" stroke="${c.color || '#1f4fd1'}" stroke-width="3.5" stroke-linejoin="round"/>`); seg = []; };
+    const [a, b] = c.range || [xmin, xmax];
+    for (let i = 0; i <= 600; i++) {
+      const x = a + (b - a) * i / 600, y = c.f(x);
+      if (!isFinite(y) || y < ymin - (ymax - ymin) * 0.05 || y > ymax + (ymax - ymin) * 0.05) { flush(); continue; }
+      seg.push(`${X(x).toFixed(1)},${Y(Math.max(ymin, Math.min(ymax, y))).toFixed(1)}`);
+    }
+    flush();
+    if (c.label) out.push(txt(X(c.labelAt[0]) + (c.dx || 8), Y(c.labelAt[1]) + (c.dy || 0), c.label, { size: 17, anchor: 'start', color: c.color || '#1f4fd1', halo: true }));
+  }
+  for (const pt of points) {
+    out.push(`<circle cx="${X(pt.x).toFixed(1)}" cy="${Y(pt.y).toFixed(1)}" r="5.5" fill="#111"/>`);
+    if (pt.label) out.push(txt(X(pt.x) + (pt.dx ?? 10), Y(pt.y) + (pt.dy ?? -10), pt.label, { size: 16, anchor: 'start', halo: true }));
+  }
+  out.push('</svg>');
+  return out.join('\n');
+}
+const ints = (a, b, step = 1, skip0 = true) => { const r = []; for (let v = a; v <= b; v += step) if (!(skip0 && v === 0)) r.push([v, String(v)]); return r; };
+
+// y = −(x − 2)² + 9: vertex (2, 9), zeros −1 and 5, y-intercept 5.
+G['parabola-down'] = plot({ xmin: -3, xmax: 7, ymin: -4, ymax: 11, xticks: ints(-2, 6), yticks: ints(-2, 10, 2),
+  curves: [{ f: x => -((x - 2) ** 2) + 9 }], points: [{ x: 2, y: 9 }, { x: -1, y: 0 }, { x: 5, y: 0 }, { x: 0, y: 5 }] });
+// y = 0.5(x + 3)² − 8: vertex (−3, −8), zeros −7 and 1, y-intercept −3.5.
+G['parabola-up'] = plot({ xmin: -9, xmax: 3, ymin: -10, ymax: 6, xticks: ints(-8, 2), yticks: ints(-8, 6, 2),
+  curves: [{ f: x => 0.5 * (x + 3) ** 2 - 8 }], points: [{ x: -3, y: -8 }, { x: -7, y: 0 }, { x: 1, y: 0 }] });
+// y = 32(1/2)^x: halves every step; asymptote y = 0.
+G['exp-decay'] = plot({ xmin: -1, xmax: 6, ymin: -4, ymax: 40, ystep: 4, xticks: ints(-1, 6), yticks: ints(4, 36, 4),
+  curves: [{ f: x => 32 * 0.5 ** x }], points: [{ x: 0, y: 32 }, { x: 1, y: 16 }, { x: 2, y: 8 }, { x: 3, y: 4 }] });
+// y = 2^x − 4: asymptote y = −4, y-intercept −3, zero at x = 2.
+G['exp-shift'] = plot({ xmin: -6, xmax: 4, ymin: -6, ymax: 10, xticks: ints(-5, 3), yticks: ints(-6, 10, 2),
+  curves: [{ f: x => 2 ** x - 4 }], hlines: [-4], points: [{ x: 0, y: -3 }, { x: 2, y: 0 }, { x: 3, y: 4 }] });
+// A Ferris wheel: h(t) = −10 cos(30t) + 12, in metres, t in seconds (degrees). Period 12, min 2, max 22.
+G['sinusoid'] = plot({ xmin: 0, xmax: 26, ymin: 0, ymax: 25, xstep: 1, ystep: 2, xticks: ints(3, 24, 3), yticks: ints(2, 24, 2),
+  curves: [{ f: t => -10 * Math.cos(t * 30 * Math.PI / 180) + 12 }], points: [{ x: 6, y: 22 }, { x: 12, y: 2 }], xlabel: 't (s)', ylabel: 'h (m)' });
+// y = 2 sin(2x) on 0 to 2π: amplitude 2, period π.
+{
+  const P = Math.PI;
+  G['trig-radians'] = plot({ xmin: -0.3, xmax: 2 * P + 0.4, ymin: -3, ymax: 3, xstep: P / 4, ystep: 1,
+    xticks: [[P / 4, 'π/4'], [P / 2, 'π/2'], [P, 'π'], [3 * P / 2, '3π/2'], [2 * P, '2π']], yticks: ints(-2, 2),
+    curves: [{ f: x => 2 * Math.sin(2 * x), range: [0, 2 * P] }] });
+}
+// y = (x + 2)(x − 1)²(x − 3): zeros −2, 1 (double), 3; y-intercept −6.
+G['polynomial'] = plot({ xmin: -3, xmax: 4, ymin: -20, ymax: 20, ystep: 4, xticks: ints(-3, 4), yticks: ints(-16, 16, 8),
+  curves: [{ f: x => (x + 2) * (x - 1) ** 2 * (x - 3) }], points: [{ x: -2, y: 0 }, { x: 1, y: 0 }, { x: 3, y: 0 }, { x: 0, y: -6 }] });
+// y = (x + 1)/(x − 2): vertical asymptote x = 2, horizontal asymptote y = 1.
+G['rational'] = plot({ xmin: -6, xmax: 8, ymin: -6, ymax: 7, xticks: ints(-5, 7), yticks: ints(-5, 6),
+  curves: [{ f: x => (x + 1) / (x - 2) }], vlines: [2], hlines: [1], points: [{ x: -1, y: 0 }, { x: 0, y: -0.5 }] });
+// y = log₂ x.
+G['log'] = plot({ xmin: -1, xmax: 9, ymin: -3, ymax: 4, xticks: ints(1, 8), yticks: ints(-2, 3),
+  curves: [{ f: x => Math.log2(x), range: [0.01, 9] }], points: [{ x: 1, y: 0 }, { x: 2, y: 1 }, { x: 4, y: 2 }, { x: 8, y: 3 }] });
+
+// Triangles for trigonometry.
+function triangle({ pts, sides = [], angles = [], right }) {
+  const out = svgOpen();
+  out.push(`<polygon points="${pts.map(p => p.join(',')).join(' ')}" fill="#eef2ff" stroke="#111" stroke-width="3" stroke-linejoin="round"/>`);
+  if (right) out.push(`<path d="${right}" fill="none" stroke="#111" stroke-width="2"/>`);
+  sides.forEach(([x, y, t]) => out.push(txt(x, y, t, { size: 22, color: '#1f4fd1', halo: true })));
+  angles.forEach(([x, y, t]) => out.push(txt(x, y, t, { size: 22, color: '#d1342f', halo: true })));
+  out.push('</svg>');
+  return out.join('\n');
+}
+// Right triangle: adjacent 8, opposite 15, hypotenuse 17; θ at the bottom left.
+G['right-triangle'] = triangle({ pts: [[90, 380], [510, 380], [510, 60]], right: 'M482,380 V352 H510',
+  sides: [[300, 415, '8'], [545, 228, '15'], [280, 200, '17']], angles: [[160, 368, 'θ']] });
+// Any triangle ABC: b = 10, c = 12, angle A = 50°. Side a is unknown.
+G['oblique-triangle'] = triangle({ pts: [[90, 370], [560, 370], [330, 70]],
+  sides: [[325, 405, 'c = 12'], [180, 205, 'b = 10'], [480, 205, 'a = ?']],
+  angles: [[70, 395, 'A'], [585, 395, 'B'], [330, 52, 'C'], [150, 355, '50°']] });
+
 fs.mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(G)) fs.writeFileSync(path.join(OUT, name + '.svg'), svg + '\n');
 console.log(`Wrote ${Object.keys(G).length} graphs to ${path.relative(process.cwd(), OUT)}`);

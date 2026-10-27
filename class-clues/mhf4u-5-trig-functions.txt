@@ -1,0 +1,94 @@
+# Course: MHF4U | Grade 12 Advanced Functions
+# Unit: trigfn | Unit 5: Trigonometric Functions
+// Solutions are for 0 ≤ x ≤ 2π unless the clue says otherwise.
+
+## GRAPHS IN RADIANS
+1 | What is the period of y = sin x, in radians? | = 2π ~0.5%
+2 | What is the period of y = tan x, in radians? | = π ~0.5%
+3 | Where does y = cos x reach its minimum between 0 and 2π? | = π ~0.5%
+4 | y = tan x has vertical asymptotes at x = π/2 + kπ. What are they between 0 and 2π? | π/2 AND 3π/2 | 0 AND π; π ONLY; π/4 AND 3π/4
+5 | What is the range of y = sin x? | −1 ≤ y ≤ 1 | ALL REAL NUMBERS; 0 ≤ y ≤ 1; y ≥ −1
+
+## READ THE GRAPH
+1 | [graph: trig-radians] What is the amplitude? | = 2 ~0
+2 | [graph: trig-radians] What is the period? | = π ~0.5%
+3 | [graph: trig-radians] Which equation matches the graph? | y = 2 sin(2x) | y = 2 sin(x); y = sin(2x); y = 2 cos(2x)
+4 | [graph: trig-radians] At what x-value is the first maximum? | = π/4 ~0.5%
+5 | [graph: trig-radians] How many complete cycles are shown from 0 to 2π? | = 2 ~0
+
+## TRANSFORMATIONS
+1 | y = sin(x − π/3) is shifted this way | RIGHT π/3 | LEFT π/3; UP π/3; DOWN π/3
+2 | What is the period of y = cos(4x)? | = π/2 ~0.5%
+3 | y = 3 cos(2(x + π/4)) − 1. What is the maximum value? | = 2 ~0
+4 | y = −2 sin(x) + 5. What is the minimum value? | = 3 ~0
+5 | What is the period of y = sin(πx ÷ 6)? | = 12 ~0
+
+## RECIPROCAL GRAPHS
+1 | y = csc x has vertical asymptotes where this equals zero | sin x | cos x; tan x; x
+2 | y = sec x has vertical asymptotes where this equals zero | cos x / COS / COSINE
+3 | What is the period of y = sec x? | = 2π ~0.5%
+4 | The range of y = csc x is this | y ≤ −1 OR y ≥ 1 | −1 ≤ y ≤ 1; ALL REAL NUMBERS; y ≥ 0
+5 | y = cot x has vertical asymptotes at these x-values | x = kπ | x = π/2 + kπ; x = 2kπ; NONE
+// k is any integer.
+
+## SOLVING BASIC EQUATIONS
+1 | Solve sin x = 1/2 | π/6 AND 5π/6 | π/6 AND 11π/6; π/3 AND 2π/3; π/6 AND 7π/6
+2 | Solve 2 cos x + 1 = 0 | 2π/3 AND 4π/3 | π/3 AND 5π/3; 2π/3 AND 5π/3; π/3 AND 2π/3
+3 | Solve tan x = 1 | π/4 AND 5π/4 | π/4 AND 3π/4; π/4 AND 7π/4; π/4 ONLY
+4 | Solve sin x = 1. What is x? | = π/2 ~0.5%
+5 | Solve cos x = 0 | π/2 AND 3π/2 | 0 AND π; π ONLY; π/2 ONLY
+
+## QUADRATIC TRIG EQUATIONS
+1 | Solve 2 sin²x − 1 = 0. How many solutions are there? | = 4 ~0
+2 | 2 cos²x − cos x − 1 = 0 factors as this | (2 cos x + 1)(cos x − 1) = 0 | (2 cos x − 1)(cos x + 1) = 0; (cos x − 1)² = 0; 2(cos x − 1)(cos x + 1) = 0
+3 | Solve 2 cos²x − cos x − 1 = 0 | 0, 2π/3, 4π/3 AND 2π | 0 AND 2π ONLY; π/3, π AND 5π/3; 2π/3 AND 4π/3 ONLY
+4 | Solve sin x cos x = 0. How many solutions are there? | = 5 ~0
+5 | Solve sin²x = sin x. How many solutions are there? | = 4 ~0
+// x = 0, π/2, π, 2π.
+
+## DOUBLE ANGLE EQUATIONS
+1 | Solve sin 2x = 0. How many solutions are there? | = 5 ~0
+2 | sin 2x = cos x can be rewritten as this | cos x(2 sin x − 1) = 0 | sin x(2 cos x − 1) = 0; 2 sin x = 1; cos 2x = sin x
+3 | Solve sin 2x = cos x. How many solutions are there? | = 4 ~0
+4 | cos 2x = 1 − 2 sin²x is useful when the equation also has this | sin x | cos x ONLY; tan x; NO OTHER TERMS
+5 | Solve cos 2x = 0 for 0 ≤ x ≤ π. What is the smaller solution? | = π/4 ~0.5%
+
+## USING A CALCULATOR
+1 | sin x = 0.3. To 3 decimal places, what is the quadrant 1 solution, in radians? | = 0.305 ~0.5%
+2 | sin x = 0.3. To 3 decimal places, what is the quadrant 2 solution, in radians? | = 2.837 ~0.2%
+3 | Make sure your calculator is in this mode for radian answers | RADIAN / RADIANS / RAD
+4 | cos x = −0.6. To 3 decimal places, what is the quadrant 2 solution, in radians? | = 2.214 ~0.2%
+5 | tan x = 2. To 3 decimal places, what is the quadrant 3 solution, in radians? | = 4.249 ~0.2%
+
+## MODELLING
+1 | The height of a Ferris wheel seat is h(t) = −10 cos(πt ÷ 30) + 12. What is the period, in seconds? | = 60 s ~0
+2 | For h(t) = −10 cos(πt ÷ 30) + 12, what is the maximum height, in m? | = 22 m ~0
+3 | For h(t) = −10 cos(πt ÷ 30) + 12, how high is the seat at t = 0, in m? | = 2 m ~0
+4 | Tides follow h(t) = 3 sin(πt ÷ 6) + 10. What is the height at t = 1, in m? | = 11.5 m ~0
+5 | For h(t) = 3 sin(πt ÷ 6) + 10, what is the time between high tides, in hours? | = 12 h ~0
+
+## RATES OF CHANGE
+1 | Where is y = sin x increasing fastest between 0 and 2π? | AT x = 0 (AND 2π) | AT x = π/2; AT x = π; AT x = 3π/2
+2 | The instantaneous rate of change of y = sin x is 0 at its maxima and this | MINIMA | ZEROS; ASYMPTOTES; y-INTERCEPT
+3 | What is the average rate of change of y = sin x from 0 to π/2, to 3 decimal places? | = 0.637 ~0.5%
+4 | What is the average rate of change of y = cos x from 0 to π? (To 3 decimal places) | = -0.637 ~0.5%
+5 | The instantaneous rate of change of y = sin x at x = 0 is this | = 1 ~0.5%
+
+## GENERAL SOLUTIONS
+1 | sin x = 0 for all x = kπ, where k is this | ANY INTEGER | ANY REAL NUMBER; A POSITIVE INTEGER ONLY; 0 ONLY
+2 | The general solution of cos x = 1 is this | x = 2kπ | x = kπ; x = π/2 + kπ; x = π + 2kπ
+3 | The general solution of tan x = 0 is this | x = kπ | x = 2kπ; x = π/2 + kπ; x = π/4 + kπ
+4 | How many solutions does sin x = 0.5 have for 0 ≤ x ≤ 4π? | = 4 ~0
+5 | How many solutions does cos(3x) = 1 have for 0 ≤ x < 2π? | = 3 ~0
+
+## SKETCHING
+1 | To sketch y = a sin(k(x − d)) + c, the first step is often to draw this | THE AXIS y = c | THE ASYMPTOTES; THE y-INTERCEPT ONLY; A TANGENT LINE
+2 | y = sin x and y = cos x cross how many times from 0 to 2π? | = 2 ~0
+3 | y = sin x and y = 1/2 intersect at how many points from 0 to 2π? | = 2 ~0
+4 | y = 2 sin x and y = 2 meet how many times from 0 to 2π? | = 1 ~0
+5 | Key points for one cycle of y = sin x are at 0, π/2, π, 3π/2 and this | 2π | 3π; π/4; 4π
+
+FINAL | QUADRATIC TRIG EQUATIONS | Solve 2 sin²x + sin x − 1 = 0 for 0 ≤ x ≤ 2π | π/6, 5π/6 AND 3π/2 | π/6 AND 5π/6 ONLY; π/2, 7π/6 AND 11π/6; π/3, 2π/3 AND 3π/2
+FINAL | MODELLING | A Ferris wheel seat is at h(t) = −15 cos(πt ÷ 40) + 17. For how many seconds per turn is it above 17 m? | = 40 s ~0
+FINAL | DOUBLE ANGLE EQUATIONS | Solve cos 2x = cos x for 0 ≤ x < 2π. How many solutions are there? | = 3 ~0
+FINAL | GENERAL SOLUTIONS | How many solutions does 2 cos x = √3 have for 0 ≤ x ≤ 6π? | = 6 ~0

@@ -1,0 +1,92 @@
+# Course: MCF3M | Grade 11 Functions and Applications
+# Unit: trig | Unit 6: Trigonometric Ratios
+// Angles in degrees. Answers to 1 decimal place are accepted within about 1%.
+
+## SOH CAH TOA
+1 | In a right triangle, sin θ = opposite ÷ this | HYPOTENUSE / THE HYPOTENUSE / HYP
+2 | cos θ equals this | ADJACENT ÷ HYPOTENUSE | OPPOSITE ÷ HYPOTENUSE; OPPOSITE ÷ ADJACENT; HYPOTENUSE ÷ ADJACENT
+3 | tan θ equals this | OPPOSITE ÷ ADJACENT | ADJACENT ÷ OPPOSITE; OPPOSITE ÷ HYPOTENUSE; ADJACENT ÷ HYPOTENUSE
+4 | The longest side of a right triangle, across from the right angle | HYPOTENUSE / THE HYPOTENUSE
+5 | What is sin 30°? | = 0.5 ~0
+
+## THE TRIANGLE
+1 | [graph: right-triangle] What is sin θ? (A fraction or a decimal) | = 15/17 ~0.5%
+2 | [graph: right-triangle] What is cos θ? (A fraction or a decimal) | = 8/17 ~0.5%
+3 | [graph: right-triangle] What is tan θ? (A fraction or a decimal) | = 15/8 ~0.5%
+4 | [graph: right-triangle] To 1 decimal place, what is θ, in degrees? | = 61.9 ° ~0.5%
+5 | [graph: right-triangle] Check with Pythagoras: 8² + 15² equals what? | = 289 ~0
+
+## MISSING SIDES
+1 | A right triangle has hypotenuse 10 and an angle of 30°. How long is the side opposite 30°? | = 5 ~0
+2 | A 6 m ladder leans at 70° to the ground. To 1 decimal place, how high up the wall does it reach, in m? | = 5.6 m ~1%
+3 | The side opposite a 35° angle is 10. To 1 decimal place, how long is the hypotenuse? | = 17.4 ~1%
+4 | The side opposite a 35° angle is 10. To 1 decimal place, how long is the adjacent side? | = 14.3 ~1%
+5 | A right triangle has legs 9 and 12. What is the hypotenuse? | = 15 ~0
+
+## MISSING ANGLES
+1 | sin θ = 0.5. What is θ, in degrees? | = 30 ° ~0
+2 | tan θ = 1. What is θ, in degrees? | = 45 ° ~0
+3 | sin θ = 0.6. To 1 decimal place, what is θ, in degrees? | = 36.9 ° ~0.5%
+4 | A 12 m tree casts a 20 m shadow. To 1 decimal place, what is the angle of elevation of the sun, in degrees? | = 31 ° ~1%
+5 | A wheelchair ramp rises 1 m for every 12 m across. To 1 decimal place, what angle does it make with the ground, in degrees? | = 4.8 ° ~2%
+
+## LOOKING UP AND DOWN
+1 | The angle measured up from the horizontal to an object above you | ANGLE OF ELEVATION / ELEVATION
+2 | The angle measured down from the horizontal to an object below you | ANGLE OF DEPRESSION | ANGLE OF ELEVATION; BEARING; RIGHT ANGLE
+3 | From 50 m away, the top of a building is at a 40° angle of elevation. To 1 decimal place, how tall is the building, in m? | = 42 m ~1%
+4 | From a 30 m cliff, a boat is seen at a 20° angle of depression. To the nearest metre, how far is the boat from the cliff's base? | = 82 m ~1%
+5 | The angle of elevation to a kite is 60° and its string is 50 m long. To 1 decimal place, how high is the kite, in m? | = 43.3 m ~1%
+
+## THE SINE LAW
+1 | The sine law says a ÷ sin A equals this | b ÷ sin B | sin B ÷ b; b × sin B; a ÷ sin B
+2 | The sine law works for this kind of triangle | ANY TRIANGLE | RIGHT TRIANGLES ONLY; EQUILATERAL TRIANGLES ONLY; ISOSCELES TRIANGLES ONLY
+3 | Angle A = 40°, a = 8 and angle B = 65°. To 1 decimal place, how long is b? | = 11.3 ~1%
+4 | To use the sine law to find a side, you need a side and its opposite angle, plus this | ONE MORE ANGLE | TWO MORE SIDES; THE AREA; A RIGHT ANGLE
+5 | [graph: oblique-triangle] Once a is known (about 9.47), to 1 decimal place what is angle B, in degrees? | = 54 ° ~1%
+
+## THE COSINE LAW
+1 | The cosine law: a² = b² + c² − 2bc × this | cos A | sin A; tan A; cos B
+2 | Use the cosine law when you know two sides and this | THE ANGLE BETWEEN THEM | ANY ANGLE; NO ANGLES; THE AREA
+3 | [graph: oblique-triangle] To 2 decimal places, how long is side a? | = 9.47 ~0.5%
+4 | Sides are 7, 8 and 9. To 1 decimal place, what is the largest angle, in degrees? | = 73.4 ° ~0.5%
+5 | Two sides of 5 and 7 meet at a 120° angle. To 2 decimal places, how long is the third side? | = 10.44 ~0.5%
+
+## WHICH LAW?
+1 | You know all three sides and want an angle. Which law? | THE COSINE LAW | THE SINE LAW; PYTHAGORAS; SOH CAH TOA
+2 | You know two angles and one side. Which law? | THE SINE LAW | THE COSINE LAW; PYTHAGORAS; NEITHER
+3 | You know two sides and the angle between them. Which law finds the third side? | THE COSINE LAW | THE SINE LAW; SOH CAH TOA; NEITHER
+4 | The triangle has a 90° angle and you know two sides. What's the simplest tool? | PYTHAGORAS OR SOH CAH TOA | THE COSINE LAW; THE SINE LAW; NONE WORK
+5 | In the cosine law, if the angle is 90°, the law becomes this | THE PYTHAGOREAN THEOREM | THE SINE LAW; TAN θ = 1; IT DOESN'T WORK
+
+## BEARINGS
+1 | A bearing of 090° points in this direction | EAST | NORTH; SOUTH; WEST
+2 | A bearing of 180° points in this direction | SOUTH | NORTH; EAST; WEST
+3 | A hiker walks 3 km north then 4 km east. How far are they from the start, in km? | = 5 km ~0
+4 | A hiker walks 3 km north then 4 km east. To 1 decimal place, what is their bearing from the start, in degrees? | = 53.1 ° ~0.5%
+5 | Two ships leave port at the same time, 5 km and 8 km out, 60° apart. How far apart are they, in km? | = 7 km ~0.5%
+
+## AREA OF A TRIANGLE
+1 | The area of a triangle is ½ × base × this | HEIGHT / THE HEIGHT
+2 | With two sides and the angle between them, Area = ½ab × this | sin C | cos C; tan C; C
+3 | Sides 8 and 10 meet at 30°. What is the area? | = 20 ~0.5%
+4 | Sides 6 and 6 meet at 90°. What is the area? | = 18 ~0
+5 | Sides 12 and 15 meet at 50°. To 1 decimal place, what is the area? | = 68.9 ~0.5%
+
+## 3D PROBLEMS
+1 | A problem using more than one triangle, in different planes, is often called a ___ problem | 3D / THREE-DIMENSIONAL / 3-D
+2 | From 100 m away, the angle of elevation to a tower is 30°. To 1 decimal place, how tall is it, in m? | = 57.7 m ~1%
+3 | A box is 3 by 4 by 12. How long is the diagonal from one corner to the opposite corner? | = 13 ~0
+4 | In 3D problems, the first step is usually this | DRAW A CLEAR DIAGRAM | USE THE COSINE LAW; FIND THE AREA; GUESS AND CHECK
+5 | Two people 100 m apart see a balloon between them at elevations 30° and 45°. To the nearest metre, how high is it? | = 37 m ~1%
+
+## SPECIAL VALUES
+1 | What is tan 45°? | = 1 ~0
+2 | What is cos 60°? | = 0.5 ~0
+3 | What is sin 90°? | = 1 ~0
+4 | What is cos 0°? | = 1 ~0
+5 | sin θ = cos θ for which angle between 0° and 90°? | = 45 ° ~0
+
+FINAL | THE COSINE LAW | A triangle has sides 10, 14 and 18. To 1 decimal place, what is its largest angle, in degrees? | = 95.7 ° ~0.5%
+FINAL | THE SINE LAW | In triangle PQR, angle P = 48°, angle Q = 72° and side r = 20. To 1 decimal place, how long is side p? | = 17.2 ~1%
+FINAL | LOOKING UP AND DOWN | From two points 50 m apart on the same side of a tree, the angles of elevation are 25° and 40°. To the nearest metre, how tall is the tree? | = 52 m ~2%
+FINAL | BEARINGS | A plane flies 200 km east then 150 km south. How far is it from where it started, in km? | = 250 km ~0

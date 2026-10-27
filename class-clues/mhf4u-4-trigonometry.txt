@@ -1,0 +1,92 @@
+# Course: MHF4U | Grade 12 Advanced Functions
+# Unit: trig | Unit 4: Trigonometry
+// Radian answers accept multiples of pi (5π/6 or 5pi/6) or decimals.
+
+## RADIAN MEASURE
+1 | How many radians are in 180°? | = π ~0.5%
+2 | Convert 90° to radians | = π/2 ~0.5%
+3 | Convert 150° to radians | = 5π/6 ~0.5%
+4 | Convert 2π/3 radians to degrees | = 120 ° ~0
+5 | Convert 2.5 radians to degrees, to 1 decimal place | = 143.2 ° ~0.2%
+
+## ARC LENGTH AND SPEED
+1 | Arc length equals radius times the angle in this unit | RADIANS | DEGREES; REVOLUTIONS; GRADIANS
+2 | A circle of radius 6 has a central angle of 2 radians. How long is the arc? | = 12 ~0
+3 | A circle of radius 10 has a central angle of π/3. To 2 decimal places, how long is the arc? | = 10.47 ~0.5%
+4 | A wheel turns once per second. What is its angular velocity, in radians per second, to 2 decimal places? | = 6.28 ~0.5%
+5 | A record turns at 33 revolutions per minute. To 2 decimal places, what is that in radians per second? | = 3.46 ~0.5%
+
+## THE UNIT CIRCLE
+1 | The unit circle has this radius | = 1 ~0
+2 | A point on the unit circle at angle θ has coordinates (cos θ, ___) | sin θ | tan θ; cos θ; 1
+3 | What is sin(π/2)? | = 1 ~0
+4 | What is cos(π)? | = -1 ~0
+5 | What is sin(3π/2)? | = -1 ~0
+
+## SPECIAL ANGLES IN RADIANS
+1 | What is sin(π/6)? | = 0.5 ~0
+2 | What is cos(π/3)? | = 0.5 ~0
+3 | What is tan(π/4)? | = 1 ~0
+4 | What is sin(7π/6)? | = -0.5 ~0
+5 | What is tan(5π/3)? To 3 decimal places. | = -1.732 ~0.2%
+
+## RECIPROCAL RATIOS
+1 | csc θ is the reciprocal of this | sin θ | cos θ; tan θ; sec θ
+2 | sec θ is the reciprocal of this | cos θ / COS / COSINE
+3 | What is sec(π/3)? | = 2 ~0
+4 | What is csc(π/6)? | = 2 ~0
+5 | What is cot(π/4)? | = 1 ~0
+
+## RELATED ANGLES
+1 | What is the related acute angle of 5π/6? | = π/6 ~0.5%
+2 | In which quadrant is 4π/3? | QUADRANT 3 | QUADRANT 1; QUADRANT 2; QUADRANT 4
+3 | cos(5π/4) is positive or negative? | NEGATIVE | POSITIVE; ZERO; UNDEFINED
+4 | sin(π − θ) equals this | sin θ | −sin θ; cos θ; −cos θ
+5 | cos(2π − θ) equals this | cos θ | −cos θ; sin θ; −sin θ
+
+## CO-FUNCTION IDENTITIES
+1 | sin(π/2 − θ) equals this | cos θ | sin θ; −cos θ; tan θ
+2 | cos(π/2 − θ) equals this | sin θ | cos θ; −sin θ; csc θ
+3 | sin(π/5) equals cos of what angle? | = 3π/10 ~0.5%
+4 | tan(π/2 − θ) equals this | cot θ | tan θ; −tan θ; sec θ
+5 | cos(π/2 + θ) equals this | −sin θ | sin θ; cos θ; −cos θ
+
+## IDENTITIES
+1 | The Pythagorean identity: sin²θ + cos²θ = ___ | = 1 ~0
+2 | tan θ equals this | sin θ ÷ cos θ | cos θ ÷ sin θ; 1 ÷ sin θ; sin θ × cos θ
+3 | 1 + tan²θ equals this | sec²θ | csc²θ; cot²θ; cos²θ
+4 | sin θ = 3/5 and θ is in quadrant 1. What is cos θ? | = 0.8 ~0
+5 | cos θ = −5/13 and θ is in quadrant 2. What is sin θ? (A fraction or a decimal) | = 12/13 ~0.5%
+
+## COMPOUND ANGLES
+1 | sin(a + b) = sin a cos b + this | cos a sin b | sin a sin b; cos a cos b; −cos a sin b
+2 | cos(a + b) = cos a cos b − this | sin a sin b | cos a sin b; sin a cos b; tan a tan b
+3 | Using sin(π/4 − π/6), what is sin(π/12), to 4 decimal places? | = 0.2588 ~0.2%
+4 | cos(75°) equals this exact value | (√6 − √2) ÷ 4 | (√6 + √2) ÷ 4; √3 ÷ 2; (√2 − 1) ÷ 2
+5 | sin(x + π) equals this | −sin x | sin x; cos x; −cos x
+
+## DOUBLE ANGLES
+1 | sin 2x equals this | 2 sin x cos x | 2 sin x; sin²x − cos²x; sin x + cos x
+2 | cos 2x equals cos²x − this | sin²x | cos x; 1; 2 sin x
+3 | sin x = 3/5 and x is in quadrant 1. What is sin 2x? | = 0.96 ~0
+4 | sin x = 3/5 and x is in quadrant 1. What is cos 2x? | = 0.28 ~0.5%
+5 | cos 2x can also be written as this | 1 − 2 sin²x | 2 sin²x − 1; 1 − 2 cos²x; 2 − sin²x
+
+## PROVING IDENTITIES
+1 | To prove an identity, you work on each side ___ | SEPARATELY / INDEPENDENTLY / ON ITS OWN
+2 | A good first step in proving an identity is often to rewrite everything in terms of these | SINE AND COSINE | TANGENT AND COTANGENT; DEGREES; RADIANS
+3 | (1 − cos²x) ÷ sin x simplifies to this | sin x | cos x; 1; tan x
+4 | sin x × csc x simplifies to this | = 1 ~0
+5 | (sin x + cos x)² simplifies to this | 1 + sin 2x | 1; 1 + cos 2x; 2 sin x cos x
+
+## EXACT VALUES
+1 | What is the exact value of sin(π/3)? | √3 ÷ 2 | 1 ÷ 2; √2 ÷ 2; √3
+2 | What is the exact value of cos(π/4)? | √2 ÷ 2 | 1 ÷ 2; √3 ÷ 2; 1
+3 | What is the exact value of tan(π/6)? | 1 ÷ √3 | √3; 1; √3 ÷ 2
+4 | What is the exact value of cos(11π/6)? | √3 ÷ 2 | −√3 ÷ 2; 1 ÷ 2; −1 ÷ 2
+5 | What is the exact value of sec(3π/4)? | −√2 | √2; −2; 2
+
+FINAL | COMPOUND ANGLES | What is tan(π/4 + π/3), to 3 decimal places? | = -3.732 ~0.2%
+FINAL | DOUBLE ANGLES | cos x = −4/5 and x is in quadrant 3. What is sin 2x? | = 0.96 ~0
+FINAL | ARC LENGTH AND SPEED | A bike wheel of radius 0.35 m turns at 10 rad/s. To 1 decimal place, how fast is the bike moving, in m/s? | = 3.5 m/s ~0.5%
+FINAL | IDENTITIES | tan θ = −3/4 and θ is in quadrant 4. What is cos θ? | = 0.8 ~0

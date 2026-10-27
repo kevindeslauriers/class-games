@@ -6,6 +6,8 @@ Courses so far:
 
 - **SNC1W**, Grade 9 Science (de-streamed): four units (ecosystems, space, chemistry, electricity). This is the default course.
 - **CGC1W**, Grade 9 Geography (Exploring Canadian Geography): the three units of the course outline (the physical environment, resources and industries, changing populations), with climate graphs, plate boundaries, population pyramids, the demographic transition model and jobs by economic sector.
+- **MCF3M**, Grade 11 Functions and Applications: all seven units (forms of quadratics, working with quadratics, functions, exponentials, financial math, trig ratios, periodic functions).
+- **MHF4U**, Grade 12 Advanced Functions: all eight units (polynomials, polynomial equations, rational functions, trigonometry, trig functions, exponential and log functions and equations, combining functions).
 - **MDM4U**, Grade 12 Data Management: the eight units of the course outline (probability, permutations, combinations and Pascal's triangle, discrete distributions, organizing data, one-variable statistics, normal distributions, two-variable statistics). Most clues are calculations; graph clues use a Venn diagram, a tree diagram, Pascal's triangle, a box plot, histograms, normal curves and scatter plots.
 - **AP Microeconomics**: the six College Board units, with about a quarter of clues needing a calculation (as on the exam) and over 80 clues built around graphs: supply and demand, surplus, price controls, taxes, cost curves, the competitive firm, monopoly, monopolistic competition, monopsony, externalities, the Lorenz curve and a payoff matrix.
 
@@ -37,7 +39,7 @@ Each file in `class-clues/` is one unit of a course:
 FINAL | ENERGY FLOW | clue | answer
 ```
 
-Each category has one clue at each level 1 to 5 (worth 100 to 500, doubled on the second board). An answer with `| WRONG; WRONG; WRONG` after it is multiple choice; `= number unit ~tolerance` is a number (tolerance `~2%` by default, `~0` for exact; students can type fractions like `3/8`, decimals or scientific notation); anything else is typed, with other accepted answers after slashes. `^` in a clue shows as a superscript (`10^8`). Every unit has 12 categories and 4 final clues, so one unit can fill two boards. Another course is just more files with a different `# Course:` line; the course menu appears once there are two.
+Each category has one clue at each level 1 to 5 (worth 100 to 500, doubled on the second board). An answer with `| WRONG; WRONG; WRONG` after it is multiple choice; `= number unit ~tolerance` is a number (tolerance `~2%` by default, `~0` for exact; students can type fractions like `3/8`, decimals, scientific notation, `x = 3`, or multiples of pi like `5π/6`). A slash with spaces (` / `) separates other accepted answers; a slash inside a value like `π/6` doesn't; anything else is typed, with other accepted answers after slashes. `^` in a clue shows as a superscript (`10^8`). Every unit has 12 categories and 4 final clues, so one unit can fill two boards. Another course is just more files with a different `# Course:` line; the course menu appears once there are two.
 
 ### Graphs
 
