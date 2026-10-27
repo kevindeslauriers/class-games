@@ -180,6 +180,7 @@ function lobby(v, me) {
 }
 
 function board(v, me) {
+  if (!v.settings.teamsPick) return waiting('Your teacher is picking the next clue', 'Watch the board. Everyone answers every clue, so get ready!', '?');
   if (v.pickTeam !== me.team) return waiting(`${team(v.pickTeam).name} are picking`, 'Watch the board. Everyone answers every clue, so get ready!', '?', team(v.pickTeam).color);
   const card = h('div', { className: 'card' }, h('h1', {}, 'Your team picks!'), h('p', { className: 'hint' }, 'Agree with your team, then one of you picks a clue.'));
   const grid = h('div', { className: 'mini' });

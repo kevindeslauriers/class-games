@@ -44,6 +44,7 @@ body{font-size:clamp(14px,1.35vw,30px);overflow:hidden;height:100vh;
 .team .sc.neg{color:var(--bad)}
 .team.pick{outline:3px solid var(--qgold);background:rgba(255,204,51,.12)}
 .team.pick .nm::after{content:" ▸ picking";color:var(--qgold);font-size:.7em}
+.team.pick.turn .nm::after{content:" ▸ their turn"}
 .top3{list-style:none;margin:0;padding:0;display:grid;gap:.25em}
 .top3 li{display:flex;gap:.5em;align-items:baseline}
 .top3 .medal{font-family:"Anton",sans-serif;color:var(--qgold);width:1.2em}
@@ -245,9 +246,10 @@ body{font-size:clamp(14px,1.35vw,30px);overflow:hidden;height:100vh;
         <span>Boards</span><select class="field" id="rounds"><option value="1">One board</option><option value="2">Two boards (second doubled)</option></select>
         <span>Time per clue</span><select class="field" id="secs"><option value="20">20 seconds</option><option value="30">30 seconds</option><option value="45">45 seconds</option><option value="60">60 seconds</option><option value="90">90 seconds</option></select>
       </div>
-      <label class="choice"><input type="checkbox" id="dd"> Daily Doubles (the picking team wagers)</label>
+      <label class="choice"><input type="checkbox" id="teamsPick"> Teams pick the clues on their devices (off: you pick every clue)</label>
+      <label class="choice"><input type="checkbox" id="dd"> Daily Doubles (the team whose turn it is wagers)</label>
       <label class="choice"><input type="checkbox" id="final"> Final clue (every team wagers)</label>
-      <p class="rules">A team picks each clue, then <b>every student answers</b> on their own device. Right answers earn the student the clue’s value; the team earns the value × the share of its members who got it right. Number answers get 50% more time. Teams take turns picking.</p>
+      <p class="rules">Teams take turns (or you pick each clue), then <b>every student answers</b> on their own device. Right answers earn the student the clue’s value; the team earns the value × the share of its members who got it right. Number answers get 50% more time.</p>
       <p class="err" id="lobbyErr"></p>
       <div class="actions"><button class="btn" id="newClass" title="Use this when the next class arrives">New class (new code)</button><button class="btn" id="balance">Shuffle into even teams</button><button class="btn primary" id="startGame">Start the game</button></div>
     </section>

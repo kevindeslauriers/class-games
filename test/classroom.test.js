@@ -139,6 +139,10 @@ test('everyone answers; teams earn their share', () => {
   const picker = g.pickTeam;
   const other = g.students.find(s => s.team !== picker);
   assert.throws(() => g.choose(other.id, 0, 0), /picking/);
+  // With the teacher picking, no student can choose, not even the team whose turn it is.
+  g.settings.teamsPick = false;
+  assert.throws(() => g.choose(g.students.find(s => s.team === picker).id, 0, 0), /teacher/);
+  g.settings.teamsPick = true;
   g.choose(null, 0, 0);
   assert.strictEqual(g.phase, 'open');
   const ch = g.rec.choices;

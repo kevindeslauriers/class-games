@@ -80,7 +80,7 @@ function renderSide(v) {
   const box = $('#teams');
   box.innerHTML = '';
   v.teams.forEach(t => {
-    const row = el('div', 'team' + (v.phase === 'board' && v.pickTeam === t.t ? ' pick' : ''));
+    const row = el('div', 'team' + (v.phase === 'board' && v.pickTeam === t.t ? ' pick' + (v.settings.teamsPick ? '' : ' turn') : ''));
     const sw = el('span', 'sw'); sw.style.background = t.color;
     const nm = el('span', 'nm', t.name); nm.append(el('small', '', `${t.count} student${t.count === 1 ? '' : 's'}`));
     row.append(sw, nm, el('span', 'sc' + (t.score < 0 ? ' neg' : ''), pts(t.score)));
@@ -183,6 +183,7 @@ function renderLobby(v) {
   $('#rounds').value = String(st.rounds);
   $('#secs').value = String(st.secs);
   $('#dd').checked = st.dd;
+  $('#teamsPick').checked = st.teamsPick;
   $('#final').checked = st.final;
 }
 // The teacher's last settings (course, units and options) come back next time.
@@ -197,14 +198,15 @@ function restoreSettings(v) {
 }
 function saveSettings(v) {
   if (!V.restored || v.phase !== 'lobby') return;
-  const { course, units, teams, rounds, secs, dd, final } = v.settings;
-  try { localStorage.setItem('class-settings', JSON.stringify({ course, units, teams, rounds, secs, dd, final })); } catch (e) {}
+  const { course, units, teams, rounds, secs, dd, final, teamsPick } = v.settings;
+  try { localStorage.setItem('class-settings', JSON.stringify({ course, units, teams, rounds, secs, dd, final, teamsPick })); } catch (e) {}
 }
 $('#course').onchange = e => cmd('settings', { settings: { course: e.target.value } });
 $('#teamsN').onchange = e => cmd('settings', { settings: { teams: +e.target.value } });
 $('#rounds').onchange = e => cmd('settings', { settings: { rounds: +e.target.value } });
 $('#secs').onchange = e => cmd('settings', { settings: { secs: +e.target.value } });
 $('#dd').onchange = e => cmd('settings', { settings: { dd: e.target.checked } });
+$('#teamsPick').onchange = e => cmd('settings', { settings: { teamsPick: e.target.checked } });
 $('#final').onchange = e => cmd('settings', { settings: { final: e.target.checked } });
 $('#balance').onclick = () => cmd('balance');
 $('#newClass').onclick = () => {
