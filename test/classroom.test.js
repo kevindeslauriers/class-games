@@ -103,6 +103,7 @@ test('the teacher can switch courses; graph clues reach the screens', () => {
   assert.strictEqual(g.settings.course, 'SNC1W', 'marked "# Default course"');
   assert.deepStrictEqual(g.settings.units, ['bio', 'space', 'chem', 'elec']);
   g.updateSettings({ course: 'MDM4U' });
+  assert.strictEqual(g.teacherView().teams[0].name, 'Outliers', 'each course names its own teams');
   assert.strictEqual(g.settings.units.length, 8);
   g.updateSettings({ course: 'APMICRO' });
   g.updateSettings({ units: ['imperfect'] });

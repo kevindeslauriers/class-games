@@ -1,5 +1,6 @@
 # Course: APMICRO | AP Microeconomics
 # Unit: basics | Unit 1: Basic Economic Concepts
+# Teams: Bulls, Bears, Tycoons, Traders, Brokers, Startups, Moguls, Investors
 // Same format as the SNC1W units. "[graph: name]" shows class-clues/images/name.svg with the clue.
 
 ## THE BASIC PROBLEM

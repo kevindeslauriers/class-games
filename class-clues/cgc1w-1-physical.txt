@@ -1,5 +1,6 @@
 # Course: CGC1W | Grade 9 Geography (Exploring Canadian Geography)
 # Unit: physical | Unit 1: Sustainable Physical Environment
+# Teams: Glaciers, Volcanoes, Canyons, Rapids, Fjords, Deltas, Prairies, Tundra
 
 ## A GOOD PLACE TO LIVE
 1 | How suitable a place is for people to live, based on things like safety, jobs, health care and the environment | LIVABILITY / LIVEABILITY

@@ -1,5 +1,6 @@
 # Course: MDM4U | Grade 12 Data Management
 # Unit: prob | Unit 1: An Introduction to Probability
+# Teams: Outliers, Medians, Modes, Quartiles, Z-Scores, Percentiles, Variables, Samples
 // Number answers accept fractions (3/8) or decimals (0.375).
 
 ## THE BASICS
