@@ -1,0 +1,23 @@
+{
+  "name": "class-games",
+  "version": "1.0.0",
+  "description": "Class Board: a quiz board for the whole class, answered on every student's laptop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindeslauriers/class-games.git"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "qrcode": "^1.5.4",
+    "ws": "^8.22.0"
+  }
+}
