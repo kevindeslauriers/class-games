@@ -3,7 +3,8 @@
 # Lesson
 // Built from the class notes: intro to geography, livability and sustainability,
 // plate tectonics, glaciation, landform regions, weather and climate (parts 1 and 2),
-// climate graphs, Canada's climate regions, and soil and vegetation.
+// climate graphs, Canada's climate regions, and soil and vegetation, plus the
+// "Canadian Landform Region" story map (storymaps.arcgis.com) for the landform regions.
 
 ## STARTING OUT
 1 | Pollution, climate change and waste management belong to this branch of geography, about how humans and nature interact | ENVIRONMENTAL GEOGRAPHY | HUMAN GEOGRAPHY; PHYSICAL GEOGRAPHY; URBAN GEOGRAPHY
@@ -76,11 +77,18 @@
 5 | The Oak Ridges ___ north of Toronto is a ridge of till left at the edge of a glacier | MORAINE
 
 ## LANDFORM REGIONS
-1 | Canada's landform regions fall into three types: shield, highlands and this | LOWLANDS | MOUNTAINS; DESERTS; ISLANDS
-2 | The landform region of the Rocky Mountains and the Coast Mountains | WESTERN CORDILLERA / CORDILLERA / THE CORDILLERA
-3 | The flat region of the Prairies, between the Rockies and the Shield | INTERIOR PLAINS | CANADIAN SHIELD; HUDSON BAY LOWLANDS; ARCTIC LANDS
-4 | The region where most Canadians live, around Toronto and Montreal | GREAT LAKES–ST. LAWRENCE LOWLANDS | CANADIAN SHIELD; APPALACHIAN REGION; INTERIOR PLAINS
-5 | Glaciers scraped the soil off this huge region of ancient rock, the largest in Canada | CANADIAN SHIELD | INTERIOR PLAINS; ARCTIC LANDS; WESTERN CORDILLERA
+1 | Canada has 3 landform types and this many landform regions | = 7 ~0
+2 | The landform type with only one region, which covers more than half of Canada | CANADIAN SHIELD | HIGHLANDS; LOWLANDS; ARCTIC LAND
+3 | The flat region nicknamed Canada's "breadbasket", which also produces oil and natural gas | INTERIOR PLAINS | CANADIAN SHIELD; HUDSON BAY LOWLANDS; ARCTIC LAND
+4 | About 50% of Canadians live in this region, even though it is less than 2% of the country | GREAT LAKES–ST. LAWRENCE LOWLANDS | CANADIAN SHIELD; APPALACHIAN REGION; INTERIOR PLAINS
+5 | How many of the 7 landform regions are lowlands? | = 4 ~0
+
+## ACROSS CANADA
+1 | True or false: the Rockies and the Western Cordillera are the same thing | FALSE | TRUE
+2 | Ontario's "Ring of Fire" mining area is in this region, which has some of the world's oldest rocks | CANADIAN SHIELD | INTERIOR PLAINS; WESTERN CORDILLERA; APPALACHIAN REGION
+3 | Waterlogged soil, a severe climate and the Hudson's Bay Company fur trade belong to this region | HUDSON BAY LOWLANDS | ARCTIC LAND; INTERIOR PLAINS; CANADIAN SHIELD
+4 | The oldest highland region in Canada, where Halifax and St. John's sit on narrow coastal plains | APPALACHIAN REGION / APPALACHIANS / THE APPALACHIANS / APPALACHIAN
+5 | The young, rugged mountains of the Western Cordillera formed where the Pacific Plate converges with this plate | NORTH AMERICAN PLATE / THE NORTH AMERICAN PLATE / NORTH AMERICAN
 
 ## LOWERN
 1 | The L in LOWERN | LATITUDE
@@ -128,4 +136,5 @@ FINAL | LEFT BEHIND BY ICE | A small lake formed when a block of ice left behind
 FINAL | ART AND THE LAND | This group of painters (1920–1933) created a national art style inspired by the rugged Canadian wilderness | THE GROUP OF SEVEN / GROUP OF SEVEN / GROUP OF 7
 FINAL | NATURAL HAZARDS | A glacial lake outburst flood is shortened to these four letters | GLOF / GLOFS
 FINAL | DOWN TO EARTH | In dry grasslands, water moves up through the soil and leaves calcium carbonate behind. This process is called | CALCIFICATION
+FINAL | ARCTIC LAND | The most remote part of Arctic Land, with no full-time population, made of rock similar to the Appalachians | INNUITIAN MOUNTAINS / THE INNUITIAN MOUNTAINS / INNUITIANS
 FINAL | FROZEN GIANTS | A boulder dropped by a glacier that doesn't match the rock around it | ERRATIC / GLACIAL ERRATIC / AN ERRATIC

@@ -5,7 +5,7 @@ A quiz board for a whole class. The teacher's computer drives the projector; eve
 Courses so far:
 
 - **SNC1W**, Grade 9 Science (de-streamed): four units (ecosystems, space, chemistry, electricity). This is the default course.
-- **CGC1W**, Grade 9 Geography (Exploring Canadian Geography): the three units of the course outline (the physical environment, resources and industries, changing populations), with climate graphs, plate boundaries, population pyramids, the demographic transition model and jobs by economic sector. Plus a lesson, **Notes: Canada's Physical Geography (Lessons 1–9)**, built from the class notes (17 categories).
+- **CGC1W**, Grade 9 Geography (Exploring Canadian Geography): the three units of the course outline (the physical environment, resources and industries, changing populations), with climate graphs, plate boundaries, population pyramids, the demographic transition model and jobs by economic sector. Plus a lesson, **Notes: Canada's Physical Geography (Lessons 1–9)**, built from the class notes and the landform regions story map (18 categories).
 - **MCF3M**, Grade 11 Functions and Applications: all seven units (forms of quadratics, working with quadratics, functions, exponentials, financial math, trig ratios, periodic functions).
 - **MHF4U**, Grade 12 Advanced Functions: all eight units (polynomials, polynomial equations, rational functions, trigonometry, trig functions, exponential and log functions and equations, combining functions).
 - **SCH4U**, Grade 12 Chemistry: all seven units (organic chemistry, atomic and molecular structure, thermochemistry, reaction rates, chemical equilibrium, electrochemistry, acid–base equilibrium), with energy diagram, equilibrium, titration curve and galvanic cell graphs.
