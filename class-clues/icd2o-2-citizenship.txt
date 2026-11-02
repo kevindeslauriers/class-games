@@ -1,0 +1,94 @@
+# Course: ICD2O | Grade 10 Digital Technology (Python and pygame)
+# Unit: citizenship | Unit 2: Digital Citizenship, AI and Society (to Lesson 15)
+// Built from the ICD2O course context, Lessons 14 and 15. Bias, Indigenous
+// contributions and the seminar come later in the unit and are not here yet.
+// Energy and water figures are the class's sources; the point is that estimates differ.
+
+## CRACK TIME
+1 | Which makes a password hardest to crack? | MORE LENGTH | ONE SYMBOL AT THE END; SWAPPING O FOR 0; YOUR PET'S NAME
+2 | Attackers try these first, which is why reusing a password is the bigger danger | LEAKED PASSWORDS | PASSWORDS WITH SYMBOLS; LONG PASSWORDS; RANDOM WORDS
+3 | An app that remembers a different password for every account | PASSWORD MANAGER / A PASSWORD MANAGER
+4 | Each extra lowercase letter multiplies the number of possible passwords by this | = 26 ~0
+5 | Crack time lab: 8 characters of any symbol is 95 ** 8 passwords. At 10 billion guesses a second, about how many days to try them all? | = 7.7 days ~1
+
+## TWO-STEP LOGIN
+1 | 2FA stands for this | TWO FACTOR AUTHENTICATION / TWO-FACTOR AUTHENTICATION / 2 FACTOR AUTHENTICATION
+2 | Which kind of 2FA is strongest? | A PASSKEY OR SECURITY KEY | AN EMAIL CODE; A TEXT MESSAGE CODE; AN AUTHENTICATOR APP CODE
+3 | An authenticator app makes a new six-digit code every this many seconds | = 30 s ~0
+4 | An attacker moves your phone number to their own SIM card to get your text codes. This is called | SIM SWAPPING / SIM SWAP / SIM-SWAPPING
+5 | A passkey gives a fake login page nothing because it checks this | THE REAL WEBSITE ADDRESS | YOUR PASSWORD LENGTH; YOUR PHONE NUMBER; YOUR SCREEN NAME
+
+## LOCKING IT DOWN
+1 | Steam Guard and Epic Authenticator are 2FA built into these | GAME APPS | BANK APPS; WEB BROWSERS; WI-FI ROUTERS
+2 | Save these in case you lose your phone and can't get a 2FA code | BACKUP CODES / BACKUP CODE
+3 | A small device with a screen that shows a changing code | CODE FOB / A CODE FOB / FOB
+4 | "Approve on your phone" with number matching means you tap this | THE NUMBER THE COMPUTER SHOWS | YES ON EVERY POP-UP; YOUR PASSWORD; THE SMALLEST NUMBER
+5 | Which of these authenticator apps makes codes for any account? | GOOGLE AUTHENTICATOR | STEAM GUARD; EPIC AUTHENTICATOR; A GAME'S BUILT-IN 2FA
+
+## SPOT THE PHISH
+1 | A fake message pretending to be a real company to steal your login | PHISHING
+2 | Which address is fake? | steamcommunlty.com | steamcommunity.com; store.steampowered.com; epicgames.com
+3 | An email asks for your 2FA code. What should you do? | NEVER GIVE IT, NO COMPANY ASKS FOR IT | GIVE IT IF THE EMAIL LOOKS REAL; GIVE IT ONLY TO SUPPORT; TEXT IT BACK
+4 | An email starts "Dear user". This phishing sign is | A GENERIC GREETING | A REAL NAME; A SAFE SENDER; A PRIZE
+5 | True or false: epicgames.com.account-check.co is safe because it starts with epicgames.com | FALSE | TRUE
+
+## WHO SEES WHAT
+1 | Settings that control who can see your profile and who can message you | PRIVACY SETTINGS
+2 | Data a game collects about how people play, like where players die | TELEMETRY
+3 | Which is fair for a game to collect? | TIME SPENT ON EACH LEVEL | YOUR REAL NAME; YOUR HOME ADDRESS; YOUR SCHOOL
+4 | Which file name follows the class rule? | l14_crack_time.py | final2.py; Crack Time FINAL.py; crackTime-new.py
+5 | Before a big change to a file, do this | COPY AND DATE IT | DELETE THE OLD ONE; RENAME IT final2.py; EMAIL IT TO A FRIEND
+
+## THE AI RULE
+1 | You may use AI as a coding tool, but you must be able to do this for every line you submit | EXPLAIN IT | DELETE IT; HIDE IT; RETYPE IT
+2 | The comment block above AI code names the tool and this | WHAT YOU ASKED IT | THE TEACHER'S NAME; THE DATE ONLY; HOW LONG IT TOOK
+3 | After the tool and the prompt, the annotation says this | WHAT YOU CHANGED | NOTHING ELSE; YOUR PASSWORD; THE AI'S RATING
+4 | Is AI allowed in the code walkthrough interviews? | NO | YES
+5 | AI is not allowed on the engine modification skills check, the code walkthrough interviews and this | THE WRITTEN EXAM | PRACTICE PROGRAMS; MICRO-GAMES; PYGAME DEMOS
+
+## HOW CHATBOTS WRITE
+1 | LLM stands for this | LARGE LANGUAGE MODEL / A LARGE LANGUAGE MODEL
+2 | An LLM writes by predicting this, over and over | THE NEXT WORD | THE WHOLE ANSWER AT ONCE; AN ANSWER FROM A DATABASE; THE LAST WORD FIRST
+3 | The model gives every possible next word a chance. The math word for that chance | PROBABILITY
+4 | Why can the same prompt give different answers? | IT PICKS AMONG LIKELY WORDS WITH SOME RANDOMNESS | IT SEARCHES A DIFFERENT DATABASE; IT CHANGES ITS WEIGHTS EACH TIME; IT UNDERSTANDS YOU BETTER
+5 | Hook: "The player opened the chest and found a ___". The word most of the class picked is the most ___ next word | LIKELY / PROBABLE / MOST LIKELY
+
+## INSIDE THE MODEL
+1 | The billions of numbers that decide which next word is likely | PARAMETERS / WEIGHTS / PARAMETERS (WEIGHTS)
+2 | Who sets the weights? | THEY ARE ADJUSTED AUTOMATICALLY IN TRAINING | PROGRAMMERS, BY HAND; THE USERS; NOBODY, THEY NEVER CHANGE
+3 | Before training, the weights start out like this | RANDOM / RANDOMLY / RANDOM NUMBERS
+4 | Training needs thousands of these chips because it takes an enormous number of calculations | GPUS / GPU / GRAPHICS CARDS
+5 | Does the model keep learning from your chat as it happens? | NO | YES, AFTER EVERY MESSAGE; ONLY FROM GOOD CHATS; ONLY IF YOU ASK IT TO
+
+## TINY MODEL
+1 | In the tiny model, which rolls of random.randint(1, 10) give "jumps"? | 1 TO 5 | 6 TO 8; 9 TO 10; 1 TO 4
+2 | Out of the 10 training sentences, how many used "runs"? | = 3 ~0
+3 | The roll for the ending is 8 (quickly 1 to 4, again 5 to 7, into the lava 8 to 10). Which ending? | INTO THE LAVA | QUICKLY; AGAIN; NONE
+4 | What decides what a model says? | ITS TRAINING DATA | ITS UNDERSTANDING OF MEANING; ITS FEELINGS; THE PERSON TYPING
+5 | It printed "The player falls quickly", which is not in the training data. Why? | IT PICKS THE VERB AND THE ENDING SEPARATELY | IT UNDERSTANDS GAMES; IT SEARCHED THE INTERNET; IT HAS A BUG
+
+## ENERGY LAB
+1 | Data centres need large amounts of electricity, and this for cooling | WATER
+2 | Google (2025) reports a median text prompt uses about how many mL of water? | = 0.26 mL ~0.02
+3 | 5 students × 10 prompts a day × 180 school days is how many prompts? | = 9000 ~0
+4 | 9000 prompts × 0.24 watt hours each is how many watt hours? | = 2160 ~0
+5 | Which cost does "one prompt" leave out? | TRAINING THE MODEL | ANSWERING THE PROMPT; THE WATER FOR THAT PROMPT; NOTHING
+
+## OLD DEVICES
+1 | Old phones, laptops and other thrown-out electronics | E-WASTE / EWASTE / ELECTRONIC WASTE
+2 | Which reduces e-waste? | REPLACING A WEAK BATTERY | BUYING A NEW PHONE EVERY YEAR; KEEPING AN OLD PHONE IN A DRAWER; PUTTING IT IN THE GARBAGE
+3 | How many million tonnes of e-waste were produced in 2022? | = 62 ~0
+4 | Is a phone kept in a drawer recycled? | NO | YES
+5 | About what percent of 2022's e-waste was documented as properly collected and recycled? | = 22.3 % ~1
+
+## MYTH OR FACT?
+1 | True or false: the model looks up answers in a database | FALSE | TRUE
+2 | True or false: the same prompt can give different answers | TRUE | FALSE
+3 | True or false: text message codes are as safe as a passkey | FALSE | TRUE
+4 | True or false: estimates of the energy per prompt differ a lot depending on who measured and what they counted | TRUE | FALSE
+5 | True or false: one prompt is tiny, so billions of prompts barely matter | FALSE | TRUE
+
+FINAL | ENERGY LAB | In the energy lab, students changed 5 students to 1000000. With 10 prompts a day for 180 days, how many prompts is that? | = 1.8e9 ~1%
+FINAL | ENERGY LAB | 9000 prompts × 0.26 mL each (Google's estimate) is about how many litres? | = 2.34 L ~0.4
+FINAL | TINY MODEL | The tiny model has 3 verbs and 3 endings. How many different sentences can it print? | = 9 ~0
+FINAL | OLD DEVICES | E-waste is on track for this many million tonnes by 2030 | = 82 ~0

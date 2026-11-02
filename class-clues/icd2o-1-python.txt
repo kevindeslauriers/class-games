@@ -1,0 +1,94 @@
+# Course: ICD2O | Grade 10 Digital Technology (Python and pygame)
+# Unit: python | Unit 1: Foundations of Python
+# Teams: Pixels, Sprites, Glitches, Coders, Debuggers, Bytes, Respawns, Speedrunners
+// Built from the ICD2O course context (Lessons 1 to 10 and the Studio Lockdown review).
+// Only what was taught: no lists, len, f-strings, break or while True.
+
+## THINK LIKE A CODER
+1 | Breaking a big problem into smaller parts | DECOMPOSITION | ABSTRACTION; PATTERNS; PSEUDOCODE
+2 | A step-by-step set of instructions that solves a problem | ALGORITHM / AN ALGORITHM
+3 | Plain-language steps written like code, but not in a real programming language | PSEUDOCODE | FLOWCHART; PYTHON; ABSTRACTION
+4 | Hiding the details that don't matter so you can focus on what does | ABSTRACTION | DECOMPOSITION; PATTERNS; ITERATION
+5 | A diagram of an algorithm drawn with shapes and arrows | FLOWCHART / FLOW CHART / A FLOWCHART
+
+## VARIABLES
+1 | What data type is 3.5? | FLOAT | INT; STR; BOOL
+2 | A bool can be True or this | FALSE
+3 | has_shoes = "False" stores this data type | STR (A STRING) | BOOL; INT; FLOAT
+4 | This built-in function shows a value's data type | TYPE / TYPE()
+5 | score = 40, then score = score + 10. What is score now? | = 50 ~0
+
+## MATH OPERATORS
+1 | What does 7 / 2 give? | = 3.5 ~0
+2 | What does 17 // 5 give? | = 3 ~0
+3 | What does 17 % 5 give? | = 2 ~0
+4 | What does 2 ** 5 give? | = 32 ~0
+5 | Clock Tower: total_seconds = 4537. What is total_seconds // 60? | = 75 ~0
+
+## PRINT AND INPUT
+1 | input() always gives back this data type, even when the player types digits | STR | INT; FLOAT; BOOL
+2 | What happens when Python runs print("Level " + 2)? | AN ERROR (TypeError) | IT PRINTS Level 2; IT PRINTS Level2; NOTHING PRINTS
+3 | The player types three into int(input()). Which error does it give? | VALUEERROR / VALUE ERROR
+4 | Merchant room: what does "12" * 3 print? | 121212
+5 | To join a number to text with +, first wrap the number in this function | STR / STR()
+
+## DECISIONS
+1 | Every if, elif and else line ends with this | A COLON (:) | A SEMICOLON; A COMMA; A PERIOD
+2 | In an if / elif / else chain, how many branches run at most? | = 1 ~0
+3 | else runs only when every condition above it is this | FALSE
+4 | What decides which lines are inside an if block? | INDENTATION | BRACKETS; LINE NUMBERS; BLANK LINES
+5 | Rank Shrine: score >= 10 is checked before score >= 30 in an elif chain. What goes wrong? | GOLD AND SILVER CAN NEVER HAPPEN | IT CRASHES; EVERY SCORE GETS GOLD; NOTHING, IT WORKS
+
+## AND, OR, NOT
+1 | What does True and False give? | FALSE | TRUE
+2 | What does True or False give? | TRUE | FALSE
+3 | What does not True give? | FALSE | TRUE
+4 | What does "7" == 7 give? | FALSE | TRUE
+5 | if answer == "yes" or "y": is always this | TRUE | FALSE
+
+## FOR AND RANGE
+1 | range(5) starts counting from this number | = 0 ~0
+2 | random.randint(1, 10) can give this many different numbers | = 10 ~0
+3 | Add up 1 to 1000 with for num in range(1, 1001). What is the total? | = 500500 ~0
+4 | In the accumulate pattern, the total is set to 0 here | BEFORE THE LOOP | INSIDE THE LOOP; AFTER THE LOOP; INSIDE THE IF
+5 | Echo Well: total = 0, then for depth in range(3, 8): total = total + depth * 2. What is total? | = 50 ~0
+
+## WHILE IT LASTS
+1 | What does != mean? | IS NOT EQUAL TO | IS EQUAL TO; IS GREATER THAN; IS LESS THAN
+2 | A loop whose condition never becomes False | INFINITE LOOP / AN INFINITE LOOP
+3 | If a while condition is False at the start, the body runs this many times | = 0 ~0
+4 | Use a while loop rather than a for loop when you... | KEEP GOING UNTIL SOMETHING CHANGES | KNOW HOW MANY TIMES; WANT TO COUNT TO 10; NEED A RANDOM NUMBER
+5 | gems = 0. While gems < 18, add 5 gems. How many gems are there when the loop ends? | = 20 ~0
+
+## ROWS AND COLUMNS
+1 | In nested loops, the inner loop runs all the way through for each pass of this | THE OUTER LOOP | THE INNER LOOP; THE FUNCTION; THE IF
+2 | 3 rows of 4 tiles: how many times does the inner loop body run? | = 12 ~0
+3 | Tile map: rows = 8 and cols = 12. What is tiles_drawn? | = 96 ~0
+4 | row_text = "" is put outside the outer loop. What does the player see? | EACH ROW IS LONGER THAN THE ONE BEFORE | THE SAME ROW EVERY TIME; NOTHING PRINTS; IT CRASHES
+5 | A table with one row per pass and one column per variable | TRACE TABLE / A TRACE TABLE
+
+## DEF AND CALL
+1 | A def on its own, with no call, runs this many lines of its body | = 0 ~0
+2 | The value in the brackets when you call a function | ARGUMENT | PARAMETER; RETURN VALUE; FUNCTION NAME
+3 | The variable named in the def line that gets the argument's value | PARAMETER / A PARAMETER
+4 | Calling a function above its def line gives which error? | NAMEERROR / NAME ERROR
+5 | lives_after_hits(lives, 2) is called, but the def has three parameters. Which error does it give? | TYPEERROR / TYPE ERROR
+
+## GIVING BACK
+1 | A function with no return gives back this | NONE
+2 | Trap 1: bad_rank prints "Silver" instead of returning it. What is the last line print("Rank:", bad_rank(75)) shows? | Rank: None | Rank: Silver; Silver; Nothing
+3 | Trap 2: lives = 3, then lose_life(lives), then print("Lives:", lives). What number prints? | = 3 ~0
+4 | The shield rule: damage_after_shield(5, True) returns hit // 2. What does it give back? | = 2 ~0
+5 | Lines after a return in the same function body do this | NEVER RUN | RUN LAST; RUN TWICE; CRASH THE PROGRAM
+
+## BUG HUNT
+1 | The program runs with no message, but the player sees the wrong thing. This is a | LOGIC ERROR | SYNTAX ERROR; RUNTIME ERROR; NAMEERROR
+2 | A missing colon stops the whole program before anything runs. This kind of error | SYNTAX ERROR / SYNTAXERROR
+3 | Read a traceback starting from this line | THE LAST LINE | THE FIRST LINE; THE MIDDLE LINE; THE LONGEST LINE
+4 | In the VS Code debugger, this goes inside the function being called | STEP INTO | STEP OVER; BREAKPOINT; RUN
+5 | The line named in an error message looks fine. Where can the cause be? | ON AN EARLIER LINE | IN THE TRACEBACK ITSELF; IN VS CODE; NOWHERE, PYTHON IS WRONG
+
+FINAL | STUDIO LOCKDOWN | The Forge: 250 bars make 250 // 7 swords. How many bars are left over (250 % 7)? | = 5 ~0
+FINAL | STUDIO LOCKDOWN | Gatekeeper: gate starts at 7. Each turn, halve it with // when it is even, otherwise gate * 3 + 1. How many turns until gate is 1? | = 16 ~0
+FINAL | HAZARD RUN | Lives start at 10 and the shield is on, so damage_after_shield returns hit // 2. Spikes hit 2 and lava hits 5. After 2 spikes and 2 lava tiles, how many lives are left? | = 4 ~0
+FINAL | FIND THE BUG | For levels 1 to 3, coins = level + 2 and points = coins * 5 * level. What is the total score? | = 130 ~0

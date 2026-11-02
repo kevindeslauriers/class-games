@@ -147,6 +147,17 @@ test('the SCH4U bank loads all seven units with its own teams and graphs', () =>
   imgs.forEach(x => assert.ok(bank.images.has(x.img), x.img));
 });
 
+test('the ICD2O bank loads both units with its own teams', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const c = bank.course('ICD2O');
+  assert.ok(c, 'ICD2O course');
+  assert.deepStrictEqual(c.units.map(u => u.id), ['python', 'citizenship']);
+  assert.strictEqual(c.teams[0], 'Pixels');
+  c.units.forEach(u => { assert.strictEqual(u.cats.length, 12, u.id); assert.ok(u.finals.length >= 3, u.id); });
+  const merchant = c.units[0].cats.flatMap(k => k.clues).find(x => x.q.startsWith('Merchant'));
+  assert.strictEqual(merchant.a, '121212', 'a repeated string is text, not a number with commas');
+});
+
 test('the teacher can switch courses; graph clues reach the screens', () => {
   const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
   const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
@@ -158,7 +169,7 @@ test('the teacher can switch courses; graph clues reach the screens', () => {
   g.updateSettings({ course: 'APMICRO' });
   g.updateSettings({ units: ['imperfect'] });
   assert.deepStrictEqual(g.settings.units, ['imperfect']);
-  assert.strictEqual(g.teacherView().courses.length, 7);
+  assert.strictEqual(g.teacherView().courses.length, 8);
   const a = g.join('Ann', 0);
   g.updateSettings({ rounds: 1, dd: false });
   g.start();
