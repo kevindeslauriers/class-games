@@ -399,6 +399,8 @@ const CLIMATE = {
   'climate-a': { name: 'City A', t: [-3.7, -2.6, 1.4, 7.9, 14.1, 19.4, 22.3, 21.5, 17.2, 10.7, 4.9, -0.5], p: [61, 51, 57, 69, 74, 71, 77, 79, 77, 65, 76, 62] },
   // On the Pacific coast (based on Vancouver's normals).
   'climate-b': { name: 'City B', t: [4.1, 4.9, 6.9, 9.4, 12.8, 15.7, 18.0, 18.1, 15.1, 10.6, 6.4, 3.6], p: [168, 105, 113, 88, 65, 54, 40, 41, 54, 112, 191, 172] },
+  // The practice graph from the class notes (Toronto's numbers).
+  'climate-notes': { name: 'Practice city from the notes', t: [-3.5, -2.7, 1.7, 7.8, 14.5, 19.8, 22.5, 21.9, 17.9, 11.2, 5.2, -0.1], p: [64.6, 53.9, 52.8, 78.0, 76.4, 81.6, 76.5, 71.9, 69.4, 69.1, 70.8, 57.8] },
 };
 for (const [key, c] of Object.entries(CLIMATE)) {
   const out = svgOpen();

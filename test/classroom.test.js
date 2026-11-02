@@ -98,9 +98,25 @@ test('the CGC1W bank loads all three units, and every graph it names exists', ()
   const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
   const c = bank.course('CGC1W');
   assert.ok(c, 'CGC1W course');
-  assert.deepStrictEqual(c.units.map(u => u.id), ['physical', 'resources', 'population']);
-  c.units.forEach(u => { assert.strictEqual(u.cats.length, 12, u.id); assert.ok(u.finals.length >= 3, u.id); });
+  assert.deepStrictEqual(c.units.filter(u => !u.lesson).map(u => u.id), ['physical', 'resources', 'population']);
+  c.units.filter(u => !u.lesson).forEach(u => { assert.strictEqual(u.cats.length, 12, u.id); assert.ok(u.finals.length >= 3, u.id); });
   c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals]).filter(x => x.img).forEach(x => assert.ok(bank.images.has(x.img), x.img));
+});
+
+test('a lesson from class notes is listed apart and fills the board on its own', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const lesson = bank.course('CGC1W').units.find(u => u.lesson);
+  assert.strictEqual(lesson.id, 'notes-physical');
+  assert.ok(lesson.cats.length >= 12 && lesson.finals.length >= 3);
+  assert.ok(bank.list().find(c => c.id === 'CGC1W').units.find(u => u.id === 'notes-physical').lesson);
+  const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
+  g.updateSettings({ course: 'CGC1W' });
+  assert.deepStrictEqual(g.settings.units, ['physical', 'resources', 'population'], 'lessons start unticked');
+  g.updateSettings({ units: ['notes-physical'], rounds: 2 });
+  g.join('Ann', 0);
+  g.start();
+  assert.strictEqual(g.rounds.length, 2);
+  g.rounds.forEach(r => r.cats.forEach(k => assert.strictEqual(k.unit, 'notes-physical')));
 });
 
 test('the MCF3M and MHF4U banks load every unit, and slashes in math answers stay whole', () => {

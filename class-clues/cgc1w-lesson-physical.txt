@@ -1,0 +1,131 @@
+# Course: CGC1W | Grade 9 Geography (Exploring Canadian Geography)
+# Unit: notes-physical | Notes: Canada's Physical Geography (Lessons 1–9)
+# Lesson
+// Built from the class notes: intro to geography, livability and sustainability,
+// plate tectonics, glaciation, landform regions, weather and climate (parts 1 and 2),
+// climate graphs, Canada's climate regions, and soil and vegetation.
+
+## STARTING OUT
+1 | Pollution, climate change and waste management belong to this branch of geography, about how humans and nature interact | ENVIRONMENTAL GEOGRAPHY | HUMAN GEOGRAPHY; PHYSICAL GEOGRAPHY; URBAN GEOGRAPHY
+2 | Landscapes, climate, ecosystems and natural resources belong to this branch of geography | PHYSICAL GEOGRAPHY | HUMAN GEOGRAPHY; ENVIRONMENTAL GEOGRAPHY; URBAN GEOGRAPHY
+3 | Geography's three fundamental questions are "What is there?", "Why there?" and this | WHY CARE? | WHO LIVES THERE?; HOW BIG IS IT?; WHEN DID IT HAPPEN?
+4 | Giving a place's latitude and longitude describes this kind of location | ABSOLUTE LOCATION / ABSOLUTE
+5 | "Halifax is east of Fredericton" describes this kind of location | RELATIVE LOCATION / RELATIVE
+
+## THE FOUR CONCEPTS
+1 | How things affect each other, within and between natural and human environments, is this concept | INTERRELATIONSHIPS | SPATIAL SIGNIFICANCE; PATTERNS AND TRENDS; GEOGRAPHIC PERSPECTIVE
+2 | The importance of a particular location, or "why there", is this concept | SPATIAL SIGNIFICANCE | INTERRELATIONSHIPS; PATTERNS AND TRENDS; GEOGRAPHIC PERSPECTIVE
+3 | In "patterns and trends", a trend is something that does this | CHANGES OVER TIME | STAYS THE SAME EVERYWHERE; HAPPENS IN ONE PLACE ONLY; IS ARRANGED IN A LINE
+4 | The perspectives in SEEP are social, economic, environmental and this | POLITICAL
+5 | Step 1 of a geographic inquiry is to formulate this | THE BIG QUESTION / BIG QUESTION / A BIG QUESTION / A QUESTION
+
+## MAP OF CANADA
+1 | Canada's national capital | OTTAWA | TORONTO; MONTREAL; VANCOUVER
+2 | The capital of Nunavut | IQALUIT | YELLOWKNIFE; WHITEHORSE; RESOLUTE
+3 | Which Great Lake is NOT shared with Canada? | LAKE MICHIGAN | LAKE SUPERIOR; LAKE HURON; LAKE ERIE
+4 | How many provinces and territories does Canada have altogether? | = 13 ~0
+5 | The capital of Prince Edward Island | CHARLOTTETOWN
+
+## QUALITY OF LIFE
+1 | The characteristics of a community that add to its quality of life make up its ___ | LIVABILITY | SUSTAINABILITY; CARRYING CAPACITY; POPULATION
+2 | The maximum number of a species an environment can support indefinitely | CARRYING CAPACITY | LIVABILITY; BIRTH RATE; POPULATION DENSITY
+3 | Development that meets the needs of the present without compromising the ability of future generations to meet their own needs | SUSTAINABLE DEVELOPMENT / SUSTAINABILITY
+4 | The United Nations adopted the Sustainable Development Goals (the Global Goals) in this year | = 2015 ~0
+5 | Designing and regulating land use, infrastructure and the layout of cities to make them functional, safe and pleasant | URBAN PLANNING / CITY PLANNING / URBAN PLANNER
+
+## ON THE MOVE
+1 | The supercontinent whose name means "all the Earth" | PANGAEA / PANGEA
+2 | Fossils of the freshwater reptile Mesosaurus are found in both South America and Africa. What does this support? | THE CONTINENTS WERE ONCE JOINED | THE REPTILE SWAM ACROSS THE OCEAN; THE CLIMATE WAS ALWAYS THE SAME; GLACIERS CARRIED THE FOSSILS
+3 | Coal swamps and glacier marks in places that now have the wrong climate are this kind of evidence for continental drift | CLIMATE | FOSSILS; ROCK TYPE; JIGSAW FIT
+4 | The Permian extinction is nicknamed this | THE GREAT DYING / GREAT DYING
+5 | Earth is 4.6 billion years old and the Precambrian ended 541 million years ago. About what percent of Earth's history was the Precambrian? | = 88 % ~2
+
+## INSIDE THE EARTH
+1 | Earth's thinnest, outermost layer | CRUST | MANTLE; OUTER CORE; INNER CORE
+2 | Which layer of the Earth is liquid? | OUTER CORE | INNER CORE; CRUST; LOWER MANTLE
+3 | Where an oceanic plate meets a continental plate, the oceanic plate sinks underneath because it is this | DENSER | LIGHTER; THICKER; WARMER
+4 | Rock that forms when magma or lava cools | IGNEOUS / IGNEOUS ROCK
+5 | Circulation in the mantle, caused by temperature differences, that moves the plates | CONVECTION CURRENTS / CONVECTION / CONVECTION CURRENT
+
+## PLATE BOUNDARIES
+1 | Plates moving apart form this kind of boundary | DIVERGENT | CONVERGENT; TRANSFORM; SUBDUCTION
+2 | Plates sliding past each other, like at the San Andreas Fault in California, form this kind of boundary | TRANSFORM | DIVERGENT; CONVERGENT; SUBDUCTION
+3 | Two continental plates colliding built these mountains | THE HIMALAYAS | THE ANDES; THE CASCADES; HAWAII'S VOLCANOES
+4 | Ocean-ocean convergence builds a chain of volcanic islands, like Japan or the Philippines, called this | ISLAND ARC / AN ISLAND ARC / VOLCANIC ISLAND ARC
+5 | The deepest ocean trench on Earth, formed at a convergent boundary | MARIANA TRENCH / THE MARIANA TRENCH / MARIANAS TRENCH
+
+## SHAKING GROUND
+1 | The underground point where an earthquake starts | FOCUS | EPICENTRE; FAULT; CRUST
+2 | The point on Earth's surface directly above where an earthquake starts | EPICENTRE / EPICENTER
+3 | Each step up in earthquake magnitude means this many times more ground shaking | = 10 ~0
+4 | Which earthquakes tend to be the most deadly? | VERY SHALLOW (0 TO 30 KM DEEP) | DEEP-FOCUS (300 TO 700 KM); INTERMEDIATE (70 TO 300 KM); ALL DEPTHS ARE THE SAME
+5 | Besides a tsunami, name one natural hazard an earthquake can cause | LANDSLIDE / LANDSLIDES / VOLCANIC ERUPTION / VOLCANIC ERUPTIONS / ERUPTION / AVALANCHE
+
+## FROZEN GIANTS
+1 | A glacier forms from this, packed down over many years | SNOW | RAIN; SEA WATER; HAIL
+2 | A smaller glacier that flows through mountain valleys, like those in the Rockies | VALLEY GLACIER / ALPINE GLACIER / VALLEY / ALPINE
+3 | The only two ice sheets left on Earth cover Antarctica and this island | GREENLAND
+4 | A valley carved by a glacier has this shape (rivers carve a V) | U-SHAPED | V-SHAPED; STAIR-STEPPED; PERFECTLY FLAT
+5 | The huge ice sheet that covered most of Canada in the last ice age | LAURENTIDE ICE SHEET / LAURENTIDE / THE LAURENTIDE
+
+## LEFT BEHIND BY ICE
+1 | Rock and sediment of every size, from sand to boulders, picked up and dropped by a glacier | TILL | ESKER; HUMUS; MAGMA
+2 | Scratch marks a glacier leaves on bedrock, showing which way it moved | STRIATIONS / STRIATION
+3 | Egg-shaped hills of till that occur in clusters, like those in Nova Scotia | DRUMLINS | ESKERS; KETTLE LAKES; ERRATICS
+4 | A long, winding ridge of sand and gravel deposited by water flowing under a glacier | ESKER | DRUMLIN; MORAINE; ERRATIC
+5 | The Oak Ridges ___ north of Toronto is a ridge of till left at the edge of a glacier | MORAINE
+
+## LANDFORM REGIONS
+1 | Canada's landform regions fall into three types: shield, highlands and this | LOWLANDS | MOUNTAINS; DESERTS; ISLANDS
+2 | The landform region of the Rocky Mountains and the Coast Mountains | WESTERN CORDILLERA / CORDILLERA / THE CORDILLERA
+3 | The flat region of the Prairies, between the Rockies and the Shield | INTERIOR PLAINS | CANADIAN SHIELD; HUDSON BAY LOWLANDS; ARCTIC LANDS
+4 | The region where most Canadians live, around Toronto and Montreal | GREAT LAKES–ST. LAWRENCE LOWLANDS | CANADIAN SHIELD; APPALACHIAN REGION; INTERIOR PLAINS
+5 | Glaciers scraped the soil off this huge region of ancient rock, the largest in Canada | CANADIAN SHIELD | INTERIOR PLAINS; ARCTIC LANDS; WESTERN CORDILLERA
+
+## LOWERN
+1 | The L in LOWERN | LATITUDE
+2 | The side of a mountain facing the wind, where the rain falls | WINDWARD SIDE | LEEWARD SIDE; RAIN SHADOW; SUMMIT
+3 | The dry area on the leeward side of mountains | RAIN SHADOW / A RAIN SHADOW / THE RAIN SHADOW
+4 | Places near large bodies of water have this kind of climate: summers not too hot, winters not too cold | MARITIME | CONTINENTAL; TROPICAL; ARCTIC
+5 | Air cools about this many °C for every 1000 m you climb | = 6.5 °C ~0.6
+
+## FORECAST
+1 | Short-term changes in the atmosphere from day to day are ___. The long-term pattern is climate. | WEATHER
+2 | On a weather app, POP stands for this | PROBABILITY OF PRECIPITATION | PERCENT OF POLLUTION; POWER OF PRESSURE; PEAK OF THE PLUME
+3 | A high pressure system usually brings this | CLEAR, CALM WEATHER | STORMS AND RAIN; TORNADOES; FREEZING RAIN
+4 | Fast, narrow bands of strong wind high in the atmosphere | JET STREAM / THE JET STREAM / JET STREAMS
+5 | Winds between 30° and 60° latitude that steer storms across Canada | WESTERLIES | TRADE WINDS; POLAR EASTERLIES; MONSOONS
+
+## CLIMATE GRAPHS
+1 | [graph: climate-notes] On a climate graph, precipitation is shown by these | BARS | THE LINE; DOTS; SHADING
+2 | [graph: climate-notes] Which month is warmest here? | JULY | JUNE; AUGUST; JANUARY
+3 | [graph: climate-notes] The warmest month is 22.5°C and the coldest is −3.5°C. What is the annual temperature range in °C? | = 26 °C ~0.2
+4 | [graph: climate-notes] The range is over 25°C and the year's precipitation is 822.8 mm, under 1000 mm. This climate is | CONTINENTAL | MARITIME; TROPICAL; DESERT
+5 | [graph: climate-notes] The monthly temperatures add up to 116.2°C. To 1 decimal place, what is the average annual temperature? | = 9.7 °C ~0.1
+
+## CLIMATE REGIONS
+1 | The climate region of Canada's far north, with long harsh winters, little precipitation and permafrost | ARCTIC | TAIGA; BOREAL; PRAIRIE
+2 | Ground that stays frozen for at least two years in a row | PERMAFROST
+3 | The climate region of coastal BC, with the most precipitation in Canada | PACIFIC MARITIME | CORDILLERAN; PRAIRIE; ATLANTIC MARITIME
+4 | Toronto is in this climate region | SOUTHEASTERN | BOREAL; ATLANTIC MARITIME; PRAIRIE
+5 | How many climate regions are on the map of Canada in your notes? | = 8 ~0
+
+## MYTH OR FACT
+1 | True or false: climate change is the same thing as global warming | FALSE | TRUE
+2 | The most abundant greenhouse gas in the atmosphere | WATER VAPOUR (H2O) | CARBON DIOXIDE (CO2); METHANE (CH4); NITROUS OXIDE (N2O)
+3 | Livestock digestion and decomposing waste give off this greenhouse gas | METHANE (CH4) | OZONE (O3); NITROGEN (N2); OXYGEN (O2)
+4 | El Niño and La Niña are natural climate events. El Niño is this phase | THE WARM PHASE | THE COLD PHASE; THE DRY PHASE; THE WINDY PHASE
+5 | The main cause of today's rapid climate change | HUMAN ACTIVITY / HUMANS / PEOPLE / HUMAN ACTIVITIES / BURNING FOSSIL FUELS
+
+## DOWN TO EARTH
+1 | Dark, decomposed plant and animal matter in soil | HUMUS | TILL; CLAY; BEDROCK
+2 | The A horizon, the layer best for plant growth, is also called this | TOPSOIL | SUBSOIL; BEDROCK; PARENT MATERIAL
+3 | Trees with needles that stay green all year | CONIFEROUS / CONIFERS / CONIFER / EVERGREEN / EVERGREENS
+4 | In wet climates, water moving down washes minerals out of the soil. This is called | LEACHING | CALCIFICATION; EROSION; WEATHERING
+5 | The solid, unweathered rock at the bottom of a soil profile, the R horizon | BEDROCK
+
+FINAL | LEFT BEHIND BY ICE | A small lake formed when a block of ice left behind by a retreating glacier melts | KETTLE LAKE / KETTLE / KETTLE LAKES
+FINAL | ART AND THE LAND | This group of painters (1920–1933) created a national art style inspired by the rugged Canadian wilderness | THE GROUP OF SEVEN / GROUP OF SEVEN / GROUP OF 7
+FINAL | NATURAL HAZARDS | A glacial lake outburst flood is shortened to these four letters | GLOF / GLOFS
+FINAL | DOWN TO EARTH | In dry grasslands, water moves up through the soil and leaves calcium carbonate behind. This process is called | CALCIFICATION
+FINAL | FROZEN GIANTS | A boulder dropped by a glacier that doesn't match the rock around it | ERRATIC / GLACIAL ERRATIC / AN ERRATIC

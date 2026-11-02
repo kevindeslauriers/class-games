@@ -161,24 +161,29 @@ function renderLobby(v) {
   }
   sel.value = st.course;
   $('#courseRow').hidden = v.courses.length < 2;
-  const units = $('#units');
+  const units = $('#units'), lessons = $('#lessons');
   const key = st.course + '|' + st.units.join(',');
   if (V.unitKey !== key) {
     V.unitKey = key;
     units.innerHTML = '';
+    lessons.innerHTML = '';
+    const all = course ? course.units : [];
     // Long unit lists go in two columns so Start stays on screen.
-    units.classList.toggle('many', !!course && course.units.length > 6);
-    (course ? course.units : []).forEach(u => {
+    units.classList.toggle('many', all.filter(u => !u.lesson).length > 6);
+    lessons.classList.toggle('many', all.filter(u => u.lesson).length > 6);
+    // Lessons (one set of class notes each) are listed under the units.
+    all.forEach(u => {
       const l = el('label', 'choice');
-      const cb = el('input'); cb.type = 'checkbox'; cb.checked = st.units.includes(u.id);
+      const cb = el('input'); cb.type = 'checkbox'; cb.checked = st.units.includes(u.id); cb.dataset.id = u.id;
       cb.onchange = () => {
-        const ids = [...units.querySelectorAll('input')].map((x, i) => x.checked && course.units[i].id).filter(Boolean);
+        const ids = [...document.querySelectorAll('#units input, #lessons input')].filter(x => x.checked).map(x => x.dataset.id);
         cmd('settings', { settings: { units: ids } });
       };
       l.append(cb, ` ${u.title}`);
       l.title = `${u.cats} categories`;
-      units.append(l);
+      (u.lesson ? lessons : units).append(l);
     });
+    $('#lessonsBox').hidden = !all.some(u => u.lesson);
   }
   $('#teamsN').value = String(st.teams);
   $('#rounds').value = String(st.rounds);
