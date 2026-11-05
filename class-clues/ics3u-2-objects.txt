@@ -18,7 +18,7 @@
 5 | new Lantern(20), light(), burn(15). What is getFuel()? | = 0 ~0
 
 ## WHAT COMES BACK
-1 | A method that changes the object and gives nothing back has this return type | VOID
+1 | A method that changes the object and gives nothing back has this return type | void
 2 | Which line compiles? | int f = lamp.getFuel() | int f = lamp.isLit(); int left = greta.restock(5); int b = lamp.burn(5)
 3 | int left = greta.restock(5); does not compile because restock is | void | static; private; overloaded
 4 | lamp.getFuel(); on its own line is legal, but the value is | LOST | PRINTED; STORED IN fuel; DOUBLED

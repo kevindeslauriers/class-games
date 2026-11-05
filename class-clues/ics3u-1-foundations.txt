@@ -15,7 +15,7 @@
 1 | int score = 25; then score = 35; What is score now? | = 35 ~0
 2 | int a = 4; int b = a; a = 9; What is b? | = 4 ~0
 3 | Which is a legal identifier? | moveCount | 2moves; move count; class
-4 | The naming convention for variables and methods, like lanternCharge | CAMELCASE / CAMEL CASE
+4 | The naming convention for variables and methods, like lanternCharge | camelCase / CAMEL CASE
 5 | Swap: int x = 3; int y = 8; int z = x; x = y; y = z; What is y? | = 3 ~0
 
 ## PRINT IT
@@ -69,7 +69,7 @@
 
 ## LIMITS
 1 | An int is stored in this many bytes | = 4 ~0
-2 | The largest int is Integer.___ | MAX_VALUE / INTEGER.MAX_VALUE / MAX VALUE
+2 | The largest int is Integer.___ | MAX_VALUE / Integer.MAX_VALUE / MAX VALUE
 3 | int gold = Integer.MAX_VALUE; gold++; What happens? | IT WRAPS AROUND TO THE SMALLEST int | IT CRASHES; IT STAYS AT THE MAX; IT BECOMES A double
 4 | Going past the largest or smallest int with no error is called | INTEGER OVERFLOW / OVERFLOW
 5 | Money is stored as an int number of these, to avoid round off error | CENTS

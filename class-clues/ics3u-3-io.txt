@@ -7,7 +7,7 @@
 2 | Scanner input = new Scanner(System.in); System.in is connected to this | THE KEYBOARD | THE SCREEN; A FILE; THE INTERNET
 3 | Which line does not compile? | int n = input.nextDouble() | int gold = input.nextInt(); double w = input.nextInt(); String s = input.nextLine()
 4 | Scanner.nextInt() does not compile because nextInt is this kind of method | INSTANCE METHOD / AN INSTANCE METHOD / INSTANCE
-5 | Without import java.util.Scanner; the error is "cannot find ___" | SYMBOL
+5 | Without import java.util.Scanner; the error is "cannot find ___" | symbol
 
 ## WORD BY WORD
 1 | A run of characters with no spaces or Enters | TOKEN / A TOKEN
@@ -19,7 +19,7 @@
 ## LEFT BEHIND
 1 | int count = input.nextInt(); String weapon = input.nextLine(); The user types 3 and Enter. What is weapon? | THE EMPTY STRING "" | "3"; The next line typed; null
 2 | Why? nextInt() leaves this behind | THE ENTER | THE NUMBER; A SPACE; THE SCANNER
-3 | The fix: one extra call to this method, on its own line | nextLine / input.nextLine() / nextLine()
+3 | The fix: one extra call to this method, on its own line | nextLine() / nextLine / input.nextLine()
 4 | Does the same trap happen after nextBoolean()? | YES | NO
 5 | exits.txt is read with next() only. Does it need the extra nextLine()? | NO | YES
 
