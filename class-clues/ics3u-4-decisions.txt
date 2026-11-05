@@ -1,0 +1,93 @@
+# Course: ICS3U | Grade 11 Computer Science (ICS3U / AP CSA, Java)
+# Unit: decisions | Unit 4: Decision Making (to Day 17)
+// Day 17 only: relational operators, if / else if / else, &&, || and !, and String
+// conditions. No nested if, short circuit or De Morgan yet. Write \| for a |.
+
+## RELATIONAL OPERATORS
+1 | The operator for "not equal to" | != | =!; <>; ==
+2 | What is 20 > 20? | false | true
+3 | What is 20 >= 20? | true | false
+4 | int gold = 45; boolean canBuy = gold >= 40; What does "Can buy a potion: " + canBuy give? | Can buy a potion: true | Can buy a potion: 45; Can buy a potion: canBuy; It does not compile
+5 | Why does if (gold = 45) not compile? | BECAUSE = STORES A VALUE AND == COMPARES | IT NEEDS DOUBLE QUOTES; gold MUST BE A double; EVERY if NEEDS AN else
+
+## HEALTH CHECK
+1 | [graph: health-check] What prints for health 90? | Strong | Wounded; Critical; Defeated
+2 | [graph: health-check] What prints for health 40? | Wounded | Strong; Critical; Defeated
+3 | [graph: health-check] What prints for health 0? | Defeated | Critical; Wounded; Strong
+4 | [graph: health-check] What prints for health 74? | Wounded | Strong; Critical; Defeated
+5 | [graph: health-check] With health 0, does "Health check done." print? | YES | NO
+
+## ORDER MATTERS
+1 | In an if, else if chain, how many blocks run at most? | = 1 ~0
+2 | Java checks the conditions in a chain starting from here | THE TOP | THE BOTTOM; THE BEST MATCH; ALL AT ONCE
+3 | HealthCheckBroken checks health > 0, then >= 40, then >= 75. What prints for health 90? | Critical | Strong; Wounded; Defeated
+4 | The fix for HealthCheckBroken | REORDER THE CONDITIONS | CHANGE > TO >=; ADD AN else; USE SEPARATE if STATEMENTS
+5 | Separate if statements, not a chain: can more than one block run? | YES | NO
+
+## IF AND ELSE
+1 | if on its own is this kind of selection | ONE WAY / ONE-WAY / ONE WAY SELECTION
+2 | if with else is this kind of selection | TWO WAY | ONE WAY; MULTIWAY; NESTED
+3 | else runs only when this is true | EVERY CONDITION ABOVE IT WAS FALSE | ANY CONDITION WAS FALSE; THE FIRST CONDITION WAS TRUE; ALWAYS
+4 | The condition after if must be this type | boolean | int; String; double
+5 | if, then any number of else if, then an optional else | MULTIWAY SELECTION / MULTIWAY / MULTI-WAY SELECTION
+
+## AND, OR, NOT
+1 | What is true && false? | false | true
+2 | What is true \|\| false? | true | false
+3 | What is !true? | false | true
+4 | What is false \|\| false? | false | true
+5 | What is true \|\| true? | true | false
+
+## PRECEDENCE
+1 | Which runs first, && or \|\|? | && | \|\|; WHICHEVER IS ON THE LEFT; THEY ARE EQUAL
+2 | hasKey is true, lanternLit is false, fuel is 0. What is hasKey \|\| lanternLit && fuel > 0? | true | false
+3 | Same values. What is (hasKey \|\| lanternLit) && fuel > 0? | false | true
+4 | !fuel > 0 does not compile. What is the fix? | !(fuel > 0) | (!fuel) > 0; !fuel >! 0; not fuel > 0
+5 | The order: brackets, arithmetic, relational, &&, and last this | \|\| | !; ==; =
+
+## RANGES
+1 | health is 25. What is health >= 1 && health <= 30? | true | false
+2 | A range needs two comparisons joined with this | && | \|\|; !; ==
+3 | Which checks for health from 40 to 74? | health >= 40 && health <= 74 | health >= 40 \|\| health <= 74; 40 <= health <= 74; health > 40 && health < 74
+4 | health is 500. What is health >= 1 \|\| health <= 30? | true | false
+5 | Why does 1 <= health <= 30 not compile? | 1 <= health IS A boolean, AND <= CAN'T COMPARE A boolean WITH 30 | IT NEEDS BRACKETS; 30 MUST BE A double; <= IS NOT A JAVA OPERATOR
+
+## CELLAR DOOR
+1 | [graph: cellar-door] health 60, gold 20, hasKey true, lanternLit false. Which message prints? | The door opens, but it is too dark to go down. | You unlock the door and go down the stairs.; You bribe the guard or force the door open.; The door stays locked.
+2 | [graph: cellar-door] Same, but lanternLit is true. Which message prints? | You unlock the door and go down the stairs. | The door opens, but it is too dark to go down.; You bribe the guard or force the door open.; The door stays locked.
+3 | [graph: cellar-door] health 60, gold 20, hasKey false, lanternLit false. Which message prints? | The door stays locked. | You bribe the guard or force the door open.; The door opens, but it is too dark to go down.; You are too weak to move.
+4 | [graph: cellar-door] health 60, gold 50, hasKey false, lanternLit false. Which message prints? | You bribe the guard or force the door open. | The door stays locked.; The door opens, but it is too dark to go down.; You unlock the door and go down the stairs.
+5 | [graph: cellar-door] health 0, gold 90, hasKey true, lanternLit true. Which message prints? | You are too weak to move. | You unlock the door and go down the stairs.; You bribe the guard or force the door open.; The door stays locked.
+
+## STRINGS IN CONDITIONS
+1 | Compare the text of two Strings with this | equals | ==; compareTo; =
+2 | What is "Chapel".equals("chapel")? | false | true
+3 | String name = "Ada"; What is name.compareTo("Kai") < 0? | true | false
+4 | The player typed Cellar, read with nextLine(). What is typed == "Cellar"? | false | true
+5 | String room = "Chapel"; What is !room.equals("Cellar")? | true | false
+
+## ALPHABETICAL ORDER
+1 | compareTo gives 0 when this is true | THE TEXT IS THE SAME | THE FIRST STRING IS SHORTER; BOTH ARE EMPTY; THE FIRST LETTERS MATCH
+2 | "Kim".compareTo("Kai") is | POSITIVE | NEGATIVE; ZERO; true
+3 | What is "Ada".compareTo("Kai")? | = -10 ~0
+4 | Why does if (name.compareTo("Kai")) not compile? | compareTo RETURNS AN int, NOT A boolean | compareTo IS STATIC; "Kai" NEEDS SINGLE QUOTES; IT NEEDS AN else
+5 | What is "Zed".compareTo("Kai")? | = 15 ~0
+
+## GUARD GATE
+1 | [graph: guard-gate] gold 0, level 1, hasPass true, armed false. What prints? | Welcome, traveller. | Leave your weapon here, then enter.; You may pass.; Turn back.
+2 | [graph: guard-gate] gold 30, level 2, hasPass false, armed false. What prints? | You may pass. | Welcome, traveller.; Turn back.; Leave your weapon here, then enter.
+3 | [graph: guard-gate] gold 5, level 12, hasPass false, armed true. What prints? | You may pass. | Turn back.; Leave your weapon here, then enter.; Welcome, traveller.
+4 | [graph: guard-gate] gold 24, level 9, hasPass false, armed true. What prints? | Turn back. | You may pass.; Leave your weapon here, then enter.; Welcome, traveller.
+5 | [graph: guard-gate] A new branch, gold > 100, prints "Nice purse. The toll is 50." It must go before the branch with this condition | gold >= 25 \|\| level >= 10 | hasPass && !armed; hasPass && armed; the else
+
+## WHAT COMPILES?
+1 | int gold = 45; if (gold = 45) { ... } | DOES NOT COMPILE | COMPILES
+2 | boolean canBuy = gold >= 40; | COMPILES | DOES NOT COMPILE
+3 | int fuel = 0; if (!fuel > 0) { ... } | DOES NOT COMPILE | COMPILES
+4 | if (health >= 1 && health <= 30) { ... } | COMPILES | DOES NOT COMPILE
+5 | if (typed == "Cellar") { ... } | COMPILES, BUT COMPARES REFERENCES | DOES NOT COMPILE; COMPILES AND COMPARES THE TEXT; CRASHES AT RUN TIME
+
+FINAL | THE FLOWCHART | Kai has health 0, the key and 10 gold. The key question is moved in front of the health question. What happens? | KAI UNLOCKS THE DOOR | KAI IS TOO WEAK TO MOVE; THE DOOR STAYS LOCKED; KAI BRIBES THE GUARD
+FINAL | LOGIC DEMO | int fuel = 0; What is !(fuel > 0)? | true | false
+FINAL | GUARD GATE | [graph: guard-gate] gold 25, level 10, hasPass false, armed false. What prints? | You may pass. | Turn back.; Welcome, traveller.; Leave your weapon here, then enter.
+FINAL | ALPHABETICAL ORDER | What is "Kim".compareTo("Kai")? | = 8 ~0

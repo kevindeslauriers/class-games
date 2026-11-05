@@ -158,6 +158,22 @@ test('the ICD2O bank loads both units with its own teams', () => {
   assert.strictEqual(merchant.a, '121212', 'a repeated string is text, not a number with commas');
 });
 
+test('the ICS3U bank loads four units, and \\| writes Java\'s || in a clue', () => {
+  const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
+  const c = bank.course('ICS3U');
+  assert.ok(c, 'ICS3U course');
+  assert.deepStrictEqual(c.units.map(u => u.id), ['foundations', 'objects', 'io', 'decisions']);
+  c.units.forEach(u => { assert.strictEqual(u.cats.length, 12, u.id); assert.ok(u.finals.length >= 3, u.id); });
+  const all = c.units.flatMap(u => [...u.cats.flatMap(k => k.clues), ...u.finals]);
+  all.filter(x => x.img).forEach(x => assert.ok(bank.images.has(x.img), x.img));
+  const or = all.find(x => x.q === 'What is true || false?');
+  assert.ok(or, 'the || clue parses whole');
+  assert.deepStrictEqual([or.a, or.wrong], ['true', ['false']]);
+  const p = parseBank('# Course: X | X\n# Unit: u | U\nFINAL | C | a \\|\\| b | A \\| B / C', 't.txt');
+  assert.strictEqual(p.finals[0].q, 'a || b');
+  assert.strictEqual(p.finals[0].a, 'A | B');
+});
+
 test('the teacher can switch courses; graph clues reach the screens', () => {
   const bank = new Bank({ dir: path.join(__dirname, '..', 'class-clues') });
   const g = new Classroom({ bank, code: 'TEST', random: () => 0.5, setTimer: () => ({}), clearTimer: () => {} });
@@ -169,7 +185,7 @@ test('the teacher can switch courses; graph clues reach the screens', () => {
   g.updateSettings({ course: 'APMICRO' });
   g.updateSettings({ units: ['imperfect'] });
   assert.deepStrictEqual(g.settings.units, ['imperfect']);
-  assert.strictEqual(g.teacherView().courses.length, 8);
+  assert.strictEqual(g.teacherView().courses.length, 9);
   const a = g.join('Ann', 0);
   g.updateSettings({ rounds: 1, dd: false });
   g.start();

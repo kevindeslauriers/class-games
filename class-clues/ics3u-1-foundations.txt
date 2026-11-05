@@ -1,0 +1,94 @@
+# Course: ICS3U | Grade 11 Computer Science (ICS3U / AP CSA, Java)
+# Unit: foundations | Unit 1: Foundations of Programming and Tools
+# Teams: Compilers, Lanterns, Merchants, Hermits, Booleans, Objects, Strings, Crypt Keepers
+// Built from the ICS3U / AP CSA course context (November 5). Only what was taught.
+// Every code output here was run on Java. Write \| for a | in a clue (|| is \|\|).
+
+## TYPES
+1 | Which type holds only true or false? | boolean | int; double; String
+2 | What type is the literal 2.0? | double | int; boolean; String
+3 | Which of these is a reference type, not a primitive? | String | int; double; boolean
+4 | A fixed value written in the code, like 25 or "Cellar" | LITERAL / A LITERAL
+5 | Why does int n = 3.0; not compile? | POSSIBLE LOSSY CONVERSION (double to int needs a cast) | 3.0 IS A STRING; n IS A KEYWORD; AN int CAN'T HOLD 3
+
+## VARIABLES
+1 | int score = 25; then score = 35; What is score now? | = 35 ~0
+2 | int a = 4; int b = a; a = 9; What is b? | = 4 ~0
+3 | Which is a legal identifier? | moveCount | 2moves; move count; class
+4 | The naming convention for variables and methods, like lanternCharge | CAMELCASE / CAMEL CASE
+5 | Swap: int x = 3; int y = 8; int z = x; x = y; y = z; What is y? | = 3 ~0
+
+## PRINT IT
+1 | Which one moves to a new line after printing? | System.out.println | System.out.print; System.out.next; System.in.println
+2 | The escape sequence for a new line | \n | /n; \t; \newline
+3 | What does System.out.println("The leaflet says \"Welcome\""); print? | The leaflet says "Welcome" | The leaflet says \"Welcome\"; The leaflet says Welcome; It does not compile
+4 | A comment can start with // or look like this | /** */ | ##; <!-- -->; ''' '''
+5 | What does System.out.println("Saved in C:\\ICS3U\\src"); print? | Saved in C:\ICS3U\src | Saved in C:\\ICS3U\\src; Saved in C:ICS3Usrc; It does not compile
+
+## INTEGER DIVISION
+1 | What is 19 / 4 in Java? | = 4 ~0
+2 | What is 2 / 7 in Java? | = 0 ~0
+3 | What is 17 % 5? | = 2 ~0
+4 | What is 3 % 8? | = 3 ~0
+5 | Time converter: int totalSeconds = 7385; What is totalSeconds % 3600 / 60? | = 3 ~0
+
+## ORDER OF OPERATIONS
+1 | What is 2 + 3 * 4? | = 14 ~0
+2 | Which operators come right after parentheses, all at the same level? | * / % | + -; % only; * and +
+3 | What is 10 - 4 - 3? | = 3 ~0
+4 | Why is s1 + s2 + s3 / 3 the wrong average? | ONLY s3 IS DIVIDED BY 3 | IT ADDS IN THE WRONG ORDER; DIVISION IS DONE LAST; IT ROUNDS UP
+5 | What is 2 + 3 * 4 % 5 - 6 / 4? | = 3 ~0
+
+## CASTING
+1 | What is (int) 9.99? | = 9 ~0
+2 | What is (int) -8.9? | = -8 ~0
+3 | int a = 7; int b = 2; What is (double) a / b? | 3.5 | 3.0; 3; 4.0
+4 | What is (int) 2.5 * 4? | = 8 ~0
+5 | int a = 7; int b = 2; What is (double) (a / b)? | 3.0 | 3.5; 3; 4.0
+
+## DECIMALS
+1 | int with int gives an int. If at least one operand is a double, the result is a | double | int; String; boolean
+2 | double d = 7 / 2; What does System.out.println(d) print? | 3.0 | 3.5; 3; 4.0
+3 | double w = 5; stores this value | 5.0 | 5; 0.5; It does not compile
+4 | System.out.println(0.1 + 0.2) prints 0.30000000000000004. This is called | ROUND OFF ERROR / ROUNDOFF ERROR / ROUND-OFF ERROR
+5 | Score board: double percent = 85.66666666666667; What is (int) (percent * 10 + 0.5) / 10.0? | 85.7 | 85.6; 86.0; 857
+
+## ROUNDING
+1 | (int) truncates toward this | ZERO | THE NEAREST WHOLE NUMBER; THE NEXT EVEN NUMBER; INFINITY
+2 | To round a nonnegative double x to an int: (int) (x + ___) | = 0.5 ~0
+3 | What is (int) (2.7 + 0.5)? | = 3 ~0
+4 | Score board: double percent = 85.66666666666667; What is (int) (percent + 0.5)? | = 86 ~0
+5 | To round a negative double x to an int: (int) (x ___ 0.5) | - (MINUS) | + (PLUS); * (TIMES); / (DIVIDED BY)
+
+## COMPOUND ASSIGNMENT
+1 | int gold = 100; gold += 45; What is gold? | = 145 ~0
+2 | int gold = 27; gold++; What is gold? | = 28 ~0
+3 | int gold = 85; gold *= 3; What is gold? | = 255 ~0
+4 | int gold = 127; gold %= 50; What is gold? | = 27 ~0
+5 | int gold = 255; gold /= 2; What is gold? | 127 | 127.5; 128; 127.0
+
+## LIMITS
+1 | An int is stored in this many bytes | = 4 ~0
+2 | The largest int is Integer.___ | MAX_VALUE / INTEGER.MAX_VALUE / MAX VALUE
+3 | int gold = Integer.MAX_VALUE; gold++; What happens? | IT WRAPS AROUND TO THE SMALLEST int | IT CRASHES; IT STAYS AT THE MAX; IT BECOMES A double
+4 | Going past the largest or smallest int with no error is called | INTEGER OVERFLOW / OVERFLOW
+5 | Money is stored as an int number of these, to avoid round off error | CENTS
+
+## WHAT WENT WRONG?
+1 | int x = 5 / 0; compiles, but crashes with this | ArithmeticException | NullPointerException; InputMismatchException; StringIndexOutOfBoundsException
+2 | A missing semicolon is this kind of error | COMPILE TIME ERROR / COMPILE-TIME ERROR / COMPILE TIME / SYNTAX ERROR
+3 | The program runs with no crash but prints the wrong answer. This is a | LOGIC ERROR | COMPILE TIME ERROR; RUN TIME ERROR; ArithmeticException
+4 | Dividing an int by zero is caught at this time | RUN TIME | COMPILE TIME; NEVER; WHEN YOU SAVE
+5 | Declaring int score twice in the same method gives this | A COMPILE TIME ERROR | A RUN TIME ERROR; A LOGIC ERROR; NO ERROR
+
+## STEP BY STEP
+1 | A table with one row per statement and one column per variable | TRACE TABLE / A TRACE TABLE
+2 | In class, = is read as this word | GETS | EQUALS; COMPARES; LINKS
+3 | int x = 10; x = x + 5; x = x * 2; What is x? | = 30 ~0
+4 | Gold pouch: int gold = 100; gold += 45; gold -= 60; What is gold? | = 85 ~0
+5 | int a = 5; int b = a + 2; a = b * 3; What is a? | = 21 ~0
+
+FINAL | TIME CONVERTER | int totalSeconds = 7385; What is totalSeconds / 3600? | = 2 ~0
+FINAL | SCORE BOARD | int earned = 257; int outOf = 300; What is earned / outOf * 100? | = 0 ~0
+FINAL | CASTING | What is (int) (2.5 * 4)? | = 10 ~0
+FINAL | LIMITS | int gold = Integer.MAX_VALUE; gold++; What is gold? | -2147483648 | 2147483648; 2147483647; IT CRASHES

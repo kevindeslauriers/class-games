@@ -1,0 +1,93 @@
+# Course: ICS3U | Grade 11 Computer Science (ICS3U / AP CSA, Java)
+# Unit: objects | Unit 2: Methods, Using Objects, and APIs
+// Lantern burns 2 fuel per minute, only while lit, and fuel never goes below 0.
+// Merchant(name) has 10 potions at 15 gold. Player(name) has 50 gold; gold never goes below 0.
+
+## BLUEPRINTS
+1 | The class is the blueprint. One thing built from it is this | AN OBJECT / OBJECT / AN INSTANCE / INSTANCE
+2 | The only keyword that creates an object | new | class; static; void
+3 | An object's attributes and their current values | STATE
+4 | A constructor has the same name as the class and no ___ | RETURN TYPE / A RETURN TYPE
+5 | Which call does not compile? | Lantern.light() | spare.light(); spare.burn(5); new Lantern(45)
+
+## LANTERN TRACE
+1 | A full Lantern (100 fuel) is lit and burned 12 minutes. What is getFuel()? | = 76 ~0
+2 | new Lantern(30), then burn(5) without light(). What is getFuel()? | = 30 ~0
+3 | new Lantern(45), light(), burn(10). What is minutesLeft()? | = 12 ~0
+4 | new Lantern(50), light(), burn(8), extinguish(), burn(5). What is getFuel()? | = 34 ~0
+5 | new Lantern(20), light(), burn(15). What is getFuel()? | = 0 ~0
+
+## WHAT COMES BACK
+1 | A method that changes the object and gives nothing back has this return type | VOID
+2 | Which line compiles? | int f = lamp.getFuel() | int f = lamp.isLit(); int left = greta.restock(5); int b = lamp.burn(5)
+3 | int left = greta.restock(5); does not compile because restock is | void | static; private; overloaded
+4 | lamp.getFuel(); on its own line is legal, but the value is | LOST | PRINTED; STORED IN fuel; DOUBLED
+5 | Methods that start with get and return part of an object's state | ACCESSOR METHODS / ACCESSOR METHOD / ACCESSORS / ACCESSOR
+
+## REFERENCES
+1 | A reference variable with no object holds this | null
+2 | Calling a method on null crashes with this | NullPointerException | ArithmeticException; InputMismatchException; FileNotFoundException
+3 | Lantern c = a; makes a and c two names for one object. This is called | ALIASING
+4 | ReviewDriver: Lantern a = new Lantern(); Lantern c = a; a.light(); c.burn(10); What is a.getFuel()? | = 80 ~0
+5 | Merchant bram = new Merchant("Bram", 4, 25); Merchant shop = bram; shop.restock(10); What is bram.getStock()? | = 14 ~0
+
+## SHOP LAB
+1 | Merchant greta = new Merchant("Greta"); What is greta.getPrice()? | = 15 ~0
+2 | Merchant bram = new Merchant("Bram", 4, 25); What is bram.costOf(3)? | = 75 ~0
+3 | greta charges 15 a potion. What is greta.costOf(2, 5)? | = 25 ~0
+4 | Player ada = new Player("Ada", 100); ada.spend(75); ada.earn(greta.costOf(4)); What is ada.getGold()? | = 85 ~0
+5 | Which call does not compile? | greta.costOf(1.5) | greta.costOf(2); greta.costOf(2, 5); greta.sell(3)
+
+## HEADERS AND SIGNATURES
+1 | The value passed in a call | ARGUMENT | PARAMETER; SIGNATURE; RETURN TYPE
+2 | A variable declared in the method header | PARAMETER / A PARAMETER
+3 | What is the signature of public int costOf(int quantity, int discount)? | costOf(int, int) | int costOf(int, int); costOf(quantity, discount); public int costOf
+4 | Methods with the same name and different signatures | OVERLOADING / OVERLOADED / METHOD OVERLOADING
+5 | Which pair CANNOT be in the same class? | int area(int w) and double area(int w) | int area(int w) and int area(double w); int area(int w) and int area(int w, int h); int area(int w, double h) and int area(double w, int h)
+
+## STATIC
+1 | A static method is called with this before the dot | THE CLASS NAME | AN OBJECT; new; THE PACKAGE NAME
+2 | Each gem is worth 25 gold. What is GameMath.totalGold(40, 2)? | = 90 ~0
+3 | GameMath.average(7, 8) returns (a + b) / 2.0. What does it return? | 7.5 | 7; 7.0; 8.0
+4 | Why is main static? | JAVA RUNS IT BEFORE ANY OBJECTS EXIST | IT IS FASTER; IT RETURNS NOTHING; IT IS PUBLIC
+5 | One copy shared by every object of the class | CLASS VARIABLE / STATIC VARIABLE / A CLASS VARIABLE
+
+## MATH CLASS
+1 | What is Math.abs(-7)? | = 7 ~0
+2 | What does Math.sqrt(49) print? | 7.0 | 7; 49.0; 3.5
+3 | What does Math.pow(2, 3) print? | 8.0 | 8; 6.0; 9.0
+4 | Cellar at (1, 2), treasure room at (4, 6): Math.sqrt(Math.pow(4 - 1, 2) + Math.pow(6 - 2, 2)) | 5.0 | 5; 7.0; 25.0
+5 | Why does int p = Math.pow(2, 3); not compile? | pow RETURNS A double | pow IS AN INSTANCE METHOD; Math NEEDS AN IMPORT; 8 IS TOO BIG
+
+## RANDOM
+1 | Math.random() returns a double from 0.0 up to, but not including, this | 1.0 | 0.9; 10.0; 100.0
+2 | int die = (int) (Math.random() * 6) + 1; What is the smallest value? | = 1 ~0
+3 | int damage = (int) (Math.random() * 8) + 5; What is the largest value? | = 12 ~0
+4 | (int) Math.random() * 6 + 1 is always this | = 1 ~0
+5 | For a random int from 10 to 20 inclusive, multiply Math.random() by this | = 11 ~0
+
+## STRING INDEXES
+1 | What is "Lantern".length()? | = 7 ~0
+2 | What is "Lantern".substring(1, 4)? | ant | antr; Lan; nte
+3 | What is "Lantern".indexOf("n")? | = 2 ~0
+4 | What is "Lantern".indexOf("N")? | = -1 ~0
+5 | What happens with "Lantern".substring(3, 8)? | StringIndexOutOfBoundsException | It gives tern; It gives "tern "; NullPointerException
+
+## TEXT TOOLS
+1 | What is "Cellar".equals("cellar")? | false | true
+2 | "apple".compareTo("banana") is | NEGATIVE | POSITIVE; ZERO; true
+3 | "Zork".compareTo("apple") is | NEGATIVE | POSITIVE; ZERO; false
+4 | String room = "Cellar"; room.substring(0, 3); System.out.println(room); prints | Cellar | Cel; lar; Cell
+5 | What is "Lantern".substring(7)? | THE EMPTY STRING "" | n; null; StringIndexOutOfBoundsException
+
+## JOINING STRINGS
+1 | What is "Gold: " + 4 + 5? | Gold: 45 | Gold: 9; Gold: 4 5; It does not compile
+2 | What is 4 + 5 + " gold"? | 9 gold | 45 gold; 4 5 gold; It does not compile
+3 | What is "Gold: " + (4 + 5)? | Gold: 9 | Gold: 45; Gold: (4 + 5); It does not compile
+4 | A String's characters can never change. Strings are | IMMUTABLE
+5 | String door = "Cellar"; door += " Door"; door refers to this | Cellar Door | CellarDoor; Cellar; Door
+
+FINAL | STRING POOL | What is new String("Cellar") == new String("Cellar")? | false | true
+FINAL | REVIEW DRIVER | Lantern b = new Lantern(40); b.light(); b.burn(5); What is b.getFuel()? | = 30 ~0
+FINAL | SHOP LAB | Merchant greta = new Merchant("Greta"); greta.sell(3); greta.restock(5); What is greta.getStock()? | = 12 ~0
+FINAL | STRINGS | What is "Lantern".substring("Lantern".indexOf("t"))? | tern | ern; Lantern; t

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 245" width="640" height="245">
+<rect x="0" y="0" width="640" height="245" fill="#ffffff"/>
+<text x="18" y="28" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#111">GuardGate</text>
+<text x="18" y="56" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan fill="#1f4fd1" font-weight="bold">if</tspan><tspan> (hasPass &amp;&amp; !armed) {</tspan></text>
+<text x="18" y="77" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan>    System.out.println(</tspan><tspan fill="#0a7a2f">"Welcome, traveller."</tspan><tspan>);</tspan></text>
+<text x="18" y="98" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan>} </tspan><tspan fill="#1f4fd1" font-weight="bold">else</tspan><tspan> </tspan><tspan fill="#1f4fd1" font-weight="bold">if</tspan><tspan> (hasPass &amp;&amp; armed) {</tspan></text>
+<text x="18" y="119" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan>    System.out.println(</tspan><tspan fill="#0a7a2f">"Leave your weapon here, then enter."</tspan><tspan>);</tspan></text>
+<text x="18" y="140" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan>} </tspan><tspan fill="#1f4fd1" font-weight="bold">else</tspan><tspan> </tspan><tspan fill="#1f4fd1" font-weight="bold">if</tspan><tspan> (gold >= 25 || level >= 10) {</tspan></text>
+<text x="18" y="161" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan>    System.out.println(</tspan><tspan fill="#0a7a2f">"You may pass."</tspan><tspan>);</tspan></text>
+<text x="18" y="182" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan>} </tspan><tspan fill="#1f4fd1" font-weight="bold">else</tspan><tspan> {</tspan></text>
+<text x="18" y="203" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan>    System.out.println(</tspan><tspan fill="#0a7a2f">"Turn back."</tspan><tspan>);</tspan></text>
+<text x="18" y="224" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#111" xml:space="preserve"><tspan>}</tspan></text>
+</svg>

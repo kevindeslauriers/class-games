@@ -665,6 +665,70 @@ G['oblique-triangle'] = triangle({ pts: [[90, 370], [560, 370], [330, 70]],
   G['galvanic-cell'] = out.join('\n');
 }
 
+/* ---------- ICS3U: Java code from the Day 17 lesson ---------- */
+// The class's own code, shown with clues that ask what it prints.
+function codeSvg(title, lines) {
+  const size = 15, lh = 21, cw = 9.6;
+  const w = Math.ceil(44 + Math.max(title.length * 9.5, ...lines.map(l => l.length * cw)));
+  const h = 56 + lines.length * lh;
+  const out = [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}">`,
+    `<rect x="0" y="0" width="${w}" height="${h}" fill="#ffffff"/>`,
+    `<text x="18" y="28" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#111">${esc(title)}</text>`];
+  lines.forEach((l, i) => {
+    const y = 56 + i * lh;
+    const parts = [];
+    let last = 0;
+    // Strings green, keywords blue, the rest black.
+    const tokens = /("[^"]*")|\b(if|else|boolean|int|String|true|false|new)\b/g;
+    let m;
+    while ((m = tokens.exec(l))) {
+      if (m.index > last) parts.push(`<tspan>${esc(l.slice(last, m.index))}</tspan>`);
+      parts.push(`<tspan fill="${m[1] ? '#0a7a2f' : '#1f4fd1'}"${m[1] ? '' : ' font-weight="bold"'}>${esc(m[0])}</tspan>`);
+      last = m.index + m[0].length;
+    }
+    if (last < l.length) parts.push(`<tspan>${esc(l.slice(last))}</tspan>`);
+    out.push(`<text x="18" y="${y}" font-family="Consolas, 'Courier New', monospace" font-size="${size}" fill="#111" xml:space="preserve">${parts.join('')}</text>`);
+  });
+  out.push('</svg>');
+  return out.join('\n');
+}
+G['health-check'] = codeSvg('HealthCheck (health is read with input.nextInt())', [
+  'if (health >= 75) {',
+  '    System.out.println("Strong");',
+  '} else if (health >= 40) {',
+  '    System.out.println("Wounded");',
+  '} else if (health > 0) {',
+  '    System.out.println("Critical");',
+  '} else {',
+  '    System.out.println("Defeated");',
+  '}',
+  'System.out.println("Health check done.");',
+]);
+G['cellar-door'] = codeSvg('CellarDoor', [
+  'if (health <= 0) {',
+  '    System.out.println("You are too weak to move.");',
+  '} else if (hasKey && lanternLit) {',
+  '    System.out.println("You unlock the door and go down the stairs.");',
+  '} else if (hasKey && !lanternLit) {',
+  '    System.out.println("The door opens, but it is too dark to go down.");',
+  '} else if (gold >= 50 || health >= 80) {',
+  '    System.out.println("You bribe the guard or force the door open.");',
+  '} else {',
+  '    System.out.println("The door stays locked.");',
+  '}',
+]);
+G['guard-gate'] = codeSvg('GuardGate', [
+  'if (hasPass && !armed) {',
+  '    System.out.println("Welcome, traveller.");',
+  '} else if (hasPass && armed) {',
+  '    System.out.println("Leave your weapon here, then enter.");',
+  '} else if (gold >= 25 || level >= 10) {',
+  '    System.out.println("You may pass.");',
+  '} else {',
+  '    System.out.println("Turn back.");',
+  '}',
+]);
+
 fs.mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(G)) fs.writeFileSync(path.join(OUT, name + '.svg'), svg + '\n');
 console.log(`Wrote ${Object.keys(G).length} graphs to ${path.relative(process.cwd(), OUT)}`);

@@ -1,0 +1,92 @@
+# Course: ICS3U | Grade 11 Computer Science (ICS3U / AP CSA, Java)
+# Unit: io | Unit 3: Input, Output, and Data Representation
+// Day 11 (Scanner), the number systems lesson and Day 16 (Loading the World).
+
+## SCANNER BASICS
+1 | Scanner is in this package, so the file needs an import | java.util | java.lang; java.io; java.scanner
+2 | Scanner input = new Scanner(System.in); System.in is connected to this | THE KEYBOARD | THE SCREEN; A FILE; THE INTERNET
+3 | Which line does not compile? | int n = input.nextDouble() | int gold = input.nextInt(); double w = input.nextInt(); String s = input.nextLine()
+4 | Scanner.nextInt() does not compile because nextInt is this kind of method | INSTANCE METHOD / AN INSTANCE METHOD / INSTANCE
+5 | Without import java.util.Scanner; the error is "cannot find ___" | SYMBOL
+
+## WORD BY WORD
+1 | A run of characters with no spaces or Enters | TOKEN / A TOKEN
+2 | Typed on one line: 40 7. int a = input.nextInt(); int b = input.nextInt(); What is a / b? | = 5 ~0
+3 | Typed: Iron Sword. String first = input.next(); What is first? | Iron | Iron Sword; Sword; " Sword"
+4 | Then String rest = input.nextLine(); What is rest? | " Sword" (WITH A LEADING SPACE) | "Sword"; "Iron Sword"; ""
+5 | nextDouble() reads the typed token 4 as this | 4.0 | 4; 0.4; It crashes
+
+## LEFT BEHIND
+1 | int count = input.nextInt(); String weapon = input.nextLine(); The user types 3 and Enter. What is weapon? | THE EMPTY STRING "" | "3"; The next line typed; null
+2 | Why? nextInt() leaves this behind | THE ENTER | THE NUMBER; A SPACE; THE SCANNER
+3 | The fix: one extra call to this method, on its own line | nextLine / input.nextLine() / nextLine()
+4 | Does the same trap happen after nextBoolean()? | YES | NO
+5 | exits.txt is read with next() only. Does it need the extra nextLine()? | NO | YES
+
+## BAD INPUT
+1 | The player types ten for nextInt(). This exception | InputMismatchException | ArithmeticException; NullPointerException; NumberFormatException
+2 | Does the compiler catch bad typed input? | NO | YES
+3 | A reading call on its own line: the value is lost, but the Scanner still does this | MOVES FORWARD | STAYS PUT; CLOSES; STARTS OVER
+4 | VS Code warns "Resource leak" when a Scanner is never | CLOSED / CLOSE
+5 | Prompts use this so the cursor stays on the line where the user types | System.out.print | System.out.println; input.nextLine; System.in.print
+
+## DATA ON DISK
+1 | This class makes an object from a path like "src/day11/cellar.txt" | File | Scanner; Path; String
+2 | A method that makes a Scanner on a File needs this at the end of its header | throws IOException | throws Scanner; import java.io; static void
+3 | A wrong path compiles but crashes with this | FileNotFoundException | InputMismatchException; NullPointerException; ArithmeticException
+4 | hasNext() returns this at the end of the file | false | true; null; -1
+5 | RoomReader reads Cellar with nextLine(), skips the description, then calls nextInt(). What happens? | InputMismatchException | It reads 40; It reads 0; FileNotFoundException
+
+## BINARY
+1 | Binary is base this | = 2 ~0
+2 | Binary 110010 in decimal | = 50 ~0
+3 | Decimal 37 in binary | 100101 | 110001; 101001; 100111
+4 | The largest number with 6 binary digits, in decimal | = 63 ~0
+5 | Decimal 100 in binary | 1100100 | 100; 1010000; 1100010
+
+## HEX AND OCTAL
+1 | In hexadecimal, F stands for this decimal value | = 15 ~0
+2 | Hexadecimal 2F in decimal | = 47 ~0
+3 | Decimal 200 in hexadecimal | C8 | 2C; C2; 8C
+4 | Octal 17 in decimal | = 15 ~0
+5 | Binary 10111110 in hexadecimal | BE | EB; B14; 190
+
+## DIGIT VALUES
+1 | Binary place values go 1, 2, 4, 8, 16, then this | = 32 ~0
+2 | Hexadecimal place values go 1, 16, then this | = 256 ~0
+3 | Octal uses the digits 0 to this | = 7 ~0
+4 | With n binary digits there are this many different values | 2ⁿ | 2ⁿ − 1; n²; 2n
+5 | Binary to hexadecimal: group the binary digits in fours, starting from this side | THE RIGHT | THE LEFT; THE MIDDLE; EITHER SIDE
+
+## FILE LAYOUT
+1 | All the lines that describe one thing, such as one room | RECORD / A RECORD
+2 | One piece of a record, such as the room's name | FIELD / A FIELD
+3 | The character that separates pieces of data, like the space in exits.txt | DELIMITER / A DELIMITER / SEPARATOR
+4 | In rooms.txt each room has 3 lines: the name, the description and this | dark (true or false) | weight; exits; gold
+5 | Leaving a line out of a fixed layout file usually ends in this | InputMismatchException | FileNotFoundException; ArithmeticException; NullPointerException
+
+## KEY VALUE PAIRS
+1 | In the line name=Crypt, the key is this | name | Crypt; =; name=
+2 | String line = "name=Crypt"; What is line.indexOf("=")? | = 4 ~0
+3 | What is line.substring(line.indexOf("=") + 1)? | Crypt | =Crypt; name; rypt
+4 | String darkLine = "dark=true"; darkLine.substring(darkLine.indexOf("=") + 1).equals("true") gives | true | "true"; false; It does not compile
+5 | A line with no = gives back the whole line, because indexOf returns this | = -1 ~0
+
+## BUILDING THE MAP
+1 | world.getRoom gives back this for a name that isn't there | null | ""; an empty Room; -1
+2 | Then room.addItem(item) crashes with this | NullPointerException | InputMismatchException; FileNotFoundException; ArithmeticException
+3 | connect adds a one way exit. Going both ways needs this many calls | = 2 ~0
+4 | A misspelled room name in exits.txt makes connect do this | PRINT A WORLD WARNING AND ADD NOTHING | CRASH; ADD THE ROOM ANYWAY; IGNORE THE CASE
+5 | The full load with the Crypt prints "Rooms loaded:" and this number | = 4 ~0
+
+## OBJECTS IN MEMORY
+1 | room = world.getRoom(roomName); creates how many new objects? | = 0 ~0
+2 | Primitives like int and boolean are stored inside the variable. Everything else is reached by a | REFERENCE / A REFERENCE
+3 | getRoom compares room names with this | equals | ==; compareTo; indexOf
+4 | After new Room(name, description), name = "Hallway"; runs. Does the Room's name change? | NO | YES
+5 | room = new Room(name, description); runs again for the next room. Is the first Room lost? | NO, THE WORLD STILL REFERS TO IT | YES, IT IS DELETED; YES, IT IS REPLACED; ONLY IF THE NAMES MATCH
+
+FINAL | NUMBER SYSTEMS | Binary 1011010 in hexadecimal | 5A | A5; 90; 5B
+FINAL | NUMBER SYSTEMS | Decimal 64 in octal | = 100 ~0
+FINAL | SHOP COUNTER | Ada has 100 gold. Greta charges 15 a potion. int cost = greta.costOf(3, 5); ada.spend(cost); How much gold does Ada have? | = 60 ~0
+FINAL | MERCHANT LOADER | merchant.txt holds Bram, 4, 25. Ada has 100 gold and buys 2 potions with trader.costOf(2). How much gold does Ada have? | = 50 ~0
