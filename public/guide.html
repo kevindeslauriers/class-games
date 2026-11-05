@@ -103,9 +103,10 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <dt>Lessons from class notes</dt><dd>Some courses also list lessons built from a set of class notes. Tick a lesson on its own and every category comes from those notes, or tick it with units to mix them. Lessons start unticked.</dd>
       <dt><span class="ui">Choose clues</span></dt><dd>Shows every clue and answer in the ticked units. Set each clue or whole category to <b>Use</b>, <b>Skip</b> or <b>Must</b>. A skipped clue’s square starts empty on the board; a skipped category never appears. A must category (or one with a must clue) goes on the first board. A must on a final clue means the final comes from your musts. Your choices are saved on this computer, per course.</dd>
       <dt>Teams</dt><dd>2 to 8. Students on a team you remove move to the smallest team.</dd>
-      <dt>Boards</dt><dd>One board, or two with the second worth double.</dd>
+      <dt>Boards</dt><dd>Two boards (the default): the second board is worth double and comes before the final clue. One board is there for short periods. Two boards need 12 categories in play; with fewer there is one board.</dd>
       <dt>Time per clue</dt><dd>20 to 90 seconds. Number answers get 50% more time; the final clue gets double.</dd>
       <dt>Teams pick the clues</dt><dd>On: teams take turns picking on their devices. Off: you click every clue. Teams still take turns for Daily Doubles.</dd>
+      <dt>Wrong answers lose points</dt><dd>On (the default): a wrong answer loses the clue's value for the student and counts against the team. No answer costs nothing. Off: wrong answers earn nothing.</dd>
       <dt>Daily Doubles</dt><dd>Hidden squares. The team whose turn it is agrees on a wager.</dd>
       <dt>Final clue</dt><dd>Every team wagers, then everyone answers one last clue.</dd>
     </dl>
@@ -120,8 +121,8 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
   <section>
     <h2>How scoring works</h2>
     <ul class="plain">
-      <li><b>Students:</b> a right answer earns the clue's value (100 to 500, doubled on the second board). The board shows only the top three students.</li>
-      <li><b>Teams:</b> the team earns the clue's value times the share of its members who got it right. If 3 of 4 are right on a 400 clue, the team gets 300. So every student's answer counts.</li>
+      <li><b>Students:</b> a right answer earns the clue's value (100 to 500, doubled on the second board). With <b>Wrong answers lose points</b> ticked (the default), a wrong answer loses the value. No answer costs nothing. The board shows only the top three students.</li>
+      <li><b>Teams:</b> every student answers separately. The team earns the clue's value times the share of its members who got it right, minus the share who got it wrong. On a 400 clue with 4 players: 3 right and 1 wrong gives 400 × (3 − 1) ÷ 4 = 200; 3 right and 1 silent gives 300; 1 right and 3 wrong gives −200. With the box unticked, wrong answers just earn nothing (3 of 4 right is 300).</li>
       <li><b>Daily Double and final clue:</b> the team wins its wager if at least half of its members are right, and loses it if not.</li>
     </ul>
   </section>

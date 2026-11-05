@@ -190,6 +190,7 @@ function renderLobby(v) {
   $('#secs').value = String(st.secs);
   $('#dd').checked = st.dd;
   $('#teamsPick').checked = st.teamsPick;
+  $('#penalty').checked = st.penalty;
   $('#final').checked = st.final;
   const p = (v.picks || {})[st.course];
   const sum = $('#picksSum');
@@ -209,8 +210,8 @@ function restoreSettings(v) {
 }
 function saveSettings(v) {
   if (!V.restored || v.phase !== 'lobby') return;
-  const { course, units, teams, rounds, secs, dd, final, teamsPick } = v.settings;
-  try { localStorage.setItem('class-settings', JSON.stringify({ course, units, teams, rounds, secs, dd, final, teamsPick, picks: v.picks || {} })); } catch (e) {}
+  const { course, units, teams, rounds, secs, dd, final, teamsPick, penalty } = v.settings;
+  try { localStorage.setItem('class-settings', JSON.stringify({ course, units, teams, rounds, secs, dd, final, teamsPick, penalty, picks: v.picks || {} })); } catch (e) {}
 }
 
 /* ---------- choosing clues ---------- */
@@ -345,6 +346,7 @@ $('#rounds').onchange = e => cmd('settings', { settings: { rounds: +e.target.val
 $('#secs').onchange = e => cmd('settings', { settings: { secs: +e.target.value } });
 $('#dd').onchange = e => cmd('settings', { settings: { dd: e.target.checked } });
 $('#teamsPick').onchange = e => cmd('settings', { settings: { teamsPick: e.target.checked } });
+$('#penalty').onchange = e => cmd('settings', { settings: { penalty: e.target.checked } });
 $('#final').onchange = e => cmd('settings', { settings: { final: e.target.checked } });
 $('#balance').onclick = () => cmd('balance');
 $('#newClass').onclick = () => {
@@ -496,7 +498,7 @@ function teamResults(v, st, c) {
     if (!r.n && !(c.dd && c.dd.team === t)) return;
     if (c.dd && c.dd.team !== t) return;
     const card = el('div', 'tr'); card.style.borderColor = team(t).color;
-    card.append(el('div', 'nm', team(t).name), el('div', 'r', `${r.right} of ${r.n} right`));
+    card.append(el('div', 'nm', team(t).name), el('div', 'r', `${r.right} of ${r.n} right` + (r.wrong && v.settings.penalty && !c.final ? ` · ${r.wrong} wrong` : '')));
     card.append(el('div', 'p' + (r.pts > 0 ? ' pos' : r.pts < 0 ? ' neg' : ''), (r.pts > 0 ? '+' : '') + pts(r.pts)));
     box.append(card);
   });

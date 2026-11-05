@@ -256,8 +256,9 @@ function results(v, me) {
   const card = h('div', { className: 'card' }, catLine(c));
   if (!a) card.append(h('p', { className: 'result no' }, 'No answer'));
   else if (a.right) card.append(h('p', { className: 'result ok' }, `Right! +${pts(c.value)}`));
-  else card.append(h('p', { className: 'result no' }, 'Not quite'));
-  card.append(h('p', { className: 'q small', html: rich(c.q) }), graph(c, true));
+  else card.append(h('p', { className: 'result no' }, v.settings.penalty && !c.final ? `Not quite −${pts(c.value)}` : 'Not quite'));
+  card.append(h('p', { className: 'q small', html: rich(c.q) }));
+  if (c.img) card.append(graph(c, true));
   card.append(h('p', { className: 'answer', html: `Answer: <b>${rich(c.a)}</b>` }));
   if (a && !a.right && c.type !== 'mc') card.append(h('p', { className: 'hint' }, `You wrote: ${a.text}`));
   if (c.type === 'mc') {
@@ -273,7 +274,7 @@ function results(v, me) {
   if (v.phase === 'reveal') {
     const tr = st.teams[me.team];
     if (c.dd && c.dd.team !== me.team) facts.append(h('div', {}, h('b', {}, '–'), h('small', {}, `only ${team(c.dd.team).name}’ points were on the line`)));
-    else if (tr) facts.append(h('div', {}, h('b', { className: tr.pts < 0 ? 'neg' : 'pos' }, `${tr.pts >= 0 ? '+' : ''}${pts(tr.pts)}`), h('small', {}, `${team(me.team).name}: ${tr.right} of ${tr.n} right`)));
+    else if (tr) facts.append(h('div', {}, h('b', { className: tr.pts < 0 ? 'neg' : 'pos' }, `${tr.pts >= 0 ? '+' : ''}${pts(tr.pts)}`), h('small', {}, `${team(me.team).name}: ${tr.right} of ${tr.n} right` + (tr.wrong && v.settings.penalty ? `, ${tr.wrong} wrong` : ''))));
   } else if (v.final && v.final.results) {
     const r = v.final.results[me.team];
     facts.append(h('div', {}, r ? h('b', { className: r.pts < 0 ? 'neg' : 'pos' }, `${r.pts >= 0 ? '+' : ''}${pts(r.pts)}`) : h('b', {}, '…'),

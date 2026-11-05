@@ -277,10 +277,16 @@ test('everyone answers; teams earn their share', () => {
   runTimer();
   assert.strictEqual(g.phase, 'reveal');
   const sc = g.scores();
-  // Team 0: Ann right, Ben wrong: half of 100. Team 1: Cy right, "ann 2" silent: half.
-  assert.deepStrictEqual(sc.teams, [50, 50]);
+  // Wrong answers lose points: Team 0 has Ann right and Ben wrong, so 100 × (1 − 1) / 2.
+  // Team 1 has Cy right and "ann 2" silent (no answer costs nothing): 100 × 1 / 2.
+  assert.deepStrictEqual(sc.teams, [0, 50]);
   assert.strictEqual(sc.students.get(a.id), 100);
-  assert.strictEqual(sc.students.get(b.id), 0);
+  assert.strictEqual(sc.students.get(b.id), -100);
+  // With the penalty off, only right answers count.
+  g.settings.penalty = false;
+  assert.deepStrictEqual(g.scores().teams, [50, 50]);
+  assert.strictEqual(g.scores().students.get(b.id), 0);
+  g.settings.penalty = true;
   const st = g.stats(g.rec);
   assert.strictEqual(st.pct, 50);
   assert.strictEqual(st.dist.find(d => d.right).count, 2);
@@ -305,7 +311,7 @@ test('typed and number answers, accepting a near miss, and the report', () => {
   assert.strictEqual(g.rec.answers.get(b.id).right, true);
   assert.deepStrictEqual(g.scores().teams, [200, 200]);
   g.accept(grp.key);
-  assert.deepStrictEqual(g.scores().teams, [200, 0]);
+  assert.deepStrictEqual(g.scores().teams, [200, -200], 'a wrong answer loses the value');
   g.next();
   g.choose(null, 0, 2);
   assert.throws(() => g.answer(a.id, 'fast'), /number/);
@@ -316,7 +322,7 @@ test('typed and number answers, accepting a near miss, and the report', () => {
   g.next();
   const csv = g.report();
   assert.match(csv, /"Ann","Protons","500","2","2"/);
-  assert.match(csv, /"Ben","Neutrons","0","0","2"/);
+  assert.match(csv, /"Ben","Neutrons","-500","0","2"/);
   assert.match(csv, /"1","1","CAT [A-F]","200"/);
 });
 
