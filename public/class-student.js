@@ -254,9 +254,12 @@ function results(v, me) {
   const c = v.clue;
   const a = me.answer;
   const card = h('div', { className: 'card' }, catLine(c));
-  if (!a) card.append(h('p', { className: 'result no' }, 'No answer'));
-  else if (a.right) card.append(h('p', { className: 'result ok' }, `Right! +${pts(c.value)}`));
-  else card.append(h('p', { className: 'result no' }, v.settings.penalty && !c.final ? `Not quite −${pts(c.value)}` : 'Not quite'));
+  // The final clue is worth the student's own wager; other clues their value.
+  const stake = c.final ? (me.finalWager ? me.finalWager.amount : 0) : c.value;
+  const lose = c.final ? stake > 0 : v.settings.penalty;
+  if (!a) card.append(h('p', { className: 'result no' }, c.final && stake ? `No answer −${pts(stake)}` : 'No answer'));
+  else if (a.right) card.append(h('p', { className: 'result ok' }, `Right! +${pts(stake)}`));
+  else card.append(h('p', { className: 'result no' }, lose ? `Not quite −${pts(stake)}` : 'Not quite'));
   card.append(h('p', { className: 'q small', html: rich(c.q) }));
   if (c.img) card.append(graph(c, true));
   card.append(h('p', { className: 'answer', html: `Answer: <b>${rich(c.a)}</b>` }));
@@ -286,12 +289,12 @@ function results(v, me) {
 
 function finalWager(v, me) {
   const card = h('div', { className: 'card' }, h('h1', {}, 'Final clue'), h('div', { className: 'cat' }, h('span', {}, `Category: ${v.final.category}`)));
-  const max = v.final.maxes[me.team];
-  if (!max) card.append(h('p', {}, 'Your team has no points to wager, but answer anyway for your own points.'));
+  const max = me.finalMax || 0;
+  if (!max) card.append(h('p', {}, 'You have no points to wager, but answer anyway: a right answer still counts for your team.'));
   else {
-    card.append(h('p', {}, 'Agree on your team’s wager. Your team wins it if at least half of you get the final clue right. Anyone on the team can enter it; the last one entered counts.'));
-    if (me.finalWager) card.append(h('p', { className: 'locked' }, `Your team’s wager: ${pts(me.finalWager.amount)} (entered by ${me.finalWager.by})`));
-    card.append(wagerBox('fw', max, n => send('finalWager', { amount: n }), `Team wager (0 to ${pts(max)})`));
+    card.append(h('p', {}, `Wager up to your ${pts(max)} points. Get the final clue right and you win your wager; get it wrong or leave it blank and you lose it. Your team gets the average of its players’ results.`));
+    if (me.finalWager) card.append(h('p', { className: 'locked' }, `Your wager: ${pts(me.finalWager.amount)} (you can change it until the clue appears)`));
+    card.append(wagerBox('fw', max, n => send('finalWager', { amount: n }), `Your wager (0 to ${pts(max)})`));
   }
   return card;
 }

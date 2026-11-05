@@ -326,7 +326,7 @@ test('typed and number answers, accepting a near miss, and the report', () => {
   assert.match(csv, /"1","1","CAT [A-F]","200"/);
 });
 
-test('a Daily Double is a team wager; the final clue too', () => {
+test('a Daily Double is a team wager; in the final each student wagers their own points', () => {
   const { g, runTimer } = setup();
   g.updateSettings({ teams: 2, rounds: 1, dd: true, final: true });
   const a = g.join('Ann', 0), b = g.join('Ben', 0), c = g.join('Cy', 1);
@@ -348,10 +348,18 @@ test('a Daily Double is a team wager; the final clue too', () => {
   g.next();
   g.endRound();
   assert.strictEqual(g.phase, 'finalWager');
-  assert.strictEqual(g.finalMax(1), 0);
-  assert.throws(() => g.finalWager(c.id, null, 10), /no points/);
+  // Each student wagers their own points. Ben lost the Daily Double clue, so he has none.
+  const v = g.records[0].value;
+  assert.strictEqual(g.finalMax(a.id), v);
+  assert.strictEqual(g.finalMax(b.id), 0);
+  assert.throws(() => g.finalWager(b.id, null, 10), /no points/);
+  assert.throws(() => g.finalWager(null, 0, 10), /own device/);
+  assert.throws(() => g.finalWager(a.id, null, v + 1), /Wager from 0/);
   g.finalWager(a.id, null, 300);
-  assert.strictEqual(g.phase, 'finalClue', 'every team that can wager has');
+  assert.strictEqual(g.phase, 'finalWager', 'Cy has not wagered yet');
+  assert.deepStrictEqual(g.studentView(a.id).me.finalWager, { amount: 300 });
+  g.finalWager(c.id, null, 100);
+  assert.strictEqual(g.phase, 'finalClue', 'everyone who can wager has');
   g.answer(a.id, 'BETA');
   g.answer(b.id, 'BETA');
   g.answer(c.id, 'ALPHA');
@@ -359,10 +367,13 @@ test('a Daily Double is a team wager; the final clue too', () => {
   assert.deepStrictEqual(g.final.order, [1, 0], 'last place first');
   g.next();
   g.next();
-  assert.deepStrictEqual(g.scores().teams, [100, 0]);
+  // Team 0: Ann loses 300, Ben wagered nothing: (−300 + 0) / 2. Team 1: Cy wins 100.
+  assert.deepStrictEqual(g.scores().teams, [400 - 150, 100]);
   g.next();
   assert.strictEqual(g.phase, 'champ');
-  assert.strictEqual(g.scores().students.get(c.id), g.records[0].value + 1000);
+  assert.strictEqual(g.scores().students.get(c.id), v + 100);
+  assert.strictEqual(g.scores().students.get(a.id), v - 300);
+  assert.match(g.report(), new RegExp(`"Cy","Neutrons","${v + 100}"`));
   const tv = g.teacherView();
   assert.strictEqual(tv.top[0].name, 'Cy');
   g.toLobby();

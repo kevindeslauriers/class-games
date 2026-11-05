@@ -108,7 +108,7 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <dt>Teams pick the clues</dt><dd>On: teams take turns picking on their devices. Off: you click every clue. Teams still take turns for Daily Doubles.</dd>
       <dt>Wrong answers lose points</dt><dd>On (the default): a wrong answer loses the clue's value for the student and counts against the team. No answer costs nothing. Off: wrong answers earn nothing.</dd>
       <dt>Daily Doubles</dt><dd>Hidden squares. The team whose turn it is agrees on a wager.</dd>
-      <dt>Final clue</dt><dd>Every team wagers, then everyone answers one last clue.</dd>
+      <dt>Final clue</dt><dd>After the last board, each student wagers up to their own points on their device, then everyone answers one last clue.</dd>
     </dl>
 
     <figure class="shot">
@@ -123,7 +123,8 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
     <ul class="plain">
       <li><b>Students:</b> a right answer earns the clue's value (100 to 500, doubled on the second board). With <b>Wrong answers lose points</b> ticked (the default), a wrong answer loses the value. No answer costs nothing. The board shows only the top three students.</li>
       <li><b>Teams:</b> every student answers separately. The team earns the clue's value times the share of its members who got it right, minus the share who got it wrong. On a 400 clue with 4 players: 3 right and 1 wrong gives 400 × (3 − 1) ÷ 4 = 200; 3 right and 1 silent gives 300; 1 right and 3 wrong gives −200. With the box unticked, wrong answers just earn nothing (3 of 4 right is 300).</li>
-      <li><b>Daily Double and final clue:</b> the team wins its wager if at least half of its members are right, and loses it if not.</li>
+      <li><b>Daily Double:</b> the team wins its wager if at least half of its members are right, and loses it if not.</li>
+      <li><b>Final clue:</b> each student wagers from 0 up to their own score. A right answer wins the wager; a wrong or blank answer loses it. Students with no points can't wager but still answer. Each team gets the average of its players' results: if Ann wins 300 and Ben loses 100, their team gets +100.</li>
     </ul>
   </section>
 

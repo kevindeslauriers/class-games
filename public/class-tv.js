@@ -402,19 +402,14 @@ function renderClue(v) {
     return;
   }
   if (v.phase === 'finalWager') {
-    body.append(el('p', 'big', `Final category: ${v.final.category}. Each team agrees on a wager; one member enters it.`));
+    body.append(el('p', 'big', `Final category: ${v.final.category}. Each student wagers up to their own points on their device.`));
+    body.append(el('p', 'hint', 'Right answers win the wager; wrong or blank answers lose it. Each team gets the average of its players’ results.'));
     const grid = el('div', 'fteams');
     activeTeams(v).forEach(t => {
       const card = el('div', 'ft'); card.style.borderColor = t.color;
-      card.append(el('div', 'nm', t.name), el('div', 'st', `Score ${pts(t.score)} · can wager up to ${pts(v.final.maxes[t.t])}`));
-      const w = v.finalWagers && v.finalWagers[t.t];
-      card.append(el('div', 'st', w ? `✓ Wager in (${w.by})` : v.final.maxes[t.t] ? 'Waiting…' : 'No points to wager'));
-      if (v.final.maxes[t.t]) {
-        const row = el('div', 'wrow');
-        const inp = el('input', 'field'); inp.type = 'number'; inp.min = 0; inp.max = v.final.maxes[t.t]; inp.placeholder = 'Wager'; inp.dataset.id = 'fw' + t.t;
-        row.append(inp, btn('Set', () => cmd('finalWager', { team: t.t, amount: +inp.value })));
-        card.append(row);
-      }
+      const w = v.final.waiting && v.final.waiting[t.t] || { in: 0, of: 0 };
+      card.append(el('div', 'nm', t.name), el('div', 'st', `Score ${pts(t.score)}`));
+      card.append(el('div', 'st', w.of ? `${w.in} of ${w.of} wagers in${w.in === w.of ? ' ✓' : '…'}` : 'No one has points to wager'));
       grid.append(card);
     });
     body.append(grid);
@@ -525,8 +520,8 @@ function finalTeams(v) {
     const card = el('div', 'ft' + (r ? '' : ' hide')); card.style.borderColor = team(t).color;
     card.append(el('div', 'nm', team(t).name));
     if (r) {
-      card.append(el('div', 'st res', `${r.right} of ${r.n} right · wagered ${pts(r.wager)}`));
-      card.append(el('div', 'p', (r.pts >= 0 ? '+' : '') + pts(r.pts)));
+      card.append(el('div', 'st res', `${r.right} of ${r.n} right · average of their wagers won and lost`));
+      card.append(el('div', 'p', (r.pts > 0 ? '+' : '') + pts(r.pts)));
     } else card.append(el('div', 'st', 'Still to come'));
     grid.append(card);
   });

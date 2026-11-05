@@ -25,7 +25,7 @@ The teacher picks the course and which units the board draws from in the lobby; 
 - **Lessons from class notes**: a clue file with a `# Lesson` line is a lesson. It is listed under the units in its own list, starts unticked, and can fill the board on its own or mix with units. A lesson can have more than 12 categories; each game draws from them.
 - Clues are multiple choice (A to D keys work), typed (spelling is forgiven) or numbers (`3e8` and `3 x 10^8` both work; number clues get 50% more time).
 - After each clue the board shows the answer, the class's % right, each team's result and how many picked each choice. For typed answers it groups what students wrote, so the teacher can **Accept** a near miss for everyone who wrote it.
-- **Daily Double:** the team that finds it agrees on a wager. Everyone answers; the team wins the wager if at least half of its members are right. **Final clue:** every team wagers the same way.
+- **Daily Double:** the team that finds it agrees on a wager. Everyone answers; the team wins the wager if at least half of its members are right. **Final clue:** each student wagers up to their own points; a right answer wins the wager and a wrong or blank one loses it. The team gets the average of its players' results.
 - The teacher can pause, close answers early, skip a clue or end a board. **Report (CSV)** downloads % right for each question and every student's answers and score. Nothing is stored on the server: rooms live in memory and close after 3 hours with nobody connected.
 - If a school network blocks WebSockets, the pages switch to ordinary web requests (long polling) on their own.
 
