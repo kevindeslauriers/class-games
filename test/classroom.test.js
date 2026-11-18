@@ -380,6 +380,24 @@ test('a Daily Double is a team wager; in the final each student wagers their own
   assert.strictEqual(g.students.length, 3);
 });
 
+test('playing the last clue on a board moves on without losing track of the clues', () => {
+  const { g } = setup();
+  g.updateSettings({ teams: 2, rounds: 1, dd: false, final: true });
+  const a = g.join('Ann', 0);
+  g.join('Ben', 1);
+  g.start();
+  for (let c = 0; c < 6; c++) for (let r = 0; r < 5; r++) {
+    g.choose(null, c, r);
+    g.close(false);
+    g.next();
+  }
+  assert.strictEqual(g.phase, 'finalWager', 'the last next() ends the board');
+  assert.strictEqual(g.records.length, 30);
+  assert.ok(g.records.every(Boolean), 'no empty entries');
+  assert.doesNotThrow(() => g.studentView(a.id));
+  assert.doesNotThrow(() => g.report());
+});
+
 test('pause holds the clock; skipping gives no points', () => {
   const { g, timers } = setup();
   g.updateSettings({ teams: 2, rounds: 1, dd: false, final: false, secs: 20 });
