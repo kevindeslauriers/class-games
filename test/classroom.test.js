@@ -521,3 +521,43 @@ test('class rooms are separate, work over polling, and give a report', async () 
     server.closeAllConnections();
   }
 });
+
+test('bad input from a browser never stops the server', async () => {
+  const { server } = createServer();
+  await new Promise(r => server.listen(0, r));
+  const port = server.address().port;
+  const base = `http://127.0.0.1:${port}`;
+  try {
+    // An oversized WebSocket message closes that connection only.
+    const big = new WebSocket(`ws://127.0.0.1:${port}/ws`);
+    big.on('error', () => {});
+    await new Promise(r => big.once('open', r));
+    big.send('x'.repeat(100 * 1024));
+    assert.strictEqual(await new Promise(r => big.once('close', r)), 1009);
+    // Malformed and oversized bodies on the polling fallback are refused.
+    const { sid } = await (await fetch(`${base}/rt/open`, { method: 'POST' })).json();
+    const post = body => fetch(`${base}/rt/send?sid=${sid}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body });
+    assert.strictEqual((await post('{bad json')).status, 400);
+    assert.strictEqual((await post(JSON.stringify({ t: 'x', a: 'a'.repeat(100 * 1024) }))).status, 413);
+    assert.strictEqual((await post(JSON.stringify({ t: 'hello', role: 'student', code: { x: 1 }, name: ['a'] }))).status, 200);
+    // The server is still up and still makes games.
+    assert.strictEqual((await fetch(`${base}/healthz`)).status, 200);
+    const tv = wsClient(port); await tv.open();
+    tv.send({ t: 'hello', role: 'classTv' });
+    assert.ok((await tv.wait(m => m.t === 'classHost')).code);
+  } finally {
+    open.forEach(ws => ws.close());
+    server.close();
+  }
+});
+
+test('a square must be a whole number on the board', () => {
+  const { g } = setup();
+  g.updateSettings({ teams: 2, rounds: 1, dd: false, final: false });
+  g.join('Ann', 0);
+  g.start();
+  assert.throws(() => g.choose(null, 2.5, 1), /Pick a clue/);
+  assert.throws(() => g.choose(null, 2, '1.5'), /Pick a clue/);
+  assert.strictEqual(g.taken.size, 0, 'a refused pick leaves the board as it was');
+  assert.strictEqual(g.phase, 'board');
+});

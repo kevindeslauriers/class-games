@@ -27,12 +27,15 @@ function createServer({ classOpts = {} } = {}) {
   // Graphs that go with clues ([graph: name] in a clue file).
   app.use('/graphs', express.static(path.join(__dirname, 'class-clues', 'images'), { maxAge: '1h' }));
 
-  app.get('/class/qr.svg', async (req, res) => {
-    const proto = (req.headers['x-forwarded-proto'] || req.protocol).split(',')[0];
-    const code = String(req.query.code || '').toUpperCase().replace(/[^A-Z]/g, '').slice(0, 8);
-    const url = `${proto}://${req.get('host')}/join?code=${code}`;
-    res.type('image/svg+xml').set('Cache-Control', 'no-store')
-      .send(await QRCode.toString(url, { type: 'svg', margin: 1, color: { dark: '#0b1a4a', light: '#ffffff' } }));
+  app.get('/class/qr.svg', async (req, res, next) => {
+    // Express 4 does not catch a rejected promise, so errors are passed on by hand.
+    try {
+      const proto = (req.headers['x-forwarded-proto'] || req.protocol).split(',')[0];
+      const code = String(req.query.code || '').toUpperCase().replace(/[^A-Z]/g, '').slice(0, 8);
+      const url = `${proto}://${req.get('host')}/join?code=${code}`;
+      res.type('image/svg+xml').set('Cache-Control', 'no-store')
+        .send(await QRCode.toString(url, { type: 'svg', margin: 1, color: { dark: '#0b1a4a', light: '#ffffff' } }));
+    } catch (e) { next(e); }
   });
   // The end-of-game report. Nothing is kept: it comes from the room in memory.
   app.get('/class/report.csv', (req, res) => {
@@ -77,6 +80,9 @@ function createServer({ classOpts = {} } = {}) {
     ws.on('pong', () => { c.alive = true; });
     ws.on('message', data => { let m; try { m = JSON.parse(data); } catch { return; } onMessage(c, m); });
     ws.on('close', () => onClose(c));
+    // An oversized or malformed frame ends this connection only. Without a
+    // listener, the 'error' event would crash the server for every class.
+    ws.on('error', e => { console.error('WebSocket error:', e.code || e.message); });
   });
 
   // Fallback for networks that block WebSockets (some school firewalls do):
@@ -119,6 +125,8 @@ function createServer({ classOpts = {} } = {}) {
   sweep.unref();
 
   app.use((err, req, res, next) => {
+    // A malformed or oversized body from a browser is its problem, not ours.
+    if (err.type === 'entity.parse.failed' || err.type === 'entity.too.large') return res.status(err.status || 400).json({ error: 'Bad request.' });
     console.error(err);
     res.status(500).json({ error: 'Something went wrong.' });
   });
