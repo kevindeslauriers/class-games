@@ -551,6 +551,35 @@ test('bad input from a browser never stops the server', async () => {
   }
 });
 
+test('skipping the last clue on a board ends the board too', () => {
+  for (const dd of [false, true]) {
+    const { g } = setup();
+    // The test bank has 6 categories, so there is one board and no final.
+    g.updateSettings({ teams: 2, rounds: 1, dd, final: false });
+    g.join('Ann', 0);
+    g.start();
+    const squares = [];
+    for (let c = 0; c < 6; c++) for (let r = 0; r < 5; r++) squares.push([c, r]);
+    // Play every square but one, leaving a Daily Double for last when there is one.
+    const last = dd ? [...g.round().dds][0].split(',').map(Number) : [5, 4];
+    squares.filter(([c, r]) => c !== last[0] || r !== last[1]).forEach(([c, r]) => {
+      g.choose(null, c, r);
+      if (g.phase === 'ddWager') g.ddWager(null, 0);
+      g.close(false);
+      g.next();
+    });
+    g.choose(null, ...last);
+    assert.strictEqual(g.phase, dd ? 'ddWager' : 'open');
+    g.skip();
+    assert.strictEqual(g.phase, 'champ', 'the board, and so the game, is over');
+    assert.strictEqual(g.rec, null);
+    assert.strictEqual(g.records.length, 29);
+    assert.ok(g.records.every(Boolean));
+    assert.throws(() => g.ddWager(null, 100), /not time/);
+    assert.doesNotThrow(() => g.teacherView());
+  }
+});
+
 test('a square must be a whole number on the board', () => {
   const { g } = setup();
   g.updateSettings({ teams: 2, rounds: 1, dd: false, final: false });
